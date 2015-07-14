@@ -1,14 +1,14 @@
 var counter = 1;
 var skip = false;
 
-setup_sidebar();
-init_events();
-nav_current();
+$( document ).ready( function(){
+  setup_sidebar();
+  init_events();
+  nav_current();
+});
 
 function setup_sidebar()
-{
-	get_rss();
-	
+{	
 	$( "#newsletter input" ).first()
 		.focusin( function()
 		{
@@ -201,41 +201,6 @@ function build_project( id )
 		$( "#trio .design p" ).html( json[ 'design' ] );
 		$( "#trio .code p" ).html( json[ 'code' ] );
 	});
-}
-
-function get_rss()
-{
-	$.ajax({
-		url : "php/get_blog.php",
-		dataType : "json",
-		success : function( json )
-		{
-			for( var i = 0; i < Math.min( json.length, 3 ); i++ )
-			{
-				$( "ul#blog" ).append( 
-					$( document.createElement( 'li' ) )
-						.html(
-							$( document.createElement( 'a' ) )
-								.html( json[ i ].title )
-								.attr( "href", json[ i ].url )
-						)
-				);
-			}
-		}
-	});
-	
-	$.ajax({
-		url : "php/get_store.php",
-		dataType : "json",
-		success : function( json )
-		{
-			$( "#store" ).html(
-				$( document.createElement( 'a' ) )
-					.html( json.title )
-					.attr( "href", json.url )
-			);
-		}
-	})
 }
 
 function webform_submit(){
