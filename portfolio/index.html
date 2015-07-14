@@ -18,4 +18,13 @@ layout: page
 </section>
 <section id="all">
 	<h2 class='ribbon'>Additional projects</h2>
+  {% assign items = site.projects | sort: 'date' %}
+  {% for project in items reversed %}
+    {% if project.featured == false %}
+      <div class="all">
+        <img src="{{ site.baseurl }}/media/slideshow/{{ project.id }}.png" />
+        <p><b>{{ project.title }}</b> - <i>{{ project.client }}</i><br /><br />{{ project.content }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
 </section>
