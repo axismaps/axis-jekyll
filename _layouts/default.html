@@ -5,18 +5,13 @@
     {% include ga.html %}
     <div id="wrapper">
       {% include header.html %}
-      {% if page.path == 'index.html' %}
-        {% include slideshow.html %}
-      {% endif %}
+      {% include slideshow.html %}
       {% include nav.html %}
-      
       <div id="main">
         <div id="main-content">
           {{ content }}
         </div>
-        {% if page.path == 'index.html' %}
-          {% include sidebar.html %}
-        {% endif %}
+        {% include sidebar.html %}
         {% include footer.html %}
       </div>
     </div>
