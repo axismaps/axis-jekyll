@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Bivariate Cartograms
+nav: Guide
 category: multivariate
 ---
 

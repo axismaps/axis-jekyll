@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Bivariate Proportional Symbols
+nav: Guide
 category: multivariate
 ---
 

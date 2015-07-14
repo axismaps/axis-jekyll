@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Proportional Symbols
+nav: Guide
 category: univariate
 ---
 

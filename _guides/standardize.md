@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Standardizing Data
+nav: Guide
 category: general
 ---
 

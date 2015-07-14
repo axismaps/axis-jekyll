@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Map Projections
+nav: Guide
 category: general
 ---
 

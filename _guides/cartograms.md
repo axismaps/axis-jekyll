@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Non-Contiguous Cartograms
+nav: Guide
 category: univariate
 ---
 

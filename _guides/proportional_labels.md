@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Proportional Labels
+nav: Guide
 category: multivariate
 ---
 

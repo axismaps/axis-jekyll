@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Dot Density Maps
+nav: Guide
 category: univariate
 ---
 

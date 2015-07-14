@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Value-By-Alpha Maps
+nav: Guide
 category: multivariate
 ---
 

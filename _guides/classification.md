@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: The Basics of Data Classification
+nav: Guide
 category: general
 ---
 

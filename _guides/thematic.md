@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: What are Thematic Maps?
+nav: Guide
 category: general
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Bivariate Choropleth
+nav: Guide
 category: multivariate
 ---
 

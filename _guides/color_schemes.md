@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Using Colors on Thematic Maps
+nav: Guide
 category: general
 ---
 

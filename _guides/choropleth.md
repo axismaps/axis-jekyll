@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Choropleth Maps
+nav: Guide
 category: univariate
 ---
 

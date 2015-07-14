@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Labeling and text hierarchy in cartography
+nav: Guide
 category: general
 ---
 
