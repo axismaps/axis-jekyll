@@ -1,18 +1,16 @@
-html {
-
-}
-
 body {
 	border-top: 8px solid #595959;
 	background: #ececec url(../images/background.png);
 	color: #1a1a1a;
 	font: 15px / 20px "pt-sans", sans-serif;
 }
+
 h2 {
 	margin: 0;
 	font-weight: normal;
 	font-size: 21px;
 }
+
 a {
 	color: #0061ad;
 }
@@ -23,6 +21,12 @@ hr {
 	border: none;
 	border-top: 1px dashed #ccc;
 }
+
+section{
+  background: white;
+  padding: 50px 150px;
+}
+
 /* UTILITY */
 .clear-left {
 	clear: left;
@@ -39,15 +43,18 @@ hr {
 	margin: 0 auto 10px;
 	/*background-color: #fbf9ed;*/
 }
+
 /* HEADER */
 #header{
 	padding: 25px 0 15px;
 }
+
 #header:after {
 	content: "";
 	display: block;
 	clear: both;
 }
+
 #build, #contact #submit{
 	float: right;
 	margin: 5px 0;
@@ -62,16 +69,20 @@ hr {
 	line-height: 45px;
 	cursor: pointer;
 }
+
 #build:hover, #contact #submit:hover{
 	background-color: #666;
 }
+
 #build span{
 	display: none;
 }
+
 #contact{
 	display: none;
 	margin-bottom: 15px;
 }
+
 #contact #other{
 	float: right;
 	width: 40%;
@@ -153,6 +164,7 @@ nav li.current, nav li.current:hover{
 	background-color: #666;
 	color: white;
 }
+
 nav #menu {
 	font-size: 2em;
 	text-align: right;
@@ -161,13 +173,16 @@ nav #menu {
 	line-height: 1.4em;
 	padding: 0;
 }
+
 nav #menu:hover {
 	cursor: pointer;
 }
+
 /* SLIDESHOWS */
 img#init {
 	position: absolute; /* just let the slides underneath float up to top */
 }
+
 #slideshow{
 	overflow: hidden;
 	height: 305px;
@@ -175,6 +190,7 @@ img#init {
 	border-bottom: 1px solid #93928c;
 	position: relative;
 }
+
 #controls{
 	position: absolute;
 	right: 20px;
@@ -191,6 +207,7 @@ img#init {
 	-ms-user-select: none;
 	user-select: none;
 }
+
 #slides .title{
 	position: relative;
 	display: none;
@@ -202,12 +219,15 @@ img#init {
 	font-weight: bold;
 	line-height: 40px;
 }
+
 #controls span:first-child{
 	margin-right: 20px;
 }
+
 #controls .disabled{
 	color: #666;
 }
+
 #project-slideshow {
 	width: 642px;
 	height: 520px;
@@ -216,17 +236,20 @@ img#init {
 	overflow: hidden;
 	box-shadow: -6px 0px 5px -5px #999;
 }
+
 #slides {
 	height: 305px;
     padding: 0;
     margin: 0;
     position: relative;
 }
+
 #slides li {
     list-style-type: none;
     position: absolute;
     left: 102%;
 }
+
 #slides li:first-child {
     left: 0;
 }
@@ -252,29 +275,35 @@ img#init {
 	height: 100%;
 	padding: 0 20px;
 }
+
 #sidebar h2 {
 	display: none;
 }
+
 #sidebar h4 {
 	text-transform: uppercase;
 	margin-top: 15px;
 	padding-top: 15px;
 	border-top: 1px solid #ccc;
 }
+
 #sidebar h4.no-border{
 	border: none;
 	padding: 0;
 	margin-top: 15px;
 }
+
 #sidebar ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
 #sidebar li{
 	margin: 0 0 15px;
 	word-wrap: break-word;
 }
+
 #store img{
 	float: none;
 	margin: 0 !important;
@@ -309,22 +338,27 @@ footer{
 	color: #999;
 	text-align: center;
 }
+
 footer p {
 	font-size: 12px;
 	margin: 0;
 }
+
 footer p:last-child {
 	margin-top: 2em;
 }
+
 /* INDEX */
 #main {
 	background: #eee;
 }
+
 #main:after{
 	content: "";
 	display: block;
 	clear: both;
 }
+
 #main-content{
 	float: left;
 	width: 755px;
@@ -333,6 +367,7 @@ footer p:last-child {
 	-moz-box-shadow: 2px 0px 3px rgba(0,0,0,0.25);
 	box-shadow: 2px 0px 3px rgba(0,0,0,0.25);
 }
+
 .ribbon {
 	line-height: 50px;
 	color: white;
@@ -344,15 +379,19 @@ footer p:last-child {
 	font-weight: normal;
 	font-style: italic;
 }
+
 #trio {
 	height: 100%;
 	background: #fff;
+	padding: 0;
 }
+
 #trio:after {
 	content: '';
 	display: block;
 	clear: both;
 }
+
 #trio article {
 	position: relative;
 	float: left;
@@ -362,6 +401,7 @@ footer p:last-child {
 	background-color: white;
 	padding: 0 4%;
 }
+
 #trio article h3 {
 	text-indent: 70px;
 	font-weight: bold;
@@ -370,6 +410,7 @@ footer p:last-child {
 	line-height: 40px;
 	margin-top: 30px;
 }
+
 #trio article:after {
 	content: "";
 	position: absolute;
@@ -378,9 +419,11 @@ footer p:last-child {
 	top: 10%;
 	border-right: 1px solid #ddd;
 }
+
 #trio article:last-child:after {
 	border-right: none;
 }
+
 #trio p.more {
 	position: absolute;
 	bottom: 0;
@@ -454,25 +497,29 @@ p.more span{
 	visibility: visible;
 }
 
-
 #explanations article {
 	padding: 20px 140px 20px 4%;
 }
+
 #explanations article.data {
 	background: url(../images/charts.png) right top no-repeat;
 }
+
 #explanations article.design {
 	background:url(../images/map.png) right top no-repeat;
 }
+
 #explanations article.code {
 	background:url(../images/histogram.png) right top no-repeat;
 }
+
 #explanations article p {
 	color: #1A1A1A;
     font: 15px/20px "pt-sans",sans-serif;
 }
+
 .axis-summary{
-	padding-bottom: 41px;
+	padding: 0 0 41px 0;
 	background: url(../images/screenshot.png) right bottom no-repeat;
 }
 
@@ -538,21 +585,24 @@ p.more span{
 
 
 /* PORTFOLIO */
-
 #featured  {
+  padding: 0;
 	background: white;
 
 }
+
 #featured ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
+
 #featured:after, #featured ul:after {
 	content: "";
 	display: block;
 	clear: both;
 }
+
 #featured ul li {
 	float: left;
 	margin: 25px 0 75px 25px;
@@ -561,28 +611,34 @@ p.more span{
 	border: 1px solid #ddd;
 	opacity: 1;
 }
+
 #featured ul li:hover{
 	cursor: pointer;
 }
+
 #featured ul li a img{
 	height: 185px;
 	border: 10px solid white;
 	background-position: left center;
 	background-size: cover;
 }
+
 #featured ul li a img:hover {
 	border-color: #ddd;
 	transition: border-color .2s;
 }
+
 #featured ul li p a{
 	text-decoration: none;
 	color: #005C7A;
 
 }
+
 #featured ul li p a:hover {
 	color: #333;
 	transition: color .3s;
 }
+
 #featured ul li p{
 	display: block;
 	margin: 10px 0 0;
@@ -590,6 +646,7 @@ p.more span{
 	text-align: center;
 	font-size: 16px;
 }
+
 #more-work {
 	height: 40px;
 	padding-top: 25px;
@@ -597,13 +654,16 @@ p.more span{
 	border-top: 1px solid #DDDDDD;
 	text-align: center;
 }
+
 #more-work a {
 	text-decoration: none;
 }
+
 #more-work a:hover {
 	color: #333;
 	transition: color .3s;
 }
+
 #all{
 	padding: 40px 80px;
 	background-color: white;
