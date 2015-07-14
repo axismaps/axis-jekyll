@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include meta.html %}
+  <body>
+    {% include ga.html %}
+    <div id="wrapper">
+      {% include header.html %}
+      {% include slideshow.html %}
+      {% include nav.html %}
+      <div id="main">
+        <div id="main-content">
+          {{ content }}
+        </div>
+        {% include sidebar.html %}
+        {% include footer.html %}
+      </div>
+    </div>
+  </body>
+</html>
