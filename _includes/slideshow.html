@@ -4,11 +4,10 @@
     <li><img src="{{ 'images/slideshow_start.png' prepend: site.baseurl }}" /></li>
     {% for project in site.projects %}
   	    {% if project.slideshow %}
-  	      <li>
+  	      <li id="slide{% increment length %}">
   	        <img src="{{ site.baseurl }}/media/slideshow/{{ project.id }}.png" />
   	        <div class="title">{{ project.title }}</div>
   	      </li>
-  	      {% increment length %}
       {% endif %}
     {% endfor %}
   </ul>
