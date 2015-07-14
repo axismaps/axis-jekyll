@@ -53,7 +53,7 @@ layout: default
 	<div id='mini_portfolio'>
   	  {% for project in site.projects %}
   	    {% if project.featured %}
-  	      <a class="mini-portfolio" href="{{ post.url | prepend: site.baseurl }}">
+  	      <a class="mini-portfolio" href="{{ project.url | prepend: site.baseurl }}">
     	      <div class="mini-image" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.id }}.png)"></div>
           <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
   	      </a>
