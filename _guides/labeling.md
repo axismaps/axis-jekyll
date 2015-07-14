@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Labeling and text hierarchy in cartography
+category: general
 ---
 
 ![](../images/labels.jpg)

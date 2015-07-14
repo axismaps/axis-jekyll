@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Proportional Labels
+category: multivariate
 ---
 
 ### When to Use

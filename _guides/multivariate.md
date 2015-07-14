@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Univariate Maps Versus Multivariate Maps
+category: general
 ---
 
 ### One Data Theme or Many Data Themes?

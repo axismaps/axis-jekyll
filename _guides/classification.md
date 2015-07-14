@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: The Basics of Data Classification
+category: general
 ---
 
 ### When to Use

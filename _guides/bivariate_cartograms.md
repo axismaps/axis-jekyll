@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Bivariate Cartograms
+category: multivariate
 ---
 
 ### When to Use

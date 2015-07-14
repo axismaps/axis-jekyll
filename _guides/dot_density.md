@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Dot Density Maps
+category: univariate
 ---
 
 ### When to Use

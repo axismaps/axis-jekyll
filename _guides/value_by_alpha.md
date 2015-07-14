@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Value-By-Alpha Maps
+category: multivariate
 ---
 
 ### When to Use

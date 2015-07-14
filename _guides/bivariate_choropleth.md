@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Bivariate Choropleth
+category: multivariate
 ---
 
 ### When to Use

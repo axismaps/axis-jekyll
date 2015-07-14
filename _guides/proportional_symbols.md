@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Proportional Symbols
+category: univariate
 ---
 
 ![](../images/prop_symbols.jpg)

@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Standardizing Data
+category: general
 ---
 
 ### To Standardize or Not?

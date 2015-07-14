@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Using Colors on Thematic Maps
+category: general
 ---
 
 ### Controlling the Three Dimensions of Color

@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Choropleth Maps
+category: univariate
 ---
 
 ![](../images/choropleth.jpg)

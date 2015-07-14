@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Map Projections
+category: general
 ---
 
 ### Flattening the Earth

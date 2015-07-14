@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Non-Contiguous Cartograms
+category: univariate
 ---
 
 ### When to Use

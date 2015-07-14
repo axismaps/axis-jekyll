@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Bivariate Proportional Symbols
+category: multivariate
 ---
 
 ### When to Use

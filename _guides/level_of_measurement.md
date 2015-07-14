@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: Level of Measurement&#58; Nominal, Ordinal, and Numerical Data
+category: general
 ---
 
 ### Know Your Data

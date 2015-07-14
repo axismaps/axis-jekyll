@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guide
 title: What are Thematic Maps?
+category: general
 ---
 
 ### Reference maps versus thematic maps
