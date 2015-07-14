@@ -1,3 +1,15 @@
+---
+id: musqueam
+title: Musqueam Place Names Map
+titleshort: Musqueam Indian Band
+client: Musqueam
+clientshort: Musqueam
+tag: Preserving language and heritage
+date: 2013-04-24
+featured: true
+slideshow: true
+---
+
 # Musqueam Language Map
 
 ## Overview

@@ -1,3 +1,16 @@
+---
+id: jobs
+title: Geography of Jobs
+titleshort: Geography of Jobs
+client: TIP Strategies
+clientshort: TIP Strategies
+tag: Visualizing 15 years of job growth / loss
+date: 2014-09-02
+featured: true
+slideshow: true
+link: http://tipstrategies.com/geography-of-jobs/
+---
+
 # Geography of Jobs
 
 ## Overview

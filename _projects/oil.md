@@ -1,3 +1,15 @@
+---
+id: oil
+title: Global Commodities Oil Visualization
+titleshort: Oil Visualization
+client: Adam Matthew Digital
+clientshort: AMD
+tag: Revealing the globe's energy history
+date: 2013-06-15
+featured: true
+slideshow: true
+---
+
 # Global Commodities Oil Visualization
 
 ## Overview

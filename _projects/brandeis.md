@@ -1,5 +1,14 @@
 ---
-title: American-Jewish-Population-Map
+id: brandeis
+title: American Jewish Population Map
+titleshort: American Jewish Population
+client: Brandeis University
+clientshort: Brandeis
+tag: Nationwide population study
+date: 2013-09-27
+featured: true
+slideshow: true
+link: http://ajpp.brandeis.edu
 ---
 
 # American Jewish Population Map

@@ -1,3 +1,15 @@
+---
+id: cap
+title: Mapping Pacific Voyages
+titleshort: Mapping Pacific Voyages
+client: Adam Matthew Digital
+clientshort: AMD
+tag: Animating historic sea voyages
+date: 2013-11-21
+featured: true
+slideshow: true
+---
+
 # Pacific Voyages Map
 
 ## Overview

@@ -1,3 +1,16 @@
+---
+id: wntb
+title: Why Not the Best?
+titleshort: Why Not the Best?
+client: IPRO
+clientshort: IPRO
+tag: Mapping ever-changing hospital data
+date: 2013-04-25
+featured: true
+slideshow: true
+link: http://whynotthebest.org/map/
+---
+
 # Why Not the Best?
 
 ## Overview

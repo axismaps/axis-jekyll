@@ -1,3 +1,16 @@
+---
+id: nyt
+title: "New York Times: Remembering 9/11"
+titleshort: Remembering 9/11
+client: The New York Times
+clientshort: New York Times
+tag: User-collected memories of 9/11
+date: 2011-09-11
+featured: true
+slideshow: true
+link: http://www.nytimes.com/interactive/2011/09/08/us/sept-11-reckoning/where-were-you-september-11-map.html
+---
+
 # NYT 9/11 Map
 
 ## Overview

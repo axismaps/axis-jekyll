@@ -1,3 +1,16 @@
+---
+id: chis
+title: AskCHIS Neighborhood Edition
+titleshort: AskCHIS NE
+client: UCLA Center for Health Policy Research
+clientshort: UCLA
+tag: California health dashboard visualization
+date: 2014-11-19
+featured: true
+slideshow: true
+link: http://askchisne.ucla.edu/ask/_layouts/ne/dashboard.aspx#/
+---
+
 #AskCHIS Neighborhood Edition
 
 ## Overview

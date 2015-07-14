@@ -1,3 +1,16 @@
+---
+id: idph
+title: Illinois Department of Public Health Map
+titleshort: Illinois Public Health
+client: IPRO
+clientshort: IPRO
+tag: Dynamic health dashboard
+date: 2013-11-13
+featured: true
+slideshow: true
+link: http://map-idph-ipro-org.bitnamiapp.com/
+---
+
 #Illinois Public Health Community Map
 
 ## Overview
