@@ -1,3 +1,15 @@
+---
+id: chronology
+title: Empires Online Chronology
+titleshort: EO Chronology
+client: Adam Matthew Digital
+clientshort: AMD
+tag: Engaging students with history
+date: 2012-07-11
+featured: true
+slideshow: true
+---
+
 # Global Commodities Chronology
 
 ## Overview

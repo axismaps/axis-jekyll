@@ -1,3 +1,16 @@
+---
+id: prices
+title: Global Commodities Prices Visualization
+titleshort: Prices Visualization
+client: Adam Matthew Digital
+clientshort: AMD
+tag: 1,000 years of commodity prices
+date: 2012-10-26
+featured: true
+slideshow: true
+---
+
+
 # Global Commodities Prices Visualization
 
 ## Overview

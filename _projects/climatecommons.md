@@ -1,3 +1,16 @@
+---
+id: climatecommons
+title: Climate Commons
+titleshort: Climate Commons
+client: Earth Journalism Network
+clientshort: EJN
+tag: Climate data meets climate journalism
+date: 2013-04-03
+featured: true
+slideshow: true
+url: http://climatecommons.earthjournalism.net/map/
+---
+
 # ClimateCommons
 
 ## Overview
