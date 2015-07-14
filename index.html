@@ -51,7 +51,8 @@ layout: default
 <section id="mini-portfolio">
 	<h2 class='ribbon'>Designed &amp; Built by Axis Maps:</h2>
 	<div id='mini_portfolio'>
-  	  {% for project in site.projects %}
+  	  {% assign items = site.projects | sort: 'date' %}
+  	  {% for project in items reversed %}
   	    {% if project.featured %}
   	      <a class="mini-portfolio" href="{{ project.url | prepend: site.baseurl }}">
     	      <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.id }}.png)"></div>
