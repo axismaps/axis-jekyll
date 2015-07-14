@@ -1,10 +1,15 @@
 <nav>
 	<a id="menu">&#9776;</a>
 	<ul>
-		<li><a href='index.php'>Home</a></li>
-		<li><a href='portfolio.php'>Portfolio</a></li>
-		<li><a href='blog/'>Blog</a></li>
-		<li><a href='company.php'>Company</a></li>
+  	  {% assign items = site.html_pages | sort: 'order' %}
+  	  {% for html in items %}
+    	  {% if html.nav == page.nav %}
+        <li class="current">
+      {% else %}
+        <li>
+      {% endif %}
+      <a href="{{ html.url | prepend: site.baseurl | remove: 'index.html' }}">{{ html.nav }}</a></li>
+  	  {% endfor %}
 		<li><a href='http://store.axismaps.com' target="_blank">Store</a></li>
 	</ul>
 </nav>
