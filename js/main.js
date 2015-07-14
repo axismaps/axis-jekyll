@@ -4,7 +4,6 @@ var skip = false;
 $( document ).ready( function(){
   setup_sidebar();
   init_events();
-  nav_current();
 });
 
 function setup_sidebar()
@@ -126,51 +125,6 @@ function init_events()
 		if( $( window ).width() > 520 ) $( "nav ul" ).show();
 	});
 
-}
-function nav_current() {
-
-	var filename = window.location.href.split( '/' ).pop();
-	if( filename.indexOf( '#' ) != 0 ) filename = filename.split( '#' ).shift();
-	if( filename == 'index.php' || filename == '' ) $( "nav a[href='index.php']" ).parent().addClass( 'current' );
-	if( filename == 'portfolio.php' || filename == 'project.php' ) $( "nav a[href='portfolio.php']" ).parent().addClass( 'current' );
-	if( filename == 'company.php' ) $( "nav a[href='company.php']" ).parent().addClass( 'current' );
-}
-
-function build_portfolio()
-{
-	$.getJSON( "php/get_portfolio.php", function( json )
-	{
-		for( var i = 0; i < json.length; i++ )
-		{
-			if( json[ i ].featured )
-			{
-				$( "#featured ul" )
-					// .addClass( "featured" )
-					.append(
-						$( document.createElement( 'li' ) )
-							.html( "<p><a href='project.php#" + json[ i ].id + "'><b>" + json[ i ].title + "</b><br /><i>" + json[ i ].client + "</i></a></p>" )
-							.prepend(
-								$( document.createElement( 'a' ) )
-									.attr( 'href', 'project.php#' + json[ i ].id )
-									.append(
-										$( document.createElement( 'img' ) )
-											.attr( 'alt', json[ i ].title )
-											.attr( 'width', '265px' ) // explicitly define dimensions to avoid jump on page load
-											.attr( 'height', '185px' )
-											.attr( 'src', "media/portfolio/" + json[ i ].id + ".png" )
-									)
-							)		
-					);
-			}
-			else
-			{
-				var all = $( document.createElement( 'div' ) ).addClass( "all" ).html( "<p><b>" + json[ i ].title + "</b> - <i>" + json[ i ].client + "</i><br /><br />" + json[ i ].intro + "</p>" );
-				if( json[ i ].url ) all.append( '<a href="' + json[ i ].url + '" target="_blank"><b>View the map &nbsp;-&gt;</b></a>' );
-				all.prepend( $( document.createElement( 'img' ) ).attr( "src", "php/get_image.php?id=" + json[ i ].id + "&w=815&h=255" ) );
-				$( "#all" ).append( all );
-			}
-		}
-	});
 }
 
 function build_project( id )
