@@ -2,7 +2,8 @@
   <div id='controls'><span id='prev'>&#9664;</span><span id='next'>&#9654;</span></div>
   <ul id='slides'>
     <li><img src="{{ 'images/slideshow_start.png' prepend: site.baseurl }}" /></li>
-    {% for project in site.projects %}
+    {% assign items = site.projects | sort: 'date' %}
+    {% for project in items reversed %}
   	    {% if project.slideshow %}
   	      <li id="slide{% increment length %}">
   	        <img src="{{ site.baseurl }}/media/slideshow/{{ project.id }}.png" />
