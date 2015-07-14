@@ -136,37 +136,6 @@ function nav_current() {
 	if( filename == 'company.php' ) $( "nav a[href='company.php']" ).parent().addClass( 'current' );
 }
 
-function mini_portfolio()
-{
-	$.getJSON( "php/get_portfolio.php?l=short", function( json )
-	{
-		var count = 0;
-		for( var i = 0; count < Math.min( 10, json.length ); i++ )
-		{
-			if( json[ i ].featured )
-			{
-				$( "#mini-portfolio" ).append(
-					$( document.createElement( 'a' ) )
-						.addClass( "mini-portfolio" )
-						.attr( "id", 'mini-port-' + i )
-						.attr( "href", "project.php#" + json[ i ].id )
-						.html( "<p><strong>" + json[ i ].title + "</strong> - " + json[ i ].client + "<br /><em>" + json[ i ].tag + "</em></p>" )
-						.prepend(
-							$( document.createElement( 'div' ) )
-								.addClass( "mini-image" )
-								.css( "background-image", "url( media/icon/" + json[ i ].id + ".png )" )
-						)
-				);
-				count++;
-			}
-		}
-		$( "#mini-portfolio" ).append(
-			$( document.createElement( 'div' ) ).css( "clear", "both" )
-		);
-		build_slideshow( json );
-	});
-}
-
 function build_slideshow( json )
 {
 	if( $( window ).width() < 520 ) return false;
