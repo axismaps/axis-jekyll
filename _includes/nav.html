@@ -3,12 +3,20 @@
 	<ul>
   	  {% assign items = site.html_pages | sort: 'order' %}
   	  {% for html in items %}
-    	  {% if html.nav == page.nav %}
-        <li class="current">
-      {% else %}
-        <li>
+  	    {% if html.nav != last %}
+      	  {% if html.nav == page.nav %}
+          <li class="current">
+        {% else %}
+          <li>
+        {% endif %}
+        {% if html.nav == 'Blog' %}
+          <a href="{{ '/blog/' | prepend: site.baseurl }}">
+        {% else %}
+          <a href="{{ html.url | prepend: site.baseurl | remove: 'index.html' }}">
+        {% endif %}
+        {{ html.nav }}</a></li>
       {% endif %}
-      <a href="{{ html.url | prepend: site.baseurl | remove: 'index.html' }}">{{ html.nav }}</a></li>
+      {% assign last = html.nav %}
   	  {% endfor %}
 		<li><a href='http://store.axismaps.com' target="_blank">Store</a></li>
 	</ul>
