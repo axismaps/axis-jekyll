@@ -1,3 +1,16 @@
+---
+id: vilnius
+title: Exploring the Vilnius Ghetto
+titleshort: The Vilnius Ghetto
+client: reVilna
+clientshort: reVilna
+tag: A digital monument to the Jewish ghetto
+date: 2013-05-03
+featured: true
+slideshow: true
+link: http://revilna.org
+---
+
 # ReVilna: Mapping the Vilnius Ghetto
 
 ## Overview
