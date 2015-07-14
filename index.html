@@ -50,5 +50,15 @@ layout: default
 </section>
 <section id="mini-portfolio">
 	<h2 class='ribbon'>Designed &amp; Built by Axis Maps:</h2>
-	<div id='mini_portfolio'></div>
+	<div id='mini_portfolio'>
+  	  {% for project in site.projects %}
+  	    {% if project.featured %}
+  	      <a class="mini-portfolio" href="{{ post.url | prepend: site.baseurl }}">
+    	      <div class="mini-image" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.id }}.png)"></div>
+          <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
+  	      </a>
+  	    {% endif %}
+    {% endfor %}
+    <div style="clear:both"></div>
+	</div>
 </section>

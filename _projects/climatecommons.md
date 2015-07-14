@@ -8,7 +8,7 @@ tag: Climate data meets climate journalism
 date: 2013-04-03
 featured: true
 slideshow: true
-url: http://climatecommons.earthjournalism.net/map/
+link: http://climatecommons.earthjournalism.net/map/
 ---
 
 # ClimateCommons
