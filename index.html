@@ -54,9 +54,12 @@ layout: default
   	  {% for project in site.projects %}
   	    {% if project.featured %}
   	      <a class="mini-portfolio" href="{{ project.url | prepend: site.baseurl }}">
-    	      <div class="mini-image" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.id }}.png)"></div>
+    	      <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.id }}.png)"></div>
           <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
   	      </a>
+  	      {% if length >= 10 %}
+  	        {% break %}
+        {% endif %}
   	    {% endif %}
     {% endfor %}
     <div style="clear:both"></div>
