@@ -13,7 +13,7 @@ The point of classification is to take a large number of observations and **grou
 
 Classification matters because how we group our data into classes is one of the most fundamental aspects of map generalization—the process by which we simplify the real world to fit it on to the page—and small differences in how we do that **can dramatically change the look of the map, and thus, its message**. Despite this influence, data classification is often taken for granted by map readers since we rarely notice or question the classes that are used in maps, and thus, it is one of the easiest ways to "[lie with maps](http://www.amazon.com/How-Lie-Maps-Mark-Monmonier/dp/0226534219)"—whether intentionally or accidentally. Nonetheless, classification is a useful and basic part of making thematic maps.
 
-![](../images/classed_choropleth.jpg)
+![]({{site.baseurl}}/images/guides/classed_choropleth.jpg)
 
 _This map uses a 5-class equal interval classification scheme (1-10, 11-20, ...)._
 
@@ -37,7 +37,7 @@ Not sure how many classes to use? Have a look at the distribution of your data i
 
 Just as there is no single correct number of classes, there is no single best way to classify you data into ranges. Look at a histogram (or scatterplot) to determine the 'form' of your observations. Above all else the goal of data classification is to put places with similar rates in the same class, and separate places with very different rates into different classes.
 
-![](../images/histogram_examples.png)
+![]({{site.baseurl}}/images/guides/histogram_examples.png)
 
 _The form of this histogram suggests that 3 or 4 data classes seem most appropriate.
  Lacking any other insight, the "dips/gaps" suggest natural places to break the data._

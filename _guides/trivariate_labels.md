@@ -19,4 +19,4 @@ These maps inherent the problems of any [graduated / proportional map](../articl
 
 In the example below, the numbers tell us the birth rates of the countries (# of births per 1000 people), the size of the numbers tells us about the average life expectancy of those countries (in years, using five classes), and the colors tell us about education expenditures as a % of GDP. So, for example, we know that the light yellow countries spend the same, roughly, on education, but have very different birth rates and life expetencies.The ability to explore these kinds of complex relationships on a single map is the appeal of multivariate mapping.
 
-![](../images/trivariate_labels.png)
+![]({{site.baseurl}}/images/guides/trivariate_labels.png)

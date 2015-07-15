@@ -26,7 +26,7 @@ Example datasets appropriate for dot density maps:
 
 Here is a dot density map that shows the number of sheep in New Zealand (by province). From this map, we can see sheep are generally found throughout NZ, but that there are more sheep raised on the eastern side of the islands than the western side.
 
-![](../images/dotDensity_NZsheep_65.jpg)
+![]({{site.baseurl}}/images/guides/dotDensity_NZsheep_65.jpg)
 
 ### Limitations
 
