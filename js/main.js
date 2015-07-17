@@ -147,6 +147,9 @@ function webform_submit(){
 	}
 	if( valid )
 	{
+  	  $( "#submit" ).hide();
+  	  $( "img.loading" ).show();
+  	  
 		$.ajax({
   		  type : "POST",
   		  url : "https://mandrillapp.com/api/1.0/messages/send.json",
@@ -155,7 +158,7 @@ function webform_submit(){
         "message" : {
           "text" : $( "#body" ).val(),
           "subject" : "Website Enquiry - " + $( "#name" ).val(),
-          "from_email" : "dave@axismaps.com",
+          "from_email" : "robot@axismaps.com",
           "from_name" : "Robo Bieber",
           "to" : [{
             "email": "info@axismaps.com",

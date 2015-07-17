@@ -136,6 +136,12 @@ section{
 	line-height: 45px;
 }
 
+#contact img.loading{
+  display: none;
+  float: right;
+  margin: 15px 40px 0 35px;
+}
+
 /* NAVIGATION */
 nav, nav ul{
 	margin: 0;
