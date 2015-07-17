@@ -497,6 +497,10 @@ p.more span{
 	visibility: visible;
 }
 
+#explanations{
+  padding: 0;
+}
+
 #explanations article {
 	padding: 20px 140px 20px 4%;
 }
