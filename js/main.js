@@ -127,36 +127,6 @@ function init_events()
 
 }
 
-function build_project( id )
-{
-	$.getJSON( "php/get_project.php?id=" + id, function( json )
-	{
-		$( "#project-featured h2" ).prepend( json[ 'title' ] );
-		$( "#project-summary h3" ).html( json[ 'tag' ] );
-		$( "#project-summary p" ).html( json[ 'intro' ] );
-		if( json[ 'url' ] ) $( "#project-summary p" ).append( '<br /><br /><a href="' + json[ 'url' ] + '" target="_blank"><b>View the map &nbsp;-&gt;</b></a>' );
-		
-		// build slideshow structure
-		for ( var i = 0; i < json.features.length; i++ )
-		{
-			$( "#slides" )
-				.append( $( document.createElement( 'li' ) )
-				.append( $( document.createElement( 'img' ) ).attr( 'src', 'media/features/' + json.id + '/' + i + '.png' ) )
-				.append( $( document.createElement( 'div' ) )
-					.addClass( 'project-image-summary' )
-					.append( '<p><strong>' + json.features[ i ][ 'title' ] + '</strong> - ' + json.features[ i ][ 'text' ] + '</p>' )
-				)
-			);
-		}
-		slideshow( json.features.length, "#project-slideshow" );
-
-		$( "#trio article" ).height( '100%' ).css( { 'position' : 'relative', 'bottom' : '0' } );
-		$( "#trio .data p" ).html( json[ 'data' ] );
-		$( "#trio .design p" ).html( json[ 'design' ] );
-		$( "#trio .code p" ).html( json[ 'code' ] );
-	});
-}
-
 function webform_submit(){
 	var valid = true;
 	if( !$( "#email" ).val().match( /(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})/ ) )
@@ -177,15 +147,30 @@ function webform_submit(){
 	}
 	if( valid )
 	{
-		var dataString = "body=" + $( "#body" ).val() + "&email=" + $( "#email" ).val() + "&name=" + $( "#name" ).val();
 		$.ajax({
-			type : "POST",
-			url : "php/email.php",
-			data : dataString,
-			success : function( result )
+  		  type : "POST",
+  		  url : "https://mandrillapp.com/api/1.0/messages/send.json",
+      data : {
+        "key" : "DPtXU8VfREJ5BeEUVDdKyg",
+        "message" : {
+          "text" : $( "#body" ).val(),
+          "subject" : "Website Enquiry - " + $( "#name" ).val(),
+          "from_email" : "dave@axismaps.com",
+          "from_name" : "Robo Bieber",
+          "to" : [{
+            "email": "info@axismaps.com",
+            "name": "David Heyman",
+            "type": "to"
+          }],
+          "headers" : {
+            "Reply-To" : $( "#email" ).val()
+          }
+        }
+      },
+      success : function( result )
 			{
 				$( "#web_form" ).css( "height", "230px" );
-				if( result == "success" )
+				if( result[ 0 ].status == "sent" )
 				{
 					$( "#contact form" ).html( "<h3>Thank you for contacting Axis Maps!</h3><h3>We will return your enquiry as soon as possible</h3>" );
 				}
@@ -194,7 +179,7 @@ function webform_submit(){
 					$( "#contact form" ).html( "<h3>There appears to be a problem with our web form.</h3><h3>Please email your request to info@axismaps.com.</h3><h3>We are sorry for the inconvenience.</h3>" );
 				}
 			}
-		});
+    });
 	}
 	return false;
 }
