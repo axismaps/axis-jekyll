@@ -882,12 +882,21 @@ section#blogpost{
   margin-bottom: 40px;
 }
 
-#blogpost .content a.imgLink{
+#blogpost .content .blogImage{
+  position: relative;
+}
+
+#blogpost .content .blogImage.center{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#blogpost .blogImage a{
   border: none;
   position: relative;
 }
 
-#blogpost .content .credit{
+#blogpost .blogImage .credit{
   background-color: rgba(0,0,0,0.6);
   bottom: 5px;
   box-sizing: border-box;
@@ -902,9 +911,10 @@ section#blogpost{
   position: absolute;
   text-align: left;
   text-transform: uppercase;
+  width: 100%;
 }
 
-#blogpost .content .caption{
+.blogImage .caption{
   color: #777;
   font-family: Rosario;
   font-size: 18px;
@@ -913,13 +923,6 @@ section#blogpost{
   margin: 0 auto;
   text-align: center;
 }
-
-#blogpost .content .center{
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
-
 
 /* RESPONSIVE STYLES */
 
