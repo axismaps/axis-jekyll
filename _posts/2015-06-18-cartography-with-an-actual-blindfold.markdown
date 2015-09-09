@@ -22,12 +22,23 @@ tags:
 - Accessibility
 comments: []
 ---
-<p>Last month, Andy gave a talk at the OpenVis Conference entitled <a href="http://www.axismaps.com/blog/2015/05/blindfolded-cartography/">Blindfolded Cartography</a>. Essentially, things to look out for when designing maps (especially interactive ones) so that when real data comes in, the map/design/page doesn't get wonky. Things like too long text, missing data, skewed data, etcâ€¦ The last week or so, we've been working on adding accessibility features to one of our projects and wanted to share a few thoughts and lessons on Cartography with an actual blindfold.</p>
-<p>First off, what are accessibility features and why should you care? Accessibility features are features and general design patterns that allow people with disabilities to view and interact with your content. This can range from simply allowing keyboard navigation all the way up to screen readers. Now, why should you care? We can get fairly pedantic about whether a font size should be 16pt or 18pt, should this light brown text be <code>#f2e1cb</code> or <code>#f8f1e7</code>, should this <code>div</code> have a margin of 20px or 22px? If we as developers take that much care about things that a lot of users aren't going to consciously notice, shouldn't we take at least some care with things that some of the users are really really going to notice?</p>
-<p>So what categories of accessibility should you be aware of? There are 4 areas that I'm going to talk about; I'm sure there are more, but these cover the majority of cases that I'm currently aware of. Color, keyboard navigation, ARIA, and Screen Readers. Also, I should note, I am not an expert in this. What follows are the notes of a developer brand new to the area of accessibility.</p>
-<h3>Color</h3>
-<p>Color can cover a whole host of issues, but the main areas to watch out for are color blindness and low contrast. About 10% of all males have some form of color blindness, of which the most prevalent is red/green (protanopia) color blindness. That's a big percentage of your users. Simple fix â€“ don't put red and green right next to each other. As a mapping company trained in classical cartography techniques, this one is pretty much embedded in our blood and bones. Other versions of color blindness do exist though. It's up to you to decide how many versions you want to design for (since the more you cover, the less options you have for design). A good site to figure out which colors you can use is <a href="http://colorlab.wickline.org/colorblind/colorlab/">Colorlab</a>.</p>
-<p>[caption id="attachment_2195" align="aligncenter" width="300"]<a href="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-lab.png"><img class="size-medium wp-image-2195" src="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-lab-300x277.png" alt="Color lab example image - magenta for red green color blind people" width="300" height="277" /></a> Magenta vs Gray for Red/Green color blind people[/caption]</p>
+Last month, Andy gave a talk at the OpenVis Conference entitled [Blindfolded Cartography](http://www.axismaps.com/blog/2015/05/blindfolded-cartography/). Essentially, things to look out for when designing maps (especially interactive ones) so that when real data comes in, the map/design/page doesn't get wonky. Things like too long text, missing data, skewed data, etcâ€¦ The last week or so, we've been working on adding accessibility features to one of our projects and wanted to share a few thoughts and lessons on Cartography with an actual blindfold.  
+
+First off, what are accessibility features and why should you care? Accessibility features are features and general design patterns that allow people with disabilities to view and interact with your content. This can range from simply allowing keyboard navigation all the way up to screen readers. Now, why should you care? We can get fairly pedantic about whether a font size should be 16pt or 18pt, should this light brown text be `#f2e1cb` or `#f8f1e7`, should this `div` have a margin of 20px or 22px? If we as developers take that much care about things that a lot of users aren't going to consciously notice, shouldn't we take at least some care with things that some of the users are really really going to notice?
+
+So what categories of accessibility should you be aware of? There are 4 areas that I'm going to talk about; I'm sure there are more, but these cover the majority of cases that I'm currently aware of. Color, keyboard navigation, ARIA, and Screen Readers. Also, I should note, I am not an expert in this. What follows are the notes of a developer brand new to the area of accessibility.
+
+### Color
+
+Color can cover a whole host of issues, but the main areas to watch out for are color blindness and low contrast. About 10% of all males have some form of color blindness, of which the most prevalent is red/green (protanopia) color blindness. That's a big percentage of your users. Simple fix â€“ don't put red and green right next to each other. As a mapping company trained in classical cartography techniques, this one is pretty much embedded in our blood and bones. Other versions of color blindness do exist though. It's up to you to decide how many versions you want to design for (since the more you cover, the less options you have for design). A good site to figure out which colors you can use is [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/).
+
+<div class="center"><a class="imgLink" href="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-lab.png"><img class="size-medium wp-image-2195" src="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-lab-300x277.png" alt="Color lab example image - magenta for red green color blind people" width="300" height="277" /><p class="credit" style="width: 300px">Colorlab</p></a>
+
+<p class="caption" style="width: 300px">Magenta vs Gray for Red/Green color blind people</p>
+</div>
+
+
+
 <p>A color tool for Cartography specifically and which has colorblind options is <a href="http://colorbrewer2.org/">ColorBrewer</a> (which Axis Maps hosts).</p>
 <p>[caption id="attachment_2196" align="aligncenter" width="300"]<a href="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-brewer.png"><img class="size-medium wp-image-2196" src="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-brewer-300x208.png" alt="Color brewer example image" width="300" height="208" /></a> Color Brewer[/caption]</p>
 <p>The other major category related to vision is contrast. Many users have a harder time distinguishing low contrast color pairings. For example, <code>#ccc</code> color text on a <code>#999</code> background. You can check contrast between colors using the <a href="http://www.snook.ca/technical/colour_contrast/colour.html">Color Contrast Check tool.</a></p>
@@ -45,13 +56,17 @@ comments: []
 </ul>
 <p><strong>HTML</strong><br />
 <em>Two divs. One with a class of <code>hidden</code> making it all but invisible to the naked eye, yet still there. The other one is the normal div that everybody sees, but with an <code>aria-hidden="true"</code> attribute to hide it from screen readers so they don't repeat themselves.</em></p>
-<pre>
+
+{% highlight html %}
 <div class="full-description hidden">Blah blah, this is the full description and is not truncated with ellipsis</div>
 <div class="description">Blah blah...</div>
-</pre>
+{% endhighlight %}
+
 <p><strong>CSS</strong><br />
 <em>Hidden class that reduces the element to 1px by 1px. The <code>clip</code> and <code>overflow: hidden</code> hides everything that goes out of the 1px by 1px box.</em></p>
-<pre>.hidden{
+
+{% highlight css %}
+.hidden{
 position: absolute !important;
 margin: 0 !important;
 padding: 0 !important;
@@ -61,7 +76,8 @@ clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 clip: rect(1px, 1px, 1px, 1px);
 overflow: hidden;
 }
-</pre>
+{% endhighlight %}
+
 <ul>
 <li>As seen above, the use of the <code>.hidden</code> class is very important. This allows screen readers to â€œseeâ€ something, even though people can't see it.</li>
 <li>Using a <code>hidden</code> class is different than using <code>display: none</code> or <code>visible: hidden</code>. Changing the display to none or the visibility to hidden takes the element out of the screen reader's view.</li>
