@@ -78,16 +78,16 @@ ARIA stands for â€œAccessible Rich Internet Applicationsâ€ and is desig
 
 - `aria-hidden` - makes a particular element hidden from screen readers. This is useful if, for example, you have a description that is truncated for display reasons, but is expandable through mouse interaction.
 
-**HTML**  
-*Two divs. One with a class of `hidden` making it all but invisible to the naked eye, yet still there. The other one is the normal div that everybody sees, but with an `aria-hidden="true"` attribute to hide it from screen readers so they don't repeat themselves.*
-
+  **HTML**  
+  *Two divs. One with a class of `hidden` making it all but invisible to the naked eye, yet still there. The other one is the normal div that everybody sees, but with an `aria-hidden="true"` attribute to hide it from screen readers so they don't repeat themselves.*
+  
 {% highlight html %}
 <div class="full-description hidden">Blah blah, this is the full description and is not truncated with ellipsis</div>
 <div class="description">Blah blah...</div>
 {% endhighlight %}
 
-**CSS**  
-*Hidden class that reduces the element to 1px by 1px. The `clip` and `overflow: hidden` hides everything that goes out of the 1px by 1px box.*
+  **CSS**  
+  *Hidden class that reduces the element to 1px by 1px. The `clip` and `overflow: hidden` hides everything that goes out of the 1px by 1px box.*
 
 {% highlight css %}
 .hidden{
