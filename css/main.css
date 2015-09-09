@@ -882,6 +882,44 @@ section#blogpost{
   margin-bottom: 40px;
 }
 
+#blogpost .content a.imgLink{
+  border: none;
+  position: relative;
+}
+
+#blogpost .content .credit{
+  background-color: rgba(0,0,0,0.6);
+  bottom: 5px;
+  box-sizing: border-box;
+  color: white;
+  font-family: Rosario;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  line-height: 30px;
+  margin: 0 auto;
+  padding-left: 20px;
+  position: absolute;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#blogpost .content .caption{
+  color: #777;
+  font-family: Rosario;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#blogpost .content .center{
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
 
 /* RESPONSIVE STYLES */
 
