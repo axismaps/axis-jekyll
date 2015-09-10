@@ -793,12 +793,14 @@ p.more span{
 	margin: 15px 0 5px -15px;
 }
 
-/* BLOGPOSTS */
-section#blogpost{
+/* BLOGPOSTS AND GUIDES*/
+section#blogpost,
+section#guide{
   padding: 0;
 }
 
-#blogpost a{
+#blogpost a,
+#guide a{
   border-bottom: 1px dotted #000;
   text-decoration: none;
 }
@@ -821,8 +823,46 @@ section#blogpost{
   line-height: 30px;
 }
 
-#blogpost .content{
+#guide-banner{
+  background-color: #666;
+  box-sizing: border-box;
+  height: 360px;
+  padding: 240px 0 0 100px;
+  width: 100%;
+}
+
+#guide-banner h1{
+  color: white;
+  font-family: Rosario;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 0 15px;
+  text-shadow: 1px 1.7px 3px rgba(0, 0, 0, 0.5);
+}
+
+#guide-banner p{
+  color: white;
+  font-family: Rosario;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 30px;
+  text-shadow: 1px 1.7px 3px rgba(0, 0, 0, 0.5);
+}
+
+#blogpost .content,
+#guide .content{
+  max-width: 650px;
   padding: 60px 100px;
+}
+
+#guide .dropcap:first-letter{
+  color: #333;
+  float: left;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-right: 10px;
 }
 
 #blogpost .content h3{
@@ -833,7 +873,17 @@ section#blogpost{
   line-height: 30px;
 }
 
-#blogpost .content p{
+#guide .content h3{
+  color: #333;
+  font-family: Rosario;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 30px;
+}
+
+#blogpost .content p,
+#guide .content p{
   color: #555;
   font-family: "Expo Serif Pro";
   font-size: 18px;
@@ -841,20 +891,23 @@ section#blogpost{
   line-height: 28px;
 }
 
-#blogpost .content code{
+#blogpost .content code,
+#guide .content code{
   color: #da0048;
   font-family: "Source Code Pro";
   font-size: 16px;
 }
 
-#blogpost .content strong{
+#blogpost .content strong,
+#guide .content strong{
   color: #333;
   font-family: Rosario;
   font-weight: 700;
   line-height: 36px;
 }
 
-#blogpost .content pre{
+#blogpost .content pre,
+#guide .content pre{
   background-color: #fafafa;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
@@ -866,7 +919,8 @@ section#blogpost{
   padding: 20px;
 }
 
-#blogpost .content a{
+#blogpost .content a,
+#guide .content a{
   color: #111;
   font-family: "Expo Serif Pro";
   font-size: 18px;
@@ -874,11 +928,21 @@ section#blogpost{
 }
 
 #blogpost .content ol,
-#blogpost .content ul{
+#blogpost .content ul,
+#guide .content ol,
+#guide .content ul{
   margin-top: 40px;
 }
 
 #blogpost .content li{
+  margin-bottom: 40px;
+}
+
+#guide .content li{
+  margin-bottom: 10px;
+}
+
+#guide .content li:last-of-type{
   margin-bottom: 40px;
 }
 

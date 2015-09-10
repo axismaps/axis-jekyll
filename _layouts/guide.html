@@ -10,9 +10,11 @@
         <h1>Thematic Cartography Guide</h1>
         <p>A short, friendly guide to basic principles of thematic mapping</p>
       </div>
-      <section>
-        <h2>{{ page.title }}</h2>
-        {{ content }}
+      <section id="guide">
+        <div class="content">
+          <h2>{{ page.title }}</h2>
+          {{ content }}
+        </div>
       </section>
       {% include footer.html %}
     </div>
