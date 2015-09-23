@@ -853,7 +853,7 @@ section#guide{
 #blogpost .content,
 #guide .content{
   max-width: 650px;
-  padding: 60px 100px;
+  padding: 40px 100px;
 }
 
 #guide .dropcap:first-letter{
@@ -886,9 +886,9 @@ section#guide{
 #guide .content p{
   color: #555;
   font-family: "Expo Serif Pro";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 30px;
 }
 
 #blogpost .content code,
