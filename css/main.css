@@ -794,18 +794,18 @@ p.more span{
 }
 
 /* BLOGPOSTS AND GUIDES*/
-section#blogpost,
+section#blog,
 section#guide{
   padding: 0;
 }
 
-#blogpost a,
+#blog a,
 #guide a{
   border-bottom: 1px dotted #000;
   text-decoration: none;
 }
 
-#blogpost h1{
+#blog h1{
   background-color: #666;
   box-sizing: border-box;
   height: 150px;
@@ -814,7 +814,7 @@ section#guide{
   width: 100%;
 }
 
-#blogpost h1 a{
+#blog h1 a{
   border-bottom-color: #fff;
   color: white;
   font-family: Rosario;
@@ -850,7 +850,7 @@ section#guide{
   text-shadow: 1px 1.7px 3px rgba(0, 0, 0, 0.5);
 }
 
-#blogpost .content,
+#blog .content,
 #guide .content{
   max-width: 650px;
   padding: 40px 100px;
@@ -865,25 +865,24 @@ section#guide{
   margin-right: 10px;
 }
 
-#blogpost .content h3{
-  color: #333;
-  font-family: Rosario;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 30px;
-}
-
+#blog .content h3,
 #guide .content h3{
+  margin: 40px 0 -10px 0;
   color: #333;
   font-family: Rosario;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: bold;
   font-style: italic;
   line-height: 30px;
 }
 
-#blogpost .content p,
-#guide .content p{
+#blog .content h4,
+#guide .content h4{
+  margin-bottom: -20px;
+}
+
+#blog .content,
+#guide .content{
   color: #555;
   font-family: "Expo Serif Pro";
   font-size: 20px;
@@ -891,14 +890,14 @@ section#guide{
   line-height: 30px;
 }
 
-#blogpost .content code,
+#blog .content code,
 #guide .content code{
   color: #da0048;
   font-family: "Source Code Pro";
   font-size: 16px;
 }
 
-#blogpost .content strong,
+#blog .content strong,
 #guide .content strong{
   color: #333;
   font-family: Rosario;
@@ -906,7 +905,7 @@ section#guide{
   line-height: 36px;
 }
 
-#blogpost .content pre,
+#blog .content pre,
 #guide .content pre{
   background-color: #fafafa;
   border: 1px solid #d9d9d9;
@@ -919,7 +918,7 @@ section#guide{
   padding: 20px;
 }
 
-#blogpost .content a,
+#blog .content a,
 #guide .content a{
   color: #111;
   font-family: "Expo Serif Pro";
@@ -927,17 +926,7 @@ section#guide{
   text-decoration: none;
 }
 
-#blogpost .content ol,
-#blogpost .content ul,
-#guide .content ol,
-#guide .content ul{
-  margin-top: 40px;
-}
-
-#blogpost .content li{
-  margin-bottom: 40px;
-}
-
+#blog .content li,
 #guide .content li{
   margin-bottom: 10px;
 }
@@ -946,46 +935,18 @@ section#guide{
   margin-bottom: 40px;
 }
 
-#blogpost .content .blogImage{
-  position: relative;
+#blog img{
+  max-width: 100%;
 }
 
-#blogpost .content .blogImage.center{
-  margin: 0 auto;
-  text-align: center;
-}
-
-#blogpost .blogImage a{
-  border: none;
-  position: relative;
-}
-
-#blogpost .blogImage .credit{
-  background-color: rgba(0,0,0,0.6);
-  bottom: 5px;
-  box-sizing: border-box;
-  color: white;
-  font-family: Rosario;
-  font-size: 14px;
-  font-weight: 400;
-  left: 0;
-  line-height: 30px;
-  margin: 0 auto;
-  padding-left: 20px;
-  position: absolute;
-  text-align: left;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.blogImage .caption{
+#blog img + em{
+  margin: -5px 0 40px;
+  display: block;
   color: #777;
   font-family: Rosario;
   font-size: 18px;
   font-style: italic;
   line-height: 30px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 /* RESPONSIVE STYLES */

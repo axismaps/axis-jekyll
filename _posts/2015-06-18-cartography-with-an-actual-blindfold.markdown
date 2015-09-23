@@ -32,33 +32,18 @@ So what categories of accessibility should you be aware of? There are 4 areas th
 
 Color can cover a whole host of issues, but the main areas to watch out for are color blindness and low contrast. About 10% of all males have some form of color blindness, of which the most prevalent is red/green (protanopia) color blindness. That's a big percentage of your users. Simple fix â€“ don't put red and green right next to each other. As a mapping company trained in classical cartography techniques, this one is pretty much embedded in our blood and bones. Other versions of color blindness do exist though. It's up to you to decide how many versions you want to design for (since the more you cover, the less options you have for design). A good site to figure out which colors you can use is [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/).
 
-<div class="blogImage center" style="width: 300px">
-  <a href="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-lab.png">
-    <img src="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-lab-300x277.png" alt="Color lab example image - magenta for red green color blind people" />
-    <p class="credit">Colorlab</p>
-  </a>
-  <p class="caption">Magenta vs Gray for Red/Green color blind people</p>
-</div>
-
+![Magenta vs Gray for Red/Green color blind people]({{ site.baseurl }}/media/posts/2015/06/color-lab.png)
+_Magenta vs Gray for Red/Green color blind people_
 
 A color tool for Cartography specifically and which has colorblind options is [ColorBrewer](http://colorbrewer2.org/) (which Axis Maps hosts).
 
-<div class="blogImage center" style="width: 300px">
-  <a href="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-brewer.png">
-    <img src="http://www.axismaps.com/blog/wp-content/uploads/2015/06/color-brewer.png" alt="Color brewer example image" width="300px" />
-    <p class="credit">Color Brewer</p>
-  </a>
-  <p class="caption">Color Brewer</p>
-</div>
+![Color brewer example image]({{ site.baseurl }}/media/posts/2015/06/color-brewer.png)
+_Color Brewer_
 
 The other major category related to vision is contrast. Many users have a harder time distinguishing low contrast color pairings. For example, `#ccc` color text on a `#999` background. You can check contrast between colors using the [Color Contrast Check tool.](http://www.snook.ca/technical/colour_contrast/colour.html)
 
-<div class="blogImage center" style="width: 300px">
-  <a href="http://www.axismaps.com/blog/wp-content/uploads/2015/06/contrast-checker-999vsccc-300x108.png">
-    <img src="http://www.axismaps.com/blog/wp-content/uploads/2015/06/contrast-checker-999vsccc-300x108.png" alt="Contrast checker image - #999 vs #ccc" width="300px" />
-  </a>
-  <p class="caption">Contrast Checker - #999 vs #ccc</p>
-</div>
+![Contrast checker image - #999 vs #ccc]({{ site.baseurl }}/media/posts/2015/06/contrast-checker-999vsccc.png)
+_Contrast Checker - #999 vs #ccc_
 
 *Testing:* The best way to test for color blindness issues is to have a someone who is actually color blind look at the site (and since 1 out 10 men are, there is a good chance you know someone who is). Barring that, run the various colors through [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/) and the [Color Contrast Check tool](http://www.snook.ca/technical/colour_contrast/colour.html).
 
@@ -78,16 +63,16 @@ ARIA stands for â€œAccessible Rich Internet Applicationsâ€ and is desig
 
 - `aria-hidden` - makes a particular element hidden from screen readers. This is useful if, for example, you have a description that is truncated for display reasons, but is expandable through mouse interaction.
 
-  **HTML**  
-  *Two divs. One with a class of `hidden` making it all but invisible to the naked eye, yet still there. The other one is the normal div that everybody sees, but with an `aria-hidden="true"` attribute to hide it from screen readers so they don't repeat themselves.*
+#### HTML
+Two divs. One with a class of `hidden` making it all but invisible to the naked eye, yet still there. The other one is the normal div that everybody sees, but with an `aria-hidden="true"` attribute to hide it from screen readers so they don't repeat themselves.
   
 {% highlight html %}
 <div class="full-description hidden">Blah blah, this is the full description and is not truncated with ellipsis</div>
 <div class="description">Blah blah...</div>
 {% endhighlight %}
 
-  **CSS**  
-  *Hidden class that reduces the element to 1px by 1px. The `clip` and `overflow: hidden` hides everything that goes out of the 1px by 1px box.*
+#### CSS
+Hidden class that reduces the element to 1px by 1px. The `clip` and `overflow: hidden` hides everything that goes out of the 1px by 1px box.
 
 {% highlight css %}
 .hidden{
@@ -124,25 +109,21 @@ The four main ones that are relevant to interactive web sites are [JAWS](http://
 Each screen reader sees the world slightly differently. This can create some head bashing moments as the notes below make clear. They were filed as apart of a Github bug report for the accessibility upgrade I was working on this week. The list was a long list of images where each one, on click, would open up to a carousel widget to view more images from that spot. The carousel widget had a left and right HTML button that were supposed to be navigable by keyboard arrows, mouse clicks on display arrows, and keyboard â€œenterâ€ when the focus was on a display arrow.
 
 ---
-**Tabbing through list**
 
+#### Tabbing through list
 - Chrome - reads each section when the section is focused, reads header
 - FF - reads all the sections when the entire list is focused (i.e. on normal tabbing through), reads each section when focused, does not read header when `tabbed` to, but does read header when `shift-tabbed` to
 - IE - reads each section when the section is focused, reads header
 
-**Arrows**
-
+#### Arrows
 - Chrome - does not read the arrow `aria-label`, reads the title and description of each carousel image after interacting with the arrow
 - FF - reads the arrow `aria-label`, when the focus is shifted to a new arrow (i.e. at the beginning or end when the current arrow is hidden) reads the new arrow, otherwise, doesn't read anything on interaction
 - IE - same as FF
 
 ---
-<div class="blogImage center" style="width: 496px">
-  <a href="http://www.axismaps.com/blog/wp-content/uploads/2015/06/carousel.png">
-    <img src="http://www.axismaps.com/blog/wp-content/uploads/2015/06/carousel.png" alt="Screenshot of the carousel  with the problem arrows" width="496px" />
-  </a>
-  <p class="caption">Screenshot of the carousel with the problem arrows</p>
-</div>
+
+![Screenshot of the carousel  with the problem arrows]({{ site.baseurl }}/media/posts/2015/06/carousel.png)
+_Screenshot of the carousel with the problem arrows_
 
 For the life of me, I couldn't get Chrome to read the `aria-label` on the arrows, until I took the [ChromeVox tutorial](http://www.chromevox.com/tutorial/) and realized that screen readers don't just use `tab` to navigate. They use the arrow keys, the plus/minus keys, and a whole host of other shortcut keys. `Tab` is just for interactive elements (and apparently Chrome/ChromeVox was not reading the `aria-label` for interactive elements). This is by design. Keyboard only users just need `tab` to move through the interactable elements. They can read the non-interactive elements already. Screen Readers use other keys to move through the non-interactable elements such as paragraph blocks.
 
@@ -156,8 +137,4 @@ Accessibility concerns affect a small but significant portion of users. If thing
 
 And if you really want to get a handle on how this stuff works in practice, do as Mercator did and use an actual blindfold:
 
-<div class="blogImage center" style="width: 660px">
-  <a href="http://www.axismaps.com/blog/wp-content/uploads/2015/05/mercator_blindfold2.jpg">
-    <img src="http://www.axismaps.com/blog/wp-content/uploads/2015/05/mercator_blindfold2.jpg" alt="Blindfolded Mercator" width="660px" />
-  </a>
-</div>
+![Blindfolded Mercator]({{ site.baseurl}}/media/posts/2015/05/mercator_blindfold2.jpg)
