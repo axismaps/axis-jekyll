@@ -72,18 +72,18 @@ comments:
   author_url: http://sweetmaps.com/blog/?p=194
   date: '2009-06-23 10:20:08 +0100'
   date_gmt: '2009-06-23 15:20:08 +0100'
-  content: "[...] such mapÂ aboutÂ DOE (Dept. of Energy) projects was made by ace
-    cartographers at Axis Maps in Madison Wisconsin.Â  This illustrates various techniques
-    for communicatingÂ data on a static [...]"
+  content: "[...] such map about DOE (Dept. of Energy) projects was made by ace
+    cartographers at Axis Maps in Madison Wisconsin.  This illustrates various techniques
+    for communicating data on a static [...]"
 - id: 28231
   author: Where are all the dollar$ going? &laquo; SweetMaps
   author_email: ''
   author_url: http://www.sweetmaps.com/blog/?p=166
   date: '2011-01-08 11:56:23 +0000'
   date_gmt: '2011-01-08 16:56:23 +0000'
-  content: "[...] such mapÂ aboutÂ DOE (Dept. of Energy) projects was made by ace
-    cartographers at Axis Maps in Madison Wisconsin.Â  This illustrates various techniques
-    for communicatingÂ data on a static [...]"
+  content: "[...] such map about DOE (Dept. of Energy) projects was made by ace
+    cartographers at Axis Maps in Madison Wisconsin.  This illustrates various techniques
+    for communicating data on a static [...]"
 ---
 <p style="text-align: center;"><a href="http://work.axismaps.com/arra/ARRA_fundingMap.pdf"><img class="aligncenter" title="ARRA Funding Map" alt="ARRA Funding Map" src="http://www.axismaps.com/blog/wp-content/uploads/2009/04/arra_fundingmap1-1024x682.jpg" width="525" height="349" /></a></p>
 <p>Lots of maps are coming out that document when, where, and how stimulus money is being spent through the ARRA, like these at the <a href="http://foundationcenter.org/focus/economy/maps.html" target="_blank">Foundation Center</a>. With all of the reporting, accountability, and transparency required of ARRA grant recipients, I'm sure we'll only be seeing a lot more of these in the future. <a href="http://www.recovery.gov/?q=content/state-recovery-page" target="_blank">Recovery.gov</a> directs traffic to states' Web sites where some of this data is appearing. I'm looking forward to seeing more and more mash-ups and interactive maps and graphics as developers and designers get their hands on this stuff and data from other sources that track stimulus money.</p>

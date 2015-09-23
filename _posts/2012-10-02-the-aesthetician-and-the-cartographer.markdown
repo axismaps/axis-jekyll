@@ -131,9 +131,9 @@ comments:
   date: '2013-08-03 18:22:06 +0100'
   date_gmt: '2013-08-03 23:22:06 +0100'
   content: "[...] A couple of online essays about the bridge (or divide depending
-    on your viewpoint) between cartography as an art versus a science: Brian Timoney&#8217;sÂ GIS
-    &amp; Cartography: the Latest Best Opportunity to Bridge the Chasm, andÂ Andy
-    Woodruff&#8217;sÂ The Aesthetician and the Cartographer. [...]"
+    on your viewpoint) between cartography as an art versus a science: Brian Timoney&#8217;s GIS
+    &amp; Cartography: the Latest Best Opportunity to Bridge the Chasm, and Andy
+    Woodruff&#8217;s The Aesthetician and the Cartographer. [...]"
 ---
 <p><img src="http://www.axismaps.com/blog/wp-content/uploads/2012/09/ugly.jpg" alt="An ugly map" title="An ugly map" width="750" height="150" class="size-full wp-image-1400" /></p>
 <p>Sometime around 2006, when everyone and their grandma started cranking out terrible Google Maps mashups, the Cartography world soiled its collective underpants as it looked like the once specialized profession was about to become obsolete. Fear was channeled into outrage at the whole idea of the "democratization of cartography" because it facilitatedâ€”encouraged, perhapsâ€”the production of bad maps that ignored everything Cartographers had learned and taught over the years. In other words, "<a href="http://www.youtube.com/watch?v=sIzivCJ9pzU" target="_blank">they took our jobs!</a>"</p>

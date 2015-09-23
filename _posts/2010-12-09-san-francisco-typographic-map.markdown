@@ -229,7 +229,7 @@ comments:
   author_url: http://shellicrouse.wordpress.com/2011/02/02/typographic-maps/
   date: '2011-02-02 16:38:33 +0000'
   date_gmt: '2011-02-02 21:38:33 +0000'
-  content: "[...] execution on these is insanely well done. Â CHECK IT   LikeBe the
+  content: "[...] execution on these is insanely well done.  CHECK IT   LikeBe the
     first to like this [...]"
 - id: 32452
   author: Mark Harrower
@@ -287,7 +287,7 @@ comments:
     annet noen veldig pene noen fra Axis Maps. Denne uken sÃ¥ jeg noen ekstremt kule
     typografiske metrokart fra Fadeout Design som jeg ble obs [...]"
 ---
-<p><!-- p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px} --><strong>HOORAY</strong>! TheÂ <a href="http://axismaps.com/typographic.php" target="_blank">San Francisco typographic map</a> is finally finished and is ready for purchase today. I made a big push to get this map ready for the holidays (with some help from Andy and Ben) and we're really happy with the way this turned out. <a href="http://www.axismaps.com/typographic.php" target="_blank">More images</a>.</p>
+<p><!-- p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px} --><strong>HOORAY</strong>! The <a href="http://axismaps.com/typographic.php" target="_blank">San Francisco typographic map</a> is finally finished and is ready for purchase today. I made a big push to get this map ready for the holidays (with some help from Andy and Ben) and we're really happy with the way this turned out. <a href="http://www.axismaps.com/typographic.php" target="_blank">More images</a>.</p>
 <p><img class="aligncenter size-full wp-image-829" src="http://www.axismaps.com/blog/wp-content/uploads/2010/12/blog1.jpg" alt="" /></p>
 <p>I went a bit overboard and decided to map the *entire* city; The amount of fine detail in this map is pretty astonishing. To fit the entire city onto a poster, of course, means the type itself has to be much smaller to fit it all in. In fact, the street text is half the size of the Chicago map (6 pt surface streets versus 12 pt) so there's lots of detail for your eyes to enjoy.</p>
 <p><strong>GO BIG:</strong> <strong>Given the crazy density of streets I strongly recommend you get one in poster size (23x34 or up) so you can best see all of the parks, water features, and twisty streets the city is famous for.</strong></p>

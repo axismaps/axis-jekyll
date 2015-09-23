@@ -129,7 +129,7 @@ comments:
     which has been ingrained by the thousands of maps which precede yours.\n\nYou
     make two points that I can agree with completely (paraphrased):\n\n1. Itâ€™s a
     matter of taste and other personal factors.\n\n2. In the end, neither map is really
-    going to provide observations more qualitative that â€œthereâ€™s more blue in
+    going to provide observations more qualitative that "thereâ€™s more blue in
     this area than that area.â€\x9D"
 - id: 28
   author: bill raynor

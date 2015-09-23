@@ -22,7 +22,8 @@ tags:
 - Accessibility
 comments: []
 ---
-Last month, Andy gave a talk at the OpenVis Conference entitled [Blindfolded Cartography](http://www.axismaps.com/blog/2015/05/blindfolded-cartography/). Essentially, things to look out for when designing maps (especially interactive ones) so that when real data comes in, the map/design/page doesn't get wonky. Things like too long text, missing data, skewed data, etcâ€¦ The last week or so, we've been working on adding accessibility features to one of our projects and wanted to share a few thoughts and lessons on Cartography with an actual blindfold.  
+
+Last month, Andy gave a talk at the OpenVis Conference entitled [Blindfolded Cartography](http://www.axismaps.com/blog/2015/05/blindfolded-cartography/). Essentially, things to look out for when designing maps (especially interactive ones) so that when real data comes in, the map/design/page doesn't get wonky. Things like too long text, missing data, skewed data, etc... The last week or so, we've been working on adding accessibility features to one of our projects and wanted to share a few thoughts and lessons on Cartography with an actual blindfold.  
 
 First off, what are accessibility features and why should you care? Accessibility features are features and general design patterns that allow people with disabilities to view and interact with your content. This can range from simply allowing keyboard navigation all the way up to screen readers. Now, why should you care? We can get fairly pedantic about whether a font size should be 16pt or 18pt, should this light brown text be `#f2e1cb` or `#f8f1e7`, should this `div` have a margin of 20px or 22px? If we as developers take that much care about things that a lot of users aren't going to consciously notice, shouldn't we take at least some care with things that some of the users are really really going to notice?
 
@@ -30,7 +31,7 @@ So what categories of accessibility should you be aware of? There are 4 areas th
 
 ### Color
 
-Color can cover a whole host of issues, but the main areas to watch out for are color blindness and low contrast. About 10% of all males have some form of color blindness, of which the most prevalent is red/green (protanopia) color blindness. That's a big percentage of your users. Simple fix â€“ don't put red and green right next to each other. As a mapping company trained in classical cartography techniques, this one is pretty much embedded in our blood and bones. Other versions of color blindness do exist though. It's up to you to decide how many versions you want to design for (since the more you cover, the less options you have for design). A good site to figure out which colors you can use is [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/).
+Color can cover a whole host of issues, but the main areas to watch out for are color blindness and low contrast. About 10% of all males have some form of color blindness, of which the most prevalent is red/green (protanopia) color blindness. That's a big percentage of your users. Simple fix – don't put red and green right next to each other. As a mapping company trained in classical cartography techniques, this one is pretty much embedded in our blood and bones. Other versions of color blindness do exist though. It's up to you to decide how many versions you want to design for (since the more you cover, the less options you have for design). A good site to figure out which colors you can use is [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/).
 
 ![Magenta vs Gray for Red/Green color blind people]({{ site.baseurl }}/media/posts/2015/06/color-lab.png)
 _Magenta vs Gray for Red/Green color blind people_
@@ -49,7 +50,7 @@ _Contrast Checker - #999 vs #ccc_
 
 ### Keyboard
 
-There are two types of people who use the keyboard only; the visually impairedÂ and those with aÂ disability making use of a mouse impossible (for those of you wondering, as I did, how you can use a keyboard but not a mouse, many alternate input devices emulate a keyboard but not a mouse â€“ e.g. Sip and Puff devices).
+There are two types of people who use the keyboard only; the visually impaired and those with a disability making use of a mouse impossible (for those of you wondering, as I did, how you can use a keyboard but not a mouse, many alternate input devices emulate a keyboard but not a mouse – e.g. Sip and Puff devices).
 
 There are a couple of key points to keep in mind when designing for keyboard users. Most browsers are already pretty good at keyboard navigation, IF the HTML is organized in a logical order. While this isn't a problem when writing HTML for the most part, where you can run into issues is with adding pieces via Javascript. It's really easy to add a bunch of `divs` with JS and as long as they look in the right place, ignore the fact that they are not keyboard navigable. One major gotcha, `div` is not keyboard navigable by default. You have to add the attribute `tabindex="0"` to make it navigable. `a` links and `button` elements are keyboard navigable by default so those don't need an extra `tabindex` attribute. Best practice is to make all clickable areas that go somewhere `a` links and all clickable areas that trigger functionality `button` elements. Unless absolutely necessary, don't use `div` for buttons/links.
 
@@ -59,7 +60,7 @@ There are a couple of key points to keep in mind when designing for keyboard use
 
 ### ARIA
 
-ARIA stands for â€œAccessible Rich Internet Applicationsâ€ and is designed to let screen readers and other assistance software help make interactive pages usable by all users. ARIA tags are usually element attributes such as `aria-hidden` and `role`. Like other element attributes such as `id` and `src`, there are attributes for pretty much every element and they apply differently. I'll mention a few that are good to know about:
+ARIA stands for "Accessible Rich Internet Applications" and is designed to let screen readers and other assistance software help make interactive pages usable by all users. ARIA tags are usually element attributes such as `aria-hidden` and `role`. Like other element attributes such as `id` and `src`, there are attributes for pretty much every element and they apply differently. I'll mention a few that are good to know about:
 
 - `aria-hidden` - makes a particular element hidden from screen readers. This is useful if, for example, you have a description that is truncated for display reasons, but is expandable through mouse interaction.
 
@@ -87,26 +88,26 @@ Hidden class that reduces the element to 1px by 1px. The `clip` and `overflow: h
 }
 {% endhighlight %}
 
-- As seen above, the use of the `.hidden` class is very important. This allows screen readers to â€œseeâ€ something, even though people can't see it.
+- As seen above, the use of the `.hidden` class is very important. This allows screen readers to "see" something, even though people can't see it.
 - Using a `hidden` class is different than using `display: none` or `visible: hidden`. Changing the display to none or the visibility to hidden takes the element out of the screen reader's view.
 - `role` - <a href="http://www.w3.org/TR/wai-aria/roles">ARIA-role w3 page</a> - this one can get complicated as there are four different categories that can be used, but the idea is that you can tell the screen reader what the element is for. The four categories are:
-  1. Abstract Roles â€“ Do not use.
-  2. Widget Roles â€“ Define what the element is to be used for. This is helpful when, for example, you have `div` operating as a `button`. Most of the time, you should just mark it up as a button, but if you can't, then you can assign `role=â€buttonâ€` and it acts as a button to screen readers.
-  3. Document Structure â€“ Defines what structure the element has. This is so the screen reader can take special care with the pronunciation and navigation of that element. For example, the `math` role tells the screen reader that mathematical formulas are in coming and to take appropriate action (such as saying â€œeh-ex-squaredâ€ instead of â€œax-squaredâ€ when ax2 is encountered).
-  4. Landmark Roles â€“ Define the different areas of the document (such as `navigation`, `main`, `search`, etcâ€¦) so the screen reader can jump between them easily.
+  1. Abstract Roles – Do not use.
+  2. Widget Roles – Define what the element is to be used for. This is helpful when, for example, you have `div` operating as a `button`. Most of the time, you should just mark it up as a button, but if you can't, then you can assign `role="button"` and it acts as a button to screen readers.
+  3. Document Structure – Defines what structure the element has. This is so the screen reader can take special care with the pronunciation and navigation of that element. For example, the `math` role tells the screen reader that mathematical formulas are in coming and to take appropriate action (such as saying "eh-ex-squared" instead of "ax-squared" when ax2 is encountered).
+  4. Landmark Roles – Define the different areas of the document (such as `navigation`, `main`, `search`, etc...) so the screen reader can jump between them easily.
 
-- `alt` tags â€“ This is pretty well known, but I'll reiterate. Put descriptive `alt` tags on all images so that the screen reader knows what the picture is about. Make sure it's short though, no need to wax eloquent on all the little details of the logo.
-- links â€“ This is probably the one I'm most guilty of. Don't have links where the only linked text is â€œClick here.â€ In context, this is fine. But out of context this doesn't make any sense. And many screen reader users navigate by pulling up a list of links in which only the text of the actual link is available, so the links very well may be spoken out of context. Don't say â€œclick hereâ€, say â€œLink to Annual Report PDFâ€. Oh, and don't leave the full link in visible text or the screen reader will read "double-u, double-u, double-u, dot ...".
+- `alt` tags – This is pretty well known, but I'll reiterate. Put descriptive `alt` tags on all images so that the screen reader knows what the picture is about. Make sure it's short though, no need to wax eloquent on all the little details of the logo.
+- links – This is probably the one I'm most guilty of. Don't have links where the only linked text is "Click here." In context, this is fine. But out of context this doesn't make any sense. And many screen reader users navigate by pulling up a list of links in which only the text of the actual link is available, so the links very well may be spoken out of context. Don't say "click here", say "Link to Annual Report PDF". Oh, and don't leave the full link in visible text or the screen reader will read "double-u, double-u, double-u, dot ...".
 
 *Testing:* Testing ARIA tags is mostly about testing things with a screen reader. The testing part of the Screen Reader section below has more information.
 
 ### Screen Readers
 
-And now to the most well known accessibility genre, the screen reader. Screen Readers work by reading off the text from a web page. How they do this is different for each one and can devolve into a similar situation as the early 2000's with web browsers â€“ each one its own special flower. There is some standardization and it is getting better, but you will still run into situations where different screen readers read the same markup differently (especially when Javascript gets involved).
+And now to the most well known accessibility genre, the screen reader. Screen Readers work by reading off the text from a web page. How they do this is different for each one and can devolve into a similar situation as the early 2000's with web browsers – each one its own special flower. There is some standardization and it is getting better, but you will still run into situations where different screen readers read the same markup differently (especially when Javascript gets involved).
 
 The four main ones that are relevant to interactive web sites are [JAWS](http://www.freedomscientific.com/Products/Blindness/JAWS), [NVDA](http://www.nvaccess.org/), [VoiceOver](http://www.apple.com/accessibility/osx/voiceover/), and [ChromeVox](http://www.chromevox.com/). JAWS, the most widely used screen reader, is a commercially licensed piece of software for Windows, especially popular in academia and government. NVDA is an open-source program for Windows. VoiceOver belongs to Apple and is bundled with OSX. ChromeVox is a Google created plugin for Chrome that is really helpful for developers (though because of its integration with Chrome, it does create some headaches as seen below).
 
-Each screen reader sees the world slightly differently. This can create some head bashing moments as the notes below make clear. They were filed as apart of a Github bug report for the accessibility upgrade I was working on this week. The list was a long list of images where each one, on click, would open up to a carousel widget to view more images from that spot. The carousel widget had a left and right HTML button that were supposed to be navigable by keyboard arrows, mouse clicks on display arrows, and keyboard â€œenterâ€ when the focus was on a display arrow.
+Each screen reader sees the world slightly differently. This can create some head bashing moments as the notes below make clear. They were filed as apart of a Github bug report for the accessibility upgrade I was working on this week. The list was a long list of images where each one, on click, would open up to a carousel widget to view more images from that spot. The carousel widget had a left and right HTML button that were supposed to be navigable by keyboard arrows, mouse clicks on display arrows, and keyboard "enter" when the focus was on a display arrow.
 
 ---
 

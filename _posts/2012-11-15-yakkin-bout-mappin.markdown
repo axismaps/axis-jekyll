@@ -28,7 +28,7 @@ comments:
   content: Both funny and instructive. My kind of information transfer. Thanks for
     the post and the great finished product!
 ---
-<p>Last week, we made an <a href="http://axismaps.com/election2012/">election map</a> that shows how counties voted in relationship to several different demographic variables. It gave us a chance to take value-by-alpha (VBA) mapping one step further than we did after the 2008 election. Back then, we produced a nice littleÂ <a href="http://www.axismaps.com/blog/2008/11/a-new-kind-of-election-map/?csspreview=true">static map</a>. Our new, interactive map is a bit more substantial, having a user interface, loading data, including a charting component, and displaying a data probe with details on mouseover.</p>
+<p>Last week, we made an <a href="http://axismaps.com/election2012/">election map</a> that shows how counties voted in relationship to several different demographic variables. It gave us a chance to take value-by-alpha (VBA) mapping one step further than we did after the 2008 election. Back then, we produced a nice little <a href="http://www.axismaps.com/blog/2008/11/a-new-kind-of-election-map/?csspreview=true">static map</a>. Our new, interactive map is a bit more substantial, having a user interface, loading data, including a charting component, and displaying a data probe with details on mouseover.</p>
 <p>Unlike our typical interactive mapping project, this one was rather small in scope. We wanted to make something that could come together quickly and easily and be seen before people stopped caring about the election. There was also no client, so we were free to work however we pleased in order to get done fast. In other words, no one was telling us that we had to make this work in IE7! All said and done, we devoted twenty-eight hours to the map before sharing it on Twitter.</p>
 <p>Because the project was short and received a sustained, concentrated effort from each of us, a behind-the-scenes look at its development seems like it might be of interest to other mapmakers. If nothing else, it serves as an example of how three people, working in different parts of the world, interact together online to get work done. Something for the <a href="http://en.wikipedia.org/wiki/Human_geography">human geographers</a> out there, at least, if not for the cartographers.</p>
 <p>What follows is our <a href="http://campfirenow.com/">Campfire</a> transcript covering the duration of the project. Outside of this transcript, there was no video, voice or other written communication between us. The language here has been smoothed out and edited somewhat in order to reduce each thought, question, or decision to its essence, although there are some direct quotations thrown into the mix.</p>
@@ -56,7 +56,7 @@ comments:
 <tr>
 <td>8:15 AM</td>
 <td><img class="aligncenter size-full wp-image-1504" title="yellow" src="http://www.axismaps.com/blog/wp-content/uploads/2012/11/yellow.png" alt="Planning" width="16" height="16" /></td>
-<td class="quote">â€œMaybe just this one last time. Then Iâ€™m retiring.â€ <em>-Andy</em></td>
+<td class="quote">"Maybe just this one last time. Then Iâ€™m retiring." <em>-Andy</em></td>
 </tr>
 <tr>
 <td>8:20 AM</td>
@@ -167,7 +167,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td class="quote">"It has Obama winning most of Wyoming handily."Â <em>-Andy</em></td>
+<td class="quote">"It has Obama winning most of Wyoming handily." <em>-Andy</em></td>
 </tr>
 <tr>
 <td></td>

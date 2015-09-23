@@ -50,7 +50,7 @@ comments:
   date: '2008-12-29 10:46:50 +0000'
   date_gmt: '2008-12-29 15:46:50 +0000'
   content: "[...] Axis maps blog is sharing an interesting technique for adding another
-    dimension of data to maps by using transparency.Â  Somewhat like a cartogram,
+    dimension of data to maps by using transparency.  Somewhat like a cartogram,
     they&#8217;ve taken each county in the US and modified it based on population
     density, but instead of stretching it to a new size, they&#8217;ve increased the
     alpha transparency to make more populated areas brighter and less populated areas

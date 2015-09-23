@@ -112,8 +112,8 @@ comments:
   date_gmt: '2011-12-17 11:30:12 +0000'
   content: "I share a studio with a photographer, among others. She was showing off
     her portfolio and saying that she shares a studio with graphic designers and a
-    cartographer. Quizzical look. â€œHe makes maps,â€\x9D she offered, helpfully.
-    Long pause. â€œSo does he bring the cars up to the studio or does he usually photograph
+    cartographer. Quizzical look. "He makes maps,â€\x9D she offered, helpfully.
+    Long pause. "So does he bring the cars up to the studio or does he usually photograph
     them in the street?â€\x9D\r\n\r\nYou couldn't make this shit up."
 - id: 75668
   author: People always ask which hospital I work at.....

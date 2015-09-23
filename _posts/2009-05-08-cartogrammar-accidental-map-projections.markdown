@@ -50,6 +50,6 @@ comments:
   content: Oh, my mistake really. I was checking out Chrome and was expecting the
     orange icon appear in the address bar just like Firefox. Thanks anyway.
 ---
-<p>If you want to make anÂ omelette, you're going to have to break some eggs, and if you want to code geographic projections, you're going to have to bend the world. Here's a look at the Axis Maps blooper reel courtesy of Cartogrammar developer Andy Woodruff's blog. Enjoy!</p>
+<p>If you want to make an omelette, you're going to have to break some eggs, and if you want to code geographic projections, you're going to have to bend the world. Here's a look at the Axis Maps blooper reel courtesy of Cartogrammar developer Andy Woodruff's blog. Enjoy!</p>
 <p><strong>Link: <a href="http://www.cartogrammar.com/blog/accidental-map-projections/">Accidental map projections</a></strong><a style="text-decoration: none;" href="http://www.cartogrammar.com/blog/accidental-map-projections/"> (via Cartogrammar)</a></p>
 <p style="text-align: center;"><img class="aligncenter size-full wp-image-422" title="Azimuthal Redux" src="http://www.axismaps.com/blog/wp-content/uploads/2009/05/azimuthal.png" alt="Azimuthal Redux" width="525" height="281" /></p>

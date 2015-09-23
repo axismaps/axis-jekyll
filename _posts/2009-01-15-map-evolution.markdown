@@ -45,9 +45,9 @@ comments:
   author_url: http://sweetmaps.com/blog/?p=194
   date: '2009-06-23 11:06:39 +0100'
   date_gmt: '2009-06-23 16:06:39 +0100'
-  content: "[...] various techniques for communicatingÂ data on a static map.Â Â Axis
-    Maps also posted a super video Â (with aÂ beautiful musical accompaniment composed
-    by one of the map-makers)Â showing 106 10-minute [...]"
+  content: "[...] various techniques for communicating data on a static map.  Axis
+    Maps also posted a super video  (with a beautiful musical accompaniment composed
+    by one of the map-makers) showing 106 10-minute [...]"
 - id: 6266
   author: kuesta
   author_email: kuesta1@gmail.com

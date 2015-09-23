@@ -113,14 +113,14 @@ comments:
   date: '2010-05-04 13:08:11 +0100'
   date_gmt: '2010-05-04 18:08:11 +0100'
   content: "A bit late on this but canâ€™t help adding my two cents. Ed , like many
-    on the â€œcutting edgeâ€\x9D of geo-spatial visualization, has no idea what a
+    on the "cutting edgeâ€\x9D of geo-spatial visualization, has no idea what a
     cartographer really is or does and assumes (wrongly) that cartography itself must
     be technologically updated to have anything to offer the new mapping dynamic.\n\nThis
     would be similar to scrapping all aeronautic understanding because we invented
     the rocket.\n\nIf every new innovation became the grounds for total displacement
     of its foundation simply because it was newer, weâ€™d never get past the first
     innovation. Cartographic principles and best practices are a major, foundational
-    factor in most modern mapping, and where it isnâ€™tâ€¦ itâ€™s obvious. Cartography
+    factor in most modern mapping, and where it isnâ€™t... itâ€™s obvious. Cartography
     gives modern mappers the language and intellectual tools to make their innovations
     work.\nWhile there is a lot of interesting and even groundbreaking work going
     on in geo visualization today, there wouldnâ€™t be any of it without cartography
@@ -136,5 +136,5 @@ comments:
 <p>The title was one of the opening statements made by Google's "technology evangelist" <a href="http://www.edparsons.com/2009/11/beyond-cartography-bcs-presentation/" target="_blank">Ed Parsons</a> in a <a href="http://blog.lostinspatial.com/2009/11/04/who-killed-cartography/" target="_blank">recent talk for the British Computer Society</a>. In the talk he argues traditional street maps are bad (all of them) because they fail to engender a sense of place and because they abstract the world using map symbols. He goes on to say Streetview is good and doesn't suffer any of these problems. So is Google Earth. The take-home message is that 2D is bad! Maps symbols are bad! Photos are good! And paper is bad! [subtext: Google doesn't make paper, but if we did, we might soften our stance].</p>
 <p>Here is my concern: I'm not aware of any research to support such simplistic claims. Merely saying them, repeatedly, doesn't make them true. The wayfinding research that I have seen shows that for <em>some</em> users, for <em>some</em> map reading tasks, yes, absolutely Streetview and Virtual Earths and geo-tagged photos can help. And for some users and some situations paper is better than pixels. And for some users, and some kinds of data, 2D is better than 3D. But none of those statements is a blanket truth and by outright rejecting all traditional maps in his talk--even if just for wayfinding on mobile devices--an otherwise solid argument is overshadowed by hyperbole.</p>
 <p>If drug companies made arguments like these they might try to convince us by saying "Aspirin is bad. Aspirin may make your arms fall off. But our new drug has none of these problems. Use our new drug." The difference is drug companies are legally obligated to back-up their claims. It is perhaps the reason they don't employ "evangelists."</p>
-<p>The deeper, more troubling message that we hear again and again is that cartography is little more than making street maps.Â  And the flip side of that coin is the only reason we use maps is for wayfinding. Streetview is very cool (it really is), but it is also pretty specialized in its uses and the advent of it does not in fact "kill cartography."</p>
+<p>The deeper, more troubling message that we hear again and again is that cartography is little more than making street maps.  And the flip side of that coin is the only reason we use maps is for wayfinding. Streetview is very cool (it really is), but it is also pretty specialized in its uses and the advent of it does not in fact "kill cartography."</p>
 <p>Cartography is more than taking photographs of a street. It's a shame that someone with this level of influence at Google has such a limited view of why we map.</p>
