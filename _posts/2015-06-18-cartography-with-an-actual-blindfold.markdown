@@ -91,14 +91,14 @@ ARIA stands for â€œAccessible Rich Internet Applicationsâ€ and is desig
 
 {% highlight css %}
 .hidden{
-position: absolute !important;
-margin: 0 !important;
-padding: 0 !important;
-height: 1px;
-width: 1px;
-clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-clip: rect(1px, 1px, 1px, 1px);
-overflow: hidden;
+  position: absolute !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
 }
 {% endhighlight %}
 
