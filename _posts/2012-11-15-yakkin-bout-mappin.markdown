@@ -56,7 +56,7 @@ comments:
 <tr>
 <td>8:15 AM</td>
 <td><img class="aligncenter size-full wp-image-1504" title="yellow" src="http://www.axismaps.com/blog/wp-content/uploads/2012/11/yellow.png" alt="Planning" width="16" height="16" /></td>
-<td class="quote">"Maybe just this one last time. Then Iâ€™m retiring." <em>-Andy</em></td>
+<td class="quote">"Maybe just this one last time. Then I'm retiring." <em>-Andy</em></td>
 </tr>
 <tr>
 <td>8:20 AM</td>

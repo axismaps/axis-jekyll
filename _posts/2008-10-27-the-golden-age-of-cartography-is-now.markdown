@@ -44,7 +44,7 @@ comments:
 <li>What are the perceptual limits of animation and for what kinds of map reading tasks (e.g., rate estimation, change detection) are animated maps especially well-suited (and how could those tasks be better supported)?</li>
 <li>How can we reduce the problem of "split attention" in immersive and visually-rich environments like Google Earth?</li>
 <li>How can we create intelligent Web-based software that is both easy to use and powerful? To what degree can the map-design process be automated to further the democratization of map-making? How can we help novices to think like experts?</li>
-<li>What should our map interfaces look like and why? How does the map interface structure the userâ€™s experience? How do we know if our map interfaces work?</li>
+<li>What should our map interfaces look like and why? How does the map interface structure the user's experience? How do we know if our map interfaces work?</li>
 <li>Who benefits from these billions being invested in mapping?</li>
 <li>How does this technology change the way we do business and the way we interact with each other?</li>
 <li>What are the limitations and liabilities of decentralized data structures and technologies that run on volunteered geographic data?</li>
