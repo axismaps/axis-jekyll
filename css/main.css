@@ -794,6 +794,7 @@ p.more span{
 }
 
 /* BLOGPOSTS AND GUIDES*/
+section#project,
 section#blog,
 section#guide{
   padding: 0;
@@ -814,6 +815,7 @@ section#guide{
   width: 100%;
 }
 
+#project h1,
 #blog h1 a{
   border-bottom-color: #fff;
   color: white;
@@ -821,6 +823,17 @@ section#guide{
   font-size: 36px;
   font-weight: 700;
   line-height: 30px;
+}
+
+#project h1{
+  color: #333;
+  margin-top: 0;
+}
+
+#project header{
+  margin: 25px 0 0 -40px;
+  padding: 15px 35px;
+  border-left: 5px solid #ccc;
 }
 
 #guide-banner{
@@ -856,6 +869,16 @@ section#guide{
   padding: 40px 100px;
 }
 
+#project .content{
+  padding: 0 20% 40px;
+}
+
+#project img{
+  float: right;
+  max-width: 40%;
+  margin: 0 -20% 20px 20px;
+}
+
 #guide .dropcap:first-letter{
   color: #333;
   float: left;
@@ -881,6 +904,7 @@ section#guide{
   margin-bottom: -20px;
 }
 
+#project .content,
 #blog .content,
 #guide .content{
   color: #555;

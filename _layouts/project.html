@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  {% include meta.html %}
+  <body>
+    {% include ga.html %}
+    <div id="wrapper">
+      {% include header.html %}
+      {% include nav.html %}
+      <section id="project">
+        {% if page.video %}
+          <iframe class="video" src="https://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        {% endif %}
+        <div class="content">
+          <header>
+            <h1>{{ page.title }}</h1>
+            <b>{{ page.client }}</b><br />
+            <em>{{ page.tag }}</em><br />
+            {% if page.link %}
+              <br /><a href="{{ page.link }}" target="_blank">View the map</a><br />
+            {% endif %}
+          </header>
+          <hr />
+          {{ content }}
+          <h2>More {{ page.category }} projects</h2>
+          <h2>From the blog</h2>
+        </div>
+      </section>
+      {% include footer.html %}
+    </div>
+    <script>
+      $( window ).resize( function(){
+        $( 'iframe.video' ).height( 720 * $( 'iframe.video' ).width() / 1280 );
+      });
+      $( window ).resize();
+    </script>
+  </body>
+</html>
