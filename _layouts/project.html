@@ -71,7 +71,12 @@
         $( 'iframe.video' ).height( 720 * $( 'iframe.video' ).width() / 1280 );
       });
       $( window ).resize();
-      $( "#features img" ).tooltipster();
+      $( "#features img:not( .big )" )
+        .tooltipster()
+        .click( function(){
+          $( "#features img.big").remove();
+          $( "#features" ).prepend( $( this ).clone().addClass( "big") );
+        })
     </script>
   </body>
 </html>
