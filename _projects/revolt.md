@@ -1,4 +1,17 @@
-# Jamaican Slave Revolt
+---
+id: revolt
+title: Slave Revolt in Jamaica
+titleshort: Slave Revolt in Jamaica
+client: Harvard History Design Studio
+clientshort: Harvard
+tag: Slave insurrection in the British Empire
+date: 2013-09-04
+featured: true
+slideshow: true
+layout: project
+nav: Portfolio
+category: Education
+---
 
 ## Overview
 Produced for Dr. Vincent Brown’s African Rebellion Project, this map charts the events of the 1760-1761 insurrection in Jamaica. Dr. Brown is an eminent historian, award-winning author, and Charles Warren Professor of History and Professor of African and African American Studies at Harvard University. His project presents groundbreaking new insights into the political history of slavery and shows how African slaves in Jamaica capitalized on the opportunities presented by Britain’s involvement in the Seven Year War against France and Spain, to stage a major revolt that was arguably the most significant in West Indian history. Using extensive thematic narrative and interactive cartography expert historians and the public can now better understand what actually happened and see the revolt, as far as possible, for what it was – a strategic, carefully engineered, military campaign influenced by the island’s topography.

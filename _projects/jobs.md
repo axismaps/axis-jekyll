@@ -9,9 +9,10 @@ date: 2014-09-02
 featured: true
 slideshow: true
 link: http://tipstrategies.com/geography-of-jobs/
+layout: project
+nav: Portfolio
+category: Demographics
 ---
-
-# Geography of Jobs
 
 ## Overview
 The Geography of Jobs map is a dynamic visualization of job gains and losses over the last 15+ years for every metro area in the U.S. The red and blue bubbles represent a rolling 12-month net change in total employment for each metro area. It is a redesign of an existing map—now built in D3 instead of Flash—that focuses on speed and a polished user experience.

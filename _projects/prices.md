@@ -8,10 +8,10 @@ tag: 1,000 years of commodity prices
 date: 2012-10-26
 featured: true
 slideshow: true
+layout: project
+nav: Portfolio
+category: Education
 ---
-
-
-# Global Commodities Prices Visualization
 
 ## Overview
 For Adam Matthew Digital's Global Commodities collection, we created this interactive visualization of commodity prices across the world through history. Users can compare prices of hundreds of different commodities in hundreds of markets and different time periods. Unlike other projects with Adam Matthew Digital, this visualization was designed for researches with the goal of hypothesis formation. The visualization presents data in 3 ways: A bar chart to compare across commodities, a proportional symbol map to compare across locations, and a line graph to compare across time. Each of these components functions as both a display and a control for building complex comparisons. 

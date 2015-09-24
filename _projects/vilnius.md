@@ -9,9 +9,10 @@ date: 2013-05-03
 featured: true
 slideshow: true
 link: http://revilna.org
+layout: project
+nav: Portfolio
+category: Education
 ---
-
-# ReVilna: Mapping the Vilnius Ghetto
 
 ## Overview
 This map was created for reVILNA a digital mapping project of the Vilna Ghetto. The map allows users to explore the streets and buildings of the Vilna Ghetto from the perspective of those who lived in it. It tells the story of a remarkable group of people who lived (and died) in one of the darkest periods in modern history. It reveals how the human spirit survived, and even thrived, against persistent and sustained efforts to crush it. The interactive map explores the culture, education, health, government and resistance that played out within its boundaries and matches the narrative with dozens of rare, sometimes very personal, photographic documentation creating a powerfully moving experience. reVILNA is the brainchild of Menachem Kaiser whose goal was to make holocaust history more practically accessible not only for us today but for future generations. The project is as unprecedented and groundbreaking as it is innovative in its use of technology and geographical science and represents a turning point in the way we can experience and deliver holocaust education and scholarship.

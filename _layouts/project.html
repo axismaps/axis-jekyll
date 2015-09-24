@@ -24,7 +24,7 @@
           <hr />
           {{ content }}
           {% if page.category %}
-            <h3>More {{ page.category | downcase }} projects</h3>
+            <h2>More {{ page.category | downcase }} projects</h2>
             <ul>
               {% assign items = site.projects | sort: 'date' %}
               {% for project in items reversed %}
@@ -44,7 +44,7 @@
             {% endif %}
           {% endfor %}
           {% if blog %}
-            <h3>From the blog</h3>
+            <h2>From the blog</h2>
             <ul>
               {% for post in posts reversed %}
                 {% if post.project == page.id %}

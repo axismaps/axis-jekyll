@@ -8,9 +8,10 @@ tag: Revealing the globe's energy history
 date: 2013-06-15
 featured: true
 slideshow: true
+layout: project
+nav: Portfolio
+category: Education
 ---
-
-# Global Commodities Oil Visualization
 
 ## Overview
 This map was an addendum to the Global Commodites project covering oil (and other sources of energy), arguably the most important commodity of the modern era. It was designed to be accessible to a novice audience, unfamiliar with interactive graphics. An auto-rotating globe is the centerpiece of the applicaiton and links to bar charts for comparison amongst countries and line charts to comapre over time.

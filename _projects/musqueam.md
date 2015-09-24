@@ -8,9 +8,10 @@ tag: Preserving language and heritage
 date: 2013-04-24
 featured: true
 slideshow: true
+layout: project
+nav: Portfolio
+category: Education
 ---
-
-# Musqueam Language Map
 
 ## Overview
 The Musqueam Map is the product of our collaborative effort with the GIS coordinator of the Musqueam Band. It uses a wealth of data collected over the years by this Canadian First Nation and is very focused on enabling them to present and express themselves in their unique way. Guided by their vision of “one heart, one mind”, the map pulls together the geography, history, culture, language, and challenges of this indigenous people group, presenting it as a strong, unified whole. Preserving a tribal culture and language in which place names have significance and traditional hunter/gathering is still a way of life is an increasing challenge, especially in the urban setting that has been carved out of the heart of Musqueam territory. This map will be instrumental in documenting and preserving their history and telling their story in their own words, complementing and augmenting the vital job that community historians and educators do as they teach and pass on Musqueam history to their people.

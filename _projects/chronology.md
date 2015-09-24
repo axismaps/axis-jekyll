@@ -8,9 +8,10 @@ tag: Engaging students with history
 date: 2012-07-11
 featured: true
 slideshow: true
+layout: project
+nav: Portfolio
+category: Education
 ---
-
-# Global Commodities Chronology
 
 ## Overview
 This chronology is the centerpiece of both the Global Commodities and Empire Online projects. The primary goal was to create an engaging way to get students to interact with chronological information. The map pulls short entries from a database covering thousands years organized by category and tag.

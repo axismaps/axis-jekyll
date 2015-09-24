@@ -10,9 +10,9 @@ category: Healthcare
 featured: true
 slideshow: true
 link: http://whynotthebest.org/map/
+layout: project
+nav: Portfolio
 ---
-
-# Why Not the Best?
 
 ## Overview
 Taking advantage of IPRO's Pellucid database of healthcare indicators and built with HTML 5 and JavaScript, this second-generation map allows users to explore numerous indicators of care at the state, county, HRR, and hospital level. Users can view and filter data distributions via the histogram, add hospital and physician overlays, and control the classification and color scheme applied to the choropleth map. The new map is fully integrated with the Why Not The Best site, allowing users to link out to more detailed reports and return to the map exactly as they left it.

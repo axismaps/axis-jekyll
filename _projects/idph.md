@@ -10,9 +10,9 @@ category: Healthcare
 featured: true
 slideshow: true
 link: http://map-idph-ipro-org.bitnamiapp.com/
+layout: project
+nav: Portfolio
 ---
-
-#Illinois Public Health Community Map
 
 ## Overview
 As a collaboration with the Illinois Department of Public Health and IPRO, this map makes information about the quality of health in communities available to the public, highlighting socioeconomic disparities that may exist. Displayed through interactive maps and charts, the clinical data in the map can be used to examine the health needs of a community, county or region for better policy and planning. This second-generation map, originally built in Flash, was updated and completely rebuilt with modern web technology to give users a faster, more accessible experience.

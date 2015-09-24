@@ -9,9 +9,10 @@ date: 2013-09-27
 featured: true
 slideshow: true
 link: http://ajpp.brandeis.edu
+layout: project
+nav: Portfolio
+category: Demographics
 ---
-
-# American Jewish Population Map
 
 ## Overview
 This project seeks to provide answers to social research questions about the Jewish population in the United States. Commissioned by The Steinhardt Social Research Institute (SSRI) at the Cohen Center for Modern Jewish Studies (CMJS) at Brandeis University, the map uses the synthesized results of targeted surveys to provide high quality, unbiased data about the distribution of the contemporary Jewish population in the US. Applying cutting-edge research methods to inform and influence religo-ethnic policymaking, the SSRI hopes that this interactive map will generate greater interest in its work while increasing its reach and use. 

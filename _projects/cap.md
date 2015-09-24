@@ -8,9 +8,10 @@ tag: Animating historic sea voyages
 date: 2013-11-21
 featured: true
 slideshow: true
+layout: project
+nav: Portfolio
+category: Education
 ---
-
-# Pacific Voyages Map
 
 ## Overview
 This map for the China, America, and the Pacific resource was our 8th project for Adam Matthew Digital. The resource contains an extensive range of archival material connected to the trading and cultural relationships that emerged between China, America and the Pacific region between the 18th and early 20th centuries including manuscript sources, rare printed texts, visual images, objects, and maps. Among these manuscripts were ships' logs taken from voyages containing date, location, descriptions, and drawings. From these primary source logs, we were able to create an animated interactive map that explores the development of international trade by showing the movement of ships. This map also presents the primary source ships' logs in an engaging way, giving users access to descriptions, quotes, adn images linked to the time and place they were recorded.
