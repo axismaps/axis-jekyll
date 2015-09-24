@@ -19,7 +19,9 @@ categories:
 - Portfolio
 tags: []
 comments: []
+project: chis
 ---
+
 <p>Last week saw the launch of <a href="http://askchisne.ucla.edu/ask/_layouts/ne/dashboard.aspx#/" target="_blank">AskCHIS Neighborhood Edition</a>, a product of The California Health Interview Survey and the UCLA Center for Health Policy Research, with whom we worked to develop map and chart components for this new interactive tool. The short story of AskCHIS NE is that it is a tool for searching, displaying, and comparing various California health estimates at local levels such as zip codes and legislative districts. <a href="http://askchisne.ucla.edu/ask/_layouts/ne/dashboard.aspx#/" target="_blank">Take a look at it</a> if you feel like setting up an account, or you can watch a <a href="https://connectpro72759986.adobeconnect.com/_a782517175/p4martnp8f6?launcher=false&fcsContent=true&pbMode=normal" target="_blank">demo at its launch event</a> (demo begins at 14:00).</p>
 <p><a href="http://www.axismaps.com/blog/wp-content/uploads/2014/11/chis_screenshot.jpg" target="_blank"><img src="http://www.axismaps.com/blog/wp-content/uploads/2014/11/chis_screenshot_med.jpg" alt="AskCHIS Neighborhood Edition" width="600" height="514" class="aligncenter size-full wp-image-1875" /></a></p>
 <p>The long story is interesting too, as this is fairly sophisticated for a public-facing tool, so we'd like to share a few details of how the map and charts were made.</p>

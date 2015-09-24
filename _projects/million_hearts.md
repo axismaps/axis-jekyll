@@ -4,6 +4,7 @@ title: Million Hearts Map
 client: IPRO
 date: 2014-05-06
 featured: false
+category: Healthcare
 slideshow: false
 ---
 

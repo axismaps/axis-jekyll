@@ -6,6 +6,7 @@ client: IPRO
 clientshort: IPRO
 tag: Dynamic health dashboard
 date: 2013-11-13
+category: Healthcare
 featured: true
 slideshow: true
 link: http://map-idph-ipro-org.bitnamiapp.com/

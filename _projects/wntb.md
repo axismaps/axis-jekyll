@@ -6,6 +6,7 @@ client: IPRO
 clientshort: IPRO
 tag: Mapping ever-changing hospital data
 date: 2013-04-25
+category: Healthcare
 featured: true
 slideshow: true
 link: http://whynotthebest.org/map/

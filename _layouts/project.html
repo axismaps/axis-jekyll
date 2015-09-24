@@ -21,8 +21,36 @@
           </header>
           <hr />
           {{ content }}
-          <h2>More {{ page.category }} projects</h2>
-          <h2>From the blog</h2>
+          {% if page.category %}
+            <h3>More {{ page.category | downcase }} projects</h3>
+            <ul>
+              {% assign items = site.projects | sort: 'date' %}
+              {% for project in items reversed %}
+                {% if project.category == page.category and project.featured and project.title != page.title %}
+                  <li><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+          
+          {% assign blog = false %}
+          {% assign posts = site.posts | sort: 'date' %}
+          {% for post in posts %}
+            {% if post.project == page.id %}
+              {% assign blog = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if blog %}
+            <h3>From the blog</h3>
+            <ul>
+              {% for post in posts reversed %}
+                {% if post.project == page.id %}
+                  <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
         </div>
       </section>
       {% include footer.html %}
