@@ -9,6 +9,8 @@
       <section id="project">
         {% if page.video %}
           <iframe class="video" src="https://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        {%  else %}
+          <img src="{{ site.baseurl }}/media/slideshow/{{ page.id }}.png">
         {% endif %}
         <div class="content">
           <header>
