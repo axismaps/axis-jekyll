@@ -23,6 +23,15 @@
           </header>
           <hr />
           {{ content }}
+          <hr />
+          {% if page.features %}
+            <div id="features">
+              {% for feature in page.features %}
+                <img src="{{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png" title="{{ feature }}">
+              {% endfor %}
+            </div>
+            <hr />
+          {% endif %}
           {% if page.category %}
             <h2>More {{ page.category | downcase }} projects</h2>
             <ul>
@@ -62,6 +71,7 @@
         $( 'iframe.video' ).height( 720 * $( 'iframe.video' ).width() / 1280 );
       });
       $( window ).resize();
+      $( "#features img" ).tooltipster();
     </script>
   </body>
 </html>
