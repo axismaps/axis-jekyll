@@ -13,4 +13,4 @@ Single-theme (univariate) [area cartograms](../articles/cartograms.html), also k
 
 This bivariate non-contiguous area cartogram scales the size of the countries based on their population: populous countries like India and Japan become much larger, while sparsely-populated countries like Somalia and Mongolia shrink in size. The fill colors show life expectancy: the darker the color, the shorter the life expectancy. In other words, this map combines a traditional single-theme [choropleth map](../articles/choropleth.html) (the colors) with a traditional single-theme [non-contiguous area cartogram](../articles/cartograms.html) (the sizes) to create a hybrid map of both. Since the shapes of the countries have not been distorted and they remain in relatively the correct position on the globe, they should remain easy to recognize even with the size changes. Leaving the original gray outlines of the continents behinds provides a visual comparison between the geography we are familiar with, and the world as it would be if redrawn based on population.
 
-![]({{site.baseurl}}/images/guides/bivar_cartogram_map.jpg)
+![]({{site.baseurl}}/media/guides/bivar_cartogram_map.jpg)

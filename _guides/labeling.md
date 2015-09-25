@@ -5,7 +5,7 @@ nav: Guide
 category: general
 ---
 
-![]({{site.baseurl}}/images/guides/labels.jpg)
+![]({{site.baseurl}}/media/guides/labels.jpg)
 
 ### Background
 
