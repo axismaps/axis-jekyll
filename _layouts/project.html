@@ -7,8 +7,30 @@
       {% include header.html %}
       {% include nav.html %}
       <section id="project">
-        {% if page.video %}
-          <iframe class="video" src="https://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        {% if page.video or page.features %}
+          <div id="features">
+              <div id="poster">
+                {% if page.video %}
+                  <iframe class="video full" src="https://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                {% endif %}
+                {% if page.features %}
+                  {% for feature in page.features %}
+                    <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png )"><span>{{ feature }}</span></div>
+                  {% endfor %}
+                {% endif %}
+              </div>
+          </div>
+          <div id="thumbs">
+            {% if page.video %}
+              <div id="video-thumb" class="thumb"><img src="{{ site.baseurl }}/images/play.png" /></div>
+            {% endif %}
+            {% if page.features %}
+              {% for feature in page.features %}
+                <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png )"></div>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <hr />
         {%  else %}
           <img src="{{ site.baseurl }}/media/slideshow/{{ page.id }}.png">
         {% endif %}
@@ -22,14 +44,7 @@
             {% endif %}
           </header>
           <hr />
-          {% if page.features %}
-            <div id="features">
-              {% for feature in page.features %}
-                <img src="{{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png" title="{{ feature }}">
-              {% endfor %}
-            </div>
-            <hr />
-          {% endif %}
+          
           {{ content }}
           <hr />
           {% if page.category %}
@@ -68,15 +83,24 @@
     </div>
     <script>
       $( window ).resize( function(){
-        $( 'iframe.video' ).height( 720 * $( 'iframe.video' ).width() / 1280 );
+        $( '#poster' ).height( 720 * $( '#poster' ).width() / 1280 );
       });
       $( window ).resize();
-      $( "#features img:not( .big )" )
-        .tooltipster()
-        .click( function(){
-          $( "#features img.big").remove();
-          $( "#features" ).prepend( $( this ).clone().addClass( "big") );
-        })
+      
+      $( '.thumb' ).first().addClass( 'active' );
+      $( '.full' ).first().addClass( 'active' );
+      
+      $( '.thumb' ).click( function(){
+        $( '.active' ).removeClass( 'active' );
+        $( this ).addClass( 'active' );
+        $( $( "#poster" ).children()[ $( "#thumbs" ).children().index( $( this ) ) ] ).addClass( "active" );
+      })
+      
+      {% if page.video %}
+        $.getJSON( "http://vimeo.com/api/v2/video/{{ page.video }}.json", function( json ){
+          $( "#video-thumb" ).css( "background-image", "url(" + json[ 0 ].thumbnail_medium + ")" );
+        });
+      {% endif %}
     </script>
   </body>
 </html>

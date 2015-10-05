@@ -842,18 +842,61 @@ section#guide{
   border-left: 5px solid #ccc;
 }
 
-#project #features{
+#project #poster > *{
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#project #poster .active{
+  display: block;
+}
+
+#project #poster .active span{
+  display: block;
+  float: left;
+  padding: 0 25px;
+  background-color: rgba(0,0,0,0.55);
+  color: white;
+  line-height: 50px;
+  font-size: 24px;
+  position: absolute;
+  bottom: 80px;
+}
+
+#project #thumbs{
+  width: 100%;
   text-align: center;
 }
 
-#project #features img{
-  width: 25%;
-  margin: 1%;
+#project .thumb{
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px 5px;
+  border: 2px solid #666;
+  background-size: cover;
+  background-position: center center;
 }
 
-#project #features img.big{
-  width: 100%;
-  margin: 0;
+#project .thumb.active{
+  border: 5px solid #333;
+  position: relative;
+  top: 2px;
+}
+
+#project .thumb span{
+  display: none;
+}
+
+#project #video-thumb img{
+  width: 100px;
+  height: 100px;
+  margin: 0 25px;
+  float: left;
 }
 
 #guide-banner{
