@@ -888,6 +888,20 @@ section#guide{
   top: 2px;
 }
 
+#project .thumb.active .arrow{
+  width: 0;
+  height: 0;
+  display: block;
+  border-style: solid;
+  border-width: 0 25px 25px 25px;
+  border-color: transparent transparent #000000 transparent;
+  -webkit-transform:rotate( 360deg );
+  position: relative;
+  top: -25px;
+  left: 50px;
+  margin-bottom: -25px;
+}
+
 #project .thumb span{
   display: none;
 }

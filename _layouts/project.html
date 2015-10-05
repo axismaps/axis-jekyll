@@ -22,11 +22,11 @@
           </div>
           <div id="thumbs">
             {% if page.video %}
-              <div id="video-thumb" class="thumb"><img src="{{ site.baseurl }}/images/play.png" /></div>
+              <div id="video-thumb" class="thumb"><span class="arrow"></span><img src="{{ site.baseurl }}/images/play.png" /></div>
             {% endif %}
             {% if page.features %}
               {% for feature in page.features %}
-                <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png )"></div>
+                <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png )"><span class="arrow"></span></div>
               {% endfor %}
             {% endif %}
           </div>
