@@ -967,6 +967,7 @@ section#guide{
 
 #blog .content p:first-of-type,
 #guide .content p:first-of-type{
+  border-bottom: 1px dashed #ccc;
   font-size: 21px;
   line-height: 32px;
 }
