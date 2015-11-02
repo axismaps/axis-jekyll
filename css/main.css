@@ -960,6 +960,12 @@ section#guide{
   line-height: 28px;
 }
 
+#blog .content p:first-of-type,
+#guide .content p:first-of-type{
+  font-size: 21px;
+  line-height: 32px;
+}
+
 #project img{
   max-width: 100%;
 }
