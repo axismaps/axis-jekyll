@@ -1,0 +1,43 @@
+<footer class="metadata">
+  {% if page.date %}
+  <div class="metadata-item">
+    <i class="icon-table"></i>
+    {{ page.date | date: "%b %-d, %Y" }}
+  </div>
+  
+  {% if page.author %}
+    <div class="metadata-item">
+      <i class="icon-user"></i>
+      {{ page.author.display_name }}
+    </div>
+  {% endif %}
+  
+  {% if page.categories %}
+    <div class="metadata-item categories">
+      <i class="icon-folder-open"></i>
+      {{ page.categories | join: ', ' }}
+    </div>
+  {% endif %}
+  
+  {% else %}
+  <div class="metadata-item">
+    <i class="icon-table"></i>
+    {{ post.date | date: "%b %-d, %Y" }}
+  </div>
+  
+  {% if post.author %}
+    <div class="metadata-item">
+      <i class="icon-user"></i>
+      {{ post.author.display_name }}
+    </div>
+  {% endif %}
+  
+  {% if post.categories %}
+    <div class="metadata-item categories">
+      <i class="icon-folder-open"></i>
+      {{ post.categories | join: ', ' }}
+    </div>
+  {% endif %}
+  
+  {% endif %}
+</footer>

@@ -1115,6 +1115,23 @@ section#guide{
   margin-right: 2px;
 }
 
+#blog .metadata{
+  background-color: #ccc;
+  box-sizing: border-box; 
+  padding: 5% 10%;
+  width: 100%;
+}
+
+#blog .metadata .metadata-item{
+  color: #333;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#blog .metadata .categories{
+  text-transform: capitalize;
+}
+
 /* RESPONSIVE STYLES */
 
 @media (max-width: 520px) {

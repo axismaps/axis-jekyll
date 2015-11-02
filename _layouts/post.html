@@ -4,12 +4,12 @@ layout: default
 <section id="blog">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
   <article class="post content">
     {{ content }}
   </article>
   {% include social_media_excerpt.html %}
+  {% include post_metadata.html %}
 
 </section>
