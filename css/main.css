@@ -802,7 +802,7 @@ section#guide{
 
 #blog a,
 #guide a{
-  border-bottom: 1px dotted #111;
+  border-bottom: 1px dashed #999;
   text-decoration: none;
 }
 
@@ -1047,7 +1047,6 @@ section#guide{
 #guide .content a{
   color: #111;
   font-family: "Expo Serif Pro";
-  font-size: 18px;
   text-decoration: none;
 }
 
