@@ -1044,6 +1044,12 @@ section#guide{
   padding: 20px;
 }
 
+#blog .content pre code,
+#guide .content pre code{
+  background-color: initial;
+  border: none;
+}
+
 #blog .content a,
 #guide .content a{
   color: #111;
