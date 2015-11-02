@@ -433,14 +433,14 @@ footer p:last-child {
 #trio p.more {
 	position: absolute;
 	bottom: 0;
-	color: #0061ad;
+	color: #57a1d7;
 	width: 100%;
 	font-weight: bold;
 	line-height: 11px;
 }
 
 #trio p.more:hover {
-	color: #404040;
+	color: #333;
 }
 
 p.more span{
@@ -804,6 +804,7 @@ section#guide{
 #guide a,
 #project a{
   border-bottom: 1px dashed #999;
+  color: #111;
   text-decoration: none;
 }
 
