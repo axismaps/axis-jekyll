@@ -824,7 +824,7 @@ section#guide{
 #blog h1 a{
   border-bottom-color: #fff;
   color: white;
-  font-family: Rosario;
+  font-family: "rosario";
   font-size: 36px;
   font-weight: 700;
   line-height: 30px;
@@ -836,7 +836,7 @@ section#guide{
 }
 
 #project h2{
-	font-family: Rosario;
+	font-family: "rosario";
 	font-weight: bold;
 	font-size: 28px;
 }
@@ -928,7 +928,7 @@ section#guide{
 
 #guide-banner h1{
   color: white;
-  font-family: Rosario;
+  font-family: "rosario";
   font-size: 42px;
   font-weight: 700;
   line-height: 30px;
@@ -938,7 +938,7 @@ section#guide{
 
 #guide-banner p{
   color: white;
-  font-family: Rosario;
+  font-family: "rosario";
   font-size: 24px;
   font-style: italic;
   line-height: 30px;
@@ -959,7 +959,7 @@ section#guide{
 #blog .content,
 #guide .content{
   color: #555;
-  font-family: "Expo Serif Pro";
+  font-family: "expo-serif-pro";
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -981,7 +981,7 @@ section#guide{
 #blog .content h2,
 #guide .content h2{
   color: #333;
-  font-family: Rosario;
+  font-family: "rosario";
   font-size: 30px;
   font-weight: bold;
   margin: 40px 0 -10px 0;
@@ -991,7 +991,7 @@ section#guide{
 #guide .content h3{
   margin: 40px 0 -10px 0;
   color: #333;
-  font-family: Rosario;
+  font-family: "rosario";
   font-size: 24px;
   font-weight: bold;
   font-style: italic;
@@ -1012,7 +1012,7 @@ section#guide{
   border: 1px solid #d9d9d9;
   border-radius: 3px;
   color: #da0048;
-  font-family: "Source Code Pro";
+  font-family: "source-code-pro";
   font-size: 16px;
   padding: 0 5px;
 }
@@ -1020,7 +1020,7 @@ section#guide{
 #blog .content strong,
 #guide .content strong{
   color: #333;
-  font-family: Rosario;
+  font-family: "rosario";
   font-weight: 700;
   line-height: 36px;
 }
@@ -1031,7 +1031,7 @@ section#guide{
   border: 1px solid #d9d9d9;
   border-radius: 3px;
   color: #555;
-  font-family: "Source Code Pro";
+  font-family: "source-code-pro";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1047,7 +1047,7 @@ section#guide{
 #blog .content a,
 #guide .content a{
   color: #111;
-  font-family: "Expo Serif Pro";
+  font-family: "expo-serif-pro";
   text-decoration: none;
 }
 
@@ -1068,7 +1068,7 @@ section#guide{
   margin: -5px 0 40px;
   display: block;
   color: #777;
-  font-family: Rosario;
+  font-family: "rosario";
   font-size: 18px;
   font-style: italic;
   line-height: 30px;
