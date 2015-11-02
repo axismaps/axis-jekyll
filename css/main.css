@@ -950,6 +950,16 @@ section#guide{
   padding: 0 20% 40px;
 }
 
+#project .content,
+#blog .content,
+#guide .content{
+  color: #555;
+  font-family: "Expo Serif Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 #project img{
   max-width: 100%;
 }
@@ -977,16 +987,6 @@ section#guide{
 #blog .content h4,
 #guide .content h4{
   margin-bottom: -20px;
-}
-
-#project .content,
-#blog .content,
-#guide .content{
-  color: #555;
-  font-family: "Expo Serif Pro";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
 }
 
 #blog .content code,
