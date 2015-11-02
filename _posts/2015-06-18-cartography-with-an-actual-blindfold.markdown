@@ -29,7 +29,7 @@ First off, what are accessibility features and why should you care? Accessibilit
 
 So what categories of accessibility should you be aware of? There are 4 areas that I'm going to talk about; I'm sure there are more, but these cover the majority of cases that I'm currently aware of. Color, keyboard navigation, ARIA, and Screen Readers. Also, I should note, I am not an expert in this. What follows are the notes of a developer brand new to the area of accessibility.
 
-### Color
+## Color
 
 Color can cover a whole host of issues, but the main areas to watch out for are color blindness and low contrast. About 10% of all males have some form of color blindness, of which the most prevalent is red/green (protanopia) color blindness. That's a big percentage of your users. Simple fix – don't put red and green right next to each other. As a mapping company trained in classical cartography techniques, this one is pretty much embedded in our blood and bones. Other versions of color blindness do exist though. It's up to you to decide how many versions you want to design for (since the more you cover, the less options you have for design). A good site to figure out which colors you can use is [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/).
 
@@ -48,7 +48,7 @@ _Contrast Checker - #999 vs #ccc_
 
 *Testing:* The best way to test for color blindness issues is to have a someone who is actually color blind look at the site (and since 1 out 10 men are, there is a good chance you know someone who is). Barring that, run the various colors through [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/) and the [Color Contrast Check tool](http://www.snook.ca/technical/colour_contrast/colour.html).
 
-### Keyboard
+## Keyboard
 
 There are two types of people who use the keyboard only; the visually impaired and those with a disability making use of a mouse impossible (for those of you wondering, as I did, how you can use a keyboard but not a mouse, many alternate input devices emulate a keyboard but not a mouse – e.g. Sip and Puff devices).
 
@@ -58,13 +58,13 @@ There are a couple of key points to keep in mind when designing for keyboard use
 
 *Testing:* Keyboard navigation is really easy to test. Just use the site with only the keyboard. Can you access all the functionality? Can you get to all the links and do they work by pressing `space` or `enter`? Are all the buttons/divs/links/etc... in a clear and logical tab order?
 
-### ARIA
+## ARIA
 
 ARIA stands for "Accessible Rich Internet Applications" and is designed to let screen readers and other assistance software help make interactive pages usable by all users. ARIA tags are usually element attributes such as `aria-hidden` and `role`. Like other element attributes such as `id` and `src`, there are attributes for pretty much every element and they apply differently. I'll mention a few that are good to know about:
 
 - `aria-hidden` - makes a particular element hidden from screen readers. This is useful if, for example, you have a description that is truncated for display reasons, but is expandable through mouse interaction.
 
-#### HTML
+### HTML
 Two divs. One with a class of `hidden` making it all but invisible to the naked eye, yet still there. The other one is the normal div that everybody sees, but with an `aria-hidden="true"` attribute to hide it from screen readers so they don't repeat themselves.
   
 {% highlight html %}
@@ -72,7 +72,7 @@ Two divs. One with a class of `hidden` making it all but invisible to the naked 
 <div class="description">Blah blah...</div>
 {% endhighlight %}
 
-#### CSS
+### CSS
 Hidden class that reduces the element to 1px by 1px. The `clip` and `overflow: hidden` hides everything that goes out of the 1px by 1px box.
 
 {% highlight css %}
@@ -101,7 +101,7 @@ Hidden class that reduces the element to 1px by 1px. The `clip` and `overflow: h
 
 *Testing:* Testing ARIA tags is mostly about testing things with a screen reader. The testing part of the Screen Reader section below has more information.
 
-### Screen Readers
+## Screen Readers
 
 And now to the most well known accessibility genre, the screen reader. Screen Readers work by reading off the text from a web page. How they do this is different for each one and can devolve into a similar situation as the early 2000's with web browsers – each one its own special flower. There is some standardization and it is getting better, but you will still run into situations where different screen readers read the same markup differently (especially when Javascript gets involved).
 
@@ -132,7 +132,7 @@ Which brings me to the final point, Screen Readers are complicated pieces of sof
 
 *Testing:* ChromeVox is a free plugin for Chrome that is really easy to setup and use. Make sure that you go through the [tutorial](http://www.chromevox.com/tutorial/) first though as there are facets of screen reader navigation that are not necessarily intuitive for people used to mouse navigation. VoiceOver is included with OSX so that should be easy enough to include in testing if you are using a Mac. NVDA is free software as well, though for Windows. By using one or all of these, you should run into any bugs that will affect screen readers. Things to look for: can you hear all the content? Is anything behind an "interactive wall" that is not accessible with keyboard/screen reader? Do all the images have alt tags so you know what is going on without seeing the actual image?
 
-### Conclusion
+## Conclusion
 
 Accessibility concerns affect a small but significant portion of users. If things are designed with them in mind, that can only be a good thing. Many of the above suggestions, with the possible exception of catering to color blindness, shouldn't change a single thing on how your page looks, feels, and interacts. But by following them, more people will use and enjoy whatever content is there.
 
