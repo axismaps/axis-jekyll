@@ -972,9 +972,9 @@ section#guide{
 #guide .dropcap:first-letter{
   color: #333;
   float: left;
-  font-size: 60px;
+  font-size: 54px;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 54px;
   margin-right: 10px;
 }
 
