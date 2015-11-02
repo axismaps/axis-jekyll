@@ -801,13 +801,15 @@ section#guide{
 }
 
 #blog a,
-#guide a{
+#guide a,
+#project a{
   border-bottom: 1px dashed #999;
   text-decoration: none;
 }
 
 #blog a:hover,
-#guide a:hover{
+#guide a:hover,
+#project a:hover{
   border-bottom-style: solid;
 }
 
