@@ -1118,15 +1118,17 @@ section#guide{
 }
 
 #blog .metadata{
-  background-color: #ccc;
+  background-color: #eee;
   box-sizing: border-box; 
   padding: 5% 10%;
   width: 100%;
 }
 
 #blog .metadata .metadata-item{
-  color: #333;
+  color: #777;
   display: inline-block;
+  font-family: "rosario";
+  font-size: 18px;
   margin-right: 10px;
 }
 
