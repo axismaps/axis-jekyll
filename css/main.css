@@ -12,7 +12,7 @@ h2 {
 }
 
 a {
-	color: #0061ad;
+	color: #111;
 }
 
 hr {
@@ -131,15 +131,32 @@ section{
 }
 
 #cancel_contact{
+  border-bottom: 1px dashed #999;
+  color: #111;
 	float: right;
 	margin-right: 20px;
-	line-height: 45px;
+  margin-top: 13px;
+  text-decoration: none;
+}
+
+#cancel_contact:hover{
+  border-bottom-style: solid;
 }
 
 #contact img.loading{
   display: none;
   float: right;
   margin: 15px 40px 0 35px;
+}
+
+#other a{
+  border-bottom: 1px dashed #999;
+  color: #111;
+  text-decoration: none;
+}
+
+#other a:hover{
+  border-bottom-style: solid;
 }
 
 /* NAVIGATION */
@@ -282,6 +299,16 @@ img#init {
 	padding: 0 20px;
 }
 
+#sidebar a{
+  border-bottom: 1px dashed #999;
+  color: #111;
+  text-decoration: none;
+}
+
+#sidebar a:hover{
+  border-bottom-style: solid;
+}
+
 #sidebar h2 {
 	display: none;
 }
@@ -326,15 +353,21 @@ img#init {
 }
 
 #subForm #submit{
-	margin: 10px 0 0 2px;
-	padding: 0;
 	background: none;
 	border: none;
-	color: #0061ad;
-	text-align: left;
-	text-decoration: underline;
+  border-bottom: 1px dashed #999;
+	color: #111;
+  cursor: pointer;
 	font-style: normal;
-	cursor: pointer;
+	margin: 10px 0 0 2px;
+  padding: 0;
+	text-align: left;
+  text-decoration: none;
+  width: initial;
+}
+
+#subForm #submit:hover{
+  border-bottom-style: solid;
 }
 
 /* FOOTER */
@@ -352,6 +385,16 @@ footer p {
 
 footer p:last-child {
 	margin-top: 2em;
+}
+
+footer a{
+  border-bottom: 1px dashed #999;
+  color: #111;
+  text-decoration: none;
+}
+
+footer a:hover{
+  border-bottom-style: solid;
 }
 
 /* INDEX */
