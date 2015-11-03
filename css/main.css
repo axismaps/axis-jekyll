@@ -843,11 +843,11 @@ section#guide{
   padding: 0;
 }
 
-section#blog{
+section.blogroll{
   background-color: initial;
 }
 
-article{
+section.blogroll article{
   background-color: white;
   margin-bottom: 100px;
 }

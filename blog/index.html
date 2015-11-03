@@ -4,7 +4,7 @@ nav: Blog
 order: 3
 ---
 
-<section id="blog">
+<section id="blog" class="blogroll">
   {% for post in paginator.posts %}
     <article>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
