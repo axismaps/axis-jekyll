@@ -111,7 +111,7 @@ comments:
     that one with the L on it. Now I'm gonna make you dig it up from the archives!\r\n\r\nThe
     T (how nice that both these cities use single-letter nicknames for their transit
     systems) was never put to paper on the Boston map, but I'd considered trying it
-    and was scared away by the same problem of lines coinciding with streetsâ€”at
+    and was scared away by the same problem of lines coinciding with streets—at
     a smaller scale than the Chicago map.\r\n\r\nLarge scale maps and creative solutions
     to the space constraints would both be interesting challenges."
 - id: 16913
@@ -862,7 +862,7 @@ comments:
     paper and colors. It looks fantastic in the black frame I got for it. She is going
     to love it. Thanks for all your hard work.
 ---
-<p>Today we're pleased to show off a pet project that's been occupying us off and on for nearly two years. After some emotional separation issues, we are declaring finished a few <strong><a href="http://store.axismaps.com">typographic map posters</a></strong>â€”one of Boston, and color and black and white flavors of Chicago. Everything in these maps is made of type.</p>
+<p>Today we're pleased to show off a pet project that's been occupying us off and on for nearly two years. After some emotional separation issues, we are declaring finished a few <strong><a href="http://store.axismaps.com">typographic map posters</a></strong>—one of Boston, and color and black and white flavors of Chicago. Everything in these maps is made of type.</p>
 <p style="text-align: center;"><img class="aligncenter" style="display: inline;" src="http://www.axismaps.com/images/typographic/chi1a.jpg" alt="Chicago typographic map" width="511" height="338" /></p>
 <p style="text-align: center;"><img class="aligncenter" style="display: inline;" src="http://www.axismaps.com/images/typographic/chi2b.jpg" alt="Chicago typographic map" width="511" height="338" /></p>
 <p style="text-align: center;"><img class="aligncenter" style="display: inline;" src="http://www.axismaps.com/images/typographic/bos1b.jpg" alt="Boston typographic map" width="511" height="338" /></p>

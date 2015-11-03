@@ -35,7 +35,7 @@ tags:
 <p class="MsoNormal">
 <p>[caption id="attachment_343" align="aligncenter" width="525" caption="3D human figures as proportional symbols (blog.thematicmapping.org)"]<img class="size-full wp-image-343 " title="humanfigures" src="http://www.axismaps.com/blog/wp-content/uploads/2009/04/humanfigures.jpg" alt="3D human figures as proportional symbols" width="525" height="346" />[/caption]</p>
 <p class="MsoNormal"><strong>CHART JUNK</strong></p>
-<p class="MsoNormal" style="padding-left: 30px;">Chart junk takes what should have been a simple-to-read graphic and makes extracting information (1) slower, (2) more difficult, and (3) more prone to reading errors, because of excessive ornamentation and unnecessary design additionsâ€”like adding a 3D effect that communicates nothing in and of itself but simply "looks cool." This is not idle speculation: Research consistently shows chart junk and "redundant ink" hurt otherwise fine graphics.</p>
+<p class="MsoNormal" style="padding-left: 30px;">Chart junk takes what should have been a simple-to-read graphic and makes extracting information (1) slower, (2) more difficult, and (3) more prone to reading errors, because of excessive ornamentation and unnecessary design additions—like adding a 3D effect that communicates nothing in and of itself but simply "looks cool." This is not idle speculation: Research consistently shows chart junk and "redundant ink" hurt otherwise fine graphics.</p>
 <p class="MsoNormal" style="padding-left: 30px;">Want to see for yourself? Download these two example KML/KMZ files from blog.thematicmapping.org and run them in Google Earth. While you're looking at them try to extract numbers or compare places: <a href="http://thematicmapping.googlepages.com/polygon_hole_problem.kml" target="_blank">KMZ File 1</a> |  <a href="http://thematicmapping.googlepages.com/population_2005_collada_people.kmz" target="_blank">KML File 2</a></p>
 <p class="MsoNormal">
 <p class="MsoNormal"><strong>"BUT THEY LOOK COOL": A TECHNOLOGY IN SEARCH OF A PROBLEM </strong></p>
@@ -72,7 +72,7 @@ TASK #2: </strong>As quickly as you can, find all of the other places on the map
 <ol style="padding-left: 30px;">
 <li>The Lack of a zero-line referent makes it hard to judge absolute magnitudes.</li>
 <li>The "fish eye lens" effect mean each prism is viewed from a different angle than its neighbors, making comparison just a little bit harder as we have to mental account for these differences in our estimates.</li>
-<li>It is hard to judge the height of something when you are staring directly down at it. This matters because height is the visual variable that does the "work" in this graphicâ€”it's how the data are encoded visually. Why obscure the very thing map-readers need to make sense of the graphic (e.g., the side-view height of each polygon)?</li>
+<li>It is hard to judge the height of something when you are staring directly down at it. This matters because height is the visual variable that does the "work" in this graphic—it's how the data are encoded visually. Why obscure the very thing map-readers need to make sense of the graphic (e.g., the side-view height of each polygon)?</li>
 </ol>
 </li>
 </ol>

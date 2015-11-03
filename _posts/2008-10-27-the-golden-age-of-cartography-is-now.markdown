@@ -38,7 +38,7 @@ comments:
 <p>One thing is clear: As the GeoWeb/Web2.0 revolution continues, we need to move beyond paper map thinking and starting seeing maps much more broadly as services that can be integrated with other services. As a professional cartographer this means to me that the "rules" of cartography established through a century of study and practice are now up for grabs at the very moment mapping finds itself in a multi-billion dollar spotlight from both the private and public sectors. Some of the biggest companies in the world (Google, Microsoft, Yahoo!) are betting a big chunk of their digital future on maps and the central role they want cartography to play in their digital empires. With the backing of these companies, digital, on-demand maps have gone from technological curiosities to everyday tools worth billions of dollars. This begs the question: Where is mapping headed and what might our maps do for us in 10 years?</p>
 <p>Further questions we need to think carefully about (these are the sorts of questions that keep us up at night!!)...</p>
 <ul>
-<li>How much of what we have learned about static mapsâ€”both in practice and theoryâ€”holds true when these maps become animated, interactive, and customizable?</li>
+<li>How much of what we have learned about static maps—both in practice and theory—holds true when these maps become animated, interactive, and customizable?</li>
 <li>What are the relative merits of 2D versus 3D?</li>
 <li>How do we keep users from becoming disoriented and lost in 3D immersive maps?</li>
 <li>What are the perceptual limits of animation and for what kinds of map reading tasks (e.g., rate estimation, change detection) are animated maps especially well-suited (and how could those tasks be better supported)?</li>
