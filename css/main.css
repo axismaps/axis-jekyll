@@ -852,6 +852,10 @@ section.blogroll article{
   margin-bottom: 100px;
 }
 
+section.blogroll article:last-of-type{
+  margin-bottom: 0;
+}
+
 #blog a,
 #guide a,
 #project a{
@@ -1187,6 +1191,33 @@ section.blogroll article{
 #blog .metadata .categories{
   text-transform: capitalize;
 }
+
+/* PAGINATION */
+
+.pagination{
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+}
+
+.pagination-section{
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 100px;
+  text-align: center;
+  width: 33%;
+}
+
+#blog .pagination-section a{
+  border: none;
+  color: #57a1d7;
+}
+
+#blog .pagination-section a:hover{
+  border: none;
+  color: #333;
+}
+
 
 /* RESPONSIVE STYLES */
 

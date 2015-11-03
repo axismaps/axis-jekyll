@@ -19,13 +19,17 @@ order: 3
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
-      <i class="icon-left-dir"></i><a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
+      <div class="pagination-section">
+        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous"><i class="icon-left-dir"></i>Previous</a>
+      </div>
     {% endif %}
-    <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <div class="pagination-section">
+      <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    </div>
     {% if paginator.next_page %}
-      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next</a><i class="icon-right-dir"></i>
-    {% else %}
+      <div class="pagination-section">
+        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next<i class="icon-right-dir"></i></a>
+      </div>
     {% endif %}
   </div>
 </section>
