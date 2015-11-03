@@ -7,7 +7,7 @@ category: multivariate
 
 ### When to Use
 
-Bivariate choropleth maps combine two datasets (usually numerical data) into a single map allowing us to show relatively how much of X (variable 1) and Y (variable 2) exist in each enumeration unit. They inherent many of the same strengths and weaknesses as univariate choropleth maps, which are outlined [here](../articles/choropleth.html). Like all bivariate maps, these maps encode two numbers/facts per location and are, therefore, graphically efficient.
+Bivariate choropleth maps combine two datasets (usually numerical data) into a single map allowing us to show relatively how much of X (variable 1) and Y (variable 2) exist in each enumeration unit. They inherent many of the same strengths and weaknesses as univariate choropleth maps, which are outlined [here](../choropleth). Like all bivariate maps, these maps encode two numbers/facts per location and are, therefore, graphically efficient.
 
 ### Concerns
 
@@ -15,7 +15,7 @@ All other things being equal, bivariate choropleth maps are more difficult to re
 
 ### Example Map
 
-This is a 3-class x 3-class bivariate choropleth map from [indiemapper](http://indiemapper.com) that uses a diverging x diverging scheme (more here about [color schemes](../articles/color_schemes.html). Below that is a scatterplot which allows you to see the numerical distribution of your observations and make informed decisions about how to best classify your data (more here about [data classification](../articles/classification.html). Just like a histogram for single-variable maps, a scatterplot is a useful tool for devising classification schemes for bivariate choropleth maps.
+This is a 3-class x 3-class bivariate choropleth map from [indiemapper](http://indiemapper.com) that uses a diverging x diverging scheme (more here about [color schemes](../color_schemes). Below that is a scatterplot which allows you to see the numerical distribution of your observations and make informed decisions about how to best classify your data (more here about [data classification](../classification). Just like a histogram for single-variable maps, a scatterplot is a useful tool for devising classification schemes for bivariate choropleth maps.
 
 ![]({{site.baseurl}}/media/guides/bivariate_choroMAP.jpg)
 
