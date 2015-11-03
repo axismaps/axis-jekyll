@@ -843,6 +843,15 @@ section#guide{
   padding: 0;
 }
 
+section#blog{
+  background-color: initial;
+}
+
+article{
+  background-color: white;
+  margin-bottom: 100px;
+}
+
 #blog a,
 #guide a,
 #project a{
