@@ -58,14 +58,14 @@ section{
 #build, #contact #submit{
 	float: right;
 	margin: 5px 0;
-	width: 390px;
+  padding: 0 20px;
 	height: 45px;
 	border-radius: 8px;
 	background-color: #999;
 	color: white;
 	text-align: center;
-	font-size: 21px;
-	font-family: "chaparral-pro", sans-serif;
+	font-size: 18px;
+	font-family: "rosario", sans-serif;
 	line-height: 45px;
 	cursor: pointer;
 }
@@ -180,6 +180,9 @@ nav li:hover{
 
 nav a{
 	color: inherit;
+  font-family: 'rosario', 'sans-serif';
+  font-size: 18px;
+  font-weight: bold;
 	text-decoration: none;
 }
 
@@ -291,6 +294,7 @@ img#init {
 /* SIDEBAR */
 #sidebar{
 	color: #666;
+  font: 15px / 21px 'expo-serif-pro';
 	font-size: 13px;
 	line-height: 16px;
 	float: right;
@@ -314,6 +318,10 @@ img#init {
 }
 
 #sidebar h4 {
+  color: #555;
+  font-family: 'rosario', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 	text-transform: uppercase;
 	margin-top: 15px;
 	padding-top: 15px;
@@ -422,7 +430,7 @@ footer a:hover{
 	color: white;
 	text-indent: 40px;
 	font: 21px / 52px "chaparral-pro", sans-serif;
-	background: #666;
+	background: #999;
 }
 .ribbon .soft {
 	font-weight: normal;
@@ -448,7 +456,7 @@ footer a:hover{
 	position: relative;
 	float: left;
 	width: 25%;
-	height: 350px;
+	height: 490px;
 	margin-bottom: 20px;
 	background-color: white;
 	padding: 0 4%;
@@ -479,11 +487,20 @@ footer a:hover{
 	border-right: none;
 }
 
+#trio article p,
+#explanations article p,
+.axis-summary p{
+  color: #555;
+  font: 18px / 28px 'expo-serif-pro', serif;
+}
+
 #trio p.more {
 	position: absolute;
 	bottom: 0;
 	color: #57a1d7;
 	width: 100%;
+  font-family: 'rosario', 'sans-serif';
+  font-size: 18px;
 	font-weight: bold;
 	line-height: 11px;
 }
@@ -571,11 +588,6 @@ p.more span{
 
 #explanations article.code {
 	background:url(../images/histogram.png) right top no-repeat;
-}
-
-#explanations article p {
-	color: #1A1A1A;
-    font: 15px/20px "pt-sans",sans-serif;
 }
 
 .axis-summary{
