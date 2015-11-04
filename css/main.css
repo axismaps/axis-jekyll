@@ -429,19 +429,22 @@ footer a:hover{
 	font-style: italic;
 }
 
-#trio {
+#trio,
+#company {
 	height: 100%;
 	background: #fff;
 	padding: 0;
 }
 
-#trio:after {
+#trio:after,
+#company:after {
 	content: '';
 	display: block;
 	clear: both;
 }
 
-#trio article {
+#trio article,
+#company article {
 	position: relative;
 	float: left;
 	width: 25%;
@@ -451,7 +454,8 @@ footer a:hover{
 	padding: 0 4%;
 }
 
-#trio article h3 {
+#trio article h3,
+#company article h3 {
 	text-indent: 70px;
 	font-weight: bold;
 	font-size: 2em;
@@ -460,7 +464,8 @@ footer a:hover{
 	margin-top: 30px;
 }
 
-#trio article:after {
+#trio article:after,
+#company article:after {
 	content: "";
 	position: absolute;
 	height: 90%;
@@ -469,7 +474,8 @@ footer a:hover{
 	border-right: 1px solid #ddd;
 }
 
-#trio article:last-child:after {
+#trio article:last-child:after,
+#company article:last-child:after {
 	border-right: none;
 }
 
@@ -522,7 +528,8 @@ p.more span{
 	cursor: pointer;
 }
 
-#trio h3:before {
+#trio h3:before,
+#company h3:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -799,13 +806,25 @@ p.more span{
 	color: white;
 }
 
-#trio ul{
+#company a,
+#history a{
+  border-bottom: 1px dashed #999;
+  color: #111;
+  text-decoration: none;
+}
+
+#company a:hover,
+#history a:hover{
+  border-bottom-style: solid;
+}
+
+#company ul{
 	list-style: none;
 	padding-left: 0;
 	margin: 0;
 }
 
-#trio ul li::before{
+#company ul li::before{
 	content: "- ";
 }
 
