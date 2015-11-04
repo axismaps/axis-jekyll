@@ -299,13 +299,13 @@ img#init {
 	padding: 0 20px;
 }
 
-#sidebar a{
+#sidebar a:not(.img_link){
   border-bottom: 1px dashed #999;
   color: #111;
   text-decoration: none;
 }
 
-#sidebar a:hover{
+#sidebar a:not(.img_link):hover{
   border-bottom-style: solid;
 }
 
