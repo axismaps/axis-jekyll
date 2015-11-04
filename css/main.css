@@ -1109,9 +1109,7 @@ section.blogroll article:last-of-type{
 #blog .content strong,
 #guide .content strong{
   color: #333;
-  font-family: "rosario";
   font-weight: 700;
-  line-height: 36px;
 }
 
 #blog .content pre,
