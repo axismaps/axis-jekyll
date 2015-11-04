@@ -170,7 +170,7 @@ nav li{
 	display: inline;
 	padding: 5px 10px;
 	border-radius: 5px;
-	color: #424242;
+	color: #555;
 	font-weight: bold;
 }
 
@@ -426,11 +426,12 @@ footer a:hover{
 }
 
 .ribbon {
-	line-height: 50px;
 	color: white;
 	text-indent: 40px;
-	font: 21px / 52px "chaparral-pro", sans-serif;
+	font: 24px / 60px "rosario", sans-serif;
 	background: #999;
+  font-weight: bold;
+  font-style: italic;
 }
 .ribbon .soft {
 	font-weight: normal;
@@ -464,9 +465,11 @@ footer a:hover{
 
 #trio article h3,
 #company article h3 {
+  color: #333;
 	text-indent: 70px;
+  font-family: 'rosario';
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 30px;
 	height: 40px;
 	line-height: 40px;
 	margin-top: 30px;
