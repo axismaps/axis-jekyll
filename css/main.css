@@ -620,9 +620,8 @@ p.more span{
 .axis-summary h3 {
 	margin: 30px 0 -10px;
 	padding-left: 4%;
-	font-weight: normal;
-	font-size: 21px;
-	color: #404040;
+	color: #333;
+  font: bold 24px 'rosario';
 }
 .axis-summary p {
 	padding: 0 280px 0 4%;
