@@ -69,9 +69,7 @@ b, strong{
 	background-color: #999;
 	color: white;
 	text-align: center;
-	font-size: 18px;
-	font-family: "rosario", sans-serif;
-	line-height: 45px;
+	font: normal 18px / 45px "rosario", sans-serif;
 	cursor: pointer;
 }
 
@@ -116,24 +114,22 @@ b, strong{
 	margin: 10px 0 5px 5px;
 	width: 50%;
 	/*text-indent: 10px;*/
-	font: 15px / 20px "pt-sans", sans-serif !important;
 	line-height: 25px;
 	text-align: right;
 	padding-right: 2%;
-	color: #1A1A1A;
 	font-style: italic;
 }
 
 #contact textarea{
 	width: 100%;
 	height: 160px;
-	font: 15px / 20px "pt-sans", sans-serif !important;
 	resize: none;
 }
 
 #contact #submit{
 	padding: 0;
 	width: 90px;
+  line-height: 35px;
 	height: 35px;
 	border: none;
 	text-indent: 0;
@@ -189,7 +185,6 @@ nav li:hover{
 
 nav a{
 	color: inherit;
-  font-family: 'rosario', 'sans-serif';
   font-size: 18px;
   font-weight: bold;
 	text-decoration: none;
@@ -436,7 +431,8 @@ footer a:hover{
 .ribbon {
 	color: white;
 	text-indent: 40px;
-	font: 24px / 60px "rosario", sans-serif;
+	font-size: 24px;
+  line-height: 60px;
 	background: #999;
   font-weight: bold;
   font-style: italic;
@@ -476,7 +472,6 @@ footer a:hover{
 #company article h3 {
   color: #333;
 	text-indent: 70px;
-  font-family: 'rosario';
 	font-weight: bold;
 	font-size: 30px;
 	height: 40px;
@@ -621,7 +616,8 @@ p.more span{
 	margin: 30px 0 -10px;
 	padding-left: 4%;
 	color: #333;
-  font: bold 24px 'rosario';
+  font-weight: bold;
+  font-size: 24px;
 }
 .axis-summary p {
 	padding: 0 280px 0 4%;
@@ -648,7 +644,6 @@ p.more span{
 	margin: 9px 0 0 0;
 	color: #555;
 	line-height: 18px;
-  font: 15px 'rosario';
 }
 
 .mini-image{
@@ -714,7 +709,8 @@ p.more span{
 #featured ul li p a{
 	text-decoration: none;
 	color: #333;
-  font: 16px / 26px 'rosario';
+  font-size: 16px;
+  line-height: 26px;
   border-bottom: 1px dashed #999;
 }
 
@@ -935,7 +931,6 @@ section.singleblog article:last-of-type{
 #blog h1 a{
   border-bottom-color: #fff;
   color: white;
-  font-family: "rosario";
   font-size: 36px;
   font-weight: 700;
   line-height: 30px;
@@ -1033,7 +1028,6 @@ section.singleblog article:last-of-type{
 
 #guide-banner h1{
   color: white;
-  font-family: "rosario";
   font-size: 42px;
   font-weight: 700;
   line-height: 30px;
@@ -1043,7 +1037,6 @@ section.singleblog article:last-of-type{
 
 #guide-banner p{
   color: white;
-  font-family: "rosario";
   font-size: 24px;
   font-style: italic;
   line-height: 30px;
@@ -1198,7 +1191,7 @@ section.singleblog article:last-of-type{
 #blog .share-this{
   border-top: 1px solid #ccc;
   color: #777;
-  font: bold 15px 'rosario';
+  font-weight: bold;
   line-height: 1;
   padding-top: 10px;
   text-transform: uppercase;
@@ -1239,7 +1232,6 @@ section.singleblog article:last-of-type{
 #blog .metadata .metadata-item{
   color: #777;
   display: inline-block;
-  font-family: "rosario";
   font-size: 18px;
   margin-right: 10px;
 }
@@ -1298,7 +1290,7 @@ section.singleblog article:last-of-type{
 .pagenav-title{
   color: #777;
   display: block;
-  font: bold 15px 'rosario';
+  font-weight: bold;
   line-height: 2;
   padding-top: 10px;
   text-transform: uppercase;
@@ -1307,7 +1299,8 @@ section.singleblog article:last-of-type{
 #blog .pagenav-section a{
   border: none;
   color: #57a1d7;
-  font: bold 18px 'rosario';
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #blog .pagenav-section a:hover{
