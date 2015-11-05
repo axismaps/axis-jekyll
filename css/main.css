@@ -713,13 +713,13 @@ p.more span{
 
 #featured ul li p a{
 	text-decoration: none;
-	color: #005C7A;
-
+	color: #333;
+  font: 16px / 26px 'rosario';
+  border-bottom: 1px dashed #999;
 }
 
 #featured ul li p a:hover {
-	color: #333;
-	transition: color .3s;
+  border-bottom-style: solid;
 }
 
 #featured ul li p{
