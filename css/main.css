@@ -645,10 +645,10 @@ p.more span{
 }
 
 .mini-portfolio p{
-	margin: 17px 0 0 0;
-	color: #404040;
-	font-size: 13px;
+	margin: 9px 0 0 0;
+	color: #555;
 	line-height: 18px;
+  font: 15px 'rosario';
 }
 
 .mini-image{
