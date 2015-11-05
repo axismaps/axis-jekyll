@@ -27,6 +27,11 @@ section{
   padding: 50px 150px;
 }
 
+b, strong{
+  color: #333;
+  font-weight: bold;
+}
+
 /* UTILITY */
 .clear-left {
 	clear: left;
@@ -68,6 +73,10 @@ section{
 	font-family: "rosario", sans-serif;
 	line-height: 45px;
 	cursor: pointer;
+}
+
+#build b{
+  color: white;
 }
 
 #build:hover, #contact #submit:hover{
@@ -1112,7 +1121,7 @@ section.blogroll article:last-of-type{
 #blog .content strong,
 #guide .content strong{
   color: #333;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 #blog .content pre,
