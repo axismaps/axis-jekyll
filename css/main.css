@@ -1387,9 +1387,11 @@ section.singleblog article:last-of-type{
 		margin-left: 0;
 	}
 	#trio > article {
-		width: 92%;
+		width: 100%;
 		height: auto;
 		border-bottom: 1px solid #DDDDDD;
+    padding: 0 0 0 4%;
+    margin-bottom: 0;
 	}
 	#trio article:after {
 		border: none;
@@ -1427,7 +1429,7 @@ section.singleblog article:last-of-type{
 @media (min-width: 521px) and (max-width: 800px) {
 	#trio article article {
 		padding: 0 30% 0 0;
-		width: 70%;
+		width: 100%;
 		height: 100%;
 	}
 	#trio article article.data {
@@ -1445,7 +1447,7 @@ section.singleblog article:last-of-type{
 		float: left;
 	}
 	.ribbon{
-		text-indent: 10px;
+		text-indent: 4%;
 	}
 }
 @media (min-width: 800px) and (max-width: 975px) {
