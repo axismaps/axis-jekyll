@@ -396,7 +396,7 @@ footer{
 }
 
 footer p {
-	font-size: 12px;
+	font: 13px 'expo-serif-pro';
 	margin: 0;
 }
 
