@@ -465,7 +465,8 @@ footer a:hover{
 #company article {
 	position: relative;
 	float: left;
-	width: 25%;
+  box-sizing: border-box;
+	width: calc( 100% / 3 );
 	height: 490px;
 	margin-bottom: 20px;
 	background-color: white;
