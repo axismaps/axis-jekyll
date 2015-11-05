@@ -1165,7 +1165,9 @@ section.blogroll article:last-of-type{
   margin-bottom: 40px;
 }
 
-#blog img{
+#blog img,
+#guide img{
+  margin-top: 20px;
   max-width: 100%;
 }
 
