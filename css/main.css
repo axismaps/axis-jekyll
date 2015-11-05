@@ -1123,6 +1123,13 @@ section.blogroll article:last-of-type{
   font-weight: bold;
 }
 
+#blog .content blockquote,
+#guide .content blockquote{
+  border-left: 3px solid #ccc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
 #blog .content pre,
 #guide .content pre{
   background-color: #fafafa;
