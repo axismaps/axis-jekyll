@@ -293,10 +293,9 @@ img#init {
 
 /* SIDEBAR */
 #sidebar{
-	color: #666;
+	color: #555;
   font: 15px / 21px 'expo-serif-pro';
 	font-size: 13px;
-	line-height: 16px;
 	float: right;
 	width: 180px;
 	height: 100%;
@@ -324,6 +323,7 @@ img#init {
   font-weight: bold;
 	text-transform: uppercase;
 	margin-top: 15px;
+  margin-bottom: 10px;
 	padding-top: 15px;
 	border-top: 1px solid #ccc;
 }
