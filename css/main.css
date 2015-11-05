@@ -766,6 +766,11 @@ p.more span{
 	width: 100%;
 }
 
+.all p{
+  color: #555;
+  font: 18px / 28px 'expo-serif-pro';
+}
+
 /* PROJECT */
 #project-featured {
 	background: #fff;

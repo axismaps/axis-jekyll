@@ -25,7 +25,7 @@ order: 2
     {% if project.featured == false %}
       <div class="all">
         <img src="{{ site.baseurl }}/media/slideshow/{{ project.id }}.png" />
-        <p><b>{{ project.title }}</b> - <i>{{ project.client }}</i><br /><br />{{ project.content }}</p>
+        <p><b>{{ project.title }}</b> - <i>{{ project.client }}</i>{{ project.content }}</p>
       </div>
     {% endif %}
   {% endfor %}
