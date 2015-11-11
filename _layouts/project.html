@@ -47,7 +47,8 @@
           
           {{ content }}
           <hr />
-          {% if page.category %}
+          {% assign s = site.projects | where: "category", page.category | size %}
+          {% if page.category and s > 1 %}
             <h2>More {{ page.category | downcase }} projects</h2>
             <ul>
               {% assign items = site.projects | sort: 'date' %}
