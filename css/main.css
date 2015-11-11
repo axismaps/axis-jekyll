@@ -468,6 +468,11 @@ footer a:hover{
 	padding: 0 4%;
 }
 
+#company article {
+  height:auto; 
+  width: 50%
+}
+
 #trio article h3,
 #company article h3 {
   color: #333;
