@@ -12,6 +12,7 @@ link: http://climatecommons.earthjournalism.net/map/
 layout: project
 nav: Portfolio
 category: Environmental
+github: https://github.com/axismaps/climatecommons
 ---
 
 ## Overview
