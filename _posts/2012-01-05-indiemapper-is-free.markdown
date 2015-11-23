@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: indiemapper is free

@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: Four new typographic maps for summer 2012

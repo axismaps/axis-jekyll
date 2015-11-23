@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: Web cartography... that's like Google Maps, right?

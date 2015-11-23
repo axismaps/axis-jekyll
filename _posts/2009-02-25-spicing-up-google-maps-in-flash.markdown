@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: Spicing up Google Maps in Flash

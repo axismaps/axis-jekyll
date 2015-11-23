@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: Advice to the Aspiring Interactive Cartographer

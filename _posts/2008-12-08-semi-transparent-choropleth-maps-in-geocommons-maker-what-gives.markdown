@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: 'The Best of Both Worlds: Semi-transparent choropleth maps in GeoCommons Maker!'

@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: 'Don''t Panic: An Absolute Beginner''s Guide to Building a Map Server'

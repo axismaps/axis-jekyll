@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: 'Geography of Jobs: animated mapping with D3'

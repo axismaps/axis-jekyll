@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: 'Video Demonstration: Illinois Public Health Map'

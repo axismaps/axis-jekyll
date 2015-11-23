@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: 'Death''s Door Spirits: Mapping Wisconsin''s Finest Craft Distillery'

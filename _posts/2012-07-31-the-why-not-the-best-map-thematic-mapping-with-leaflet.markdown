@@ -1,5 +1,6 @@
 ---
 layout: post
+nav: Blog
 status: publish
 published: true
 title: 'The ''Why Not The Best'' map: thematic mapping with Leaflet'
