@@ -9,6 +9,7 @@ baseurl: "/axis-jekyll" # the subpath of your site, e.g. /blog/
 url: "http://axismaps.github.io" # the base hostname & protocol for your site
 paginate: 5
 paginate_path: "/blog/page:num/"
+permalink: "/blog/:year/:month/:title/"
 collections:
   projects:
     output: true
