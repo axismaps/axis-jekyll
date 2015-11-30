@@ -25,8 +25,8 @@ comments: []
 <h3>Indiemapper Overview Screencast</h3>
 <p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="525" height="295" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="flashvars" value="config=http://videos.indiemapper.com.s3.amazonaws.com/overview.xml" /><param name="src" value="http://videos.indiemapper.com.s3.amazonaws.com/player.swf" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="525" height="295" src="http://videos.indiemapper.com.s3.amazonaws.com/player.swf" allowfullscreen="true" flashvars="config=http://videos.indiemapper.com.s3.amazonaws.com/overview.xml"></embed></object></p>
 <h3>30-day Precipitation Totals</h3>
-<p style="text-align: center;"><img class="size-full wp-image-617 aligncenter" title="Idiemapper - Precipitation" src="http://www.axismaps.com/blog/wp-content/uploads/2009/11/indie_precip_labels2.jpg" alt="Idiemapper - Precipitation" width="525" height="467" /></p>
+<p style="text-align: center;"><img class="size-full wp-image-617 aligncenter" title="Idiemapper - Precipitation" src="{{ site.baseurl }}/media/posts/2009/11/indie_precip_labels2.jpg" alt="Idiemapper - Precipitation" width="525" height="467" /></p>
 <h3>Europe at Night</h3>
-<p><img class="aligncenter size-full wp-image-616" title="Indiemapper - Europe at Night" src="http://www.axismaps.com/blog/wp-content/uploads/2009/11/indie_europeatnight.jpg" alt="Indiemapper - Europe at Night" /></p>
+<p><img class="aligncenter size-full wp-image-616" title="Indiemapper - Europe at Night" src="{{ site.baseurl }}/media/posts/2009/11/indie_europeatnight.jpg" alt="Indiemapper - Europe at Night" /></p>
 <h3>2008 Election Results by County Population</h3>
-<p><img class="aligncenter size-full wp-image-615" title="Bivariate Election" src="http://www.axismaps.com/blog/wp-content/uploads/2009/11/election1.jpg" alt="Bivariate Election" /></p>
+<p><img class="aligncenter size-full wp-image-615" title="Bivariate Election" src="{{ site.baseurl }}/media/posts/2009/11/election1.jpg" alt="Bivariate Election" /></p>

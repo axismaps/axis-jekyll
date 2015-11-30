@@ -122,7 +122,7 @@ comments:
   date: '2010-10-04 10:24:48 +0100'
   date_gmt: '2010-10-04 15:24:48 +0100'
   content: |-
-    Hey Andy -  So, I dug around in the archives and found an old version of the map with the train lines. As you can see, things were looking <a href="http://www.axismaps.com/blog/wp-content/uploads/2010/10/cta_notsogood.jpg" rel="nofollow">not so good</a> in the loop where there's a lot of street/train overlap. However, things were <a href="http://www.axismaps.com/blog/wp-content/uploads/2010/10/cta_notsobad.jpg" rel="nofollow">not so bad</a> in other parts of the city.
+    Hey Andy -  So, I dug around in the archives and found an old version of the map with the train lines. As you can see, things were looking <a href="{{ site.baseurl }}/media/posts/2010/10/cta_notsogood.jpg" rel="nofollow">not so good</a> in the loop where there's a lot of street/train overlap. However, things were <a href="{{ site.baseurl }}/media/posts/2010/10/cta_notsobad.jpg" rel="nofollow">not so bad</a> in other parts of the city.
 
     Besides going with a larger scale map, the two solutions that initially came to mind when thinking about the conflict between streets and train lines were 1) displacing street and/or train routes off of their true locations to make room for both, or 2) somehow integrating the "CTA" text into the lines of repeating street names. I felt uneasy about the former and to be honest never gave the latter a whole lot of thought. But maybe something like this would be worth considering in a future version.
 - id: 17162
@@ -185,7 +185,7 @@ comments:
   date: '2010-10-08 17:47:39 +0100'
   date_gmt: '2010-10-08 22:47:39 +0100'
   content: Mungewell, thanks for the suggestion! I'm not sure if this is exactly what
-    you're talking about (?), but I experimented with the idea on a <a href="http://www.axismaps.com/blog/wp-content/uploads/2010/10/cta_experiment.jpg"
+    you're talking about (?), but I experimented with the idea on a <a href="{{ site.baseurl }}/media/posts/2010/10/cta_experiment.jpg"
     rel="nofollow">very small portion</a> of the green and orange lines. These lines
     coincide with Holden Ct. north of Roosevelt Rd (but don't collide with a street
     south of that intersection). It probably could use some tweaking here and there,
