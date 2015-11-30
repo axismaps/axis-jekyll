@@ -91,7 +91,7 @@ if ( data ){
 <p>&nbsp;<br>The other side is design. One common scenario is missing data in a choropleth map. We like using texture to indicate missing data. It's distinct, not easily confused with colored values; and it's explicit, keeping "no data" as part of the story instead of hiding it. If you're working with D3, check out <a href="http://riccardoscalco.github.io/textures/" target="_blank">Textures.js</a> for easy texturing.</p>
 <p><a href="http://riccardoscalco.github.io/textures/"><img src="{{ site.baseurl }}/media/posts/2015/05/texture.png" alt="choropleth textures" width="660" height="500" class="aligncenter size-full wp-image-2136" /></a></p>
 <p>Another common case is gaps in time series data. Again, it's good to be explicit. Interpolation can be misleading. For example, I like the dashed line in the iOS Health app. It explicitly indicates a gap in data without losing continuity.</p>
-<p><img src="{{ site.baseurl }}/media/posts/2015/05/ios_health-300x150.png" alt="iOS health - gaps in data" width="300" height="150" class="aligncenter size-medium wp-image-2144" /></p>
+<p><img src="{{ site.baseurl }}/media/posts/2015/05/ios_health.png" alt="iOS health - gaps in data" width="300" height="150" class="aligncenter size-medium wp-image-2144" /></p>
 <p>On maps, one thing we've tried is using a special symbol to indicate a gap in data. Below is a frame from an interactive animated map where proportional symbols remain on the map even when there's no data for the current year, showing the most recent available data but with a different, hollow symbol.</p>
 <p><img src="{{ site.baseurl }}/media/posts/2015/05/jlia_stLouis.jpg" alt="Gaps in time series data on a map" width="762" height="360" class="aligncenter size-full wp-image-2146" /></p>
 <h3>Text</h3>
@@ -119,8 +119,8 @@ if ( data ){
 <li>Look for the most atypical examples of a feature to develop a good compromise.</li>
 </ol>
 <p>To help you along the way, there are things <a href="https://taginfo.openstreetmap.org/" target="_blank">taginfo</a>, where you can explore OSM tags and get a sense of things like geographic variation; or things like this view in Mapbox Studio where you can inspect many places at once.</p>
-<p><a href="{{ site.baseurl }}/media/posts/2015/05/mapbox_studio.jpg"><img src="{{ site.baseurl }}/media/posts/2015/05/mapbox_studio-300x179.jpg" alt="Mapbox Studio &quot;places&quot; view" width="300" height="179" class="aligncenter size-medium wp-image-2160" /></a></p>
+<p><a href="{{ site.baseurl }}/media/posts/2015/05/mapbox_studio.jpg"><img src="{{ site.baseurl }}/media/posts/2015/05/mapbox_studio.jpg" alt="Mapbox Studio &quot;places&quot; view" width="300" height="179" class="aligncenter size-medium wp-image-2160" /></a></p>
 <p>And of course the nice thing about OpenStreetMap is that you can always fix the data if you find problems!</p>
 <h3>Good Luck</h3>
 <p>Well, I hope that assortment of tips and problems has been useful. Good luck as you stumble through the dark!</p>
-<p><img src="{{ site.baseurl }}/media/posts/2015/05/mercator_blindfold2-1024x683.jpg" alt="Blindfolded Mercator" width="660" height="440" class="aligncenter size-large wp-image-2164" /></p>
+<p><img src="{{ site.baseurl }}/media/posts/2015/05/mercator_blindfold2.jpg" alt="Blindfolded Mercator" width="660" height="440" class="aligncenter size-large wp-image-2164" /></p>
