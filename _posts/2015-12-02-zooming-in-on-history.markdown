@@ -41,7 +41,7 @@ More than that, it was an interesting opportunity to make something for a public
 
 We found that there are special challenges to this kind of work. Put an interactive map in a room with a bunch of tourists for a few months, and you will learn all kinds of new ways in which your map can break. We recommend testing your map by placing a bored yet excitable 4-year-old in front of it.
 
-The touchscreen feature ran simply as a web page in full screen mode. We thought of some precautions to prevent this from breaking—for example, when the screen keyboard appeared, we needed to remove or disable some keys so that someone couldn't press Control-W and kill the whole thing—but didn't fully anticipate the effects of impatient fingers banging on everything in sight, or what would happen when a lot of CSS transitions ran for hours on end. So it broke occasionally, and I'd get nerve-wracking video messages from my friends.
+The touchscreen feature ran simply as a web page in full screen mode. We thought of some precautions to prevent this from breaking—for example, when the screen keyboard appeared, we needed to remove or disable some keys so that someone couldn't press Control-W and kill the whole thing—but didn't fully anticipate the effects of impatient fingers banging on everything in sight, or what would happen when a lot of CSS transitions run for hours on end. So it broke occasionally, and I'd get nerve-wracking video messages from my friends.
 
 <video src="/media/posts/2015/11/bpl.m4v" loop="true" autoplay="true" muted="true" title="#fostertech"></video>
 
