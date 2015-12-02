@@ -1402,6 +1402,10 @@ section.singleblog article:last-of-type{
     line-height: 40px;
   }
   
+  #project header {
+    border: none;
+  }
+  
   #guide-banner {
     padding: 20px;
   }
