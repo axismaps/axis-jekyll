@@ -1326,6 +1326,7 @@ section.singleblog article:last-of-type{
 	#build span {
 		display: inline;
 		font-size: 2em;
+    line-height: 45px;
 	}
 	#slideshow{
 		display: none;
