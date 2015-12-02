@@ -32,6 +32,10 @@ b, strong{
   font-weight: bold;
 }
 
+video {
+  max-width: 100%;
+}
+
 /* UTILITY */
 .clear-left {
 	clear: left;
