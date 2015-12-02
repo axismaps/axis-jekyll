@@ -1387,6 +1387,11 @@ section.singleblog article:last-of-type{
     padding: 40px 20px;
   }
   
+  #blog .content code,
+  #guide .content code {
+    word-wrap: break-word;
+  }
+  
   #blog h1 {
     padding: 20px;
   }
