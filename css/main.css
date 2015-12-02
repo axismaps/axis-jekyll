@@ -1409,7 +1409,10 @@ section.singleblog article:last-of-type{
   #guide-banner h1 {
     line-height: 40px
   }
-
+  
+  #company a {
+    margin-left: 5px;
+  }
 }
 @media (max-width: 800px) {
 	#build {
@@ -1462,6 +1465,10 @@ section.singleblog article:last-of-type{
 	#project-slideshow{
 		height: auto;
 	}
+  
+  #company .headshot {
+    margin: 20px -10px 0;
+  }
 }
 @media (min-width: 521px) and (max-width: 800px) {
 	#trio article article {
