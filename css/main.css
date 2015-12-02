@@ -1371,6 +1371,7 @@ section.singleblog article:last-of-type{
 		width: 100% !important;
 	}
   
+  #project .content,
   #blog .content,
   #guide .content  {
     padding: 40px 20px;
