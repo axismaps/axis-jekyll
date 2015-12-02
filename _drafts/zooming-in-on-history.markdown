@@ -37,7 +37,7 @@ If you didn't have the great fortune of being in Boston during the past six mont
 
 This was a fun project to work on, not least because as the lucky local Axis Mapper, I got to pay a few visits with behind-the-scenes looks at the exhibition and other collections of the Leventhal Map Center, as well as attend a fancy opening reception.
 
-More than that, it was an interesting opportunity to make something for a public space where all sorts of different people would see it. This meant some different design choices from our typical web maps. For example, we used a lot of animation. Almost everything touchable triggers an animated transition. Even when it's idle, maps still move. The idea was to catch people's eyes as they walk past, and draw them in to explore.
+More than that, it was an interesting opportunity to make something for a public space where all sorts of different people would see it. This meant some different design choices from our typical web maps. For example, we used a lot of animation with [Animate.css](https://daneden.github.io/animate.css/). Almost everything touchable triggers an animated transition. Even when it's idle, maps still move. The idea was to catch people's eyes as they walk past, and draw them in to explore.
 
 We found that there are special challenges to this kind of work. Put an interactive map in a room with a bunch of tourists for a few months, and you will learn all kinds of new ways in which your map can break. We recommend testing your map by placing a bored yet excitable 4-year-old in front of it.
 
