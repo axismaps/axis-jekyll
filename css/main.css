@@ -1348,6 +1348,11 @@ section.singleblog article:last-of-type{
 		padding-left: 15px;
 		margin: 5px 10px;
 	}
+  nav a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
 	.mini-portfolio {
 		width: 100%;
 		margin: 20px 0;
