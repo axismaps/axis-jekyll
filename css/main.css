@@ -1370,6 +1370,11 @@ section.singleblog article:last-of-type{
 	#contact > * {
 		width: 100% !important;
 	}
+  
+  #blog .content,
+  #guide .content  {
+    padding: 40px 20px;
+  }
 
 }
 @media (max-width: 800px) {
