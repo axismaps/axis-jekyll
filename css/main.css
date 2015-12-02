@@ -32,7 +32,7 @@ b, strong{
   font-weight: bold;
 }
 
-video {
+video, iframe {
   max-width: 100%;
 }
 
