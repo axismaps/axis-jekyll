@@ -1375,6 +1375,18 @@ section.singleblog article:last-of-type{
   #guide .content  {
     padding: 40px 20px;
   }
+  
+  #blog h1 {
+    padding: 20px;
+  }
+  
+  #project h1,
+  #blog h1,
+  #blog h1 a {
+    line-height: 40px;
+  }
+  
+  
 
 }
 @media (max-width: 800px) {
