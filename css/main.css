@@ -1387,7 +1387,13 @@ section.singleblog article:last-of-type{
     line-height: 40px;
   }
   
+  #guide-banner {
+    padding: 20px;
+  }
   
+  #guide-banner h1 {
+    line-height: 40px
+  }
 
 }
 @media (max-width: 800px) {
