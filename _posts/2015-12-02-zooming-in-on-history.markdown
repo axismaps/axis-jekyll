@@ -20,6 +20,7 @@ tags:
 - Touch
 - Historical
 comments: []
+project: bpl
 ---
 
 Last weekend saw the close of a six-month exhibition by the Norman B. Leventhal Map Center at the Boston Public Library titled ["We Are One: Mapping America’s Road from Revolution to Independence,"](http://maps.bpl.org/weareone) a piece of which we at Axis Maps had the pleasure of creating. A commemoration of the 250th anniversary of the [Stamp Act](https://en.wikipedia.org/wiki/Stamp_Act_1765), the exhibition featured an impressive collection of contemporary maps from the years prior to the American Revolution through the early years of the new nation, documenting and providing context for the events leading to American independence.
