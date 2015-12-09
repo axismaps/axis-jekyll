@@ -4,7 +4,7 @@ title: Zooming In On History
 titleshort: BPL
 client: Leventhal Map Center, Boston Public Library
 clientshort: BPL
-tag: Interactive touchscreen feature for maps exhibition
+tag: Interactive touchscreen feature for a map exhibition
 date: 2015-11-29
 category: Education
 featured: true
