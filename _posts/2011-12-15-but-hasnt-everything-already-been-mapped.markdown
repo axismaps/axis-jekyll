@@ -39,14 +39,14 @@ tags: []
 <blockquote><p>I also got a "god, how boring" response once!</p>
 <p>I think he may have been something to do with geology! oh the irony!</p></blockquote>
 <p><a href="http://twitter.com/fgcartographix">@fgcartographix</a> has also found uninterested people (which is too bad, because I usually count on cartography for an easy conversation topic) but also the usual Googlers.</p>
-<blockquote><p>Person: <blank stare> and then changing the subject.</p>
+<blockquote><p>Person: &lt;blank stare&gt; and then changing the subject.</p>
 <p>Person: There's still area to map with Google Earth? (got that one twice...)</p></blockquote>
 <p><a href="http://twitter.com/desjardins">@desjardins</a> meets people who have a passing familiarity with a dictionary.</p>
 <blockquote><p>"um, so what does a cartographer do?" or "that's maps or something, right?"</p></blockquote>
 <p><a href="http://twitter.com/NadiiaGorash">@NadiiaGorash</a> knows a similar crowd.</p>
 <blockquote><p>Person: WHO?!? Me: .... Person: I see. Mapmaker!</p></blockquote>
 <p>But <a href="http://twitter.com/nichom">@nichom</a> finds people a step behind.</p>
-<blockquote><p>Person: <blink>< blink> (mental search for what 'cartographer' means) Me: I make maps. Person: Cool! (let fun conversation ensue)</p></blockquote>
+<blockquote><p>Person: &lt;blink&gt; &lt;blink&gt; (mental search for what 'cartographer' means) Me: I make maps. Person: Cool! (let fun conversation ensue)</p></blockquote>
 <p><a href="http://twitter.com/vtcraghead">@vtcraghead</a> points out that those with good taste (my judgment, not necessarily his) may know about cartography because of Arrested Development.</p>
 <blockquote><p>We are living in the shadow of Buster: <a href="http://www.youtube.com/watch?v=tj7RlQdF25A">http://www.youtube.com/watch?v=tj7RlQdF25A</a></p></blockquote>
 <p><a href="http://twitter.com/clubjosh">@clubjosh</a> has figured out a good reply to the standard line.</p>
