@@ -42,7 +42,7 @@ comments:
 <li>Entries about design appear rather consistently throughout the project, with a run of back and forth data-design entries in the middle of Day 1 and a similar back and forth run of code-design entries at the end of Day 2. Interesting!</li>
 </ol>
 <p><img style="border: none; background: none; margin: 0; padding: 0; display: inline;" title="yellow" src="{{ site.baseurl }}/media/posts/2012/11/yellow.png" alt="Planning" width="16" height="16" /> = Planning<br />
-<img style="border: none; background: none; margin: 0; padding: 0; display: inline;" title="red" src="{{ site.baseurl }}/media/posts/2012/11/red.png" alt="" width="16" height="16" /> = Data<br />
+<img style="border: none; background: none; margin: 0; padding: 0; display: inline;" title="red" src="{{ site.baseurl }}/media/posts/2012/11/red.png"  width="16" height="16" /> = Data<br />
 <img class="alignnone size-full wp-image-1505" style="border: none; background: none; margin: 0; padding: 0; display: inline;" title="blue" src="{{ site.baseurl }}/media/posts/2012/11/blue.png" alt="Design" width="16" height="16" /> = Design<br />
 <img class="alignnone size-full wp-image-1503" style="border: none; background: none; margin: 0; padding: 0; display: inline;" title="green" src="{{ site.baseurl }}/media/posts/2012/11/green.png" alt="Code" width="16" height="16" /> = Code</p>
 <style>td{ min-width: 25px; }table{ table-layout: auto; }</style>
@@ -173,7 +173,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/wyoming.png?csspreview=true"><img class="size-thumbnail wp-image-1551 alignleft" title="wyoming" src="{{ site.baseurl }}/media/posts/2012/11/wyoming-150x150.png" alt="" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/wyoming.png?csspreview=true"><img class="size-thumbnail wp-image-1551 alignleft" title="wyoming" src="{{ site.baseurl }}/media/posts/2012/11/wyoming.png"  height="150" /></a></td>
 </tr>
 <tr>
 <td>10:40 AM</td>
@@ -188,7 +188,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/pivot.png?csspreview=true"><img class="alignnone size-thumbnail wp-image-1642" title="pivot" src="{{ site.baseurl }}/media/posts/2012/11/pivot-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/pivot.png?csspreview=true"><img class="alignnone size-thumbnail wp-image-1642" title="pivot" src="{{ site.baseurl }}/media/posts/2012/11/pivot.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>11:00 AM</td>
@@ -208,7 +208,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1560" title="vba_marginbypop" src="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1560" title="vba_marginbypop" src="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>11:50 AM</td>
@@ -218,7 +218,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop_black.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1563" title="vba_marginbypop_black" src="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop_black-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop_black.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1563" title="vba_marginbypop_black" src="{{ site.baseurl }}/media/posts/2012/11/vba_marginbypop_black.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>11:55 AM</td>
@@ -238,7 +238,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_1.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1569" title="vba_winnerbypop_1" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_1-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_1.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1569" title="vba_winnerbypop_1" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_1.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>12:10 PM</td>
@@ -273,7 +273,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_2.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1572" title="vba_winnerbypop_2" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_2-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_2.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1572" title="vba_winnerbypop_2" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_2.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>12:30 PM</td>
@@ -288,7 +288,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_3.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1575" title="vba_winnerbypop_3" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_3-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_3.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1575" title="vba_winnerbypop_3" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypop_3.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>12:55 PM</td>
@@ -303,7 +303,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypopdens.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1577" title="vba_winnerbypopdens" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypopdens-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypopdens.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1577" title="vba_winnerbypopdens" src="{{ site.baseurl }}/media/posts/2012/11/vba_winnerbypopdens.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>1:20 PM</td>
@@ -323,7 +323,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/mockup.jpg?csspreview=true"><img class="alignleft size-thumbnail wp-image-1580" title="mockup" src="{{ site.baseurl }}/media/posts/2012/11/mockup-150x150.jpg" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/mockup.jpg?csspreview=true"><img class="alignleft size-thumbnail wp-image-1580" title="mockup" src="{{ site.baseurl }}/media/posts/2012/11/mockup.jpg"   height="150" /></a></td>
 </tr>
 <tr>
 <td>2:00 PM</td>
@@ -398,7 +398,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/gothmap.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1586" title="gothmap" src="{{ site.baseurl }}/media/posts/2012/11/gothmap-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/gothmap.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1586" title="gothmap" src="{{ site.baseurl }}/media/posts/2012/11/gothmap.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>4:10 PM</td>
@@ -408,7 +408,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/d3_colored.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1588" title="d3_colored" src="{{ site.baseurl }}/media/posts/2012/11/d3_colored-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/d3_colored.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1588" title="d3_colored" src="{{ site.baseurl }}/media/posts/2012/11/d3_colored.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>4:20 PM</td>
@@ -438,7 +438,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/poverty.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1590" title="poverty" src="{{ site.baseurl }}/media/posts/2012/11/poverty-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/poverty.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1590" title="poverty" src="{{ site.baseurl }}/media/posts/2012/11/poverty.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>5:30 PM</td>
@@ -448,7 +448,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/uninsured.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1591" title="uninsured" src="{{ site.baseurl }}/media/posts/2012/11/uninsured-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/uninsured.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1591" title="uninsured" src="{{ site.baseurl }}/media/posts/2012/11/uninsured.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>6:10 PM</td>
@@ -510,7 +510,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/alphascale.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1600" title="alphascale" src="{{ site.baseurl }}/media/posts/2012/11/alphascale-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/alphascale.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1600" title="alphascale" src="{{ site.baseurl }}/media/posts/2012/11/alphascale.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>9:10 AM</td>
@@ -530,7 +530,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/chart.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1602" title="chart" src="{{ site.baseurl }}/media/posts/2012/11/chart-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/chart.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1602" title="chart" src="{{ site.baseurl }}/media/posts/2012/11/chart.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>9:25 AM</td>
@@ -555,7 +555,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/chart_2.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1606" title="chart_2" src="{{ site.baseurl }}/media/posts/2012/11/chart_2-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/chart_2.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1606" title="chart_2" src="{{ site.baseurl }}/media/posts/2012/11/chart_2.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>9:35 AM</td>
@@ -600,7 +600,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/chart_3.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1608" title="chart_3" src="{{ site.baseurl }}/media/posts/2012/11/chart_3-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/chart_3.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1608" title="chart_3" src="{{ site.baseurl }}/media/posts/2012/11/chart_3.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>10:55 AM</td>
@@ -655,7 +655,7 @@ comments:
 <tr>
 <td></td>
 <td></td>
-<td><a href="{{ site.baseurl }}/media/posts/2012/11/ff.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1611" title="ff" src="{{ site.baseurl }}/media/posts/2012/11/ff-150x150.png" alt="" width="150" height="150" /></a></td>
+<td><a href="{{ site.baseurl }}/media/posts/2012/11/ff.png?csspreview=true"><img class="alignleft size-thumbnail wp-image-1611" title="ff" src="{{ site.baseurl }}/media/posts/2012/11/ff.png"   height="150" /></a></td>
 </tr>
 <tr>
 <td>11:45 AM</td>
