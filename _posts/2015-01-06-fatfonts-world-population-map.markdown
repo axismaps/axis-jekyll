@@ -35,4 +35,5 @@ comments: []
 <p>It's a fascinating map that clearly illustrates how unevenly population is distributed across the globe. Particular areas of interest are highlighted and given higher-resolution treatment:</p>
 <p><a href="http://store.axismaps.co.uk/product/fatfonts-world-population-map"><img class="aligncenter size-full wp-image-1988" src="{{ site.baseurl }}/media/posts/2015/01/detail_1_600.png" alt="detail_1_600" width="600" height="496" /></a></p>
 <p>The FatFonts World Population map is now available from the <a href="http://store.axismaps.co.uk/product/fatfonts-world-population-map">Axis Maps store</a>. All profits will be re-invested to fund more FatFonts research.</p>
-<p>[iframe src="https://pictures.lytro.com/mmauderer/albums/169751/embed" width="100%" height="480"]</p>
+
+<iframe src="https://pictures.lytro.com/mmauderer/albums/169751/embed" width="100%" height="480"></iframe>
