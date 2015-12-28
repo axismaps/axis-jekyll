@@ -23,5 +23,5 @@ comments: []
 ---
 <p style="text-align: center;">
 <p><img class="aligncenter size-full wp-image-726" src="{{ site.baseurl }}/media/posts/2010/09/cb2_new.jpg" alt="" /></p>
-<p>Good news, we've improved the export options from <a href="http://colorbrewer2.org" target="_blank">ColorBrewer2.0</a>. Starting today you'll notice a new export option: <strong>permalink</strong>. This allows you to bookmark and share specific color schemes + number of classes without having to hunt around for them. For example, <a href="http://colorbrewer2.org/index.php?type=sequential&amp;scheme=Reds&amp;n=8" target="_blank">this will automatically open</a> an 8-class red sequential scheme. Neat, huh?</p>
+<p>Good news, we've improved the export options from <a href="http://colorbrewer2.org" target="_blank">ColorBrewer2.0</a>. Starting today you'll notice a new export option: <strong>permalink</strong>. This allows you to bookmark and share specific color schemes + number of classes without having to hunt around for them. For example, <a href="http://colorbrewer2.org/?type=sequential&scheme=Reds&n=8" target="_blank">this will automatically open</a> an 8-class red sequential scheme. Neat, huh?</p>
 <p>If you have other ideas for ColorBrewer, <a href="mailto:info@axismaps.com">drop us a note</a>.</p>
