@@ -134,7 +134,3 @@ comments:
 <p style="padding-left: 30px;">3. FILTERING: You can now narrow your search and find what you're looking for much faster using filtering by colorblind-safe, print friendly, and photocopy-able check boxes.</p>
 <p style="padding-left: 30px;">4. TRANSPARENCY: This one was much requested, especially by folks who wanted to preview how well the color schemes worked on mash-up tiles and terrain/hillshading. This one was tough becuase the quality guarantee (and testing) behind the schemes was done with fully opaque colors and white backgrounds. So be carefully not to assume that the schemes will work as well once you start changing their opacity and merge them with other map layers, but if you are cautious (e.g., 3 or 4 colors) it may work for your needs.</p>
 <p>One of our core ideas of our company is that we can and should <strong>donate some a portion of our time to fun side pr<span style="font-weight: normal;"><strong>ojects</strong>. Updating ColorBrewer was just such a labor of love and we believe, deeply, in the need for tools to support the on-going democratization of cartography and also the need for good design in the world. Cheers!</span></strong></p>
-<hr /><strong><span style="font-weight: normal;"><br />
-</span></strong></p>
-<p><strong><span style="font-weight: normal;"><br />
-</span></strong></p>

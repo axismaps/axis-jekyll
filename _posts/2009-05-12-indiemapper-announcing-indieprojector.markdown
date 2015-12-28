@@ -60,4 +60,6 @@ comments:
 <p>We're very excited to be offering a preview of indiemapper before it's release at the end of the summer and we hope indieprojector is useful for your day-to-day mapping work. Check out the <a href="http://indiemapper.com/projector.html">indieprojector screencast</a> and please take some time to <a href="http://getsatisfaction.com/axismaps/products/axismaps_indieprojector">give us some feedback</a> and let us know what you think. We look forward to hearing from you.</p>
 <p>Enjoy <a href="http://projector.indiemapper.com">indieprojector</a>!</p>
 <p><strong><em>UPDATE:</em></strong> A new version of indieprojector has been released which includes support for NetworkLink tags in KML, layer re-ordering and various minor UI and bug fixes.</p>
-<p style="text-align: center;"><img class="size-full wp-image-82 aligncenter" title="indieprojector" src="http://indiemapper.com/blog/wp-content/uploads/2009/05/indieprojectorhtml-1.jpg" alt="indieprojector" width="510" height="492" /></p>
+
+![indieprojector](http://indiemapper.com/blog/wp-content/uploads/2009/05/indieprojectorhtml-1.jpg)
+
