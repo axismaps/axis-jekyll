@@ -65,14 +65,12 @@ comments:
 <p><strong><em>Note from the future: the example in this post broke somewhere along the line, but this whole post is obsolete anyway now that the Google Maps API allows <a href="http://www.41latitude.com/post/1268734799/google-styled-maps">styled maps</a>!</em></strong></p>
 <p>This isn't news to everyone, but it's worth pointing out the fun things one can do with maps using the ActionScript ColorMatrixFilter.  Tired of the boring old yellow and orange Google map in the Flash API (or any other map in Flash/Flex)?  Lay down a ColorMatrixFilter on that sucker!</p>
 <p>The ColorMatrixFilter, if it needs to be pointed out, essentially allows you to mix up the red, green, blue, and alpha channels of vector or raster graphics to produce exciting new colors.  Adobe has a nice little <a href="http://www.adobe.com/devnet/flash/articles/matrix_transformations_04.html">article</a> explaining it, along with an interactive demo.</p>
-<p>Here's a little example of simple effects I threw together for Google Maps.  Click the links at the bottom for different looks.</p>
-<p>[kml_flashembed publishmethod="static" fversion="9.0.0" useexpressinstall="true" movie="http://work.axismaps.com/flashdemos/Google.swf" width="525" height="440" targetclass="flashmovie"]</p>
-<p><a href="http://adobe.com/go/getflashplayer"><img style="border: 0px initial initial;" src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
-<p>[/kml_flashembed]</p>
 <p>I poked around the Google Maps Flash API to find exactly where to apply the filter.  If you apply it directly to the Map instance, you'll color everything, including the Google logo and whatever else floats on top of the map.  One level deeper is better, but will still color makers and info windows.  A second level deeper is the spot.  It's basically like this, where <code>map</code> is the Map instance:</p>
-<p><code>var a:Sprite = map.getChildAt(1) as Sprite;<br />
-var b:Sprite = a.getChildAt(0) as Sprite;<br />
-b.filters = [new ColorMatrixFilter([ /* color matrix values */ ])];</code></p>
+{% highlight as %}
+  var a:Sprite = map.getChildAt(1) as Sprite;
+  var b:Sprite = a.getChildAt(0) as Sprite;
+  b.filters = [new ColorMatrixFilter([ /* color matrix values */ ])];
+{% endhighlight %}
 <p>In the example above, "Winter" takes the red and green input channels and distributes them equally across all channels, but the blue input remains blue on output.  The result is an desaturated, icy-looking blue. "Inverted Grayscale" turns everything to grayscale, but additionally sets the map's <code>blendMode</code> property to "subtract" and sets it against a white background.  That inverts the grayscale image for a somewhat stylish effect.</p>
 <p>Now, let's face it: this is a quick and easy but very limited method for "customizing" a map.  (And to be honest, I'm not sure how kosher it is according to the terms of service.)  It can make a map look cool, but applying the effect to pre-made tiles means that you're altering the colors of <em>all</em> features on the map.  You can't keep the official blue and red of interstate highway shields, for example.</p>
 <p>So keep this little trick in mind, but be more excited about <em>actual</em> customization (and open data) with <a href="http://cloudmade.com/products/style-editor">CloudMade</a>.</p>
