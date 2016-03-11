@@ -37,11 +37,12 @@ comments: []
 <h3>Map layout</h3>
 <p>D3 really shines with projecting and drawing geographic data, and this tool takes full advantage of that. It goes through the <a href="http://bost.ocks.org/mike/map/" target="_blank">standard routine of drawing GeoJSON data to SVG paths</a>, putting each data layer into a named <code>&lt;g&gt;</code> element that will later show up as a layer in Illustrator. We use the Mercator projection (sorry, cartographic hard-liners, it was by request) and use D3&#8217;s geo <a href="https://github.com/mbostock/d3/wiki/Geo-Paths#centroid" target="_blank"><code>centroid()</code> and <code>bounds()</code></a> functions to center the map on the country of interest and scale it approximately to fit. After that we can manually adjust position or scale to get the layout just right, fitting the country into some guides we added on top of the map.</p>
 <p>Importantly, in addition to the standard map-drawing code, we use the projection&#8217;s <a href="https://github.com/mbostock/d3/wiki/Geo-Projections#clipExtent" target="_blank"><code>clipExtent()</code></a> method to clip everything to the page extent. Otherwise, when imported to Illustrator, we&#8217;d have a whole world&#8217;s worth of extraneous paths outside the artboard. While setting the <code>clipExtent</code> is enough to chop off polygons and anything drawn directly with the <a href="https://github.com/mbostock/d3/wiki/Geo-Paths" target="_blank">path generator</a>, hiding labels takes a little extra effort. We have to check manually whether they&#8217;re outside the clip extent and hide them if so.</p>
-<pre class="wp-code-highlight prettyprint">
-countryLabels.selectAll(&quot;text&quot;)
+
+{% highlight js %}
+countryLabels.selectAll("text")
   .each( function(d){
     var c = path.centroid(d);
-    if ( !isNaN(c[0]) &amp;&amp; !isNaN(c[1]) ){
+    if ( !isNaN(c[0]) && !isNaN(c[1]) ){
       d3.select(this)
         .attr({
           x: c[0],
@@ -53,7 +54,8 @@ countryLabels.selectAll(&quot;text&quot;)
         .remove();
     }
   });
-</pre>
+{% endhighlight %}
+
 <h3>Thematic symbols</h3>
 <p>D3&#8217;s <a href="https://github.com/mbostock/d3/wiki/Quantitative-Scales" target="_blank">scale functions</a> really come in handy for these maps&#8217; thematic layers. For the most part, we can create scales that have a constant <a href="https://github.com/mbostock/d3/wiki/Quantitative-Scales#linear_range" target="_blank"><code>range</code></a> (such as the purple color scheme or the proportional symbol size) and set the <a href="https://github.com/mbostock/d3/wiki/Quantitative-Scales#linear_domain" target="_blank"><code>domain</code></a> to according to a particular country&#8217;s data if needed. GDP data (the choropleth map) is classified using the <a href="http://bl.ocks.org/tmcw/4969184" target="_blank">Jenks</a> algorithm in <a href="https://github.com/simple-statistics/simple-statistics" target="_blank">Simple Statistics</a>.</p>
 <p>For the most part we leave legends to the Illustrator end of things. Values of the choropleth class breaks are simply listed in the containing HTML page, and then entered into the template in Illustrator. We do draw a simple proportional symbol legend because while the maximum size is constant, the size of good sample values (such as 1 or 5) changes from map to map. Flood and earthquake maps use bar chart symbols that, like the choropleth map, simply get some explanation in text.</p>

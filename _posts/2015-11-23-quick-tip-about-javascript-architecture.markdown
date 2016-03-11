@@ -26,7 +26,7 @@ A good book to refer to on code design patterns for Javascript is [Learn JavaScr
 
 jQuery has the ability to register and listen for [custom events](https://learn.jquery.com/events/introduction-to-custom-events/). How this works in practice is fairly easy. First you need to sort out what events are actually going to happen. These aren’t events like 'click', but custom events like 'yearchange' or 'dataupdated' or 'mapmove'. Once you have that set, whenever you create a component that is going to be affected by one of these custom events, you register it on the `document`.
 
-{% highlight javascript %}
+{% highlight js %}
 function createMap() {
   ...
   //Create map code
