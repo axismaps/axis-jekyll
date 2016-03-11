@@ -26,14 +26,16 @@ A good book to refer to on code design patterns for Javascript is [Learn JavaScr
 
 jQuery has the ability to register and listen for [custom events](https://learn.jquery.com/events/introduction-to-custom-events/). How this works in practice is fairly easy. First you need to sort out what events are actually going to happen. These aren’t events like 'click', but custom events like 'yearchange' or 'dataupdated' or 'mapmove'. Once you have that set, whenever you create a component that is going to be affected by one of these custom events, you register it on the `document`.
 
-    function createMap() {
-      ...
-      //Create map code
-      ...
-      $(document).on('yearchange:', function(newyear) {
-        //update map with new year information
-      });
-    }
+{% highlight javascript %}
+function createMap() {
+  ...
+  //Create map code
+  ...
+  $(document).on('yearchange:', function(newyear) {
+    //update map with new year information
+  });
+}
+{% endhighlight %}
 
 Then on any and all UI elements that affect the year (menus, animation controls, etc…), all you need to do is call `$(document).trigger('yearchange:', newyear)`. The great thing about this is that you can attach listeners on multiple different components (e.g. maybe the timeline and the chart and the map all get updated with a yearchange) and the UI element doesn’t need to know a thing about any of them.
 
