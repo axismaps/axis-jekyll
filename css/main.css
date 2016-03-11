@@ -933,6 +933,8 @@ section.singleblog article:last-of-type{
   margin: 0;
   padding: 60px 100px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #project h1,
@@ -942,7 +944,7 @@ section.singleblog article:last-of-type{
   color: white;
   font-size: 36px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.25em;
 }
 
 #project h1{
