@@ -68,7 +68,8 @@ getValueAtPercentile( uniques, .25 ); //  = 5
 <p>Andy Kirk gave a talk called "The Design of Nothing: Null, Zero, Blank" at last OpenVis in 2014, covering (among other things) some no-data scenarios. It's worth a look:</p>
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JqzAuqNPYVM" frameborder="0" allowfullscreen></iframe></p>
 <p>There are two sides to handling missing data. On one side is code that won't break if a null value is thrown at it. Basically this means a lot of error handling and bailing out of functions if they're passed null values. But it also requires some understanding of the data format. A missing value could come through in a variety of ways.</p>
-<pre>
+
+{% highlight js %}
 // no data might be...
 null
 undefined
@@ -77,9 +78,11 @@ NaN
 "NULL"
 -9999
 // &c. &c.
-</pre>
+{% endhighlight %}
+
 <p>&nbsp;<br>Be careful to avoid the JavaScript gotcha of equating zero with "no data"—usually not the same thing in reality.</p>
-<pre>
+
+{% highlight js %}
 // a tempting way to catch "no data" in javascript
 if ( data ){
   // yay, we have data!
@@ -90,7 +93,8 @@ var data = 0; // zero is real data
 if ( data ){
   // zero won't get us in here :(
 }
-</pre>
+{% endhighlight %}
+
 <p>&nbsp;<br>The other side is design. One common scenario is missing data in a choropleth map. We like using texture to indicate missing data. It's distinct, not easily confused with colored values; and it's explicit, keeping "no data" as part of the story instead of hiding it. If you're working with D3, check out <a href="http://riccardoscalco.github.io/textures/" target="_blank">Textures.js</a> for easy texturing.</p>
 <p><a href="http://riccardoscalco.github.io/textures/"><img src="{{ site.baseurl }}/media/posts/2015/05/texture.png" alt="choropleth textures" width="660" height="500" class="aligncenter size-full wp-image-2136" /></a></p>
 <p>Another common case is gaps in time series data. Again, it's good to be explicit. Interpolation can be misleading. For example, I like the dashed line in the iOS Health app. It explicitly indicates a gap in data without losing continuity.</p>
