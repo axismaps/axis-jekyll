@@ -15,7 +15,7 @@
                 {% endif %}
                 {% if page.features %}
                   {% for feature in page.features %}
-                    <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png )"><span>{{ feature }}</span></div>
+                    <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )"><span>{{ feature }}</span></div>
                   {% endfor %}
                 {% endif %}
               </div>
@@ -26,13 +26,13 @@
             {% endif %}
             {% if page.features %}
               {% for feature in page.features %}
-                <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.id }}/{{ forloop.index0 }}.png )"><span class="arrow"></span></div>
+                <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )"><span class="arrow"></span></div>
               {% endfor %}
             {% endif %}
           </div>
           <hr />
         {%  else %}
-          <img src="{{ site.baseurl }}/media/slideshow/{{ page.id }}.png">
+          <img src="{{ site.baseurl }}/media/slideshow/{{ page.pid }}.png">
         {% endif %}
         <div class="content">
           <header>
@@ -63,7 +63,7 @@
           {% assign blog = false %}
           {% assign posts = site.posts | sort: 'date' %}
           {% for post in posts %}
-            {% if post.project == page.id %}
+            {% if post.project == page.pid %}
               {% assign blog = true %}
               {% break %}
             {% endif %}
@@ -72,7 +72,7 @@
             <h2>From the blog</h2>
             <ul>
               {% for post in posts reversed %}
-                {% if post.project == page.id %}
+                {% if post.project == page.pid %}
                   <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                 {% endif %}
               {% endfor %}
