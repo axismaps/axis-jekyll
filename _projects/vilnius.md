@@ -1,5 +1,5 @@
 ---
-id: vilnius
+pid: vilnius
 title: Exploring the Vilnius Ghetto
 titleshort: The Vilnius Ghetto
 client: reVilna

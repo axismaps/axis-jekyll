@@ -1,5 +1,5 @@
 ---
-id: wntb
+pid: wntb
 title: Why Not the Best?
 titleshort: Why Not the Best?
 client: IPRO

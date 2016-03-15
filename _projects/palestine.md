@@ -1,5 +1,5 @@
 ---
-id: palestine
+pid: palestine
 title: Imagining the Israeli-Palestinian Border
 client: Washington Institute for Near East Policy
 date: 2011-01-20

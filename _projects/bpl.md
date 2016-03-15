@@ -1,5 +1,5 @@
 ---
-id: bpl
+pid: bpl
 title: Zooming In On History
 titleshort: Zooming In On History
 client: Leventhal Map Center, Boston Public Library

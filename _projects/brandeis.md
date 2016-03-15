@@ -1,5 +1,5 @@
 ---
-id: brandeis
+pid: brandeis
 title: American Jewish Population Map
 titleshort: American Jewish Population
 client: Brandeis University

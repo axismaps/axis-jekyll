@@ -1,5 +1,5 @@
 ---
-id: deathsdoor
+pid: deathsdoor
 title: Death's Door Spirits Locator
 client: Death's Door Spirits
 date: 2010-11-18

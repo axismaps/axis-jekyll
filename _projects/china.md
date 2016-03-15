@@ -1,5 +1,5 @@
 ---
-id: china
+pid: china
 title: China Chronology
 client: Adam Matthew Digital
 date: 2012-03-12

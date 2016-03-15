@@ -1,5 +1,5 @@
 ---
-id: aihc
+pid: aihc
 title: American Indian History and Culture
 client: Adam Matthew Digital
 date: 2013-09-22

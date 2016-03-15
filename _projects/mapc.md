@@ -1,5 +1,5 @@
 ---
-id: mapc
+pid: mapc
 title: MAPC Basemap
 client: MAPC
 tag: Elegant and flexible base cartography

@@ -1,5 +1,5 @@
 ---
-id: chronology
+pid: chronology
 title: Empires Online Chronology
 titleshort: EO Chronology
 client: Adam Matthew Digital

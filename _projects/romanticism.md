@@ -1,5 +1,5 @@
 ---
-id: romanticism
+pid: romanticism
 title: Romanticism
 client: Adam Matthew Digital
 date: 2011-12-02

@@ -1,5 +1,5 @@
 ---
-id: wwi
+pid: wwi
 title: First World War
 client: Adam Matthew Digital
 date: 2011-10-18

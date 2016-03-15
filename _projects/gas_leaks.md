@@ -1,5 +1,5 @@
 ---
-id: gas_leaks
+pid: gas_leaks
 title: Massachussets Triple Threat
 client: Conservation Law Foundation
 tag: Understanding the impact of natural gas leaks in and around Boston

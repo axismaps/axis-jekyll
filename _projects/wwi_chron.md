@@ -1,5 +1,5 @@
 ---
-id: wwi_chron
+pid: wwi_chron
 title: First World War Chronology
 client: Adam Matthew Digital
 date: 2014-06-26

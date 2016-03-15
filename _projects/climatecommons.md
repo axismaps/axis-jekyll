@@ -1,5 +1,5 @@
 ---
-id: climatecommons
+pid: climatecommons
 title: Climate Commons
 titleshort: Climate Commons
 client: Earth Journalism Network

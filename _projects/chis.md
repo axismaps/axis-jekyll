@@ -1,5 +1,5 @@
 ---
-id: chis
+pid: chis
 title: AskCHIS Neighborhood Edition
 titleshort: AskCHIS NE
 client: UCLA Center for Health Policy Research

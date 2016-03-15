@@ -1,5 +1,5 @@
 ---
-id: musqueam
+pid: musqueam
 title: Musqueam Place Names Map
 titleshort: Musqueam Indian Band
 client: Musqueam

@@ -1,5 +1,5 @@
 ---
-id: ekuatorial
+pid: ekuatorial
 title: Ekuatorial Indonesia
 client: Earth Journalism Network
 date: 2014-01-24

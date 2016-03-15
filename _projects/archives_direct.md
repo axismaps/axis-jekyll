@@ -1,5 +1,5 @@
 ---
-id: archives_direct
+pid: archives_direct
 title: Archives Direct Map Browser
 client: Adam Matthew Digital
 date: 2014-06-19

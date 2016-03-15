@@ -1,5 +1,5 @@
 ---
-id: election2012
+pid: election2012
 title: Shedding Light on Election Demographics - 2012
 client: Axis Maps
 date: 2012-11-09

@@ -1,5 +1,5 @@
 ---
-id: cap
+pid: cap
 title: Mapping Pacific Voyages
 titleshort: Mapping Pacific Voyages
 client: Adam Matthew Digital

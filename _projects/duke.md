@@ -1,5 +1,5 @@
 ---
-id: duke
+pid: duke
 title: Duke University Children's Environmental Health Initiative
 client: Duke University
 tag: Facilitating meaningful comparisons

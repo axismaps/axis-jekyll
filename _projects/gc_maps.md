@@ -1,5 +1,5 @@
 ---
-id: gc_maps
+pid: gc_maps
 title: Global Commodities Static Maps
 client: Adam Matthew Digital
 date: 2012-10-29

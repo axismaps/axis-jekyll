@@ -1,5 +1,5 @@
 ---
-id: rockandroll
+pid: rockandroll
 title: Rock and Roll Chronology
 client: Adam Matthew Digital
 date: 2011-10-18

@@ -11,7 +11,7 @@ order: 2
     {% for project in items reversed %}
   	    {% if project.featured %}
   	      <li>
-  	        <a href="{{ project.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/media/portfolio/{{ project.id }}.png" alt="{{ project.title }}" width="265" height="185" /></a>
+  	        <a href="{{ project.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/media/portfolio/{{ project.pid }}.png" alt="{{ project.title }}" width="265" height="185" /></a>
   	        <p><a href="{{ project.url | prepend: site.baseurl }}"><b>{{ project.title }}</b><br /><i>{{ project.client }}</i></a></p>
   	      </li>
       {% endif %}
@@ -24,7 +24,7 @@ order: 2
   {% for project in items reversed %}
     {% if project.featured == false %}
       <div class="all">
-        <img src="{{ site.baseurl }}/media/slideshow/{{ project.id }}.png" />
+        <img src="{{ site.baseurl }}/media/slideshow/{{ project.pid }}.png" />
         <p><b>{{ project.title }}</b> - <i>{{ project.client }}</i>{{ project.content }}</p>
       </div>
     {% endif %}

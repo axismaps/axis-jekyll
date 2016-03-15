@@ -1,5 +1,5 @@
 ---
-id: oil
+pid: oil
 title: Global Commodities Oil Visualization
 titleshort: Oil Visualization
 client: Adam Matthew Digital

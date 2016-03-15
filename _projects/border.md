@@ -1,5 +1,5 @@
 ---
-id: border
+pid: border
 title: Border Fence Map
 client: Popular Mechanics
 date: 2010-05-28

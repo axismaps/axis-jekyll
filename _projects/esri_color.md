@@ -1,5 +1,5 @@
 ---
-id: esri_color
+pid: esri_color
 title: ESRI Color Browser
 client: ESRI
 date: 2014-05-02

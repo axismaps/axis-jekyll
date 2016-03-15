@@ -1,5 +1,5 @@
 ---
-id: jobs
+pid: jobs
 title: Geography of Jobs
 titleshort: Geography of Jobs
 client: TIP Strategies

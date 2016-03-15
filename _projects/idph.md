@@ -1,5 +1,5 @@
 ---
-id: idph
+pid: idph
 title: Illinois Department of Public Health Map
 titleshort: Illinois Public Health
 client: IPRO

@@ -1,5 +1,5 @@
 ---
-id: nyt
+pid: nyt
 title: "New York Times: Remembering 9/11"
 titleshort: Remembering 9/11
 client: The New York Times

@@ -1,5 +1,5 @@
 ---
-id: revolt
+pid: revolt
 title: Slave Revolt in Jamaica
 titleshort: Slave Revolt in Jamaica
 client: Harvard History Design Studio

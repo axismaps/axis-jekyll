@@ -6,7 +6,7 @@
     {% for project in items reversed %}
   	    {% if project.slideshow %}
   	      <li id="slide{% increment length %}">
-  	        <img src="{{ site.baseurl }}/media/slideshow/{{ project.id }}.png" />
+  	        <img src="{{ site.baseurl }}/media/slideshow/{{ project.pid }}.png" />
   	        <div class="title">{{ project.title }}</div>
   	      </li>
       {% endif %}

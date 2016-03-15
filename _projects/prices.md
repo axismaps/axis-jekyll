@@ -1,5 +1,5 @@
 ---
-id: prices
+pid: prices
 title: Global Commodities Prices Visualization
 titleshort: Prices Visualization
 client: Adam Matthew Digital

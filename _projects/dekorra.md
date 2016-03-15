@@ -1,5 +1,5 @@
 ---
-id: dekorra
+pid: dekorra
 title: Dekorra Economic Development Map
 client: Vandewalle and Associates
 date: 2011-02-04

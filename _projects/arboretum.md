@@ -1,5 +1,5 @@
 ---
-id: arboretum
+pid: arboretum
 title: UW Arboretum Map
 client: University of Wisconsin Arboretum
 date: 2010-10-30
