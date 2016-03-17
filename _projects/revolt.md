@@ -8,6 +8,7 @@ tag: Slave insurrection in the British Empire
 date: 2013-09-04
 featured: true
 slideshow: true
+github: https://github.com/axismaps/revolt
 layout: project
 nav: Portfolio
 category: Education

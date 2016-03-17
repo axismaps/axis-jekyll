@@ -46,6 +46,9 @@
           <hr />
           
           {{ content }}
+          {%  if page.github %}
+            <span class="icon-github-circled" style="font-size:36px; margin-left:-10px"></span><a href="{{ page.github }}" target="_blank">View the source on Github</a><br />
+          {% endif %}
           <hr />
           {% assign s = site.projects | where: "category", page.category | size %}
           {% if page.category and s > 1 %}

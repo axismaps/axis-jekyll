@@ -9,6 +9,7 @@ date: 2013-04-03
 featured: true
 slideshow: true
 link: http://climatecommons.earthjournalism.net/map/
+github: https://github.com/axismaps/climatecommons
 layout: project
 nav: Portfolio
 category: Environmental

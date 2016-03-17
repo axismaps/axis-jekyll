@@ -11,6 +11,7 @@ featured: true
 slideshow: true
 video: 148411946
 link: http://zoominginonhistory.com
+github: https://github.com/axismaps/zooming-in-on-history
 layout: project
 nav: Portfolio
 features:
