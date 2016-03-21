@@ -57,12 +57,12 @@ order: 1
   	  {% for project in items reversed %}
   	    {% if project.featured %}
   	      <a class="mini-portfolio" href="{{ project.url | prepend: site.baseurl }}">
-    	      <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.pid }}.png)"></div>
+    	      <div class="mini-image" id="mp{% increment featured %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.pid }}.png)"></div>
           <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
   	      </a>
-  	      {% if length >= 10 %}
+  	      {% if featured >= 10 %}
   	        {% break %}
-        {% endif %}
+      	  {% endif %}
   	    {% endif %}
     {% endfor %}
     <div style="clear:both"></div>
