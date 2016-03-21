@@ -1191,6 +1191,19 @@ section.singleblog article:last-of-type{
   line-height: 30px;
 }
 
+#blog a.mini-portfolio{
+	float: none;
+	height: 74px;
+}
+
+#blog a.mini-portfolio p{
+	margin-top: 0;
+}
+
+#blog .mini-image{
+	margin-left: 0;
+}
+
 #blog .share-excerpt{
   background-color: white;
   box-sizing: border-box;

@@ -9,6 +9,18 @@ layout: default
   <article>
     <div class="post content">
       {{ content }}
+      
+      {% if page.project %}
+        <hr />
+        {% for project in site.projects %}
+          {% if page.project == project.pid %}
+            <a class="mini-portfolio" href="{{ project.url | prepend: site.baseurl }}">
+              <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.pid }}.png)"></div>
+              <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     </div>
   </article>
   {% include social_media.html %}
