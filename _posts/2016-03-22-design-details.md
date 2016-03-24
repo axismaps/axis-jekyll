@@ -61,22 +61,30 @@ Also—and there's more on this below—because the fixed data probe is so heavy
 Data probes provide information to the user on-demand. For a more in depth look at their design, [this post by Ben is still fantastic]({{ site.baseurl }}/blog/2009/07/data-probing-and-info-window-design-on-web-based-maps/) (though the examples are showing their age). This map uses a 2-stage data probe technique that we've been using more and more in out maps that have a similar level of attribute detail.
 
 #### Floating probe
-The floating probe appears over the map. It is visually connected to the corresponding point through it's position and a small change in 
+The floating probe appears over the map. It is visually connected to the corresponding point through it's position and a small change in state (larger, highlighted) for the selected point. It appears on an _investigative action_ (mouseover) and shows just a few details, enough for the reader to decide if they'd like to get information about the point. We often include a call-to-action here (_click to read more_), but given the simplified nature of the map, didn't feel like us was necessary.
 
 ![Floating data probe]({{ site.baseurl }}/media/posts/2016/03/floating.png)
 
-A little information (floating)
-	- Appears on investigative action (mouseover)
-	
-	
+#### Fixed probe	
+The fixed probe appears on the left side of the screen. It's large height allows it to contain scrolling text, which removes the limits on the length of content it can contain. It's activated through a _deliberate action_ (click) and the corresponding point increases in size again, changes state, and remains persistently active.
 
-A lot of information (fixed and scrolling)
-	- Appears on deliberate action (click)
-	- Organize your text using headers or tables!
-Mobile
-	- Skip the hover probe
-	- Take a more modal approach
-Map symbols echo level of probe
+![Fixed data probe]({{ site.baseurl }}/media/posts/2016/03/fixed.png)
+
+To avoid text intimidation (in addition to the small color variation), we've used headings and changes in font to break the text up into smaller visual chunks and organize it for easier reading.
+
+#### Mobile probing
+For the mobile version of the map, we had to make a few simple changes to the probe:
+
+1. The floating data probe is removed. More accurately, it's still there, but you can't activate it because you can't _hover_ on a touchscreen. Fortunately, the data is replicated entirely on the fixed probe.
+2. The fixed probe now covers nearly all of the map. It's not fully modal because we wanted to keep the reader still somewhat connected to the map while they were viewing the details on the probe.
+
+![Mobile data probe]({{ site.baseurl }}/media/posts/2016/03/mobile1.jpeg) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Mobile data probe]({{ site.baseurl }}/media/posts/2016/03/mobile.jpeg)
+
+#### One more data probe
+One more thing on data probes! It's not just the thematic features on the map that should be probe-able. Any time you use a visual variable to encode data, a data probe can quickly answer the first question about the graphic: _How much is that exactly?_ We've added a small little probe to the histogram to quickly clarify both the quantity and the bin (time period) for the selected bar.
+
+![Chart data probe]({{ site.baseurl }}/media/posts/2016/03/chart-probe.png)
+
 Any place where you ask a question should be probable
 	- Any place where a visual variable is used, should be probe-able to get exact value
 
