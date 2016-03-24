@@ -35,7 +35,7 @@ This is a concept that I first encountered with [Edward Tufte](http://www.edward
 
 ![Another great NYT map]({{ site.baseurl }}/media/posts/2016/03/nyt.png)
 
-This map is hugely effective because of it judicious use of color because:
+This map is hugely effective in its judicious use of color because:
 
 1. Elements with color draw more attention than elements without.
 2. The most important things on the map should attract most of the reader's attention.
