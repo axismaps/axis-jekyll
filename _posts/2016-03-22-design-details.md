@@ -61,12 +61,12 @@ Also—and there's more on this below—because the fixed data probe is so heavy
 Data probes provide information to the user on-demand. For a more in depth look at their design, [this post by Ben is still fantastic]({{ site.baseurl }}/blog/2009/07/data-probing-and-info-window-design-on-web-based-maps/) (though the examples are showing their age). This map uses a 2-stage data probe technique that we've been using more and more in out maps that have a similar level of attribute detail.
 
 #### Floating probe
-The floating probe appears over the map. It is visually connected to the corresponding point through it's position and a small change in state (larger, highlighted) for the selected point. It appears on an _investigative action_ (mouseover) and shows just a few details, enough for the reader to decide if they'd like to get information about the point. We often include a call-to-action here (_click to read more_), but given the simplified nature of the map, didn't feel like us was necessary.
+The floating probe appears over the map. It is visually connected to the corresponding point through its position and a small change in state (larger, highlighted) for the selected point. It appears on an _investigative action_ (mouseover) and shows just a few details, enough for the reader to decide if they'd like to get information about the point. We often include a call-to-action here (_click to read more_), but given the simplified nature of the map, didn't feel like us was necessary.
 
 ![Floating data probe]({{ site.baseurl }}/media/posts/2016/03/floating.png)
 
 #### Fixed probe	
-The fixed probe appears on the left side of the screen. It's large height allows it to contain scrolling text, which removes the limits on the length of content it can contain. It's activated through a _deliberate action_ (click) and the corresponding point increases in size again, changes state, and remains persistently active.
+The fixed probe appears on the left side of the screen. Its large height allows it to contain scrolling text, which removes the limits on the length of content it can contain. It's activated through a _deliberate action_ (click) and the corresponding point increases in size again, changes state, and remains persistently active.
 
 ![Fixed data probe]({{ site.baseurl }}/media/posts/2016/03/fixed.png)
 
@@ -88,14 +88,14 @@ One more thing on data probes! It's not just the thematic features on the map th
 ## Integrated legends
 Not every map needs a legend. This map doesn't need a persistent legend because:
 
-1. The categorical color scheme was done for it's own sake, to create color variation amongst the points
+1. The categorical color scheme was done for its own sake, to create color variation amongst the points
 2. All of the attribute data (including the categories used to color the map) is available in the data probe
 
 However, this doesn't mean we should throw the legend out entirely, just be clever about how much space we give it. For this map, we present the legend to the user when they first load the map. After that, it is available integrated into the filter menu for the attribute that we're mapping.
 
 ![Integrated legend]({{ site.baseurl }}/media/posts/2016/03/legend.png)
 
-By integrate it into an existing control, not only do we save valuable map / UI space, we reinforce the connection between the controls and the map. 
+By integrating it into an existing control, not only do we save valuable map / UI space, we reinforce the connection between the controls and the map. 
 
 ## Non-map controls
 The final thing I wanted to point out is the prev / next buttons at the top of the data probe. These buttons are used to move between points in the map. Clicking this button will activate the next / prev point in time, mirroring a click event that populates the fixed data probe and changes the point to the active marker.
