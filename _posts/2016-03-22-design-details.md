@@ -85,18 +85,19 @@ One more thing on data probes! It's not just the thematic features on the map th
 
 ![Chart data probe]({{ site.baseurl }}/media/posts/2016/03/chart-probe.png)
 
-Any place where you ask a question should be probable
-	- Any place where a visual variable is used, should be probe-able to get exact value
-
 ## Integrated legends
-Because information can be presented on-demand with data probes, legends are less necessary.
-Integrate legend into other controls to save valuable map space and reinforce connections
+Not every map needs a legend. This map doesn't need a persistent legend because:
+
+1. The categorical color scheme was done for it's own sake, to create color variation amongst the points
+2. All of the attribute data (including the categories used to color the map) is available in the data probe
+
+However, this doesn't mean we should throw the legend out entirely, just be clever about how much space we give it. For this map, we present the legend to the user when they first load the map. After that, it is available integrated into the filter menu for the attribute that we're mapping.
+
+![Integrated legend]({{ site.baseurl }}/media/posts/2016/03/legend.png)
+
+By integrate it into an existing control, not only do we save valuable map / UI space, we reinforce the connection between the controls and the map. 
 
 ## Non-map controls
-Not everyone wants to browse your data by map
- - They're interested in a non-spatial narrative
- - Not most comfortable using a map
-Give tools to allow these users to access the data in their own way
-Accessibility
- - Often thought of in terms of impairments
- - Think about making map accessible for wide range of audience with preference / technical ability
+The final thing I wanted to point out is the prev / next buttons at the top of the data probe. These buttons are used to move between points in the map. Clicking this button will activate the next / prev point in time, mirroring a click event that populates the fixed data probe and changes the point to the active marker.
+
+We like including these alternative browsing methods in our maps because—as much as we hate to admit it—_not everyone wants to access this information using a map_. Some users are interested in a narrative that is entirely non-spatial (and since our data has a temporal element, that's even more likely). Furthermore, not everyone is comfortable with the basic mechanics of interactive maps (panning / zooming / probing), and we want to make sure the content is still **accessible** to them.
