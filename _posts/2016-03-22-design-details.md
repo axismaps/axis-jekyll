@@ -20,7 +20,7 @@ comments: []
 project: eshhad
 ---
 
-I wanted to title this post: _**You Won't Believe This Cartographer's 4 Weird Tricks for a Nicer Map**_. That seemed like a bit much (plus the length of this post got away from me so it's now more Longreads than Upworthy), but the sentiment isn't entirely untrue. _Design_ (big-D Design—I would've capitalized it even if it didn't start the sentence) is an intimidating an amorphous topic. Academic cartography provides [good guidelines]({{ site.baseurl }}/guide/) for thematic cartography, but interactivity and user-interface design are often _"I know it when I see it"_ type of things. What follows are 4 quick design concepts and techniques that can be applied in many situations to improve the look and feel of an interactive map.
+I wanted to title this post: _**You Won't Believe This Cartographer's 4 Weird Tricks for a Nicer Map**_. That seemed like a bit much (plus the length of this post got away from me so it's now more Longreads than Upworthy), but the sentiment isn't entirely untrue. _Design_ (big-D Design—I would've capitalized it even if it didn't start the sentence) is an intimidating and amorphous topic. Academic cartography provides [good guidelines]({{ site.baseurl }}/guide/) for thematic cartography, but interactivity and user-interface design are often _"I know it when I see it"_ type of things. What follows are 4 quick design concepts and techniques that can be applied in many situations to improve the look and feel of an interactive map.
 
 These concepts were taken from [a map we made](http://axismaps.github.io/eshhad/public/) for the [Eshhad project](http://eshhad.timep.org/about-us/) tracking sectarian violence in Egypt. It's a relatively straightforward map with:
 
@@ -52,7 +52,7 @@ Color is also an extremely useful tool for reiterating connections between diffe
 ![Color in the fixed data probe]({{ site.baseurl }}/media/posts/2016/03/color2.png)
 
 Also—and there's more on this below—because the fixed data probe is so heavy with text and categorical attributes, we've used a subtle color variation to break up the text box from the other attributes in the fixed probe. This is partly to highlight the longer text, but mostly to create visual differentiation to the probe and reduce the _text intimidation_.
-	
+
 ## Data probes
 Data probes provide information to the user on-demand. For a more in depth look at their design, [this post by Ben is still fantastic]({{ site.baseurl }}/blog/2009/07/data-probing-and-info-window-design-on-web-based-maps/) (though the examples are showing their age). This map uses a 2-stage data probe technique that we've been using more and more in out maps that have a similar level of attribute detail.
 
@@ -61,7 +61,7 @@ The floating probe appears over the map. It is visually connected to the corresp
 
 ![Floating data probe]({{ site.baseurl }}/media/posts/2016/03/floating.png)
 
-#### Fixed probe	
+#### Fixed probe
 The fixed probe appears on the left side of the screen. Its large height allows it to contain scrolling text, which removes the limits on the length of content it can contain. It's activated through a _deliberate action_ (click) and the corresponding point increases in size again, changes state, and remains persistently active.
 
 ![Fixed data probe]({{ site.baseurl }}/media/posts/2016/03/fixed.png)
@@ -91,7 +91,7 @@ However, this doesn't mean we should throw the legend out entirely, just be clev
 
 ![Integrated legend]({{ site.baseurl }}/media/posts/2016/03/legend.png)
 
-By integrating it into an existing control, not only do we save valuable map / UI space, we reinforce the connection between the controls and the map. 
+By integrating it into an existing control, not only do we save valuable map / UI space, we reinforce the connection between the controls and the map.
 
 ## Non-map controls
 The final thing I wanted to point out is the prev / next buttons at the top of the data probe. These buttons are used to move between points in the map. Clicking this button will activate the next / prev point in time, mirroring a click event that populates the fixed data probe and changes the point to the active marker.
