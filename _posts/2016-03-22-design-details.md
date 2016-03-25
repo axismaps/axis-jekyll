@@ -22,7 +22,7 @@ project: eshhad
 
 I wanted to title this post: _**You Won't Believe This Cartographer's 4 Weird Tricks for a Nicer Map**_. That seemed like a bit much (plus the length of this post got away from me so it's now more Longreads than Upworthy), but the sentiment isn't entirely untrue. _Design_ (big-D Design—I would've capitalized it even if it didn't start the sentence) is an intimidating an amorphous topic. Academic cartography provides [good guidelines]({{ site.baseurl }}/guide/) for thematic cartography, but interactivity and user-interface design are often _"I know it when I see it"_ type of things. What follows are 4 quick design concepts and techniques that can be applied in many situations to improve the look and feel of an interactive map.
 
-These concepts were taken from [a map we made for the Eshhad project](http://eshhad.timep.org) tracking sectarian violence in Egypt. It's a relatively straightforward map with:
+These concepts were taken from [a map we made](http://axismaps.github.io/eshhad/public/) for the [Eshhad project](http://eshhad.timep.org/about-us/) tracking sectarian violence in Egypt. It's a relatively straightforward map with:
 
 1. A point dataset with a handful of attributes of various types (date, categories, short / long text, URLs)
 2. A Leaflet implementation with basemap tiles
