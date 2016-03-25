@@ -31,11 +31,7 @@ These concepts were taken from [a map we made for the Eshhad project](http://esh
 These are 3 very common circumstances for an interactive map, which should make these tips transferrable to a wide variety of projects.
 
 ## Use color sparingly
-This is a concept that I first encountered with [Edward Tufte](http://www.edwardtufte.com/tufte/books_vdqi), but I think has been best put into practice time and time again by [NYT Graphics](http://www.nytimes.com/interactive/2016/03/18/world/middleeast/what-russia-accomplished-in-syria.html?smid=tw-share&_r=0).
-
-![Another great NYT map]({{ site.baseurl }}/media/posts/2016/03/nyt.png)
-
-This map is hugely effective in its judicious use of color because:
+This is a concept that I first encountered with [Edward Tufte](http://www.edwardtufte.com/tufte/books_vdqi), but I think has been best put into practice time and time again by [NYT Graphics](http://www.nytimes.com/interactive/2016/03/18/world/middleeast/what-russia-accomplished-in-syria.html?smid=tw-share&_r=0). This map is hugely effective in its judicious use of color because:
 
 1. Elements with color draw more attention than elements without.
 2. The most important things on the map should attract most of the reader's attention.
