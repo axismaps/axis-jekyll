@@ -10,7 +10,7 @@ category: Politics
 featured: true
 slideshow: false
 video: 160261087
-link: http://eshhad.timep.org
+link: http://axismaps.github.io/eshhad/public/
 layout: project
 nav: Portfolio
 features:
@@ -23,4 +23,4 @@ This map is the centerpiece of Eshhad, an online platform that aggregates and co
 
 The design of the map is restrained and sympathetic to the serious subject matter. A small amount of subdued color displays target type and is echoed throughout the UI as users explore the data. The points on the map change state as users interact with them and full details are presented on the sidebar. Users can filter by attribute and by time, as well as explore the temporal narrative in the data using non-map controls.
 
-The map was built using a simple Leaflet implementation and is fully responsive for mobile use.
+The map was built using a simple Leaflet implementation and is fully responsive for mobile use. It is hosted on Github pages so changes to the code can quickly be deployed into production.
