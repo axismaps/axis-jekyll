@@ -1512,6 +1512,12 @@ section.singleblog article:last-of-type{
 	.ribbon{
 		text-indent: 4%;
 	}
+	#guide-banner {
+		padding-top: 180px;
+	}
+	#guide-banner h1{
+		line-height: 42px;
+	}
 }
 @media (min-width: 800px) and (max-width: 975px) {
 	#sidebar > div {
