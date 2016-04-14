@@ -965,6 +965,7 @@ section.singleblog article:last-of-type{
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+	position: relative;
 }
 
 #project #poster .active{
@@ -980,7 +981,7 @@ section.singleblog article:last-of-type{
   line-height: 50px;
   font-size: 24px;
   position: absolute;
-  bottom: 80px;
+  bottom: 0;
 }
 
 #project #thumbs{
