@@ -15,7 +15,12 @@
                 {% endif %}
                 {% if page.features %}
                   {% for feature in page.features %}
-                    <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )"><span>{{ feature }}</span></div>
+                    {% if feature contains '\gif\' %}
+                      <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.gif )">
+                    {% else %}
+                      <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )">
+                    {% endif %}
+                    <span>{{ feature | remove: "\gif\ " }}</span></div>
                   {% endfor %}
                 {% endif %}
               </div>
@@ -26,7 +31,12 @@
             {% endif %}
             {% if page.features %}
               {% for feature in page.features %}
-                <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )"><span class="arrow"></span></div>
+                {% if feature contains '\gif\' %}
+                  <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.gif )">
+                {% else %}
+                  <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )">
+                {% endif %}
+                <span class="arrow"></span></div>
               {% endfor %}
             {% endif %}
           </div>
