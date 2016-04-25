@@ -14,7 +14,7 @@ layout: project
 nav: Portfolio
 category: Demographics
 features:
-- Simple data probing gives actual values
+- Simple data probing gives exact values
 - \gif\ Fully interactive timeline
 - Intelligent symbol stacking maximizes visiblity
 ---
