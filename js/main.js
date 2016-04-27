@@ -152,7 +152,7 @@ function webform_submit(){
   	  
 		$.ajax({
   		type : "POST",
-  		url : "http://localhost:3000/email",
+  		url : "http://powerful-inlet-59386.herokuapp.com/email",
       data : {
         "text" : $( "#body" ).val() + "\n\n" + $( "#name" ).val() + " - " + $( "#email" ).val() + "\n\n" + window.location.href,
         "subject" : "Website Enquiry - " + $( "#name" ).val(),
