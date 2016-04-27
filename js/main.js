@@ -151,29 +151,23 @@ function webform_submit(){
   	  $( "img.loading" ).show();
   	  
 		$.ajax({
-  		  type : "POST",
-  		  url : "https://mandrillapp.com/api/1.0/messages/send.json",
+  		type : "POST",
+  		url : "http://localhost:3000/email",
       data : {
-        "key" : "DPtXU8VfREJ5BeEUVDdKyg",
-        "message" : {
-          "text" : $( "#body" ).val(),
-          "subject" : "Website Enquiry - " + $( "#name" ).val(),
-          "from_email" : "robot@axismaps.com",
-          "from_name" : "Robo Bieber",
-          "to" : [{
-            "email": "info@axismaps.com",
-            "name": "David Heyman",
-            "type": "to"
-          }],
-          "headers" : {
-            "Reply-To" : $( "#email" ).val()
-          }
+        "text" : $( "#body" ).val() + "\n\n" + $( "#name" ).val() + " - " + $( "#email" ).val() + "\n\n" + window.location.href,
+        "subject" : "Website Enquiry - " + $( "#name" ).val(),
+        "from" : "robot@axismaps.com",
+        "fromname" : "Robo Bieber",
+        "to": "info@axismaps.com",
+        "toname": "David Heyman",
+        "headers" : {
+          "Reply-To" : $( "#email" ).val()
         }
       },
       success : function( result )
 			{
 				$( "#web_form" ).css( "height", "230px" );
-				if( result[ 0 ].status == "sent" )
+				if( result.message == "success" )
 				{
 					$( "#contact form" ).html( "<h3>Thank you for contacting Axis Maps!</h3><h3>We will return your enquiry as soon as possible</h3>" );
 				}
