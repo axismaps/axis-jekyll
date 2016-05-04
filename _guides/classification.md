@@ -5,25 +5,21 @@ nav: Guide
 category: general
 ---
 
-### When to Use
+Most [choropleth maps](../choropleth) (and [graduated symbol maps](../proportional_symbols)) employ some method of data classification. The point of classification is to take a large number of observations and **group them into data ranges or classes**. Why? Map readers often find a few well-defined classes are easier to understand than raw data since, if done well, they help to simplify and clarify the message of the map. Data classification, however, is not without some challenges and it is often difficult to find an "ideal" method for a given dataset. It is always wise to have an understanding of the data you are working with before blindly applying a "favorite" classification method, which may create false patterns on your map that bear little resemblance to the actual geographic phenomena you are trying to portray. Maps that use questionable classification methods are more than ineffective; they're misleading.
 
-If you are going to classify your data you must decide both **the number of classes** and **the method** for breaking your data into ranges. The are many ways to **systematically classify data**. What follows is a discussion of those classification methods and their relative merits.
-
-The point of classification is to take a large number of observations and **group them into data ranges or classes**. Why? Map readers often find a few well-defined classes are easier to understand than raw data since, if done well, they help to simplify and clarify the message of the map. Data classification, however, is not without some challenges and it is often difficult to find an "ideal" method for a given dataset. It is always wise to have an understanding of the data you are working with before blindly applying a "favorite" classification method, which may create false patterns on your map that bear little resemblance to the actual geographic phenomena you are trying to portray. Maps that use questionable classification methods are more than ineffective, they're misleading.
-
-Classification matters because how we group our data into classes is one of the most fundamental aspects of map generalization—the process by which we simplify the real world to fit it on to the page—and small differences in how we do that **can dramatically change the look of the map, and thus, its message**. Despite this influence, data classification is often taken for granted by map readers since we rarely notice or question the classes that are used in maps, and thus, it is one of the easiest ways to "[lie with maps](http://www.amazon.com/How-Lie-Maps-Mark-Monmonier/dp/0226534219)"—whether intentionally or accidentally. Nonetheless, classification is a useful and basic part of making thematic maps.
+Classification matters because how we group our data into classes is one of the most fundamental aspects of map generalization—the process by which we simplify the real world to fit it on to the page—and small differences in how we do that **can dramatically change the look of the map, and thus, its message**. Despite this influence, data classification is often taken for granted by map readers since we rarely notice or question the classes that are used in maps, and thus, it is one of the easiest ways to ["lie with maps"](http://www.amazon.com/How-Lie-Maps-Mark-Monmonier/dp/0226534219)—whether intentionally or accidentally. Nonetheless, classification is a useful and basic part of making thematic maps.
 
 ![]({{site.baseurl}}/media/guides/classed_choropleth.jpg)
 
 _This map uses a 5-class equal interval classification scheme (1-10, 11-20, ...)._
-
-**NOTE:** This discussion applies to anyone making [Choropleth Maps](../choropleth), [Graduated Symbol Maps](../proportional_symbols) or [Cartograms](../cartogram) since you can make either classed or unclassed versions of those maps.
 
 ### The Goal of Data Classification
 
 Generally speaking, a basic goal of a classification scheme is to group together similar observations and split apart observations that are substantially different. In more technical terms, the goal is to find the optimal number of classes—and where to put the breaks between those classes—so as to minimize within-group variance and maximize between-group differences. For example, if I had a data set with 4 observations of 1.3, 1.6, 3.5 and 3.9 many folks would be inclined to split those observations into 2 groups with 1.3 and 1.6 in the first group and 3.5 and 3.9 in the second because that pairing makes sense given the large numerical gap in the middle of the data range. Such an approach is common and is called "maximum breaks."
 
 However, there are often other considerations when classifying our data and simply maximizing between group differences may not be the primary goal: In the example above, it might be possible that 1.5 is a **critical value** and all that matters is to distinguish between locations above and below that critical break point (e.g., if a location has a reading below 1.5 they might be eligible for emergency funding). In this case, external constraints over-ride our mathematical solutions and despite being fairly close together 1.3 and 1.6 would now be placed in different classes since they straddle that breakpoint.
+
+If you are going to classify your data you must decide both **the number of classes** and **the method** for breaking your data into ranges. The are many ways to **systematically classify data**. What follows is a discussion of those classification methods and their relative merits.
 
 ### Number of Data Classes
 
@@ -49,3 +45,11 @@ _The form of this histogram suggests that 3 or 4 data classes seem most appropri
 > **NATURAL BREAKS** is a kind of "optimal" classification scheme that finds class breaks that (for a given number of classes) will minimize within-class variance and maximize between-class differences. One drawback of this approach is each dataset generates a unique classification solution, and if you need to make comparison across maps, such as in an atlas or a series (e.g., one map each for 1980, 1990, 2000) you might want to use a single scheme that can be applied across all of the maps.
 > 
 > **MANUAL** There are many times we need to manually set one or all of the class breaks. For example; Are there important break points that need to be "hardwired" into your class breaks? Does one of the class breaks need to be the mean? Is this map part of a series that needs the same classes across all of the maps (so that the colors always refer to the same numbers on any map)? Do any of the other methods get you close to a good solution that could be improved with a few slight adjustments those classes? If so, do not hesitate to set these class breaks yourself.
+
+### How to Generate Classification Schemes
+
+GIS software such as QGIS and ArcGIS include the capability to classify your data using a variety of methods (or manually) and to see your data distribution as a histogram to assist in classification.
+
+[gis image]
+
+In JavaScript, the [Simple Statistics](https://github.com/simple-statistics/simple-statistics) library by Tom MacWright has several functions for classifying data distributions. If your web map uses D3, its [scale functions](https://github.com/mbostock/d3/wiki/Quantitative-Scales) can be used for classifications.
