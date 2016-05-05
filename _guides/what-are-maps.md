@@ -2,6 +2,7 @@
 layout: guide
 title: What is a map?
 nav: Guide
+category: general
 ---
 
 It may sound silly to ask what a map is, but it's important to understand the **what** and **why** of maps.

@@ -38,7 +38,7 @@ A **selective** variable allows us to immediately isolate a group of signs based
 
 ![]({{site.baseurl}}/media/guides/selective.png)
 
-Shape is the only one of Bertin's variables that he thought is always not selective, along with orientation when used for area representation (e.g., polygons symbolized by differently angled stripe patterns).
+Shape is the only one of Bertin's variables that he thought is always *not* selective, along with orientation when used for area representation (e.g., polygons symbolized by differently angled stripe patterns).
 
 ![]({{site.baseurl}}/media/guides/not_selective.png)
 
@@ -56,19 +56,19 @@ Of Bertin's variables, value (lightness) and size are dissociative. Both affect 
 
 ![]({{site.baseurl}}/media/guides/dissociative.png)
 
-*What does this mean for maps?* Understanding associative variables essentially means being aware of what will break the perception of "sameness" in a map. Size and color value will do this, so avoid them if you want symbols to appear as some kind of group. For example, if you have a reference map of civic institutions (say, schools, hospitals, and fire stations), keep their symbols around the same size, as they all belong to a single broad category.
+*What does this mean for maps?* Understanding associative variables essentially means being aware of what will break the perception of "sameness" in a map. Size and color value will do this, so avoid them if you want symbols to appear as some kind of group. For example, if you have a reference map of banks, schools, and hospitals, keep their symbols around the same size, as they all belong to the same broad category of civic institutions.
 
 **Ordered** variables have an immediately recognizable sequence. In other words, if you can order the symbols by their difference in a variable without having to consult a legend, the variable is ordered. Size and value, for example, have an immediately perceptible order. Position does too: symbols can naturally be seen as ordered from left to right or vice versa, for example. Color hue is an example of a non-ordered variable: there is no clear ordering of, say, red, green, and blue.
 
 ![]({{site.baseurl}}/media/guides/ordered.png)
 
-*What does this mean for maps?* When mapping numerical data, which most of the time has some order, employ ordered visuable variables in your symbolization. Conversely, avoid ordered variables for things that have no natural order. For example, don't use differences in ligthness to represent ancestry groups.
+*What does this mean for maps?* When mapping numerical data, which most of the time has some order, employ ordered visuable variables in your symbolization. Conversely, avoid ordered variables for things that have no natural order. For example, don't use differences in ligthness to represent ancestry groups from census data.
 
 **Quantitative** variables allow an estimation of the actual numerical difference between symbols. Besides position, where we can guess the measurable distance between symbols, Bertin considered only size variation to be quantitative. For example, we can easily see that one symbol is twice the size of another—more or less. 
 
 ![]({{site.baseurl}}/media/guides/quantitative.png)
 
-*What does this mean for maps?* Although it sounds like size variation is the only acceptable way to represent numerical data according to Bertin, that's not a rule. It's perfectly common—more common, perhaps—to use *ordered* but not quantitative variables, such as color value. Just be aware that differences of magnitude aren't immediately perceptible by the reader without looking at a map legend. Furthermore, be aware that even with size, visual estimation of quantitative differences is imperfect. "We must remember that quantitative perception represents an accurate approximation but not a precise measurement," Bertin writes. Other scholars have studied in more detail how human estimation of size (and area) works.
+*What does this mean for maps?* Although it sounds like size variation is the only acceptable way to represent numerical data according to Bertin, that's not a rule. It's perfectly common—more common, perhaps—to use *ordered* but non-quantitative variables, such as color value. Just be aware that differences of magnitude aren't immediately perceptible by the reader without looking at a map legend. Furthermore, be aware that even with size, visual estimation of quantitative differences is imperfect. "We must remember that quantitative perception represents an accurate approximation but not a precise measurement," Bertin writes. Other scholars have studied in more detail how human estimation of size (and area) works.
 
 ### Understanding visual variables for cartography
 
