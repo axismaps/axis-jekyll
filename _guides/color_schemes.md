@@ -1,9 +1,11 @@
 ---
 layout: guide
-title: Using Colors on Thematic Maps
+title: Using Colors on Maps
 nav: Guide
 category: general
 ---
+
+Color can be a challenging design elements to perfect. It takes experience and a designer's eye to produce pleasing and effective color schemes, but there are also some guidlines to follow. Recall that dimensions of color have powerful effects as [visual variables](../visual-variables), causing the eye to see groups, order, or some combination thereof. Choosing colors carefully based on the nature of the data you're mapping will ensure that the map's message is made clear.
 
 ### Controlling the Three Dimensions of Color
 
@@ -17,4 +19,21 @@ Nominal data are categories that are inherently unorderable (like soils or landu
 
 ### Perceptually-Graded Schemes
 
-The color schemes in ColorBrewer are perceptually graded ([pdf](http://www.geography.wisc.edu/~harrower/pdf/ColorBrewer2003.pdf)) so that the amount of color change in each color step looks consistent to our eyes. We have to do this because humans do not perceive differences in all hues equally well. Making professional color schemes like this isn't easy, especially if you are varying all three dimensions of color simultaneously as many of the multi-hue sequential and diverging scheme dos. While you shouldn't feel restricted to [ColorBrewer](http://www.ColorBrewer2.org), it does provide tested, reliable color schemes to get you started.
+The color schemes in ColorBrewer are perceptually graded ([pdf](http://www.geography.wisc.edu/~harrower/pdf/ColorBrewer2003.pdf)) so that the amount of color change in each color step looks consistent to our eyes. We have to do this because humans do not perceive differences in all hues equally well. Making professional color schemes like this isn't easy, especially if you are varying all three dimensions of color simultaneously as many of the multi-hue sequential and diverging scheme dos. While you shouldn't feel restricted to [ColorBrewer](http://www.ColorBrewer2.org), it does provide tested, reliable color schemes to get you started. Gregor Aisch has written more on [how perceptually graded multi-hue color schemes work](https://vis4.net/blog/posts/mastering-multi-hued-color-scales/) and how to create them.
+
+### Colors in reference maps
+
+Reference maps to some extent allow more creative freedom in color choices, as you are not bound to the restrictions of accurately depicting numerical relationships. While you should be aware of some cartographic conventions (blue for water, green for natural areas, etc.), the choice of color scheme is often up to you, based on the desired aesthetic, the medium and purpose, and so on. Good color choices are something you learn with experience and inspiration from others, but there are a number of resources for generating or sharing pleasing and effective color schemes (see below).
+
+That said, in reference mapping sometimes the challenge is finding color schemes that *don't* convey relationships. For example, if you use two different shades of red for two totally different types of feature, they may appear related, and possibly even ordered. For clear distinction between categories of features, rely on hue, potentially varying lightness and saturation within that category if there are ordered subsets (major roads versus minor roads).
+
+### Creating color schemes
+
+There are many helpful tools and community sites for creating color schemes! A few are listed below. The first few (including the aforementioned ColorBrewer) are good mostly for choropleth color ramps; the next few are for general color palettes.
+
+- [ColorBrewer](http://www.colorbrewer.org)
+- [chroma.js](https://github.com/gka/chroma.js) by Gregor Aisch and its [helper tool](https://gka.github.io/palettes/)
+- [Colorpicker](http://tristen.ca/hcl-picker/) based on chroma.js
+- [Adobe Color CC](https://color.adobe.com/)
+- [color-hex popular palettes](http://www.color-hex.com/color-palettes/popular.php)
+- [COLOURlovers](http://www.colourlovers.com/palettes)
