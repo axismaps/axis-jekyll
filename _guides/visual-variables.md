@@ -38,7 +38,7 @@ A **selective** variable allows us to immediately isolate a group of signs based
 
 ![]({{site.baseurl}}/media/guides/selective.png)
 
-Shape is the only one of Bertin's variables that he thought is always *not* selective, along with orientation when used for area representation (e.g., polygons symbolized by differently angled stripe patterns).
+Shape is the only one of Bertin's variables that he thought is *never* selective, along with orientation when used for area representation (e.g., polygons symbolized by differently angled stripe patterns).
 
 ![]({{site.baseurl}}/media/guides/not_selective.png)
 
