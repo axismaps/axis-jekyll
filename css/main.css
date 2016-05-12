@@ -845,6 +845,7 @@ p.more span{
   padding: 10px 25px 10px 15px;
   text-decoration: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .project-link:hover{
