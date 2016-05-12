@@ -839,6 +839,19 @@ p.more span{
 	color: white;
 }
 
+.project-link{
+  background-color: #57a1d7;
+  color: white !important;
+  padding: 10px 25px 10px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.project-link:hover{
+  background-color: #666;
+}
+
 #company a,
 #history a{
   border-bottom: 1px dashed #999;
