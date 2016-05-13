@@ -1174,10 +1174,6 @@ section.singleblog article:last-of-type{
   border: none;
 }
 
-#blog figure.highlight{
-  margin-right: -125px;
-}
-
 #blog figure.highlight code{
   font-size: 13px;
 }
