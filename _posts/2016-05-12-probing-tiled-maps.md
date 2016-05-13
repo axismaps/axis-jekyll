@@ -23,13 +23,19 @@ project: rio
 
 For the past few weeks, we've been working through the soft launch of [imagineRio](http://imaginerio.org), a project we've been working on for a couple of years with Rice University. **Fun fact:** The Portuguese translation of imagineRio is _imagináRio_ which directly translates to _imaginary_. There's more background information about the project on the [Rice Humanities Research Center website](http://hrc.rice.edu/imagineRio/home), but in short, the goal of the project was to create a platform to display spatially and temporally accurate reference of Rio de Janeiro from 1500 to the present day. The current front-end for the project uses these maps to display a range of iconography, including maps, plans, urban projects and images of the city (with viewsheds).
 
-The project has numerous technical challenges (which of course pale in comparison to the challenge of digitizing _all that historical data_), but I just wanted to focus on one of them for this post: **data probing and feature identification on a raster map.** First, a little background on the tools (or stack) being used for this project. Here they are as a sandwich:
+The project has numerous technical challenges (which of course pale in comparison to the challenge of digitizing _all that historical data_), but I just wanted to focus on one of them for this post: **data probing and feature identification on a raster map.** I've always considered data probing in the browser to be something that is exclusive to vector maps. Raster maps are just a collection of pixels. We don't know the features that are there so we can't interact with them. Usually that's OK. Interactive maps are vector thematic data on top of raster base tiles, _right?_ Not always (and yes, we'll talk about vector tiles another time, this project started 2 years ago):
 
-![Stack sandwich]({{ site.baseurl }}/media/posts/2016/05/sandwich.jpg) 
+- What if the thing your map is about is the type of thing usually reserved for basemaps (roads, buildings, natural features, etc)?
+- What if you need more map rendering _oomph_ (compositing, labels, etc) than the browser can provide?
+- What if your dataset is just _too big_ for the browser to handle as vectors?
 
-Delicious! And here they are as a stack of pancakes:
+These are all cases where you might choose to render your maps as rasters, but still want to give your users the ability to identify features through data probing and get information on-demand. First, a little background on the tools (or stack) being used for this project. Here they are as a sandwich:
 
-![Stack of pancakes]({{ site.baseurl }}/media/posts/2016/05/pancakes.jpg) 
+![Stack sandwich]({{ site.baseurl }}/media/posts/2016/05/sandwich.jpg)
+
+Delicious! And here they are as a _literal stack_ of pancakes:
+
+![Stack of pancakes]({{ site.baseurl }}/media/posts/2016/05/pancakes.jpg)
 
 Tasty! All of geographic data is stored in the PostGIS database. Each feature is tagged with a start date and end date, base on its first and last appearance (in that particular form) in the primary source documents. Map tiles are rendered using Mapnik (through [Tilelive](https://github.com/mapbox/tilelive)) based on:
 
@@ -38,11 +44,14 @@ Tasty! All of geographic data is stored in the PostGIS database. Each feature is
 
 Once delivered to the browser, the tiles are cached on AWS S3 so they won't be rendered again (unless the data in the database changes). The API (outside of the tile requests) is handled through [ExpressJS](http://expressjs.com).
 
-Hopefully that provides enough context for the technical side of this post. I imagine it's a _stack_ that's pretty familiar to lots of you. Personally, I prefer it in sandwich form. The basic flow of data probing on a raster map involves 3 separate functions:
+Hopefully that provides enough context for the technical side of this post. I imagine it's a _stack_ that's pretty familiar to lots of you. Personally, I prefer it in sandwich form. The basic flow of data probing on a raster map involves 4 separate functions:
+
+![Full probe workflow]({{ site.baseurl }}/media/posts/2016/05/full_probe.gif)
 
 1. The user clicks the map, requesting features at the lat / lon coordinates under their mouse
 2. The API uses PostGIS to identify which features exist at that given location and returns those features back to the browser
-3. The user selects the specific feature they're interested in (by name) and its outline is drawn on the map
+3. The user selects the specific feature they're interested in and requests details by the feature's ID
+4. The API returns the outline of the feature to the browser so it can be highlighted
 
 ### Requesting from the client
 
@@ -92,9 +101,17 @@ The last thing we should do on the client side is provide a little bit of feedba
 
 It's built using [pure CSS](https://github.com/axismaps/rio/blob/master/css/animate.css) so it loads much faster than an animated GIF. It can be places at the mouse cursor if it is appended to the `#map` div using the `x` and `y` properties of the `event` object passed to the click function.
 
-## Finding intersecting features in PostGIS
+### Finding intersecting features in PostGIS
 
+At this point, we know the geographic coordinates and the search radius for our query. Now, it's just a matter of asking the database what exists at that location. We're using ExpressJS to setup the [framework for the API](https://github.com/axismaps/rio/wiki/API-Documentation). This makes it easy for us to structure our API URLs using a single line of code:
 
+{% highlight js %}
+app.get( '/probe/:year/:radius/:coords/:layers?', geo.probe );
+{% endhighlight %}
+
+This defines the URL pattern, where each variable preceded by a `:` is a variable that will be available to us in the `request` object in the `geo.probe` function. The actual request made by the client is a jQuery `$.getJSON()` request to [http://imaginerio.rice.edu:3000/probe/2013/0.0005/-43.1941,-22.9286/](http://imaginerio.rice.edu:3000/probe/2013/0.5/-43.1941,-22.9286/).
+
+With all the parameters delivered to the `probe` function, we can use the [node-postgres client](https://github.com/brianc/node-postgres) to run our PostGIS query:
 
 {% highlight sql %}
 SELECT id, name, layer
@@ -103,4 +120,14 @@ SELECT id, name, layer
   ORDER BY layer
 {% endhighlight %}
 
+There are a few PostGIS functions at work here:
 
+1. `ST_MakePoint()` creates a new point geometry that the given lon, lat coordinates
+2. `ST_SetSRID()` defines the spatial reference system for the coordinates passed to the point
+3. `ST_DWithin()` searches the table for all features with geometry (`geom`) that is within `0.0005` of the point we created in `ST_MakePoint()`
+
+Once the query has ended, it's just a matter of packaging the data up into an object the client can work with and sending it back as a JSON response.
+
+### Letting the user choose their own feature
+
+Now that we've returned all of the matching features 
