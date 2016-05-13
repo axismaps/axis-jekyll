@@ -66,8 +66,8 @@ First, setup a function that runs every time the map is clicked. The `event` obj
 map.on( "click", probe );
 
 function probe( e ){
-	var lng = e.latlng.lng;
-	var lat = e.latlng.lat;
+  var lng = e.latlng.lng;
+  var lat = e.latlng.lat;
 }
 {% endhighlight %}
 
@@ -183,3 +183,9 @@ var topStyle = {
 {% endhighlight %}
 
 If you use this, make sure to but your mouse interactions on `topStyle` since that's the one with the fill.
+
+### Wrapping up
+
+There's a few more steps involved here than the simpler `layer.on( "mouseover", showProbe )` that we usually do. However, none of the steps taken on their own are that complicated. If you're building a medium to large-scale application (at least one big enough to justify PostGIS and Mapnik), you probably have a lot of these functions built into your API already. In fact, this is much more acutely a design and UX problem. How do we deliver the functionality that the user is expecting, without getting them bogged down in the different data formats we're using to display the data? How do we design an experience that gives them access to the information without needing to understand the minutiae of mapping?
+
+...and those vector tiles I didn't want to talk about? This is all going to change in 6 months, tops.
