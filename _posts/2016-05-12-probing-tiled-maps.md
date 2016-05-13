@@ -71,7 +71,7 @@ function probe( e ){
 }
 {% endhighlight %}
 
-Because this probing will operate on a multi-zoom map, we need to account for difference in zoom levels while the user is probing. At lower zoom levels (more zoomed-out), we need to search a larger radius because the tiny pixel at the very tip of the mouse pointer literally takes up more geographic space than it does at higher zoom levels. Furthermore, because this isn't as seamless as vector zooming where we can instantly highlight features on mouseover and there is a small amount of waiting involved, we want to cast the widest net so user's get the features they're looking for. We set the search radius on a `zoomend` event like so:
+Because this probing will operate on a multi-zoom map, we need to account for difference in zoom levels while the user is probing. At lower zoom levels (more zoomed-out), we need to search a larger radius because the tiny pixel at the very tip of the mouse pointer literally takes up more geographic space than it does at higher zoom levels. Furthermore, because this isn't as seamless as vector zooming where we can instantly highlight features on mouseover and there is a small amount of waiting involved, we want to cast the widest net so users get the features they're looking for. We set the search radius on a `zoomend` event like so:
 
 {% highlight js %}
 map.on( "zoomend", function(){
