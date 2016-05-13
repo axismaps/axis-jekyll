@@ -62,7 +62,7 @@ Of Bertin's variables, value (lightness) and size are dissociative. Both affect 
 
 ![]({{site.baseurl}}/media/guides/ordered.png)
 
-*What does this mean for maps?* When mapping numerical data, which most of the time has some order, employ ordered visuable variables in your symbolization. Conversely, avoid ordered variables for things that have no natural order. For example, don't use differences in ligthness to represent ancestry groups from census data.
+*What does this mean for maps?* When mapping numerical data, which most of the time has some order, employ ordered visuable variables in your symbolization. Conversely, avoid ordered variables for things that have no natural order. For example, don't use differences in lightness to represent ancestry groups from census data.
 
 **Quantitative** variables allow an estimation of the actual numerical difference between symbols. Besides position, where we can guess the measurable distance between symbols, Bertin considered only size variation to be quantitative. For example, we can easily see that one symbol is twice the size of another—more or less. 
 
