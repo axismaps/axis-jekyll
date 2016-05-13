@@ -1174,6 +1174,18 @@ section.singleblog article:last-of-type{
   border: none;
 }
 
+#blog figure.highlight{
+  margin-right: -125px;
+}
+
+#blog figure.highlight code{
+  font-size: 13px;
+}
+
+#blog figure.highlight pre{
+  line-height: 15px;
+}
+
 #blog .content a,
 #guide .content a{
   color: #111;
