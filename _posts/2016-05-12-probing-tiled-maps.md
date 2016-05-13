@@ -182,7 +182,7 @@ var topStyle = {
     };
 {% endhighlight %}
 
-If you use this, make sure to but your mouse interactions on `topStyle` since that's the one with the fill.
+If you use this, make sure to put your mouse interactions on `topStyle` since that's the one with the fill.
 
 ### Wrapping up
 
