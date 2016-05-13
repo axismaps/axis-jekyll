@@ -144,4 +144,60 @@ This type of probing is also really good for displaying features that otherwise 
 
 ### Drawing a feature on the map
 
+The final step of the probing process is to highlight the selected feature on the map. This tiny bit of user feedback is really important. It connects the information displayed in the window to the feature it represents on the map. It also makes the user feel like they're actually interacting with the features on the tiles. To "highlight" a feature on the map, we request a vector data (GeoJSON from the server) and draw it on top of the tiles.
+
+The request from the server uses `postgeo` (it's since been updated to [dbgeo](https://github.com/jczaplew/dbgeo)), to package the geometries returned from the server as nice GeoJSON that can be read into Leaflet using [omnivore](https://github.com/mapbox/leaflet-omnivore). However, there are a few small geometry tweaks we need to do first:
+
+{% highlight js %}
+exports.draw = function( req, res ){
+  postgeo.connect( conn );
+  var id = req.params.id;
+  postgeo.query( "SELECT ST_AsGeoJSON( geom ) AS geometry FROM basepoly WHERE id = '" + id, "geojson", function( data ){
+  //if it's a point, send a buffer to highlight the point
+  if( data.features[ 0 ].geometry.type == "Point" ){
+    var coords = data.features[ 0 ].geometry.coordinates.join( " " ),
+        id = data.features[ 0 ].properties.id;
+    postgeo.query( "SELECT '" + id + "' AS id, ST_AsGeoJSON( ST_Buffer( ST_GeomFromText( 'POINT(" + coords + ")' ), 0.0005 ) ) AS geometry", "geojson", function( data ){
+      res.send( data );
+    });
+	}
+  //if it's a multiline, join it into a single line and replace the geometry
+  else if( data.features[ 0 ].geometry.type == "MultiLineString" ){
+    var client = new pg.Client( conn );
+    client.connect();
+    var query = client.query( "SELECT ST_AsGeoJSON( ST_LineMerge( ST_GeomFromGeoJSON( '" + JSON.stringify( data.features[ 0 ].geometry ) + "' ) ) ) AS geom" );
+    query.on( 'row', function( results ){
+      data.features[ 0 ].geometry = JSON.parse( results.geom );
+    });
+    query.on( 'end', function(){
+      res.send( data );
+    });
+    //just send the polygon
+    } else {
+      res.send( data );
+    }
+  });
+}
+{% endhighlight %}
+
+The reasoning behind manipulating the geometry is we want it to draw as a single line because of the styling we're using. The double style with the slightly thicker and more transparent line beneath the thinner line requires the object to be a single geometry to prevent strange overlaps and breaks. The style we're using in Leaflet looks like:
+
+{% highlight js %}
+var topStyle = { 
+      color: color,
+      fillColor: color,
+      fillOpacity : 0.2,
+      weight : 2,
+      radius : 4
+    },
+    bottomStyle = { 
+      color: color,
+      fillColor: color,
+      fillOpacity : 0,
+      opacity : 0.2,
+      weight : 6,
+      radius : 4
+    };
+{% endhighlight %}
+
 
