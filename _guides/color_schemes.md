@@ -5,7 +5,7 @@ nav: Guide
 category: general
 ---
 
-Color can be a challenging design elements to perfect. It takes experience and a designer's eye to produce pleasing and effective color schemes, but there are also some guidlines to follow. Recall that dimensions of color have powerful effects as [visual variables](../visual-variables), causing the eye to see groups, order, or some combination thereof. Choosing colors carefully based on the nature of the data you're mapping will ensure that the map's message is made clear.
+Color can be a challenging design elements to perfect. It takes experience and a designer's eye to produce pleasing and effective color schemes, but there are also some guidelines to follow. Recall that dimensions of color have powerful effects as [visual variables](../visual-variables), causing the eye to see groups, order, or some combination thereof. Choosing colors carefully based on the nature of the data you're mapping will ensure that the map's message is made clear.
 
 ### Controlling the Three Dimensions of Color
 

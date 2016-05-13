@@ -17,7 +17,7 @@ Common generalization tasks include:
 - Amalgamation: group areas into larger areas
 - Collapse: reduce a detailed object to a point symbol
 - Merge: grouping of line features
-- Refinement: select only portins of an object to display
+- Refinement: select only portions of an object to display
 - Exaggeration: amplify a part of an object (for clarity)
 - Enhancement: add detail that visually elevates an object
 - Displacement: separate objects (for clarity)
