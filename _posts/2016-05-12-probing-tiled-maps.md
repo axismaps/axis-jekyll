@@ -146,41 +146,23 @@ This type of probing is also really good for displaying features that otherwise 
 
 The final step of the probing process is to highlight the selected feature on the map. This tiny bit of user feedback is really important. It connects the information displayed in the window to the feature it represents on the map. It also makes the user feel like they're actually interacting with the features on the tiles. To "highlight" a feature on the map, we request a vector data (GeoJSON from the server) and draw it on top of the tiles.
 
-The request from the server uses `postgeo` (it's since been updated to [dbgeo](https://github.com/jczaplew/dbgeo)), to package the geometries returned from the server as nice GeoJSON that can be read into Leaflet using [omnivore](https://github.com/mapbox/leaflet-omnivore). However, there are a few small geometry tweaks we need to do first:
+The request from the server uses `postgeo` (it's since been updated to [dbgeo](https://github.com/jczaplew/dbgeo)), to package the geometries returned from the server as nice GeoJSON that can be read into Leaflet using [omnivore](https://github.com/mapbox/leaflet-omnivore). The server-side code is very simply:
 
 {% highlight js %}
 exports.draw = function( req, res ){
   postgeo.connect( conn );
   var id = req.params.id;
   postgeo.query( "SELECT ST_AsGeoJSON( geom ) AS geometry FROM basepoly WHERE id = '" + id, "geojson", function( data ){
-  //if it's a point, send a buffer to highlight the point
-  if( data.features[ 0 ].geometry.type == "Point" ){
-    var coords = data.features[ 0 ].geometry.coordinates.join( " " ),
-        id = data.features[ 0 ].properties.id;
-    postgeo.query( "SELECT '" + id + "' AS id, ST_AsGeoJSON( ST_Buffer( ST_GeomFromText( 'POINT(" + coords + ")' ), 0.0005 ) ) AS geometry", "geojson", function( data ){
-      res.send( data );
-    });
-	}
-  //if it's a multiline, join it into a single line and replace the geometry
-  else if( data.features[ 0 ].geometry.type == "MultiLineString" ){
-    var client = new pg.Client( conn );
-    client.connect();
-    var query = client.query( "SELECT ST_AsGeoJSON( ST_LineMerge( ST_GeomFromGeoJSON( '" + JSON.stringify( data.features[ 0 ].geometry ) + "' ) ) ) AS geom" );
-    query.on( 'row', function( results ){
-      data.features[ 0 ].geometry = JSON.parse( results.geom );
-    });
-    query.on( 'end', function(){
-      res.send( data );
-    });
-    //just send the polygon
-    } else {
-      res.send( data );
-    }
+    res.send( data );
   });
 }
 {% endhighlight %}
 
-The reasoning behind manipulating the geometry is we want it to draw as a single line because of the styling we're using. The double style with the slightly thicker and more transparent line beneath the thinner line requires the object to be a single geometry to prevent strange overlaps and breaks. The style we're using in Leaflet looks like:
+The ID parameter is passed to the API using a similar URL structure as we setup with ExpressJS before. Outside of its use here, this is an excellent function to have as a part of your API to render GeoJSON for features on-demand. Once it's drawn in Leaflet, the highlight looks like:
+
+![Highlighted]({{ site.baseurl }}/media/posts/2016/05/highlight.png)
+
+We've added a small pseudo-halo around the polygon by drawing the vector twice. It gives it a little more depth and makes it seem less out-of-place when drawn on the pseudo-3D elements on the map. The styling object we use is:
 
 {% highlight js %}
 var topStyle = { 
@@ -200,4 +182,4 @@ var topStyle = {
     };
 {% endhighlight %}
 
-
+If you use this, make sure to but your mouse interactions on `topStyle` since that's the one with the fill.
