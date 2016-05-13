@@ -130,4 +130,18 @@ Once the query has ended, it's just a matter of packaging the data up into an ob
 
 ### Letting the user choose their own feature
 
-Now that we've returned all of the matching features 
+We've returned all of the matching features to the browser, with each feature's `name`, `layer`, and unique `id`. This allows us to present them in an organized way to the user like this:
+
+![List of features]({{ site.baseurl }}/media/posts/2016/05/list.png)
+
+It's important to organize them by layer if the type of feature they are isn't immediately apparent by its name.
+
+It's good to note that this step isn't 100% necessary for all datasets. Our data is dense enough and diverse enough that immediately drawing the vectors for each of the 7 features would be overwhelming and visually messy. Furthermore, it wouldn't accomplish the user's task of giving them information on the 1 feature they clicked on (it's not their fault a lot of stuff occupies the same geographic space). Instead, we've given them the tools to browse through the list of matching results which supports the tasks of those who want information on a specific feature, and those who want details on everything nearby.
+
+![Pick from the list]({{ site.baseurl }}/media/posts/2016/05/pick_list.gif)
+
+This type of probing is also really good for displaying features that otherwise wouldn't draw on the map because of their size and potential visual dominance. Check out the final feature _Centro_ chosen from the list. It's a neighborhood / area so it is labeled on the map, but not drawn because the complex borders would be distracting. By adding it to the list of probe-able features, we're given users a way to see it's exact boundaries.
+
+### Drawing a feature on the map
+
+
