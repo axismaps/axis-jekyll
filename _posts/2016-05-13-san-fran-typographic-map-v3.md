@@ -9,8 +9,8 @@ author:
   login: ben
   email: ben@axismaps.com
   url: ''
-date: ''
-date_gmt: ''
+date: '2016-05-13 00:00:00 +0000'
+date_gmt: '2016-05-13 00:00:00 +0000'
 categories:
 - Cartography
 tags:
@@ -22,7 +22,7 @@ project: typographic
 
 The San Francisco poster sold out over the holidays and we’ve been eager to reprint what is perhaps our most popular typographic map. Of course, we couldn’t resist making a few changes to refresh and update the design before doing so. Here’s a quick rundown of what’s new in this, the 3rd, version of the map:
 
-[![San Francisco Poster]({{ site.baseurl }}/media/posts/2016/05/full.jpg)](http://store.axismaps.com/product/typographic-map-san-francisco)
+[![San Francisco Poster]({{ site.baseurl }}/media/posts/2016/05/full_poster.jpg)](http://store.axismaps.com/product/typographic-map-san-francisco)
 
 ### Water areas filled with a solid color
 The San Francisco Peninsula divides the San Francisco Bay from the Pacific Ocean, with the city sitting on its northern tip. To enhance the distinction between land and water and further accentuate the city and its recognizable coastline, we filled major water areas with a solid color. Text in the bay and ocean now recedes into the background while text on the peninsula rises to the foreground:
