@@ -3,7 +3,7 @@ layout: post
 nav: Blog
 status: publish
 published: true
-title: San Francisco Typographic Map, v3.0!
+title: Updates to the San Francisco Typographic Map
 author:
   display_name: Ben Sheesley
   login: ben
@@ -30,12 +30,12 @@ To further accentuate the peninsula, city, and coastline, the San Francisco Bay 
 ![Blue Water]({{ site.baseurl }}/media/posts/2016/05/water.png)
 
 ### Stronger Parks
-Large parks, such as Golden Gate and Presidio, that had once been light green, were darkened so they would stand out better against the page background. These areas are important landmarks and by increasing the contrast, readers are more quickly able to get oriented.
+Large parks, such as Golden Gate and the Presidio, that had once been light green, were darkened so they would stand out better against the page background. These areas are important landmarks and by increasing the contrast, readers are more quickly able to get oriented.
 
 ![Parks]({{ site.baseurl }}/media/posts/2016/05/parks.png)
 
 ### Beaches
-Ocean, China, Baker, Marshall, and East beaches were added to the west and north sides of the peninsula. So as not to get lost among all the other text, they are shown in a unique font (Museo 500 italic) and color (beach-brown). The text is oriented to flow with the contours of the coastline.
+Ocean, China, Baker, Marshall, and East beaches were added to the west and north sides of the peninsula. So as not to get lost among all the other text, they were given a unique font (Museo 500 italic) and color (beach-brown). The text is oriented to flow with the contours of the coastline.
 
 ![Beaches]({{ site.baseurl }}/media/posts/2016/05/beach.png)
 
