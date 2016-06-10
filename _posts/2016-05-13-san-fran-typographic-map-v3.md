@@ -19,6 +19,7 @@ tags:
 comments: []
 project: typographic
 ---
+
 [![San Francisco Poster]({{ site.baseurl }}/media/posts/2016/05/full_poster.png)](http://store.axismaps.com/product/typographic-map-san-francisco)
 
 Ever since the San Francisco map sold out over the holidays we’ve been eager to get it reprinted and back up for sale. Of course, before doing so, we couldn’t resist making a few changes to refresh and update the design. The new version, pictured above, is the third in six years. Read down the page for a quick rundown of what’s new, or skip it and go straight to the [typographic maps store](http://store.axismaps.com) where you can check out the [map of San Francisco](http://store.axismaps.com/product/typographic-map-san-francisco) and our collection of other typographic cities.
