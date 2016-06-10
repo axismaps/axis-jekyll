@@ -93,4 +93,4 @@ When you view the file (log onto your server using SFTP and download it), it sho
 
 ![It's a test!]({{ site.baseurl }}/media/posts/2016/06/test.png)
 
-Success! You are now the proud owner of a map server. Go get another snack. You earned it.
+Success! You are now the proud owner of a map server. Go get another snack. You've earned it.
