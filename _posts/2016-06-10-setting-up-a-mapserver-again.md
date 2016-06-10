@@ -66,13 +66,31 @@ This script is pretty much a copy of [Dane Springmeyer's script for installing o
 
 ## Testing the installation
 
+While the install script was running, I hope you walked away to get a coffee and a snack. If so, you missed any error messages that might have appeared. Just in case there were some problems, let's run a quick test.
+
+> Unfortunately the vector tile test will fail. If you'd like to investigate / fix the problem, please fork the Gist and I'll update the post to point to yours.
+
+For the tests, we'll use the [node-mapnik-sample-code](https://github.com/mapnik/node-mapnik-sample-code). There are lots of tests and sample code, so it's a good place to poke around once you're up and running. First, clone the code onto the server:
 
 {% highlight shell %}
 git clone https://github.com/mapnik/node-mapnik-sample-code.git
+{% endhighlight %}
+
+Now install node-mapnik in that directory:
+
+{% highlight shell %}
 cd node-mapnik-sample-code/
 npm install mapnik
+{% endhighlight %}
+
+Now run the basic rendering code to use mapnik to generate a very simple map:
+
+{% highlight shell %}
 node render/app.js stylesheet.xml test.png
 {% endhighlight %}
 
+When you view the file (log onto your server using SFTP and download it), it should look something like this:
 
-## Next steps
+![It's a test!]({{ site.baseurl }}/media/posts/2016/06/test.png)
+
+Success! You are now the proud owner of a map server. Go get another snack. You earned it.
