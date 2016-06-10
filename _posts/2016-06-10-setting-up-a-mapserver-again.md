@@ -68,7 +68,7 @@ This script is pretty much a copy of [Dane Springmeyer's script for installing o
 
 While the install script was running, I hope you walked away to get a coffee and a snack. If so, you missed any error messages that might have appeared. Just in case there were some problems, let's run a quick test.
 
-> Unfortunately the vector tile test will fail. If you'd like to investigate / fix the problem, please fork the Gist and I'll update the post to point to yours.
+> If you did stick around, you may have noticed that the vector tile tests for node-mapnik failed so this installation won't support vector tiles generation from Mapnik. If you'd like to investigate / fix the problem, please fork the Gist and I'll update the post to point to yours. If you'd like to see the results of that test again run `npm-test` from the node-mapnik directory.
 
 For the tests, we'll use the [node-mapnik-sample-code](https://github.com/mapnik/node-mapnik-sample-code). There are lots of tests and sample code, so it's a good place to poke around once you're up and running. First, clone the code onto the server:
 
