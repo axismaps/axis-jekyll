@@ -1172,6 +1172,7 @@ section.singleblog article:last-of-type{
 #guide .content pre code{
   background-color: initial;
   border: none;
+  padding: 0;
 }
 
 #blog figure.highlight code{
