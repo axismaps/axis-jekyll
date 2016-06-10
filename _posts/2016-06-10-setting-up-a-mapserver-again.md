@@ -24,7 +24,7 @@ About 4 years ago we wrote a post about [setting up a map server with Mapnik and
 
 ![The pancakes again]({{ site.baseurl }}/media/posts/2016/06/pancakes.jpg)
 
-Unlike the previous guide, this one won't cover basics of Linux and the command line. It's also written for a Red Hat Enterprise Linux 7.2 server instead of Ubuntu. Let's do it.
+Unlike the previous guide, this one won't cover basics of Linux and the command line. It's also written for a Red Hat Enterprise Linux (RHEL) 7.2 server instead of Ubuntu. Let's do it.
 
 ## Provision the server
 
