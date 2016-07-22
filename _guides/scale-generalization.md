@@ -56,7 +56,7 @@ Common generalization tasks include:
 
 ### Multi-scale map design
 
-Generalization is a hugely important task in modern mapping, as many web maps cover a wide scale range and thus many different levels of generalization. Increasingly, some of the work is done for you behind the scenes, algorithmically. For example, consider Mapbox's OpennStreetMap-based vector tiles, which deliver data pre-simplified to levels appropriate for various scales:
+Generalization is a hugely important task in modern mapping, as many web maps cover a wide scale range and thus many different levels of generalization. Increasingly, some of the work is done for you behind the scenes, algorithmically. For example, consider Mapbox's OpenStreetMap-based vector tiles, which deliver data pre-simplified to levels appropriate for various scales:
 
 ![]({{site.baseurl}}/media/guides/mapbox_scale.jpg)
 
