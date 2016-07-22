@@ -38,6 +38,15 @@ order: 4
       {% endif %}
     {% endfor %}
   </ul>
+
+  <h3>Web and Interactive Maps</h3>
+  <ul>
+    {% for guide in site.guides %}
+      {% if guide.category == 'web' %}
+        <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   
   <p><strong>Want to dig a bit deeper?</strong> Have a look at a few of our favorite textbooks:</p>  
   <ul>
