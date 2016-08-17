@@ -17,7 +17,7 @@ A simple definition is that **a map is a *representation* of a place.** This car
 
 Broadly, maps fall into two categories:
 
-**Reference maps** emphasize the **location** of spatial phenomena, such a countries, cities, rivers, etc. Chances are the maps you use most in your daily life are reference maps—street maps (e.g., Google Maps) that help you see _where things are_. Other common reference maps emphasize physical landscapes—think topographic maps or maps of a national park.
+**Reference maps** emphasize the **location** of spatial phenomena, such countries, cities, rivers, etc. Chances are the maps you use most in your daily life are reference maps—street maps (e.g., Google Maps) that help you see _where things are_. Other common reference maps emphasize physical landscapes—think topographic maps or maps of a national park.
 
 [reference map image]
 
