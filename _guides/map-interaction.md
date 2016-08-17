@@ -41,8 +41,24 @@ While there are a variety of ways to pan and zoom a map, a handful are the most 
 
 **Click to zoom to a feature**: In strongly data-driven or storytelling maps, clicking on a map feature (such a state or county) may cause the map to zoom in and focus on that feature. It's a good shortcut for bringing the map user directly to the thing they're interested in, skipping a lot of manual map movement. This can also work with non-map elements: for example, if your map of states also includes a list of states, clicking a state in the list can trigger a map zoom to that state.
 
+### Data manipulation
+
+**Toggling layers**
+
+**Changing datasets**
+
+**Filtering**
+
+**Reclassifying**
+
 ### Information retrieval
 
 Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get details on demand. A word of caution, though: retrieving more information requires _work_ by the user, and users want to be lazy. Don't rely on interaction as a crutch to get you out of smart map design. If important information can be included on the map itself without sacrificing legibility and without requiring interaction, then it should be included on the map.
 
-Retrieval methods, furthermore, are a bit diverse and not as standardized as panning and zooming methods. Some are reasonably common, but you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information. 
+Retrieval methods, furthermore, are a bit diverse and not as standardized as panning and zooming methods. Some are reasonably common, but you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
+
+**Click for more**
+
+**Hover tooltip**
+
+**Floating elements vs fixed panels**
