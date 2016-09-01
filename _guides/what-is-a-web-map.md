@@ -21,3 +21,43 @@ Web maps, in contrast to a simple static map image that resides on the web, _rel
 
 ### Anatomy of a web map
 
+In many contexts "web map" has an even narrower definition, a category of map that will be described here in further detail. It includes some of the maps you probably use almost every day, such as Google Maps.
+
+#### Slippy maps
+
+The typical form of web map is sometimes called a "slippy map." This is a type of map you're used to, like Google's: you can grab and pan the map, and zoom in or out. Google was a major pioneer of this type of map with the introduction of their map service in 2005. It represented a huge leap from the previous standard web map, where panning (in fixed amounts) or zooming essentially required reloading the entire map image with a new extent.
+
+#### Tiles
+
+Slippy maps accomplish their slick usability with _tiling_ schemes. In the old days, a map view was a single image. You had to load the whole thing before you could see it. Now, the map you see comprises many smaller tiles that load invididually. What this means is you _only load the part of the map you need._ For example if you want to look slightly east, you only need to load a new column of tiles on the right side instead of reloading the entire map. Tiling makes map viewing fast and data much more manageable.
+
+Tiles come in two flavors: **raster tiles** are pre-rendered images of map data, while **vector tiles** are small sections of the data itself, which is then rendered in the browser. Raster tiles are the original standard and are still very common, but vector tiles have moved to the forefront as technology has made live-rendering of map data feasible. Vector tiles are efficient and fast for a variety of reasons—read more [[[somewhere]]].
+
+Tiled maps use a standard _tiling scheme_ which is worth understanding. Tiles are numbered according to their zoom level and x and y position, typrically starting in the top left corner.
+
+[[tile scheme image]]
+
+Each zoom level contains twice as many rows and columns as the previous level. With zoom level zero being a single tile for the whole world, this means the number of tiles for any zoom level _z_ is:
+
+2<sup>z</sup> x 2<sup>z</sup>, or 4<sup>z</sup>
+
+Notice the relationship of tile numbers in zoom level 3 (below) to those in zoom level 2 (above). Consider the top left corner of each tile in zoom level 2. When we increase the zoom level by one, the x and y for a tile with that same corner position on the map are multiplied by two.
+
+Although the numbering pattern is different in a couple of systems, tile positions and extents are nearly universal and are well understood by code libraries such as Leaflet. Many are built to understand URL patterns for tile locations (tiles are stored online one way or another), such as  
+`http://path-to-tiles/{z}/{x}/{y}.png`.
+
+#### Map projections on the web
+
+Standard slippy maps use the **Web Mercator** projection, much to the chagrin of many cartographers. There are a couple good reasons for this, though:
+
+* The map is conformal (preserving shape) and represents all constant bearings as straight lines. What this boils down to is that you can zoom into the map anywhere in the world, and all shapes and directions will look more or less correct. This isn't true of other map projections, where, for example, Quito might look right but a high-latitude place like Oslo would look terribly squished.
+
+* Almost the entire world fits neatly in a square. This makes the tiling scheme described above work very well.
+
+However, it comes with a few pitfalls:
+
+* The Mercator projection is wildly inappropriate for some types of thematic maps. (To say nothing of the generally distorted version of the world it presents.) Choropleth maps and others that depend on correct area proportions should not be used with Mercator maps at small (global-to-continental) scales, as area distortions can be huge. Distortions are minimal at local levels, though.
+
+* As implied above, scale is not constant around the world. **Be suspicious if someone presents you with Google Maps screenshots of two different places "at the same scale."** Zoom level is not the same as scale. At high latitudes, where areas are enlarged, a tile represents less area than near the equator. [[example tiles]]
+
+* Although _most_ of the world fits in a square, not all of it does. In fact, it's impossible to represent the north and south pole at all—they stretch infinitely up and down! While the typical map, which cuts off at about 85 degrees north and south, doesn't miss much, it does miss something, notably much of Antarctica.
