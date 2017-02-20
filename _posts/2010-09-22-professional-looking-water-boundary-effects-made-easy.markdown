@@ -21,5 +21,5 @@ categories:
 tags: []
 comments: []
 ---
-<p>If you haven't seen it already, <a href="http://indiemapper.com/blog/2010/09/professional-looking-water-boundary-effects-made-easy/" target="_blank">head over to the indiemapper blog</a> for a quick tutorial on how to create some cool water/land boundary effects with a few clicks of indiemapper.</p>
-<p style="text-align: center;"><a href="http://indiemapper.com/blog/2010/09/professional-looking-water-boundary-effects-made-easy/" target="_blank"><img class="aligncenter size-full wp-image-735" src="{{ site.baseurl }}/media/posts/2010/09/teaser_watereffects.jpg" alt="" width="500" height="300" /></a></p>
+<p>If you haven't seen it already, <a href="http://indiemapper.io/blog/2010/09/professional-looking-water-boundary-effects-made-easy/" target="_blank">head over to the indiemapper blog</a> for a quick tutorial on how to create some cool water/land boundary effects with a few clicks of indiemapper.</p>
+<p style="text-align: center;"><a href="http://indiemapper.io/blog/2010/09/professional-looking-water-boundary-effects-made-easy/" target="_blank"><img class="aligncenter size-full wp-image-735" src="{{ site.baseurl }}/media/posts/2010/09/teaser_watereffects.jpg" alt="" width="500" height="300" /></a></p>
