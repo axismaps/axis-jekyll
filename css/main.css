@@ -64,6 +64,19 @@ video, iframe {
 	clear: both;
 }
 
+#announcement{
+	background-color: #595959;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 0 10px;
+	text-align: center;
+	color: white;
+}
+
+#announcement a{
+	color: #57a1d7;
+}
+
 #build, #contact #submit{
 	float: right;
 	margin: 5px 0;
