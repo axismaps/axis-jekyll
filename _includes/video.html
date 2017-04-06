@@ -1,0 +1,31 @@
+<div id='home-video'>
+  <video playsinline autoplay muted loop poster="{{ '/media/video/poster.png' | prepend: site.baseurl }}">
+    <source src="{{ '/media/video/home.mp4' | prepend: site.baseurl }}" type="video/mp4">
+  </video>
+  <div id="page-title">
+    <div>
+      <h5>Axis Maps</h5>
+      <h1>We bring the traditions of cartography to the Web.</h1>
+      <p>&nbsp;</p>
+      <h3>We build custom maps to match your data, visual identity, message, and audience.</h3>
+      <p>&nbsp;</p>
+      <a class="button" href="{{ '/contact/' | prepend: site.baseurl }}">Contact us</a>
+    </div>
+  </div>
+  <div id="scroll-indicator">Projects <br/> <i class="icon-down-open"></i></div>
+</div>
+<script>
+  $( window ).resize( function(){
+    var h = $( window ).height() - 100;
+    var w = $( window ).width();
+    if( w / h < 16 / 9 ){
+      var w1 = h * ( 16 / 9 );
+      $( "video" )
+        .height( h )
+        .width( w1 )
+        .css( "margin-left", ( w - w1 ) / 2 );
+    } else {
+      $( "#page-title" ).css( 'min-height', $( '#home-video' ).height() );
+    }
+  }).resize();
+</script>
