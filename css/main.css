@@ -1,8 +1,5 @@
 body {
-	border-top: 8px solid #595959;
-	background: #ececec url(../images/background.png);
-	color: #555;
-	font: 15px / 20px "rosario", sans-serif;
+	font: 15px / 20px "Lato", sans-serif;
 }
 
 h2 {
@@ -12,7 +9,12 @@ h2 {
 }
 
 a {
-	color: #111;
+	color: #58A2D8;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
 }
 
 hr {
@@ -47,21 +49,25 @@ video, iframe {
 	clear: both;
 }
 
-#wrapper{
-	max-width: 975px;
-	margin: 0 auto 10px;
-	/*background-color: #fbf9ed;*/
-}
-
 /* HEADER */
 #header{
-	padding: 25px 0 15px;
+	height: 75px;
+	padding: 25px 0 0 30px;
 }
 
-#header:after {
-	content: "";
-	display: block;
-	clear: both;
+#header *{
+	height: 50px
+}
+
+nav{
+	float: right;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav a{
+	margin-right: 30px;
 }
 
 #announcement{
@@ -75,154 +81,6 @@ video, iframe {
 
 #announcement a{
 	color: #57a1d7;
-}
-
-#build, #contact #submit{
-	float: right;
-	margin: 5px 0;
-  padding: 0 20px;
-	height: 45px;
-	border-radius: 8px;
-	background-color: #999;
-	color: white;
-	text-align: center;
-	font: normal 18px / 45px "rosario", sans-serif;
-	cursor: pointer;
-}
-
-#build b{
-  color: white;
-}
-
-#build:hover, #contact #submit:hover{
-	background-color: #666;
-}
-
-#build span{
-	display: none;
-}
-
-#contact{
-	display: none;
-	margin-bottom: 15px;
-}
-
-#contact #other{
-	float: right;
-	width: 40%;
-}
-
-#contact form{
-	float: left;
-	width: 55%;
-	text-align: right;
-}
-
-#contact form em{
-	display: block;
-	float: right;
-}
-
-#contact label{
-	font-weight: bold;
-}
-
-#contact input{
-	margin: 10px 0 5px 5px;
-	width: 50%;
-	/*text-indent: 10px;*/
-	line-height: 25px;
-	text-align: right;
-	padding-right: 2%;
-	font-style: italic;
-}
-
-#contact textarea{
-	width: 100%;
-	height: 160px;
-	resize: none;
-}
-
-#contact #submit{
-	padding: 0;
-	width: 90px;
-  line-height: 35px;
-	height: 35px;
-	border: none;
-	text-indent: 0;
-}
-
-#cancel_contact{
-  border-bottom: 1px dashed #999;
-  color: #111;
-	float: right;
-	margin-right: 20px;
-  margin-top: 13px;
-  text-decoration: none;
-}
-
-#cancel_contact:hover{
-  border-bottom-style: solid;
-}
-
-#contact img.loading{
-  display: none;
-  float: right;
-  margin: 15px 40px 0 35px;
-}
-
-#other a{
-  border-bottom: 1px dashed #999;
-  color: #111;
-  text-decoration: none;
-}
-
-#other a:hover{
-  border-bottom-style: solid;
-}
-
-/* NAVIGATION */
-nav, nav ul{
-	margin: 0;
-	font-size: 16px;
-	line-height: 80px;
-	background-color: #eee;
-}
-nav li{
-	display: inline;
-	padding: 5px 10px;
-	border-radius: 5px;
-	color: #555;
-	font-weight: bold;
-}
-
-nav li:hover{
-	background-color: #ccc;
-}
-
-nav a{
-	color: inherit;
-  font-size: 18px;
-  font-weight: bold;
-	text-decoration: none;
-}
-
-nav li.current, nav li.current:hover{
-	background-color: #666;
-	color: white;
-}
-
-nav #menu {
-	font-size: 2em;
-	text-align: right;
-	margin: 0 10px 0 0;
-	display: none;
-	line-height: 1.4em;
-	padding: 0;
-}
-
-nav #menu:hover {
-	cursor: pointer;
 }
 
 /* SLIDESHOWS */
