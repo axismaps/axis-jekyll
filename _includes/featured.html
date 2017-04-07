@@ -19,4 +19,7 @@
         {% endfor %}
         <div style="clear:both"></div>
     </div>
+    {% if page.layout == 'home' %}
+        <a class="button hollow" href="{{ '/projects/' | prepend: site.baseurl }}">See more projects...</a>
+    {% endif %}
 </section>

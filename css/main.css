@@ -220,14 +220,14 @@ footer a:hover{
 }
 
 #project-grid{
-	margin: 10px 30px;
+	margin: 10px 40px;
 }
 
 #project-grid a.project{
 	display: block;
 	padding: 20px 20px 0;
 	margin: 20px;
-	width: calc( 50% - 105px );
+	width: calc( 50% - 85px );
 	min-width: 360px;
 	height: 380px;
 	color: black;
@@ -249,6 +249,24 @@ a.project .grid-image{
 
 a.project:hover .grid-image{
 	background-position: bottom right;
+}
+
+/* CLIENTS */
+#clients{
+	margin: 0 40px;
+}
+
+#clients h4{
+	text-indent: 20px;
+}
+
+#clients div{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#clients img{
+	margin: 20px;
 }
 
 /* PROJECT */
