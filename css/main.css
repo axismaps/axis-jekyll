@@ -77,7 +77,7 @@ a.button.hollow{
 
 a.button.hollow:hover{
 	background-color: #58A2D8;
-	color: white;
+	color: white !important;
 }
 
 hr {
@@ -267,6 +267,88 @@ a.project:hover .grid-image{
 
 #clients img{
 	margin: 20px;
+}
+
+/* TOOLS */
+#tools{
+  margin: 20px 60px;
+}
+
+.tool{
+  margin: 20px 0;
+  clear: both;
+  padding: 20px;
+}
+
+.tool div{
+  padding: 0 30px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 250px;
+}
+
+.tool h2{
+  font-size: 30px;
+}
+
+.tool p{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.tool img{
+  float: right;
+  height: 250px;
+  margin: 0 0 0 20px;
+}
+
+.tool:nth-child(even) img{
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.guide{
+  background-color: #f8f1fa;
+}
+
+.guide a.button.hollow{
+  border-color: #A968B5;
+  color: #A968B5;
+}
+
+.guide a.button.hollow:hover{
+  background-color: #A968B5;
+  color: white;
+}
+
+.indiemapper{
+  background-color: #edf5fa;
+}
+
+.colorbrewer{
+  background-color: #f4fbf9;
+}
+
+.colorbrewer a.button.hollow{
+  border-color: #398E7A;
+  color: #398E7A;
+}
+
+.colorbrewer a.button.hollow:hover{
+  background-color: #398E7A;
+}
+
+.typographic{
+  background-color: #f7f2e9;
+}
+
+.typographic a.button.hollow{
+  border-color: #BA8B36;
+  color: #BA8B36;
+}
+
+.typographic a.button.hollow:hover{
+  background-color: #BA8B36;
 }
 
 /* PROJECT */
