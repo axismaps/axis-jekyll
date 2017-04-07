@@ -31,8 +31,8 @@
     $( "#home-video, #page-title" ).height( h );
   });
 
-  window.setTimeout( function(){
+  $( window ).load( function(){
     $( window ).resize();
     $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 );
-  }, 500 );
+  });
 </script>
