@@ -145,7 +145,7 @@ nav a{
 	color: #57a1d7;
 }
 
-/* SLIDESHOWS */
+/* HOME VIDEO */
 #home-video, #home-video #page-title{
 	width: 100%;
 	height: calc( 100% - 100px );
@@ -184,29 +184,22 @@ nav a{
 
 /* FOOTER */
 footer{
-	clear: both;
-	padding: 20px 0;
-	color: #999;
-	text-align: center;
+  padding: 40px;
+  background-color: #EFF1F2;
 }
 
-footer p {
-	font: 13px 'expo-serif-pro';
-	margin: 0;
+footer > div{
+  width: calc( 25% - 40px );
+  float: left;
+  padding: 0 20px;
 }
 
-footer p:last-child {
-	margin-top: 2em;
+footer > hr{
+  clear: both;
 }
 
-footer a{
-  border-bottom: 1px dashed #999;
-  color: #111;
-  text-decoration: none;
-}
-
-footer a:hover{
-  border-bottom-style: solid;
+footer iframe.twitter-timeline{
+  min-height: 300px !important;
 }
 
 /* PORTFOLIO */
@@ -937,4 +930,8 @@ section.singleblog article:last-of-type{
 	#project-grid a.project{
 		width: calc( 100% - 105px );
 	}
+
+  footer > div{
+    width: calc( 50% - 40px );
+  }
 }
