@@ -11,8 +11,8 @@
       <p>&nbsp;</p>
       <a class="button" href="{{ '/contact/' | prepend: site.baseurl }}">Contact us</a>
     </div>
+    <div id="scroll-indicator">Projects <br/> <i class="icon-down-open"></i></div>
   </div>
-  <div id="scroll-indicator">Projects <br/> <i class="icon-down-open"></i></div>
 </div>
 <script>
   $( window ).resize( function(){
@@ -20,12 +20,19 @@
     var w = $( window ).width();
     if( w / h < 16 / 9 ){
       var w1 = h * ( 16 / 9 );
+      $( '#page-title' ).removeAttr( 'style' );
       $( "video" )
         .height( h )
         .width( w1 )
         .css( "margin-left", ( w - w1 ) / 2 );
     } else {
-      $( "#page-title" ).css( 'min-height', $( '#home-video' ).height() );
+      $( "video" ).removeAttr( 'style' ).width( w );
     }
-  }).resize();
+    $( "#home-video, #page-title" ).height( h );
+  });
+
+  window.setTimeout( function(){
+    $( window ).resize();
+    $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 );
+  }, 500 );
 </script>

@@ -144,20 +144,21 @@ nav a{
 	text-shadow: 0 0 5px black;
 }
 
-#home-video #page-title div{
-	padding: 0 40% 100px 50px;
-}
-
 #home-video #page-title div, #home-video #scroll-indicator{
 	position: absolute;
+}
+
+#home-video #page-title div{
+	padding: 0 40% 100px 50px;
 	bottom: 0;
 }
 
 #home-video #scroll-indicator{
 	width: 100%;
+	opacity: 0;
 	margin-bottom: 20px;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 25px;
+	line-height: 30px;
 	font-weight: bold;
 	color: #58A2D8;
 	text-align: center;
