@@ -82,9 +82,8 @@ a.button.hollow:hover{
 
 hr {
 	margin: 25px auto;
-	width: 90%;
 	border: none;
-	border-top: 1px dashed #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 section{
@@ -196,10 +195,21 @@ footer > div{
 
 footer > hr{
   clear: both;
+  height: 38px;
+  margin: 40px 20px;
+  background-image: url(../images/logo_small.png);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 footer iframe.twitter-timeline{
   min-height: 300px !important;
+}
+
+footer p.legal{
+  clear: both;
+  color: #999;
+  text-align: center;
 }
 
 /* PORTFOLIO */
