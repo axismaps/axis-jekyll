@@ -29,6 +29,12 @@
       "css": "at",
       "code": 59393,
       "src": "modernpics"
+    },
+    {
+      "uid": "f3dc2d6d8fe9cf9ebff84dc260888cdf",
+      "css": "heart-empty",
+      "code": 59394,
+      "src": "fontawesome"
     }
   ]
 }

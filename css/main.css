@@ -1,6 +1,6 @@
 body {
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 20px;
+	line-height: 26px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
@@ -54,6 +54,7 @@ a:hover{
 a.button{
 	display: inline-block;
 	line-height: 50px;
+  margin: 20px 0;
 	padding: 0 15px;
 	background-color: #58A2D8;
 	border-radius: 3px;
@@ -81,7 +82,7 @@ a.button.hollow:hover{
 }
 
 hr {
-	margin: 25px auto;
+	margin: 40px auto;
 	border: none;
 	border-bottom: 1px solid #ccc;
 }
@@ -99,6 +100,25 @@ iframe {
   max-width: 100%;
 }
 
+.red{
+  color: #F26565;
+}
+
+.well{
+  clear: both;
+  padding: 40px 50px;
+  margin: 40px -20px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.col3{
+  width: 33%;
+  padding: 0 10px;
+  float: left;
+  box-sizing: border-box;
+}
+
 /* UTILITY */
 .clear-left {
 	clear: left;
@@ -108,6 +128,12 @@ iframe {
 }
 .clear-both {
 	clear: both;
+}
+img.right{
+  float: right;
+}
+img.left{
+  float: left;
 }
 
 /* HEADER */
@@ -185,6 +211,8 @@ nav a{
 footer{
   padding: 40px;
   background-color: #EFF1F2;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 footer > div{
@@ -283,7 +311,7 @@ a.project:hover .grid-image{
   padding: 20px;
 }
 
-.tool div{
+.tool div, .element div{
   padding: 0 30px;
   display: table-cell;
   vertical-align: middle;
@@ -354,6 +382,21 @@ a.project:hover .grid-image{
 
 .typographic a.button.hollow:hover{
   background-color: #BA8B36;
+}
+
+/* ABOUT */
+#about{
+  margin: 20px 20%;
+  text-align: center;
+  line-height: 26px;
+}
+
+#data-design-code{
+  margin: 20px 80px;
+}
+
+#about p{
+  text-align: left;
 }
 
 /* PROJECT */
