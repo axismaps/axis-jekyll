@@ -25,27 +25,31 @@ In simple terms, we look at map interactions as supporting three general categor
 
 ### Panning and zooming
 
-While there are a variety of ways to pan and zoom a map, a handful are the most common and well understood. In our experience it's best to stick with some or all of these, and think extra hard about using other methods, as they may be confusing or at best unnecessary. Most web mapping libraries, such as Leaflet, support these methods as core functionality.
+While there are a variety of ways to pan and zoom a map, a handful are the most common and well understood. In our experience it's best to stick with some or all of these, and think extra hard about relying on unconventional methods, which can confuse people. Most web mapping libraries, such as Leaflet, support these as core functionality.
 
-**Click and drag (or touch and drag)**: this is a near-universally understood way to pan a map, thanks to Google Maps and its ilk.
+- Click and drag (or touch and drag)
+- Double click to zoom
+- Scroll to zoom
+- Pinch to zoom
+- Arrow keys to pan *(important for accessibility!)*
+- Plus and minus keys to zoom *(ditto)*
 
-**Double click to zoom**: Double clicking zooms the map in a fixed amount.
+In strongly data-driven or storytelling maps, panning and zooming can also be more integrated with data exploration or page elements. For example, clicking on a state on the map might zoom to that state and reveal more details (say, counties); or clicking a state name in a list might do the same; or stepping through sections of a story might automatically move the map to different areas of interest. It's a good shortcut for bringing the map user directly to the thing they're interested in, skipping a lot of manual map movement.
 
-**Scroll to zoom**: On non-touch devices, scroll gestures commonly zoom a map in our out (again Google Maps, etc. do this). Some mapping platforms use scrolling to pan the map—please note that this will drive modern web-savvy users absolutely bonkers, so we do not recommend it.
-
-**Pinch to zoom**: Two-finger pinching is a standard touch method for zooming.
-
-**Arrow keys to pan**: Don't forget keyboard support! Not only is this a standard, well-understood capability, keyboard controls are very important for accessibility.
-
-**Plus and minus keys to zoom**: Like above, keyboard control for map zooming is important.
-
-**Click to zoom to a feature**: In strongly data-driven or storytelling maps, clicking on a map feature (such a state or county) may cause the map to zoom in and focus on that feature. It's a good shortcut for bringing the map user directly to the thing they're interested in, skipping a lot of manual map movement. This can also work with non-map elements: for example, if your map of states also includes a list of states, clicking a state in the list can trigger a map zoom to that state.
+![]({{site.baseurl}}/media/guides/click_to_zoom1.jpg)  
+![]({{site.baseurl}}/media/guides/click_to_zoom2.jpg)  
+_On this map, clicking the state-level choropleth zooms in and reveals more detail. Note the "click to zoom in" hints and that standard zoom controls also exist, as this behavior may not be obvious to users._	
 
 ### Data manipulation
 
-**Toggling layers**
+Depending on your audience, this kind of manipulation—changing what the map shows—while it may seem like a simple type use of interactive maps to you, is often more work than most users care to do. Be aware of the costs of building this and consider alternatives like small multiples if your audience is unlikely to dive deep into the map. 
 
-**Changing datasets**
+Data manipulation tasks might include:
+
+- Toggling layers (switching between data layers and/or stacking layers on one another)
+- Changing data sets
+- Changing geographic units (sometimes in conjunction with zoom, as in the example above)
+- Reclassifying data
 
 **Filtering**
 
@@ -53,12 +57,11 @@ While there are a variety of ways to pan and zoom a map, a handful are the most 
 
 ### Information retrieval
 
-Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get details on demand. A word of caution, though: retrieving more information requires _work_ by the user, and users want to be lazy. Don't rely on interaction as a crutch to get you out of smart map design. If important information can be included on the map itself without sacrificing legibility and without requiring interaction, then it should be included on the map.
+Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get details on demand. Again a word of caution: retrieving more information requires _work_ by the user, and users want to be lazy. Don't lean on interaction as a crutch to get you out of smart map design. If important information can be included on the map itself without sacrificing legibility and without requiring interaction, then it should be included on the map.
 
-Retrieval methods, furthermore, are a bit diverse and not as standardized as panning and zooming methods. Some are reasonably common, but you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
+Retrieval methods, furthermore, are not as standardized as panning and zooming methods, but mostly come in two flavors. Although they're reasonably common, you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
 
-**Click for more**
-
-**Hover tooltip**
+- Click for more
+- Hover tooltip
 
 **Floating elements vs fixed panels**
