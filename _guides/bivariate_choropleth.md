@@ -17,9 +17,9 @@ All other things being equal, bivariate choropleth maps are more difficult to re
 
 This is a 3-class x 3-class bivariate choropleth map from [indiemapper](http://indiemapper.io) that uses a diverging x diverging scheme (more here about [color schemes](../color_schemes). Below that is a scatterplot which allows you to see the numerical distribution of your observations and make informed decisions about how to best classify your data (more here about [data classification](../classification). Just like a histogram for single-variable maps, a scatterplot is a useful tool for devising classification schemes for bivariate choropleth maps.
 
-![]({{site.baseurl}}/media/guides/bivariate_choroMAP.jpg)
+![]({{site.baseurl}}/guide/images/bivariate_choroMAP.jpg)
 
-![]({{site.baseurl}}/media/guides/bivariate_classed_scatter.png)
+![]({{site.baseurl}}/guide/images/bivariate_classed_scatter.png)
 
 ### Diverging Versus Sequential Color Ramps
 
@@ -27,6 +27,6 @@ There are two kinds of bivariate choropleth color schemes: **diverging x divergi
 
 Diverging schemes, whether for a single-theme map or a bivariate map, should only be used if there is a meaningful midpoint and you want to highlight how places _diverge_ away from that break point. For example, a map with both positive and negative numbers could place zero as the middle class (or break point), making it easier to see places that are going up or down. Another example would be 50% of the vote in a 2-party election: colors would get darker/stronger in both directions are we move away from that natural break point of 50% (a tied vote).
 
-![]({{site.baseurl}}/media/guides/seqxseq.png)![]({{site.baseurl}}/media/guides/divxdiv.png)
+![]({{site.baseurl}}/guide/images/seqxseq.png)![]({{site.baseurl}}/guide/images/divxdiv.png)
 
 For some good example color schemes and a useful—as well as very practical—discussion on bivariate choropleth maps, take a look at this [article by Josh Stevens](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/).

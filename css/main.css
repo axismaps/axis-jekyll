@@ -668,7 +668,7 @@ section.singleblog article:last-of-type{
 
 #guide-banner{
   background-color: #666;
-  background-image: url(/media/guides/guide_banner.jpg);
+  background-image: url(../images/guide_banner.jpg);
   box-sizing: border-box;
   height: 360px;
   padding: 240px 0 0 100px;

@@ -19,4 +19,4 @@ Proportional label maps inherent the problems of any [graduated / proportional m
 
 In the example below, the numbers tell us the birth rates of the countries (# of births per 1,000 people), while the size of the numbers tells us about the average life expectancy of those countries. For example, although Cuba and Panama have very different birth rates (11.13/1,000 versus 20.18/1,000), we know they have similar life expectancies because their text is the same point size. By comparison, Haiti has a very short average life expectancy, sadly, which is shown on the map by the very small text (it is in the lowest class for life expectancy in the world).
 
-![]({{site.baseurl}}/media/guides/alpha_map2.png)
+![]({{site.baseurl}}/guide/images/alpha_map2.png)
