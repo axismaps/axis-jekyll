@@ -45,8 +45,6 @@ _On this map, clicking the state-level choropleth zooms in and reveals more deta
 
 ### Data manipulation
 
-Depending on your audience, this kind of manipulation—changing what the map shows—while it may seem like a simple type use of interactive maps to you, is often more work than most users care to do. Be aware of the costs of building this and consider alternatives like small multiples if your audience is unlikely to dive deep into the map. 
-
 Data manipulation tasks might include:
 
 - Toggling layers (switching between data layers and/or stacking layers on one another)
@@ -72,9 +70,7 @@ Filter
 
 ### Information retrieval
 
-Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get details on demand. Again a word of caution: retrieving more information requires _work_ by the user, and users want to be lazy. Don't lean on interaction as a crutch to get you out of smart map design. If important information can be included on the map itself without sacrificing legibility and without requiring interaction, then it should be included on the map.
-
-Retrieval methods, furthermore, are not as standardized as panning and zooming methods, but mostly come in two flavors. Although they're reasonably common, you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
+Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get additional details on demand. Retrieval methods are not as standardized as panning and zooming methods, but mostly come in two flavors. Although they're reasonably common, you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
 
 - Click for more
 - Hover tooltip
