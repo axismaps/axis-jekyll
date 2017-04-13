@@ -13,6 +13,8 @@ In the broadest terms, we may think of an _interactive map_ as one that can be c
 
 The third point is not absolute, as stepping through images is still a designed, interactive experience, but here we are focused on interactions within the map itself.
 
+![]({{site.baseurl}}/media/guides/interaction_wntb.jpg)
+
 ### Types of map interaction
 
 The different kinds of map interaction in large part overlap the kinds of digital and web interaction in general; indeed, many elements of web maps are standard web page elements used in support of a map. There are some types of interactions that are specific to maps, or at least to data visualization. ~~~Roth citations here~~~
@@ -21,9 +23,10 @@ In simple terms, we look at map interactions as supporting three general categor
 
 1. Map navigation: changing _where_ the map is focused
 2. Data manipulation: changing _what_ the map and supporting elements are showing
-3. Information retrieval: getting _more information_ than what the map shows
+3. Search and filter: "navigating" data to refine it or find specific things
+4. Information retrieval: getting _more information_ than what the map shows
 
-### Panning and zooming
+### Map navigation
 
 While there are a variety of ways to pan and zoom a map, a handful are the most common and well understood. In our experience it's best to stick with some or all of these, and think extra hard about relying on unconventional methods, which can confuse people. Most web mapping libraries, such as Leaflet, support these as core functionality.
 
@@ -51,9 +54,21 @@ Data manipulation tasks might include:
 - Changing geographic units (sometimes in conjunction with zoom, as in the example above)
 - Reclassifying data
 
-**Filtering**
+### Search and filter
 
-**Reclassifying**
+Searching (looking for specific key words or phrases) and filtering (narrowing down data, for example by category) are common and powerful features of interactive maps that allow users to find what they're looking for amid what could be tons of data. Think of Google Maps: the map contains more information than you can imagine, whether it's visible or not, and its usefulness is in quickly finding what you want by typing in the search box.
+
+Search
+
+- well understood (thanks google)
+- users may have high expectations because of that
+- don't make it the ONLY entry point to the map unless you're sure people understand what this is and know what to look for
+
+Filter
+
+- category/tag checkboxes
+- sliders for ranges
+- boolean operators across different lists
 
 ### Information retrieval
 
