@@ -86,7 +86,7 @@ a.button.hollow:hover{
 }
 
 hr {
-	margin: 40px auto 0px;
+	margin: 40px auto 40px;
 	border: none;
 	border-bottom: 1px solid #ccc;
 }
@@ -97,7 +97,7 @@ section{
 
 b, strong{
   color: #333;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 iframe {
@@ -338,6 +338,10 @@ a.project:hover .grid-image{
   padding-bottom: 40px;
 }
 
+#tools {
+  padding-top: 10px;
+}
+
 #tools .section-title{
   text-align: center;
 }
@@ -360,8 +364,6 @@ a.project:hover .grid-image{
 }
 
 .tool p{
-  font-size: 20px;
-  line-height: 25px;
   margin-top: 0px;
 }
 
@@ -427,14 +429,26 @@ a.project:hover .grid-image{
   margin: 20px 20%;
   text-align: center;
   line-height: 26px;
+  padding-top: 10px;
 }
 
 #data-design-code{
   margin: 20px 80px;
+  padding-top: 10px;
 }
 
 #about p{
   text-align: left;
+  color: #666;
+  line-height: 32px;
+}
+
+#data-design-code p{
+  color: #666;
+}
+
+span.big{
+font-size: 30px;
 }
 
 /* PROJECT */
