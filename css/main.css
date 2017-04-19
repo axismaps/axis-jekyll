@@ -50,7 +50,7 @@ a {
 }
 
 a:hover{
-	color: black;
+	color: #333;
 	text-decoration: underline;
 }
 
@@ -234,6 +234,10 @@ footer{
   line-height: 22px;
 }
 
+footer h4{
+  font-size: 16px;
+  }
+
 footer > div{
   width: calc( 25% - 40px );
   float: left;
@@ -242,12 +246,12 @@ footer > div{
 
 footer > hr{
   clear: both;
-  height: 38px;
-  margin: 40px 20px;
-  background-image: url(../images/logo_small.png);
-  background-repeat: no-repeat;
-  background-position: left top;
+  margin: 0px 20px 40px;
 }
+
+footer img.logo{
+  padding: 0px 20px;
+  }
 
 footer iframe.twitter-timeline{
   min-height: 300px !important;
@@ -256,6 +260,8 @@ footer iframe.twitter-timeline{
 footer p.legal{
   clear: both;
   color: #999;
+  width: 75%;
+  margin: auto;
   text-align: center;
 }
 
