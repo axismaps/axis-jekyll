@@ -57,7 +57,7 @@ a:hover{
 a.button{
 	display: inline-block;
 	line-height: 50px;
-  margin: 20px 0;
+    margin: 20px 0;
 	padding: 0 15px;
 	background-color: #58A2D8;
 	border-radius: 3px;
@@ -71,6 +71,7 @@ a.button{
 a.button:hover{
 	text-decoration: none;
 	opacity: 1;
+	color: #333;
 }
 
 a.button.hollow{
@@ -85,7 +86,7 @@ a.button.hollow:hover{
 }
 
 hr {
-	margin: 40px auto;
+	margin: 40px auto 0px;
 	border: none;
 	border-bottom: 1px solid #ccc;
 }
@@ -158,6 +159,11 @@ nav a{
 	margin-right: 30px;
 	font-size: 20px;
 	font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #333;
 }
 
 #announcement{
@@ -265,6 +271,7 @@ footer p.legal{
 
 #project-grid{
 	margin: 10px 40px;
+	padding-bottom: 40px;
 }
 
 #project-grid a.project{
@@ -277,6 +284,7 @@ footer p.legal{
 	height: 290px;
 	display: inline-block;
 	background-color: white;
+	border-radius: 3px;
 }
 
 a.project .grid-image{
@@ -302,12 +310,17 @@ a.project:hover .grid-image{
 
 #clients h4{
 	text-indent: 20px;
+	text-align: center;
 }
 
 #clients div{
-	margin-top: 20px;
 	text-align: center;
+	margin-top: 20px;
 }
+
+#clients .section-title{
+    margin-top: 0px;
+    }
 
 #clients img{
 	margin: 20px;
@@ -315,11 +328,16 @@ a.project:hover .grid-image{
 
 /* TOOLS */
 #tools{
-  margin: 20px 60px;
+  margin: 10px 60px;
+  padding-bottom: 40px;
+}
+
+#tools .section-title{
+  text-align: center;
 }
 
 .tool{
-  margin: 20px 0;
+  margin: 36px 0;
   clear: both;
   padding: 20px;
 }
@@ -332,12 +350,13 @@ a.project:hover .grid-image{
 }
 
 .tool h2{
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .tool p{
   font-size: 20px;
   line-height: 25px;
+  margin-top: 0px;
 }
 
 .tool .img{
