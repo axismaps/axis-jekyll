@@ -355,8 +355,8 @@ a.project:hover .grid-image{
   height: 250px;
 }
 
-.tool h2{
-  font-size: 24px;
+.tool h4{
+  font-size: 20px;
 }
 
 .tool p{
@@ -381,7 +381,7 @@ a.project:hover .grid-image{
 .guide{
   background-color: #f8f1fa;
 }
-
+  
 .guide a.button.hollow{
   border-color: #A968B5;
   color: #A968B5;
