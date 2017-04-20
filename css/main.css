@@ -113,6 +113,7 @@ iframe {
   margin: 40px -20px;
   font-size: 16px;
   line-height: 22px;
+  color: #666;
 }
 
 .col3{
@@ -362,8 +363,9 @@ a.project:hover .grid-image{
 }
 
 .tool p{
-  margin: 5px 0px 10px;
+  margin: 5px 0px 0px;
   color: #666;
+  line-height: 32px;
 }
 
 .tool .img{
@@ -430,6 +432,11 @@ a.project:hover .grid-image{
   line-height: 26px;
   padding-top: 10px;
 }
+
+.element p{
+  line-height: 32px;
+  margin-top: 0px;
+  }
 
 #data-design-code{
   margin: 20px 80px;
