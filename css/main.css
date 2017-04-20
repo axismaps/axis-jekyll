@@ -298,15 +298,19 @@ a.project .grid-image{
 	width: 100%;
 	margin-bottom: 10px;
 	background-size: 975px 305px;
-	background-position: top left;
+	background-position: top left;	
+    transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+a.project:hover .grid-image{
+    background-position: bottom right;
 	transition: all 5s ease-in-out;
 	-webkit-transition: all 5s ease-in-out;
 	-moz-transition: all 5s ease-in-out;
 	-o-transition: all 5s ease-in-out;
-}
-
-a.project:hover .grid-image{
-	background-position: bottom right;
 }
 
 /* CLIENTS */
