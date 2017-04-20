@@ -267,8 +267,9 @@ footer p.legal{
 
 /* PORTFOLIO */
 #featured-projects {
-  text-align: center;
+    text-align: center;
 	background-color: #EFF1F2;
+	padding-bottom: 20px;
 }
 
 #featured-projects .button{
@@ -277,7 +278,7 @@ footer p.legal{
 
 #project-grid{
 	margin: 10px 40px;
-	padding-bottom: 40px;
+	padding-bottom: 0px;
 }
 
 #project-grid a.project{
@@ -439,7 +440,7 @@ a.project:hover .grid-image{
   }
 
 #data-design-code{
-  margin: 20px 80px;
+  margin: 20px 80px 80px;
   padding-top: 10px;
 }
 
