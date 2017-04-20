@@ -71,7 +71,6 @@ a.button{
 a.button:hover{
 	text-decoration: none;
 	opacity: 1;
-	color: #333;
 }
 
 a.button.hollow{
