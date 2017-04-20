@@ -3,6 +3,7 @@ body {
 	line-height: 26px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	color: #333;
 }
 
 h1, h2{
@@ -10,14 +11,16 @@ h1, h2{
 	font-size: 50px;
 	line-height: 55px;
 	font-family: 'Poppins', serif;
-	font-weight: 500;
+	font-weight: 600;
+	letter-spacing: -1px;
 }
 
 h2 {
 	font-size: 40px;
+	font-weight: 500;
 }
 
-h3, h5{
+h3{
 	font-weight: 400;
 }
 
@@ -26,18 +29,18 @@ h3{
 	line-height: 26px;
 }
 
-h3, h4{
+h3, h4, h5{
 	margin: 0;
 }
 
-h4, h5{
-	font-size: 20px;
+h4{
+	font-size: 18px;
+	font-weight: 700;
 }
 
 h5{
-	display: inline-block;
-	border-bottom: 1px solid white;
-	padding-bottom: 10px;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 a {
@@ -47,14 +50,14 @@ a {
 }
 
 a:hover{
-	color: black;
+	color: #333;
 	text-decoration: underline;
 }
 
 a.button{
 	display: inline-block;
 	line-height: 50px;
-  margin: 20px 0;
+    margin: 20px 0;
 	padding: 0 15px;
 	background-color: #58A2D8;
 	border-radius: 3px;
@@ -68,6 +71,7 @@ a.button{
 a.button:hover{
 	text-decoration: none;
 	opacity: 1;
+	color: #333;
 }
 
 a.button.hollow{
@@ -82,7 +86,7 @@ a.button.hollow:hover{
 }
 
 hr {
-	margin: 40px auto;
+	margin: 40px auto 40px;
 	border: none;
 	border-bottom: 1px solid #ccc;
 }
@@ -93,7 +97,7 @@ section{
 
 b, strong{
   color: #333;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 iframe {
@@ -157,6 +161,11 @@ nav a{
 	font-weight: bold;
 }
 
+nav a:hover{
+    text-decoration: none;
+    color: #333;
+}
+
 #announcement{
 	background-color: #595959;
 	font-size: 18px;
@@ -192,15 +201,25 @@ nav a{
 }
 
 #home-video #page-title div{
-	padding: 0 40% 100px 50px;
+	padding: 0 30% 100px 50px;
 	bottom: 0;
 }
+
+#home-video #page-title p{
+	margin: 0px;
+}
+
+#home-video #page-title #company{
+    display: inline-block;
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+	}
 
 #home-video #scroll-indicator{
 	width: 100%;
 	opacity: 0;
 	margin: 0 0 20px -50px;
-	font-size: 25px;
+	font-size: 26px;
 	line-height: 30px;
 	font-weight: bold;
 	color: #58A2D8;
@@ -215,6 +234,10 @@ footer{
   line-height: 22px;
 }
 
+footer h4{
+  font-size: 16px;
+  }
+
 footer > div{
   width: calc( 25% - 40px );
   float: left;
@@ -223,12 +246,12 @@ footer > div{
 
 footer > hr{
   clear: both;
-  height: 38px;
-  margin: 40px 20px;
-  background-image: url(../images/logo_small.png);
-  background-repeat: no-repeat;
-  background-position: left top;
+  margin: 0px 20px 40px;
 }
+
+footer img.logo{
+  padding: 0px 20px;
+  }
 
 footer iframe.twitter-timeline{
   min-height: 300px !important;
@@ -237,6 +260,8 @@ footer iframe.twitter-timeline{
 footer p.legal{
   clear: both;
   color: #999;
+  width: 75%;
+  margin: auto;
   text-align: center;
 }
 
@@ -252,21 +277,23 @@ footer p.legal{
 
 #project-grid{
 	margin: 10px 40px;
+	padding-bottom: 40px;
 }
 
 #project-grid a.project{
 	padding: 20px 20px 10px 20px;
 	margin: 20px;
 	width: calc( 50% - 85px );
-	min-width: 360px;
-	height: 380px;
-	color: black;
+	min-width: 260px;
+	color: #333;
+	height: 290px;
 	display: inline-block;
 	background-color: white;
+	border-radius: 3px;
 }
 
 a.project .grid-image{
-	height: 320px;
+	height: 220px;
 	width: 100%;
 	margin-bottom: 10px;
 	background-size: 975px 305px;
@@ -288,12 +315,17 @@ a.project:hover .grid-image{
 
 #clients h4{
 	text-indent: 20px;
+	text-align: center;
 }
 
 #clients div{
-	margin-top: 20px;
 	text-align: center;
+	margin-top: 20px;
 }
+
+#clients .section-title{
+    margin-top: 0px;
+    }
 
 #clients img{
 	margin: 20px;
@@ -301,11 +333,20 @@ a.project:hover .grid-image{
 
 /* TOOLS */
 #tools{
-  margin: 20px 60px;
+  margin: 10px 60px;
+  padding-bottom: 40px;
+}
+
+#tools {
+  padding-top: 10px;
+}
+
+#tools .section-title{
+  text-align: center;
 }
 
 .tool{
-  margin: 20px 0;
+  margin: 36px 0;
   clear: both;
   padding: 20px;
 }
@@ -317,13 +358,12 @@ a.project:hover .grid-image{
   height: 250px;
 }
 
-.tool h2{
-  font-size: 30px;
+.tool h4{
+  font-size: 20px;
 }
 
 .tool p{
-  font-size: 20px;
-  line-height: 25px;
+  margin-top: 0px;
 }
 
 .tool .img{
@@ -342,7 +382,7 @@ a.project:hover .grid-image{
 .guide{
   background-color: #f8f1fa;
 }
-
+  
 .guide a.button.hollow{
   border-color: #A968B5;
   color: #A968B5;
@@ -388,14 +428,26 @@ a.project:hover .grid-image{
   margin: 20px 20%;
   text-align: center;
   line-height: 26px;
+  padding-top: 10px;
 }
 
 #data-design-code{
   margin: 20px 80px;
+  padding-top: 10px;
 }
 
 #about p{
   text-align: left;
+  color: #666;
+  line-height: 32px;
+}
+
+#data-design-code p{
+  color: #666;
+}
+
+span.big{
+font-size: 30px;
 }
 
 /* PROJECT */
@@ -980,7 +1032,7 @@ section.singleblog article:last-of-type{
 
 /* RESPONSIVE STYLES */
 
-@media (max-width: 980px) {
+@media (max-width: 800px) {
 	#project-grid a.project{
 		width: calc( 100% - 105px );
 	}
