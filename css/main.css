@@ -362,7 +362,8 @@ a.project:hover .grid-image{
 }
 
 .tool p{
-  margin-top: 0px;
+  margin: 5px 0px 10px;
+  color: #666;
 }
 
 .tool .img{
