@@ -1052,4 +1052,20 @@ section.singleblog article:last-of-type{
   footer > div{
     width: calc( 50% - 40px );
   }
+  
+  .tool .img, .tool:nth-child(even) .img{
+    float: none;
+    display: block;
+    height: 250px;
+    max-width: 250px;
+    margin: 0px auto 20px;
+  }
+  
+  .tool div {
+    text-align: center;
+    }
+    
+  .tool {
+    padding: 40px 20px 0px;
+  }
 }
