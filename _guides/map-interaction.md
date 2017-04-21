@@ -45,6 +45,104 @@ Or, in a map with a narrative story such as below, advancing through the story (
 
 Notably, both of the above examples also allow free panning and zooming, as this is generally expected in web maps. The automated navigation is an extra touch to help guide users' attention to important things.
 
+A final tip about panning and zooming: it's easy to get lost, so it's generally a good idea to include some kind of reset button for reverting the map to its default extent.
+
+### Search and filter
+
+Searching (looking for specific key words or phrases) and filtering (narrowing down data, for example by category) are common and powerful features of interactive maps that allow users to find what they're looking for amid what could be tons of data. Think of Google Maps: the map contains more information than you can imagine, whether it's visible or not, and its usefulness is in quickly finding what you want by typing in the search box.
+
+Typically searching and filtering will ask one or more of three things:
+
+- *Where?* Find the location of something
+- *When?* Find something based on date or time
+- *What?* Find something based on its name, description, etc.
+
+#### SEARCH
+
+Google is both a blessing and a curse to the web cartographer. On the one hand, almost everyone is familiar and comfortable with searching; they know what to do with a text input box. On the other hand, they expect to be able to search anything and everything, with near-perfect accuracy. Most of us don't have the time, resources, or brainpower to build a search as smart and exhaustive as Google's.
+
+Still, we do what we can. A good search addresses both the _where_ and _what_ questions and presents results in a clear, organized manner. _What_ is fairly straightforward to accomplish with text matching in names, descriptions, and/or attributes of the data. (This can blend into the _where_ question if attributes include place names.) _Where_ might tap into a geocoding service, but could also be limited to the universe of your data, for example searching a list of county names if your map uses county-level data.
+
+**Set expectatins of what is searchable.**
+
+In all cases, it's good to tame people's expectations of Google-quality search by stating what the search is capable of. We frequently use the `placeholder` attribute of text inputs as a hint about what is searchable.
+
+![]({{site.baseurl}}/media/guides/search_hints.png)
+
+**Quick feedback is ideal.**
+
+Autocomplete hints and live-updating results as the user types (i.e., not requring the Enter key or a button click), if possible, are good ways to give the user instant feedback about the scope of search, whether their query is decent, and that search even works in the first place. For example in the map below, the main contents of the map and sidebar themselves change as you type. In other cases, a list of results simply pops up after a certain minimum number of characters are entered.
+
+![]({{site.baseurl}}/media/guides/napa_search_results.gif)
+
+**Organize results in useful ways.**
+
+Good organization of list-based results is helpful especially if data is vast and/or the search is multi-purpose (e.g., for both places and attributes), so that the user doesn't have to wade through a big list to find something. Even small ehancements, such as showing the number of results, are useful. Two examples of organized results are below, both of which separate results into categories. Notice that the second one also highlights the matching text, a small step (that could be expanded further) to help people understand why they got the results they did.
+
+![]({{site.baseurl}}/media/guides/wntb_search_results.png)
+![]({{site.baseurl}}/media/guides/rio_search_results.png)
+
+#### FILTER
+
+Filtering, quite often, accomplishes the exact same thing as a search, just approached from a different direction. Take that wineries map above, for example: the same results for that "pinot" search could have been achieved by clicking some filters in the "Varieties" menu. Filtering is more than just an alternative method for searching, though. It does a few things that are advantageous:
+
+- shows the fundamental ways in which data could be organized
+- allows viewing of groups of related things, not just a specific attribute
+- better allows us to look through data by numeric values
+- finds things that are not easily expressable as keywords
+
+Most filter controls are implemented either as some kind of toggle (such as a checkbox) for looking at pre-defined categories or groups, or sliders for looking at ranges of time or data value. There are variations, though. See the variety on display below, for example.
+
+![]({{site.baseurl}}/media/guides/hubway_filters.png)
+
+**Map and data displays can double as filter controls.**
+
+Filters don't always need to be built as separate menus and panels, but can be integrated with other parts of a well-designed UI. In the first example below, the choropleth legend is used for filtering data value categories. In the second example, charts act as filters.
+
+![]({{site.baseurl}}/media/guides/mapmaster_filter.jpg)  
+![]({{site.baseurl}}/media/guides/eic_filter.jpg)  
+
+**Make it clear that filters are active.**
+
+Combinations of active filters can get complicated, and moreover sometimes it's easy to become engrossed in a map and forget that you're looking at a restricted set of data, so it's good to include visual reminders. This could be anything from small hints to explicit text.
+
+![]({{site.baseurl}}/media/guides/eic_all_filters.jpg)  
+*The map and data displays have been filtered by commodity (long ells), geography (Bombay), and a time range. The title area explicitly states all this.*
+
+![]({{site.baseurl}}/media/guides/napa_active_filters.jpg)  
+*Active filters hidden in menus are hinted at by numbers in the menu titles, showing the number of filters active within each. Note that the search results also states that results are from a restricted set of data.*
+
+**Boolean logic can be tricky.**
+
+One challenge we run into a lot is how to deal with combinations of different filters (usually category toggles) from different places. Do we show data that matches Filter 1 AND Filter 2? Filter 1 OR Filter 2? Usually we settle on a logic of OR within a group of filters, and AND between groups, as demonstrated below. You might decide on something different, but it is always good to think this through.
+
+![]({{site.baseurl}}/media/guides/napa_filter1.jpg)  
+*No filters selected; all data present: 329 wineries.*
+
+![]({{site.baseurl}}/media/guides/napa_filter2.jpg)  
+*Filter to wineries producing Merlot: 181 wineries.*
+
+![]({{site.baseurl}}/media/guides/napa_filter3.jpg)  
+*Select a second variety; now we show wineries producing Merlot OR Pinot Noir: 210 wineries.*
+
+![]({{site.baseurl}}/media/guides/napa_filter4.jpg)  
+*Select a filter from the Features menu. We now show family-owned AND (Merlot OR Pinot Noir): 185 wineries.*
+
+#### FINAL TIPS ON SEARCH AND FILTER
+
+- Don't implement these if your map exists to tell a single specific story. Allowing the reader to stray from this by needlessly searching or filtering makes the map less effective.
+- Just as one can easily get lost geographically in the map, one can also get lost in complex combinations of searches and filters. Always provide easy ways to clear these and reset the map to its full, unrestricted data set.
+- When possible, update the URL hash with search and filter settings as they change (and build the capability to read and apply these on initial load), so that people can copy and paste the URL to share specific views.
+- Don't make search the only gateway to the map, unless you're certain that people understand the universe of data and know of something to search for. Google gets away with this because it aims for you to search _everything_ for _anything_. Your map is probably not like that. At the very least, include some examples of things to search for.
+
+
+### Information retrieval
+
+Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get additional details on demand. Retrieval methods are not as standardized as panning and zooming methods, but mostly come in two flavors. Although they're reasonably common, you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
+
+- Click for more
+- Hover tooltip
+
 ### Data manipulation
 
 Data manipulation tasks might include:
@@ -53,53 +151,6 @@ Data manipulation tasks might include:
 - Changing data sets
 - Changing geographic units (sometimes in conjunction with zoom, as in the example above)
 - Reclassifying data
-
-### Search and filter
-
-Searching (looking for specific key words or phrases) and filtering (narrowing down data, for example by category) are common and powerful features of interactive maps that allow users to find what they're looking for amid what could be tons of data. Think of Google Maps: the map contains more information than you can imagine, whether it's visible or not, and its usefulness is in quickly finding what you want by typing in the search box.
-
-Typically searching and filtering will ask one or more of three ways:
-
-- *Where?* Find the location of something
-- *When?* Find something based on date or time
-- *What?* Find something based on its name, description, etc.
-
-#### Search
-
-Google is both a blessing and a curse to the web cartographer. On the one hand, almost everyone is familiar and comfortable with searching; they know what to do with a text input box. On the other hand, they expect to be able to search anything and everything, with near-perfect accuracy. Most of us don't have the time, resources, or brainpower to build a search as smart and exhaustive as Google's.
-
-Still, we do what we can. A good search addresses both the _where_ and _what_ questions and presents results in a clear, organized manner. _What_ is fairly straightforward to accomplish with text matching in names, descriptions, and/or attributes of the data. (This can blend into the _when_ question if attributes include place names.) _Where_ might tap into a geocoding service, but could also be limited to the universe of your data, for example searching a list of county names if your map uses county-level data.
-
-In all cases, it's good to tame people's expectations of Google-quality search by stating what the search is capable of. We frequently use the `placeholder` attribute of text inputs as a hint about what is searchable.
-
-![]({{site.baseurl}}/media/guides/search_hints.png)
-
-As for the display of results, we can make a couple of recommendations: 1) show live results as the user types and 2) organize results in meaningful ways beyond a simple list. The first point might mean simply popping up a list (after a minimum of two or three characters are entered) that changes as more text is input, but it can go beyond that. For example in the map below, the main contents of the map and sidebar themselves change as you type.
-
-![]({{site.baseurl}}/media/guides/napa_search_results.gif)
-
-Organizing results is helpful especially if data is vast and/or the search is multi-purpose (e.g., for both places and attributes), so that the user doesn't have to wade through a big list to find something. Even small ehancements, such as showing the number of results, are helpful, though. Two examples of organized results are below, both of which separate results into categories. Notice that the second one also highlights the matching text, a small step (that could be expanded further) to help people understand why they got the results they did.
-
-![]({{site.baseurl}}/media/guides/wntb_search_results.png)
-![]({{site.baseurl}}/media/guides/rio_search_results.png)
-
-Lastly, two "don'ts" when it comes to search:
-
-1. Don't implement search if the map exists to sell a single specific story from which you don't want the reader to stray. At best it's unnecessary; at worst it's confusing and distracting.
-2. Don't make search the _only_ gateway to the map unless you're absolutely certain that people understand the universe they're searching and will have something in mind to look for. Google gets away with this because because it's understood that you're essentially searching _everything_ for _anything_; most maps are not like that. If the map is meant for viewing specific, user-input things (say, a map of Twitter hashtags), at least include a few examples to get people started.
-
-#### Filter
-
-- category/tag checkboxes
-- sliders for ranges
-- boolean operators across different lists
-
-### Information retrieval
-
-Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get additional details on demand. Retrieval methods are not as standardized as panning and zooming methods, but mostly come in two flavors. Although they're reasonably common, you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
-
-- Click for more
-- Hover tooltip
 
 ### More interaction guidelines
 
