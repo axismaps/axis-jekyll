@@ -20,9 +20,9 @@ The different kinds of map interaction in large part overlap the kinds of digita
 In simpler terms, we look at map interactions as supporting a few general categories of tasks:
 
 1. Map navigation: changing _where_ the map is focused
-2. Data manipulation: changing _what_ the map and supporting elements are showing
-3. Search and filter: _finding_ specific objects or sets of objects
-4. Information retrieval: getting _more information_ than what the map shows
+2. Search and filter: _finding_ specific objects or sets of objects
+3. Information retrieval: getting _more information_ than what the map shows
+4. Data manipulation: changing _what_ the map and supporting elements are showing
 
 ### Map navigation
 
@@ -138,10 +138,37 @@ One challenge we run into a lot is how to deal with combinations of different fi
 
 ### Information retrieval
 
-Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get additional details on demand. Retrieval methods are not as standardized as panning and zooming methods, but mostly come in two flavors. Although they're reasonably common, you can't expect everyone to "get it" right away. Include cues that help users see how to retrieve information.
+Retrieving more information than is currently visible on the map is a hallmark of interactive mapping, and can be one of the great benefits of interaction, as you can pack a lot more information into an interactive map than a static map by allowing users to get additional details on demand. To some degree, users expect this kind of behavior in an interactive map and may try to prod and click at everything, so it can be a good idea to include it even if there's not much more inforamtion to show.
 
-- Click for more
-- Hover tooltip
+**Tooltips and panels**
+
+The result of retrieval interactions usually comes in one (or both) of two flavors: a floating tooltip (or _popup_ or _data probe_ depending whom you ask) or a fixed panel. Floating tooltips appear next to the feature on the map, usually on mouse hover (or touch, but more on that in a moment), and are best suited to relatively small amounts of information so that they don't grow huge and obscure everything. Fixed panels have dedicated space and are good for longer, more detailed information.
+
+Besides being brief, a floating tooltip ought to show the most essential information. What's the first thing a user will want to know about something on the map? Show that so that they don't have to work hard for it. If there's a lot more beyond that, a hybrid approach works well. Show a few details on hover in a tooltip, then click for more information in a fixed panel.
+
+![]({{site.baseurl}}/media/guides/napa_hover.jpg)  
+*Hovering on a point shows basic information like name and address.*
+
+![]({{site.baseurl}}/media/guides/napa_click.jpg)  
+*Clicking the point opens more details in the side panel.*
+
+**Mobile is a different beast.**
+
+Design for mobile and touch devices throws most of the above out the window and often forces us to build two totally different experiences. It's all because there is no such thing as a hover on a touch device, at least not one that's well understood. Sometimes we can replace the hover behavior with something else—say, touch-and-hold—most of the time it's abandoned with the expectation that people just want to tap on things. What's more, a phone screen doesn't have a lot of space to accommodate things floating over the map. Tapping for a fixed panel is going to be the best bet in most cases.
+
+The two-stage retrieval can still be achieved, however, in a manner such as you've probably seen in the Google Maps app. Here's the same example as above, but for mobile. Tapping the marker shows a bit of information at the bottom. Tapping the short details brings up the full panel. (You can't see it in the screenshots, but the bottom strip initially bounces a bit to suggest that it's interactive.)
+
+![]({{site.baseurl}}/media/guides/napa_tap1.jpg)  
+*Tap once for short, essential details.*
+
+![]({{site.baseurl}}/media/guides/napa_tap2.jpg)  
+*Tap the short details for full information.*
+
+**Don't assume.**
+
+As much as some people might be inclined to poke around at everything on the map, it's not necessarily obvious to everyone that things are interactive, or the extent to which they are. If the map has both a hover and a click interaction, for example, people might see the hover and assume that's the extent of it, not knowing to click. To that end, it doesn't hurt to include hints about what's possible. (Sometimes we have to be reminded to do this by clients who aren't accustomed to looking at interactive maps all day every day.)
+
+![]({{site.baseurl}}/media/guides/learn_more.png) 
 
 ### Data manipulation
 
