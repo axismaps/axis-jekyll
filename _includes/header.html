@@ -1,8 +1,11 @@
 <div id="header">
 	<a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt='Axis Maps' class='logo'></a>
+	<a id="menu">☰</a>
 	<nav>
-		<a href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a>
-		<a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
-		<a href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
+	    <div id="links">
+	    	<a href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a>
+			<a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+			<a href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
+		</div>
 	</nav>
 </div><!-- end #header -->

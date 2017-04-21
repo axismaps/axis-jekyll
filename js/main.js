@@ -117,12 +117,12 @@ function init_events()
 
 	$("#menu").click( function()
 	{
-		$( "nav ul" ).slideToggle();
+		$( "nav #links" ).slideToggle();
 	});
 	
 	$( window ).resize( function()
 	{
-		if( $( window ).width() > 520 ) $( "nav ul" ).show();
+		if( $( window ).width() > 520 ) $( "nav #links" ).show();
 	});
 
 }

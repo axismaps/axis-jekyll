@@ -166,6 +166,15 @@ nav a:hover{
     color: #333;
 }
 
+#menu:hover {
+	cursor: pointer;
+}
+
+#menu{
+    display: none;
+    text-align: right;
+}
+
 #announcement{
 	background-color: #595959;
 	font-size: 18px;
@@ -1067,5 +1076,30 @@ section.singleblog article:last-of-type{
     
   .tool {
     padding: 40px 20px 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  #header nav #links a{
+    display: block;
+  }
+  
+  #menu {
+    display: block;
+    float: right;
+    line-height: 45px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 50px;
+  }
+  
+  #header nav{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+ 
+  #header nav #links{
+    float: left;
   }
 }
