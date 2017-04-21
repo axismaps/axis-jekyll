@@ -9,9 +9,10 @@ In the broadest terms, we may think of an _interactive map_ as one that can be c
 
 1. Digital (displayed on a computer, tablet, smartphone, etc.)
 2. Responsive to direct user manipulation (click, touch, etc.)
-3. Changeable in the map contents or data displays themselves, as opposed to swapping out static images.
+3. Changeable in some way
 
-![]({{site.baseurl}}/media/guides/interaction_wntb.jpg)
+![]({{site.baseurl}}/media/guides/interaction_wntb.jpg)  
+*A map with loads of interactivity.*
 
 ### Types of map interaction
 
@@ -172,12 +173,27 @@ As much as some people might be inclined to poke around at everything on the map
 
 ### Data manipulation
 
-Data manipulation tasks might include:
+What we loosely call "data manipulation" here refers to interactions that affect the thematic contents of the map: the data being displayed, the symbolization of it, the geographic units, etc. It's a level of interaction that only highly motivated or expert users are likely to perform, in relatively deep explorations of data. If the choice to build this is up to you, think carefully. The work may not be worth it for the small segment of people who will ever use it.
 
-- Toggling layers (switching between data layers and/or stacking layers on one another)
-- Changing data sets
-- Changing geographic units (sometimes in conjunction with zoom, as in the example above)
-- Reclassifying data
+**Overlays**
+
+Perhaps the most familiar and least costly type of "data manipulation" is adding and removing overlays. Giving user control to pile additional layers onto the map can be useful in several scenarios, such as:
+
+- a layer enhances but is not essential to the map (e.g., the traffic layer on Google Maps)
+- the map is meant for comparing two or more different things
+- users will add their own data
+
+While it can be tempting, especially to those from a GIS background, to allow all kinds of layers to be turned on an off, conservatism is advisable. Limiting the available overlays keeps people from getting too lost in the UI—and prevents some terrible-looking maps.
+
+**Switching data sets**
+
+The ability to change the entire basis of a thematic map is best reserved for maps meant for extensive data exploration. If it is included in a map with narrower purpose, again it is a good idea to limit the number of available views.
+
+In a map with a rich variety of data sources, a big challenge is designing rules for symbolization and some UI elements such that they will "work" no matter what kind of data distribution is thrown at them.
+
+**Switching geographic units**
+
+**Reclassifying, re-coloring, etc**
 
 ### More interaction guidelines
 
