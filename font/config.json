@@ -35,6 +35,12 @@
       "css": "heart-empty",
       "code": 59394,
       "src": "fontawesome"
+    },
+    {
+      "uid": "6a12c2b74456ea21cc984e11dec227a1",
+      "css": "globe",
+      "code": 59395,
+      "src": "entypo"
     }
   ]
 }

@@ -3,94 +3,92 @@
   {% include meta.html %}
   <body>
     {% include ga.html %}
-    <div id="wrapper">
       {% include header.html %}
-      <section id="project">
-        {% if page.video or page.features %}
-          <div id="features">
-              <div id="poster">
-                {% if page.video %}
-                  <iframe class="video full" src="https://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                {% endif %}
-                {% if page.features %}
-                  {% for feature in page.features %}
-                    {% if feature contains '\gif\' %}
-                      <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.gif )">
-                    {% else %}
-                      <div class="full" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )">
-                    {% endif %}
-                    <span>{{ feature | remove: "\gif\ " }}</span></div>
-                  {% endfor %}
-                {% endif %}
-              </div>
-          </div>
-          <div id="thumbs">
-            {% if page.video %}
-              <div id="video-thumb" class="thumb"><span class="arrow"></span><img src="{{ site.baseurl }}/images/play.png" /></div>
-            {% endif %}
-            {% if page.features %}
-              {% for feature in page.features %}
-                {% if feature contains '\gif\' %}
-                  <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.gif )">
-                {% else %}
-                  <div class="thumb" style="background-image: url( {{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png )">
-                {% endif %}
-                <span class="arrow"></span></div>
-              {% endfor %}
-            {% endif %}
-          </div>
-          <hr />
-        {%  else %}
-          <img src="{{ site.baseurl }}/media/slideshow/{{ page.pid }}.png">
-        {% endif %}
-        <div class="content">
-          <header>
-            <h1>{{ page.title }}</h1>
-            <b>{{ page.client }}</b><br />
-            <em>{{ page.tag }}</em><br />
-            {% if page.link %}
-              <br /><a href="{{ page.link }}" target="_blank" class="project-link"><i class="icon-globe"></i> View the map</a><br />
-            {% endif %}
-          </header>
-          <hr />
-          
-          {{ content }}
-          {%  if page.github %}
-            <span class="icon-github-circled" style="font-size:36px; margin-left:-10px"></span><a href="{{ page.github }}" target="_blank">View the source on Github</a><br />
-          {% endif %}
-          <hr />
-          {% assign s = site.projects | where: "category", page.category | size %}
-          {% if page.category and s > 1 %}
-            <h2>More {{ page.category | downcase }} projects</h2>
-            <ul>
-              {% assign items = site.projects | sort: 'date' %}
-              {% for project in items reversed %}
-                {% if project.category == page.category and project.featured and project.title != page.title %}
-                  <li><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          {% endif %}
-          
-          {% assign blog = false %}
-          {% assign posts = site.posts | sort: 'date' %}
-          {% for post in posts %}
-            {% if post.project == page.pid %}
-              {% assign blog = true %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-          {% if blog %}
-            <h2>From the blog</h2>
-            <ul>
-              {% for post in posts reversed %}
-                {% if post.project == page.pid %}
-                  <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          {% endif %}
+      {% if page.video %}
+        <div id="poster">
+            <iframe class="video full" src="http://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
+      {%  else %}
+        <img src="{{ site.baseurl }}/media/slideshow/{{ page.pid }}.png">
+      {% endif %}
+      <section id="project">
+        <h2>{{ page.title }}</h2>
+        <h3>{{ page.client }}</h3>
+        <h5>{{ page.tag }}</h5>
+        {% if page.link %}
+          <a href="{{ page.link }}" target="_blank" class="button"><i class="icon-globe"></i> View the map</a><br />
+        {% endif %}
+      </section>
+      
+      <section id="project-entry">
+        {% if page.features %}
+          <div id="features">
+            {% for feature in page.features %}
+              <div>
+                {% if feature contains '\gif\' %}
+                  <img src="{{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.gif">
+                {% else %}
+                  <img src="{{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png">
+                {% endif %}
+                <span>{{ feature | remove: "\gif\ " }}</span>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {{ content }}
+
+        {%  if page.github %}
+          <a class="button hollow" href="{{ page.github }}" target="_blank"><span class="icon-github-circled"></span> View the source on Github</a>
+        {% endif %}
+      </section>
+
+      <section id="project-metadata">
+        {% if page.logo %}
+          <hr>
+            <div id="built-for">
+              <img src="{{ site.baseurl }}/media/clients/{{ page.logo }}">
+              <div>
+                <h4>Built with and for:</h4>
+                <h5>{{ page.client }}</h5>
+              </div>
+            </div>
+            
+          <hr>
+        {% endif %}
+
+        {% assign s = site.projects | where: "category", page.category | size %}
+        {% if page.category and s > 1 %}
+          <h4>More {{ page.category | downcase }} projects</h4>
+          <ul>
+            {% assign items = site.projects | sort: 'date' %}
+            {% for project in items reversed %}
+              {% if project.category == page.category and project.featured and project.title != page.title %}
+                <li><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+          
+        {% assign blog = false %}
+        {% assign posts = site.posts | sort: 'date' %}
+        {% for post in posts %}
+          {% if post.project == page.pid %}
+            {% assign blog = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if blog %}
+          <br /><br />
+          <h4>From the blog</h4>
+          <ul>
+            {% for post in posts reversed %}
+              {% if post.project == page.pid %}
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
       </section>
       {% include footer.html %}
     </div>
