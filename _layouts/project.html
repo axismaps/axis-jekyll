@@ -9,7 +9,7 @@
             <iframe class="video full" src="http://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       {%  else %}
-        <img src="{{ site.baseurl }}/media/slideshow/{{ page.pid }}.png">
+        <img src="{{ site.baseurl }}/media/banners/{{ page.pid }}.png">
       {% endif %}
       <section id="project">
         <h2>{{ page.title }}</h2>
@@ -45,15 +45,13 @@
 
       <section id="project-metadata">
         {% if page.logo %}
-          <hr>
-            <div id="built-for">
-              <img src="{{ site.baseurl }}/media/clients/{{ page.logo }}">
-              <div>
-                <h4>Built with and for:</h4>
-                <h5>{{ page.client }}</h5>
-              </div>
+          <div id="built-for">
+            <div class="logo-image" style="background-image: url({{ site.baseurl }}/media/clients/{{ page.logo }})"></div>
+            <div>
+              <h4>Built with and for:</h4>
+              <h5>{{ page.client }}</h5>
             </div>
-          <hr>
+          </div>
         {% endif %}
 
         {% assign s = site.projects | where: "category", page.category | size %}
@@ -88,6 +86,26 @@
             {% endfor %}
           </ul>
         {% endif %}
+        <div id="next-project">
+          {% assign items = site.projects | sort: 'date' %}
+          {% assign current = false %}
+          {% for project in items reversed %}
+            {% if project.featured %}
+              {% if current == true %}
+                <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+                <div>
+                  <a class="button hollow" href="{{ project.url | prepend: site.baseurl }}">Next project ></a>
+                  <h3>{{ project.title }}</h3>
+                  <h5>{{ project.client }}</h5>
+                </div>
+                {% break %}
+              {% endif %}
+              {% if project.pid == page.pid %}
+                {% assign current = true %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
       </section>
       {% include footer.html %}
     </div>
@@ -96,15 +114,6 @@
         $( '#poster' ).height( 720 * $( '#poster' ).width() / 1280 );
       });
       $( window ).resize();
-      
-      $( '.thumb' ).first().addClass( 'active' );
-      $( '.full' ).first().addClass( 'active' );
-      
-      $( '.thumb' ).click( function(){
-        $( '.active' ).removeClass( 'active' );
-        $( this ).addClass( 'active' );
-        $( $( "#poster" ).children()[ $( "#thumbs" ).children().index( $( this ) ) ] ).addClass( "active" );
-      })
       
       {% if page.video %}
         $.getJSON( "http://vimeo.com/api/v2/video/{{ page.video }}.json", function( json ){

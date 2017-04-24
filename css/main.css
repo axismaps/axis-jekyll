@@ -241,6 +241,7 @@ footer{
   background-color: #EFF1F2;
   font-size: 16px;
   line-height: 22px;
+  clear: both;
 }
 
 footer h4{
@@ -302,20 +303,20 @@ footer p.legal{
 	border-radius: 3px;
 }
 
-a.project .grid-image{
+.grid-image{
 	height: 220px;
 	width: 100%;
 	margin-bottom: 10px;
 	background-size: 975px 305px;
 	background-position: top left;	
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 }
 
 a.project:hover .grid-image{
-    background-position: bottom right;
+  background-position: bottom right;
 	transition: all 5s ease-in-out;
 	-webkit-transition: all 5s ease-in-out;
 	-moz-transition: all 5s ease-in-out;
@@ -493,7 +494,7 @@ font-size: 30px;
 #features{
   float: right;
   padding-left: 90px;
-  margin-top: -10px;
+  margin-top: -20px;
   width: 320px;
   font-size: 16px;
   color: black;
@@ -506,15 +507,40 @@ font-size: 30px;
   margin-top: 40px;
 }
 
-#built-for img{
-  float: left;
-  margin-right: 20px;
+#built-for{
+  border-bottom: 1px solid #ccc;
+}
+
+#built-for .logo-image{
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
 }
 
 #project-metadata ul{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#next-project, #built-for{
+  display: table;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+#next-project > div, #built-for > div{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#next-project .grid-image, #built-for .logo-image{
+  width: 320px;
+  float: right;
+  margin-right: 40px;
 }
 
 /* RESPONSIVE STYLES */

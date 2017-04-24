@@ -9,7 +9,7 @@
             {% if project.featured %}
                 {% assign count = count | plus: 1 %}
                 <a class="project" href="{{ project.url | prepend: site.baseurl }}">
-                    <div class="grid-image" id="mp{% increment featured %}" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+                    <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
                     <h4>{{ project.titleshort }}</h4>
                     <h5>{{ project.clientshort }}</h5>
                 </a>
