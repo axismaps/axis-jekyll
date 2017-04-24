@@ -4,6 +4,7 @@ title: Slave Revolt in Jamaica
 titleshort: Slave Revolt in Jamaica
 client: Harvard History Design Studio
 clientshort: Harvard
+logo: harvard.png
 tag: Slave insurrection in the British Empire
 date: 2013-09-04
 featured: true

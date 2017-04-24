@@ -4,6 +4,7 @@ title: Global Commodities Oil Visualization
 titleshort: Oil Visualization
 client: Adam Matthew Digital
 clientshort: AMD
+logo: sage.png
 tag: Revealing the globe's energy history
 date: 2013-06-15
 featured: true
