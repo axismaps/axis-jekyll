@@ -20,17 +20,14 @@ h2 {
 	font-weight: 500;
 }
 
-h3{
-	font-weight: 400;
-}
-
-h3{
-	font-size: 22px;
-	line-height: 26px;
-}
-
 h3, h4, h5{
 	margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
 }
 
 h4{
@@ -122,6 +119,13 @@ iframe {
   float: left;
   box-sizing: border-box;
 }
+
+ol {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  }
+  
 
 /* UTILITY */
 .clear-left {
@@ -487,28 +491,60 @@ font-size: 30px;
 }
 
 #project-entry, #project-metadata{
-  padding: 40px 90px;
+  padding: 20px 90px;
   clear: both;
 }
 
+#project-metadata ul a{
+  font-size: 18px;
+  }
+
+#project-entry p{
+  color: #666;
+  line-height: 32px;
+  }
+  
+#project h5{
+  color: #333;
+  padding-top: 10px;
+  }
+  
+#project h3{
+  font-style: italic;
+  letter-spacing: 0.5px;
+  }
+
 #features{
   float: right;
-  padding-left: 90px;
+  padding-left: 50px;
+  padding-bottom: 30px;
   margin-top: -20px;
-  width: 320px;
+  width: 220px;
   font-size: 16px;
-  color: black;
+  font-style: italic;
+  font-weight: 400;
+  color: #333;
   line-height: 19px;
   text-align: center;
 }
+
+#features span{
+  padding-top: 5px;
+  display: inline-block;
+} 
 
 #features img{
   width: 100%;
   margin-top: 40px;
 }
 
-#built-for{
-  border-bottom: 1px solid #ccc;
+#related{
+  padding: 40px 0px;
+  border-top: 1px solid #ccc;
+}
+
+#related h4{
+  padding-bottom: 5px;
 }
 
 #built-for .logo-image{
@@ -529,18 +565,43 @@ font-size: 30px;
   width: 100%;
   border-top: 1px solid #ccc;
   padding: 40px 0;
-  margin-top: 40px;
 }
 
+#next-project{
+  padding-top: 60px;
+  }
+
 #next-project > div, #built-for > div{
-  display: table-cell;
   vertical-align: middle;
+}
+
+#next-project > div{
+  display: table-cell;
+}
+
+#built-for > div{
+  margin-right: 250px;
 }
 
 #next-project .grid-image, #built-for .logo-image{
   width: 320px;
   float: right;
   margin-right: 40px;
+}
+
+#next-project .grid-image{
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+  
+#next-project .grid-image:hover{
+  background-position: bottom right;
+  transition: all 5s ease-in-out;
+  -webkit-transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
 }
 
 /* RESPONSIVE STYLES */

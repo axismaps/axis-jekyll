@@ -13,8 +13,8 @@
       {% endif %}
       <section id="project">
         <h2>{{ page.title }}</h2>
-        <h3>{{ page.client }}</h3>
-        <h5>{{ page.tag }}</h5>
+        <h3>{{ page.tag }}</h3>
+        <h5>{{ page.client }}</h5>
         {% if page.link %}
           <a href="{{ page.link }}" target="_blank" class="button"><i class="icon-globe"></i> View the map</a><br />
         {% endif %}
@@ -53,7 +53,7 @@
             </div>
           </div>
         {% endif %}
-
+		  <div id="related">	
         {% assign s = site.projects | where: "category", page.category | size %}
         {% if page.category and s > 1 %}
           <h4>More {{ page.category | downcase }} projects</h4>
@@ -76,7 +76,7 @@
           {% endif %}
         {% endfor %}
         {% if blog %}
-          <br /><br />
+          <br />
           <h4>From the blog</h4>
           <ul>
             {% for post in posts reversed %}
@@ -86,16 +86,19 @@
             {% endfor %}
           </ul>
         {% endif %}
+          </div>
         <div id="next-project">
           {% assign items = site.projects | sort: 'date' %}
           {% assign current = false %}
           {% for project in items reversed %}
             {% if project.featured %}
               {% if current == true %}
-                <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+                <a class="project" href="{{ project.url | prepend: site.baseurl }}">
+                  <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+                </a>
                 <div>
                   <a class="button hollow" href="{{ project.url | prepend: site.baseurl }}">Next project ></a>
-                  <h3>{{ project.title }}</h3>
+                  <h2>{{ project.title }}</h2>
                   <h5>{{ project.client }}</h5>
                 </div>
                 {% break %}
