@@ -4,6 +4,7 @@ title: Climate Commons
 titleshort: Climate Commons
 client: Earth Journalism Network
 clientshort: EJN
+logo: internews.png
 tag: Climate data meets climate journalism
 date: 2013-04-03
 featured: true

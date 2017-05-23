@@ -102,10 +102,10 @@ comments:
   content: "[...] Maps meddelar pÃ¥ sin blog att deras tjÃ¤nst indiemapper numera
     Ã¤r gratis att anvÃ¤nda. Indiemapper Ã¤r ett fantastiskt [...]"
 ---
-<p>With the start of 2012, we've decided to make <a href="http://indiemapper.com">indiemapper</a> free to use. Since indiemapper launched in 2010, our business has grown and changed to where supporting and maintaining indiemapper is no longer a major part of what we do at Axis Maps every day. We're making indiemapper free so that it can continue to exist as a useful tool for map-makers while freeing us up to be as awesome as possible at our custom cartography business.</p>
+<p>With the start of 2012, we've decided to make <a href="http://indiemapper.io">indiemapper</a> free to use. Since indiemapper launched in 2010, our business has grown and changed to where supporting and maintaining indiemapper is no longer a major part of what we do at Axis Maps every day. We're making indiemapper free so that it can continue to exist as a useful tool for map-makers while freeing us up to be as awesome as possible at our custom cartography business.</p>
 <p>To allow us to give it away for free, we're scaling back what indiemapper does. We've removed all account-based online functionality including usernames / passwords, cloud storage, and map sharing. Everything else, we've left as is. The map-making process is still the same except you don't have to log in AND you need to export your map before you close your browser. We're also moving our support operations over to <a href="http://getsatisfaction.com/axismaps" target="_blank">GetSatisfaction</a> to let the community of indiemapper users share their knowledge amongst themselves.</p>
 <p>We're really happy about this change and we hope you are too. If you have any questions about the new direction of indiemapper, please let us know in the comments.</p>
-<p><strong><a href="http://app.indiemapper.com">Launch indiemapper</a></strong></p>
-<p><img class="alignnone" title="indiemapper" src="http://indiemapper.com/images/slides/9.png" alt="" width="515" height="333" /></p>
-<p><img class="alignnone" title="indiemapper" src="http://indiemapper.com/images/slides/1.png" alt="" width="515" height="333" /></p>
-<p><img class="alignnone" title="indiemapper" src="http://indiemapper.com/images/slides/5.jpg" alt="" width="515" height="333" /></p>
+<p><strong><a href="http://app.indiemapper.io">Launch indiemapper</a></strong></p>
+<p><img class="alignnone" title="indiemapper" src="http://indiemapper.io/images/slides/9.png" alt="" width="515" height="333" /></p>
+<p><img class="alignnone" title="indiemapper" src="http://indiemapper.io/images/slides/1.png" alt="" width="515" height="333" /></p>
+<p><img class="alignnone" title="indiemapper" src="http://indiemapper.io/images/slides/5.jpg" alt="" width="515" height="333" /></p>

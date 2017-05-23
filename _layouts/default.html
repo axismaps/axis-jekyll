@@ -3,11 +3,8 @@
   {% include meta.html %}
   <body>
     {% include ga.html %}
-    <div id="wrapper">
-      {% include header.html %}
-      {% include nav.html %}
-      {{ content }}
-      {% include footer.html %}
-    </div>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
   </body>
 </html>

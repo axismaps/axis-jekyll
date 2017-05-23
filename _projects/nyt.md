@@ -4,6 +4,7 @@ title: "New York Times: Remembering 9/11"
 titleshort: Remembering 9/11
 client: The New York Times
 clientshort: New York Times
+logo: newyorktimes.png
 tag: User-collected memories of 9/11
 date: 2011-09-11
 featured: true

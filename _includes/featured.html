@@ -1,0 +1,27 @@
+<section id="featured-projects">
+	<h2>Projects</h2>
+    <h3>Designed &amp; Built by Axis Maps</h3>
+    <a class="button hollow" href="{{ '/about/' | prepend: site.baseurl }}">Learn more about what we do...</a>
+	<div id='project-grid'>
+        {% assign count = 0 %}
+        {% assign items = site.projects | sort: 'date' %}
+        {% for project in items reversed %}
+            {% if project.featured %}
+                {% assign count = count | plus: 1 %}
+                <a class="project" href="{{ project.url | prepend: site.baseurl }}">
+                    <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+                    <h4>{{ project.titleshort }}</h4>
+                    <h5>{{ project.clientshort }}</h5>
+                </a>
+  	            {% if count >= 8 %}
+                    {% assign position = {{ forloop.index }} %}
+  	                {% break %}
+      	        {% endif %}
+  	        {% endif %}
+        {% endfor %}
+        <div style="clear:both"></div>
+    </div>
+    {% if page.url == '/' %}
+        <a class="button hollow" href="{{ '/projects/' | prepend: site.baseurl }}">See more projects...</a>
+    {% endif %}
+</section>

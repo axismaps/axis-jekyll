@@ -1,6 +1,6 @@
 ---
 layout: default
-nav: Guide
+title: Guide
 order: 4
 ---
 <section id="guide">
@@ -14,7 +14,7 @@ order: 4
   <p>This guide was written by <a href="http://axismaps.com">Axis Maps</a>, adapted from documentation written for <a href="http://indiemapper.io">indiemapper</a> in 2010. However, the content here is about general cartography principles, not software-specific tips. To see the material in its original context, visit <a href="http://indiemapper.io">indiemapper</a> and its <a href="http://indiemapper.io/app/learnmore.php?l=index">help pages</a>.</p>
   <h3>General Map Making Topics</h3>
   <ul>
-    {% for guide in site.guides %}
+    {% for guide in site.guide %}
       {% if guide.category == 'general' %}
         <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
       {% endif %}
@@ -23,7 +23,7 @@ order: 4
   
   <h3>Univariate Thematic Map Types</h3>
   <ul>
-    {% for guide in site.guides %}
+    {% for guide in site.guide %}
       {% if guide.category == 'univariate' %}
         <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
       {% endif %}
@@ -32,7 +32,7 @@ order: 4
   
   <h3>Multivariate Thematic Map Types</h3>  
   <ul>
-    {% for guide in site.guides %}
+    {% for guide in site.guide %}
       {% if guide.category == 'multivariate' %}
         <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
       {% endif %}
