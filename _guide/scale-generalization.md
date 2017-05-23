@@ -21,44 +21,44 @@ At its core, cartography is about _abstraction_. We don’t show data in its raw
 
 Common generalization tasks include:
 
-![]({{site.baseurl}}/media/guides/selection.png)  
+![]({{site.baseurl}}/guide/images/selection.png)  
 **Selection:** choosing which objects to include on the map
 
-![]({{site.baseurl}}/media/guides/simplification.png)  
+![]({{site.baseurl}}/guide/images/simplification.png)  
 **Simplification:** reduce the number of vertices in an object
 
-![]({{site.baseurl}}/media/guides/smoothing.png)  
+![]({{site.baseurl}}/guide/images/smoothing.png)  
 **Smoothing:** reduce sharp angles to smoother curves
 
-![]({{site.baseurl}}/media/guides/aggregation.png)  
+![]({{site.baseurl}}/guide/images/aggregation.png)  
 **Aggregation:** group points into areas
 
-![]({{site.baseurl}}/media/guides/amalgamation.png)  
+![]({{site.baseurl}}/guide/images/amalgamation.png)  
 **Amalgamation:** group areas into larger areas
 
-![]({{site.baseurl}}/media/guides/collapse.png)  
+![]({{site.baseurl}}/guide/images/collapse.png)  
 **Collapse:** reduce a detailed object to a point symbol
 
-![]({{site.baseurl}}/media/guides/merge.png)  
+![]({{site.baseurl}}/guide/images/merge.png)  
 **Merge:** grouping of line features
 
-![]({{site.baseurl}}/media/guides/refinement.png)  
+![]({{site.baseurl}}/guide/images/refinement.png)  
 **Refinement:** select only portions of an object to display
 
-![]({{site.baseurl}}/media/guides/exaggeration.png)  
+![]({{site.baseurl}}/guide/images/exaggeration.png)  
 **Exaggeration:** amplify a part of an object (for clarity)
 
-![]({{site.baseurl}}/media/guides/enhancement.png)  
+![]({{site.baseurl}}/guide/images/enhancement.png)  
 **Enhancement:** add detail that visually elevates an object
 
-![]({{site.baseurl}}/media/guides/displacement.png)  
+![]({{site.baseurl}}/guide/images/displacement.png)  
 **Displacement:** separate objects (for clarity)
 
 ### Multi-scale map design
 
 Generalization is a hugely important task in modern mapping, as many web maps cover a wide scale range and thus many different levels of generalization. Increasingly, some of the work is done for you behind the scenes, algorithmically. For example, consider Mapbox's OpenStreetMap-based vector tiles, which deliver data pre-simplified to levels appropriate for various scales:
 
-![]({{site.baseurl}}/media/guides/mapbox_scale.jpg)
+![]({{site.baseurl}}/guide/images/mapbox_scale.jpg)
 
 Notice how coastline, roads, labels, etc. become more detailed as the map is zoomed in. Part of that is because the data itself is simplified. In this case that's done automatically, but in other scenarios you may need to do it yourself, using a tool like [Mapshaper](http://mapshaper.org/) to create several different versions of your data, simplified to different levels.
 

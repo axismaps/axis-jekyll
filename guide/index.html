@@ -41,7 +41,7 @@ order: 4
 
   <h3>Web and Interactive Maps</h3>
   <ul>
-    {% for guide in site.guides %}
+    {% for guide in site.guide %}
       {% if guide.category == 'web' %}
         <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
       {% endif %}
