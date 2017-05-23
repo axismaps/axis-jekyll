@@ -25,6 +25,8 @@ In simpler terms, we look at map interactions as supporting a few general catego
 3. Information retrieval: getting _more information_ than what the map shows
 4. Data manipulation: changing _what_ the map and supporting elements are showing
 
+That's an approximate categorization based on our experience. Your mileage may vary. Besides our experiences, the recommendations in this article draw heavily from [Robin Tolochko's master's thesis research on interactive web map design](http://tolomaps.github.io/assets/Tolochko_Thesis.pdf), from which she developed some implementtion guidelines.
+
 ### Map navigation
 
 For the most part, map navigation means panning and zooming by direct manipulation. A handful of methods are common and expected by users; if a map is going to support panning and zooming at all, it should support these methods as much as possible—and avoid unconventional and confusing methods. (Looking at you, maps that use scroll wheel to pan.)
@@ -189,12 +191,25 @@ While it can be tempting, especially to those from a GIS background, to allow al
 
 The ability to change the entire basis of a thematic map is best reserved for maps meant for extensive data exploration. If it is included in a map with narrower purpose, again it is a good idea to limit the number of available views.
 
-In a map with a rich variety of data sources, a big challenge is designing rules for symbolization and some UI elements such that they will "work" no matter what kind of data distribution is thrown at them.
+In a map with a rich variety of data sources, a big challenge is designing rules for symbolization and some UI elements such that they will "work" no matter what kind of data distribution is thrown at them. A few of our usual tricks for this are discussed in a presentation about "[Blindfolded Cartography](http://www.axismaps.com/blog/2015/05/blindfolded-cartography/)."
 
 **Switching geographic units**
 
-**Reclassifying, re-coloring, etc**
+As so many thematic maps are subject to the [modifiable areal unit problem (MAUP)](https://en.wikipedia.org/wiki/Modifiable_areal_unit_problem), it's a rare piece of luck if data are avaialable in different enumeration units. In our experience, supporting different geographic units on the map comes either with exploratory maps of expansive data, or simply with scale changes. In the former case, switching between units is usually accomplished with basic menus or toggle buttons; in the latter case, sometimes it is coupled with zooming, as in an example earlier in this article.
+
+Not all geographic units can be treated equally. For example, some are too small to be legible at small scales, and too cumbersome to display on screen. It may be necesary to change symbolization along with units. In the map shown below, 32,000ish zip code tabulation areas would not only be too small to see but would also bring the map to a grinding halt if displayed as polygons. We show them as points until the map is zoomed in enough to display polygons in more managable chunks.
+
+![]({{site.baseurl}}/media/guides/merck_zips.png)  
+
+**Customized map symbology**
+
+A final type of data manipulation is changing how the data is presented and symbolized. Again, this is not commonly called for, perhaps most rarely of anything in this section. Unless it's requested and desired by an audience of expert users, think about how allowing a user to change, say, the choropleth classification method could ruin the story you're trying to tell. (As we know, [different classification methods can tell drastically different tales](../classification).) Even innocuous-seeming things added for flair, like color scheme options, could be risky—a map of sequential data could end up with a diverging or categorical color scheme, for example.
+
+Two simple recommendations here, forgoing any design details: include this stuff only if 1) you're fairly certain users want it and know what they're doing, and 2) it's a little buried in the UI, requiring motivation to find it.
+
+![]({{site.baseurl}}/media/guides/indiemapper_classification.png)  
+*Choropleth classification options in [indiemapper](http://indiemapper.io), a tool for completely custom cartography*
 
 ### More interaction guidelines
 
-Always be mindful of [how much interaction to add to a map](../should-map-be-interactive/), if any at all. A good additional resource is Robin Tolochko's master's thesis, which developed some guidelines for when and how to implement many of the interactions described on this page (and others), based on a study of map users and experts.
+Always be mindful of [how much interaction to add to a map](../should-map-be-interactive/), if any at all. A good additional resource is [Robin Tolochko's master's thesis](http://tolomaps.github.io/assets/Tolochko_Thesis.pdf), which developed some guidelines for when and how to implement many of the interactions described on this page (and others), based on a study of map users and experts.
