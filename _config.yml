@@ -13,7 +13,7 @@ collections:
     output: true
     layout: project
     permalink: /projects/:path/
-  guides:
+  guide:
     output: true
     layout: guide
     permalink: /guide/:path/
