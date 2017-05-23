@@ -3,18 +3,16 @@
   {% include meta.html %}
   <body>
     {% include ga.html %}
-    <section class="guide-wrapper">
-      {% include header.html %}
-      <div id="guide-banner">
-        <h2>Cartography Guide</h1>
-        <h3>A short, friendly guide to basic principles of map design</p>
+    {% include header.html %}
+    <div id="guide-banner">
+      <h2>Cartography Guide</h2>
+      <h3>A short, friendly guide to basic principles of map design</h3>
+    </div>
+    <section class="guide-content">
+      <div class="content">
+        <h2>{{ page.title }}</h2>
+        {{ content }}
       </div>
-      <section class="guide-content">
-        <div class="content">
-          <h2>{{ page.title }}</h2>
-          {{ content }}
-        </div>
-      </section>
     </section>
     {% include footer.html %}
   </body>

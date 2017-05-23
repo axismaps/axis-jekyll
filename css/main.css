@@ -606,8 +606,9 @@ font-size: 30px;
 
 /* Guides */
 
-section#guides, section.guide-wrapper {
-  margin: 20px 80px 80px;
+section#guides, section.guide-content {
+  margin: 0 80px 80px;
+  padding-top: 0;
 }
 
 .guide-content img {
@@ -622,11 +623,22 @@ span.caption {
 
 .guide-content h2 {
   font-size: 36px;
+  margin-bottom: 15px;
 }
 
 .guide-content h3 {
   font-size: 28px;
   font-weight: 500;
+}
+
+#guide-banner {
+  padding: 20px 0;
+  background: url(../images/guide_banner.jpg);
+  text-shadow: 1px 1px 3px white, -1px -1px 3px white;
+}
+
+#guide-banner h2, #guide-banner h3 {
+  margin: auto 80px;
 }
 
 .guide-content h4 {
