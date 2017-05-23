@@ -2,7 +2,7 @@
 layout: guide
 title: Level of Measurement&#58; Nominal, Ordinal, and Numerical Data
 nav: Guide
-category: general
+category: data
 ---
 
 ### Know Your Data

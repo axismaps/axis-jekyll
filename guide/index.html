@@ -20,6 +20,15 @@ order: 4
       {% endif %}
     {% endfor %}
   </ul>
+
+  <h3>Geographic Data</h3>
+  <ul>
+    {% for guide in site.guide %}
+      {% if guide.category == 'data' %}
+        <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   
   <h3>Univariate Thematic Map Types</h3>
   <ul>

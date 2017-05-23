@@ -2,7 +2,7 @@
 layout: guide
 title: The Basics of Data Classification
 nav: Guide
-category: general
+category: data
 ---
 
 Most [choropleth maps](../choropleth) (and [graduated symbol maps](../proportional_symbols)) employ some method of data classification. The point of classification is to take a large number of observations and **group them into data ranges or classes**. Why? Map readers often find a few well-defined classes are easier to understand than raw data since, if done well, they help to simplify and clarify the message of the map. Data classification, however, is not without some challenges and it is often difficult to find an "ideal" method for a given dataset. It is always wise to have an understanding of the data you are working with before blindly applying a "favorite" classification method, which may create false patterns on your map that bear little resemblance to the actual geographic phenomena you are trying to portray. Maps that use questionable classification methods are more than ineffective; they're misleading.
