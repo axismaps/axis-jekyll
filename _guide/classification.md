@@ -50,6 +50,7 @@ _The form of this histogram suggests that 3 or 4 data classes seem most appropri
 
 GIS software such as QGIS and ArcGIS include the capability to classify your data using a variety of methods (or manually) and to see your data distribution as a histogram to assist in classification.
 
-[gis image]
+![]({{site.baseurl}}/guide/images/qgis_histogram.png) 
+<span class="caption">Histogram view in QGIS</span>
 
 In JavaScript, the [Simple Statistics](https://github.com/simple-statistics/simple-statistics) library by Tom MacWright has several functions for classifying data distributions. If your web map uses D3, its [scale functions](https://github.com/mbostock/d3/wiki/Quantitative-Scales) can be used for classifications.
