@@ -46,7 +46,7 @@ As a static graphic, this map would be better with a more traditional look and l
 Conversely, if the second map were to be interactive, it would need some help. It's hard to make map elements (say, counties that you want people to click) look interactive in a way that most people will immediately understand. This is another reason not to hide anything important behind clicks and hovers: not only will people not take the time, they might never be aware that they *can* interact with the map. While we can provide some visual affordances on the map and surrounding UI, we usually fall back on explicit hints. If there's one thing most of our projects have in common, it's a phrase like "click to learn more."
 
 ![]({{site.baseurl}}/guide/images/learn_more.png)
-*Some hits from the Axis Maps catalog of interaction hints*
+<span class="caption">Some hits from the Axis Maps catalog of interaction hints</span>
 
 
 ### Alternatives to interactivity

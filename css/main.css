@@ -604,6 +604,36 @@ font-size: 30px;
   -o-transition: all 5s ease-in-out;
 }
 
+/* Guides */
+
+section#guides, section.guide-wrapper {
+  margin: 20px 80px 80px;
+}
+
+.guide-content img {
+  max-width: 100%;
+}
+
+span.caption {
+  display: block;
+  font-size: .75em;
+  font-style: italic;
+}
+
+.guide-content h2 {
+  font-size: 36px;
+}
+
+.guide-content h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.guide-content h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 /* RESPONSIVE STYLES */
 
 @media (max-width: 850px) {

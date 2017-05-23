@@ -32,14 +32,14 @@ The typical form of web map is sometimes called a "slippy map." This is a type o
 Slippy maps accomplish their slick usability with _tiling_ schemes. In the old days, a map view was a single image. You had to load the whole thing before you could see it. Now, the map you see comprises many smaller tiles that load invididually. What this means is you _only load the part of the map you need._ For example if you want to look slightly east, you only need to load a new column of tiles on the right side instead of reloading the entire map. Tiling makes map viewing fast and data much more manageable.
 
 ![]({{site.baseurl}}/guide/images/tile_loading.gif)
-*A slowed-down example of how tiled maps load the visible map area piece-by-piece.*
+<span class="caption">A slowed-down example of how tiled maps load the visible map area piece-by-piece.</span>
 
 Tiles come in two flavors: **raster tiles** are pre-rendered images of map data, while **vector tiles** are small sections of the data itself, which is then rendered in the browser. Raster tiles are the original standard and are still very common, but vector tiles have moved to the forefront as technology has made live-rendering of map data feasible. Vector tiles are efficient and fast for a variety of reasons—read more [[[somewhere]]].
 
 Tiled maps use a standard _tiling scheme_ which is worth understanding. Tiles are numbered according to their zoom level and x and y position, typrically starting in the top left corner.
 
 ![]({{site.baseurl}}/guide/images/zoom2.jpg)
-*Tiles are typically numbered with [z, x, y] coordinates. This example is zoom level 2.*
+<span class="caption">Tiles are typically numbered with [z, x, y] coordinates. This example is zoom level 2.</span>
 
 Each zoom level contains twice as many rows and columns as the previous level. With zoom level zero being a single tile for the whole world, this means the number of tiles for any zoom level _z_ is:
 
@@ -56,7 +56,7 @@ Although the numbering pattern is different in a couple of systems, tile positio
 
 Standard slippy maps use the **Web Mercator** projection, much to the chagrin of many cartographers. There are a couple good reasons for this, though:
 
-* The map is conformal (preserving shape) and represents all constant bearings as straight lines. What this boils down to is that you can zoom into the map anywhere in the world, and all shapes and directions will look more or less correct. This isn't true of other map projections, where, for example, Quito might look right but a high-latitude place like Anchorage would look terribly squished. (Compare "unprojected" on the left, below, with Mercator on the right.)
+* The map is conformal (preserving shape) and represents all constant bearings as straight lines. What this boils down to is that you can zoom into the map anywhere in the world, and all shapes and directions will look more or less correct. This isn't true of other map projections, where, for example, Quito might look right but a high-latitude place like Anchorage would look terribly squished. (Compare "unprojected" on the left, below, with Mercator on the right.)  
 ![]({{site.baseurl}}/guide/images/squish.jpg)
 
 * Almost the entire world fits neatly in a square. This makes the tiling scheme described above work very well.

@@ -16,10 +16,10 @@ A map's **visual** hiearchy should match its **intellectual** hierarchy. What is
 One key to visual hierarchy is understanding **figure-ground** relationshops. _Figures_ are the elements that stand out visually, while the rest of the image comprises _ground_. In other words, some things appear prominently as foreground, and others as background. **Color** and **contrast** play an important role in figure-ground relationships. The less contrast in a map, the poorer the figure-ground effect, and likely the poorer the overall hierarchy. Your map has some background color, whether it's a blank white page or something else. For elements that are important, use colors that are noticeably different from the background, especially in terms of lightness.
 
 ![]({{site.baseurl}}/guide/images/figure_ground_good.jpg)  
-_Good use of figure-ground. Color and brightness contrast let the land come forward from the ocean, and things like the river come forward from the land._
+<span class="caption">Good use of figure-ground. Color and brightness contrast let the land come forward from the ocean, and things like the river come forward from the land.</span>
 
 ![]({{site.baseurl}}/guide/images/figure_ground_bad.jpg)  
-_Not so good figure-ground. Low contrasts make it harder and slower to pick out any salient elements._
+<span class="caption">Not so good figure-ground. Low contrasts make it harder and slower to pick out any salient elements.</span>
 
 Figure-ground effects can be ambiguous even with high contrast, causing unstable perception of foreground and background, for example in the famous [Rubin's vase](https://en.wikipedia.org/wiki/Rubin_vase) image. With maps this can come into play as an inversion between land and water (especially if using unconvential colors for water), or more generally a tendency to see the background as an important object. Consider the Idaho highway sign below: it may first appear as a person's face in profile instead of the shape of Idaho. Other ways of separating the Idaho shape might improve this, perhaps using additional strokes or placing the state in the center rather than the corner.
 

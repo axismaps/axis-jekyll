@@ -12,7 +12,7 @@ In the broadest terms, we may think of an _interactive map_ as one that can be c
 3. Changeable in some way
 
 ![]({{site.baseurl}}/guide/images/interaction_wntb.jpg)  
-*A map with loads of interactivity.*
+<span class="caption">A map with loads of interactivity.</span>
 
 ### Types of map interaction
 
@@ -60,7 +60,7 @@ Typically searching and filtering will ask one or more of three things:
 - *When?* Find something based on date or time
 - *What?* Find something based on its name, description, etc.
 
-#### SEARCH
+#### Search
 
 Google is both a blessing and a curse to the web cartographer. On the one hand, almost everyone is familiar and comfortable with searching; they know what to do with a text input box. On the other hand, they expect to be able to search anything and everything, with near-perfect accuracy. Most of us don't have the time, resources, or brainpower to build a search as smart and exhaustive as Google's.
 
@@ -85,7 +85,7 @@ Good organization of list-based results is helpful especially if data is vast an
 ![]({{site.baseurl}}/guide/images/wntb_search_results.png)
 ![]({{site.baseurl}}/guide/images/rio_search_results.png)
 
-#### FILTER
+#### Filter
 
 Filtering, quite often, accomplishes the exact same thing as a search, just approached from a different direction. Take that wineries map above, for example: the same results for that "pinot" search could have been achieved by clicking some filters in the "Varieties" menu. Filtering is more than just an alternative method for searching, though. It does a few things that are advantageous:
 
@@ -110,28 +110,28 @@ Filters don't always need to be built as separate menus and panels, but can be i
 Combinations of active filters can get complicated, and moreover sometimes it's easy to become engrossed in a map and forget that you're looking at a restricted set of data, so it's good to include visual reminders. This could be anything from small hints to explicit text.
 
 ![]({{site.baseurl}}/guide/images/eic_all_filters.jpg)  
-*The map and data displays have been filtered by commodity (long ells), geography (Bombay), and a time range. The title area explicitly states all this.*
+<span class="caption">The map and data displays have been filtered by commodity (long ells), geography (Bombay), and a time range. The title area explicitly states all this.</span>
 
 ![]({{site.baseurl}}/guide/images/napa_active_filters.jpg)  
-*Active filters hidden in menus are hinted at by numbers in the menu titles, showing the number of filters active within each. Note that the search results also states that results are from a restricted set of data.*
+<span class="caption">Active filters hidden in menus are hinted at by numbers in the menu titles, showing the number of filters active within each. Note that the search results also states that results are from a restricted set of data.</span>
 
 **Boolean logic can be tricky.**
 
 One challenge we run into a lot is how to deal with combinations of different filters (usually category toggles) from different places. Do we show data that matches Filter 1 AND Filter 2? Filter 1 OR Filter 2? Usually we settle on a logic of OR within a group of filters, and AND between groups, as demonstrated below. You might decide on something different, but it is always good to think this through.
 
 ![]({{site.baseurl}}/guide/images/napa_filter1.jpg)  
-*No filters selected; all data present: 329 wineries.*
+<span class="caption">No filters selected; all data present: 329 wineries.</span>
 
 ![]({{site.baseurl}}/guide/images/napa_filter2.jpg)  
-*Filter to wineries producing Merlot: 181 wineries.*
+<span class="caption">Filter to wineries producing Merlot: 181 wineries.</span>
 
 ![]({{site.baseurl}}/guide/images/napa_filter3.jpg)  
-*Select a second variety; now we show wineries producing Merlot OR Pinot Noir: 210 wineries.*
+<span class="caption">Select a second variety; now we show wineries producing Merlot OR Pinot Noir: 210 wineries.</span>
 
 ![]({{site.baseurl}}/guide/images/napa_filter4.jpg)  
-*Select a filter from the Features menu. We now show family-owned AND (Merlot OR Pinot Noir): 185 wineries.*
+<span class="caption">Select a filter from the Features menu. We now show family-owned AND (Merlot OR Pinot Noir): 185 wineries.</span>
 
-#### FINAL TIPS ON SEARCH AND FILTER
+#### Final tips on search and filter
 
 - Don't implement these if your map exists to tell a single specific story. Allowing the reader to stray from this by needlessly searching or filtering makes the map less effective.
 - Just as one can easily get lost geographically in the map, one can also get lost in complex combinations of searches and filters. Always provide easy ways to clear these and reset the map to its full, unrestricted data set.
@@ -150,10 +150,10 @@ The result of retrieval interactions usually comes in one (or both) of two flavo
 Besides being brief, a floating tooltip ought to show the most essential information. What's the first thing a user will want to know about something on the map? Show that so that they don't have to work hard for it. If there's a lot more beyond that, a hybrid approach works well. Show a few details on hover in a tooltip, then click for more information in a fixed panel.
 
 ![]({{site.baseurl}}/guide/images/napa_hover.jpg)  
-*Hovering on a point shows basic information like name and address.*
+<span class="caption">Hovering on a point shows basic information like name and address.</span>
 
 ![]({{site.baseurl}}/guide/images/napa_click.jpg)  
-*Clicking the point opens more details in the side panel.*
+<span class="caption">Clicking the point opens more details in the side panel.</span>
 
 **Mobile is a different beast.**
 
@@ -162,10 +162,10 @@ Design for mobile and touch devices throws most of the above out the window and 
 The two-stage retrieval can still be achieved, however, in a manner such as you've probably seen in the Google Maps app. Here's the same example as above, but for mobile. Tapping the marker shows a bit of information at the bottom. Tapping the short details brings up the full panel. (You can't see it in the screenshots, but the bottom strip initially bounces a bit to suggest that it's interactive.)
 
 ![]({{site.baseurl}}/guide/images/napa_tap1.jpg)  
-*Tap once for short, essential details.*
+<span class="caption">Tap once for short, essential details.</span>
 
 ![]({{site.baseurl}}/guide/images/napa_tap2.jpg)  
-*Tap the short details for full information.*
+<span class="caption">Tap the short details for full information.</span>
 
 **Don't assume.**
 
@@ -208,7 +208,7 @@ A final type of data manipulation is changing how the data is presented and symb
 Two simple recommendations here, forgoing any design details: include this stuff only if 1) you're fairly certain users want it and know what they're doing, and 2) it's a little buried in the UI, requiring motivation to find it.
 
 ![]({{site.baseurl}}/guide/images/indiemapper_classification.png)  
-*Choropleth classification options in [indiemapper](http://indiemapper.io), a tool for completely custom cartography*
+<span class="caption">Choropleth classification options in [indiemapper](http://indiemapper.io), a tool for completely custom cartography</span>
 
 ### More interaction guidelines
 
