@@ -5,6 +5,16 @@ nav: Guide
 category: null
 ---
 
+### Other resource lists  
+See some of these lists for even more links on map design, as well as more technical and software-speficic resources.
+
+- [Resources](https://github.com/tolomaps/resources) list from Robin Tolochko.
+- [Geo how-to](https://github.com/nvkelso/geo-how-to) from Nathaniel Vaughn Kelso
+- [DUSPviz resources page](http://duspviz.mit.edu/resources/)
+- [Maptime resources](http://maptime.io/lessons-resources/)
+- [Maptime Boston tutorials and resources](http://maptimeboston.github.io/resources)
+- [MaptimeHRVA meeting links and notes](https://github.com/maptime/hrva/blob/master/meetings.md)
+
 ### General mapping and visualization
 
 - [Cartography and Visualization](https://www.e-education.psu.edu/geog486/) course website, Penn State
@@ -15,15 +25,6 @@ category: null
 - [CartoTalk](http://www.cartotalk.com/) forum hosted by NACIS
 - [List of map-related blogs](https://docs.google.com/document/d/1pjrX7F3w9X1987aAtSvR88aa_UM9YnMfxmr5qDUi6Pc/edit?usp=sharing), publicly editable
 - [Cartographic Design](https://github.com/maptime/portland/blob/gh-pages/tutorials/Cartographic-Design-Notes-and-Resources-by-Alexa-Todd.md) notes and resources by Alexa Todd for MaptimePDX
-
-### Other resource lists  
-
-- [Resources](https://github.com/tolomaps/resources) list from Robin Tolochko.
-- [Geo how-to](https://github.com/nvkelso/geo-how-to) from Nathaniel Vaughn Kelso
-- [DUSPviz resources page](http://duspviz.mit.edu/resources/)
-- [Maptime resources](http://maptime.io/lessons-resources/)
-- [Maptime Boston tutorials and resources](http://maptimeboston.github.io/resources)
-- [MaptimeHRVA meeting links and notes](https://github.com/maptime/hrva/blob/master/meetings.md)
 
 ### Books
 

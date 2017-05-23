@@ -637,6 +637,11 @@ span.caption {
   text-shadow: 1px 1px 3px white, -1px -1px 3px white;
 }
 
+#guide-banner a, #guide-banner a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
 #guide-banner h2, #guide-banner h3 {
   margin: auto 80px;
 }
