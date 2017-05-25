@@ -34,7 +34,7 @@ Slippy maps accomplish their slick usability with _tiling_ schemes. In the old d
 ![]({{site.baseurl}}/guide/images/tile_loading.gif)
 <span class="caption">A slowed-down example of how tiled maps load the visible map area piece-by-piece.</span>
 
-Tiles come in two flavors: **raster tiles** are pre-rendered images of map data, while **vector tiles** are small sections of the data itself, which is then rendered in the browser. Raster tiles are the original standard and are still very common, but vector tiles have moved to the forefront as technology has made live-rendering of map data feasible. Vector tiles are efficient and fast for a variety of reasons—read more [[[somewhere]]].
+Tiles come in two flavors: **raster tiles** are pre-rendered images of map data, while **vector tiles** are small sections of the data itself, which is then rendered in the browser. Raster tiles are the original standard and are still very common, but vector tiles have moved to the forefront as technology has made live-rendering of map data feasible. Vector tiles are efficient and fast for a variety of reasons—see some technical explanations in [Tom MacWright's JS.Geo presentation on vector tiles](http://tmcw.github.io/presentations/jsgeo/).
 
 Tiled maps use a standard _tiling scheme_ which is worth understanding. Tiles are numbered according to their zoom level and x and y position, typrically starting in the top left corner.
 
