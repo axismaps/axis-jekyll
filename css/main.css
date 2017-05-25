@@ -634,16 +634,17 @@ span.caption {
 #guide-banner {
   padding: 20px 0;
   background: url(../images/guide_banner.jpg);
-  text-shadow: 1px 1px 3px white, -1px -1px 3px white;
+  text-shadow: 0 0 5px black;
 }
 
 #guide-banner a, #guide-banner a:hover {
-  color: #333;
+  color: white;
   text-decoration: none;
 }
 
 #guide-banner h2, #guide-banner h3 {
   margin: auto 80px;
+  color: white;
 }
 
 .guide-content h4 {
