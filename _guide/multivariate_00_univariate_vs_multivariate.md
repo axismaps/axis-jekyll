@@ -2,7 +2,7 @@
 layout: guide
 title: Univariate Maps Versus Multivariate Maps
 nav: Guide
-category: mutlivariate
+category: multivariate
 ---
 
 ### One Data Theme or Many Data Themes?
@@ -19,7 +19,7 @@ The majority of thematic maps show one attribute such as _per capita income_. Of
 
 ### Concerns and Limitations
 
-Before deciding to make multivariate maps know that they are harder to design than one-attribute maps. They can become easily cluttered with many overlapping map symbols and colors all competing for precious space on the map. It is also wise to consider your audience and the amount of time they are likely to spend reading your map. In the examples below, bivariate choropleth maps use color in a fairly sophisticated manner and they usually require many return trips to the map legend to keep all of the colors straight. Simple univariate maps are not nearly as complicated and will work better-and work more quickly-for a wider audience.
+Before deciding to make multivariate maps know that they are harder to design than one-attribute maps. They can become easily cluttered with many overlapping map symbols and colors all competing for precious space on the map. It is also wise to consider your audience and the amount of time they are likely to spend reading your map. In the examples below, bivariate choropleth maps use color in a fairly sophisticated manner and they usually require many return trips to the map legend to keep all of the colors straight. Simple univariate maps are not nearly as complicated and will work better—and work more quickly—for a wider audience.
 
 ![]({{site.baseurl}}/guide/images/bivariateLegend.jpg)![]({{site.baseurl}}/guide/images/univariateLegend.jpg)
 
@@ -27,8 +27,11 @@ At the risk of oversimplifying, single theme maps are easier to read and make th
 
 ### Making Good Multivariate Maps
 
-> **USE THE RIGHT TYPES OF DATA:** Some multivariate map types, such as [bivariate choropleth](../bivariate_choropleth), are best with ordinal or numeric data. Others, such as [bivariate proportional symbols](../bivariate_proportional), can work with nominal data as one of the attributes. [See our longer discussion on level of measurement](../level_of_measurement) for more on the different types of data.
+> **USE THE RIGHT TYPES OF DATA:** Some multivariate map types, such as [bivariate choropleth](../bivariate-choropleth), are best with ordinal or numeric data. Others, such as [bivariate proportional symbols](../bivariate-proportional-symbols), can work with nominal data as one of the attributes. [See our longer discussion on level of measurement](../level-of-measurement) for more on the different types of data.
 > 
 > **MAKE SURE THESE DATA BELONG TOGETHER:** Another critical issue is that your multiple data sets need to be commensurate and logically related. To avoid making a spurious correlation (or imply that a nonsense association exists) you should be able to argue your data variables have some relationship to each other. _Income_ and _education_ are very much correlated—both influencing the other in the real world—whereas _education_ and _the price of watermelons_ are probably not connected in any meaningful way and any patterns you see are likely just random chance.
+>
+> Furthermore, the data sets should be collected at the same [scale](../scale-and-generalization/) in order to make meaningful comparisons. Combining county-level data with state-level data, for example, is not likely to yield statistically useful results, and may suggest misleading conclusions.
+
 > 
-> **AVOID MAPPING ANCILLARY DATA:** Not all of the attributes in many geodata sets are things you should map—they may be ancillary facts that are used by GIS databases / software. For example, things like "FIPS codes" or "ID" are unique identifiers used by software to track each location, but aren't thematic data _per se_. Another example is things like AREA (in square miles/km) or LENGTH (in miles/km), which are not necessarily useful by themselves for making thematic maps, but are useful for standardizing your data by calculating rates and ratios. [Click here for more about why and how we need to standardize our thematic data.](../standardize)
+> **AVOID MAPPING ANCILLARY DATA:** Not all of the attributes in many geodata sets are things you should map—they may be ancillary facts that are used by GIS databases / software. For example, things like "FIPS codes" or "ID" are unique identifiers used by software to track each location, but aren't thematic data _per se_. Another example is things like AREA (in square miles/km) or LENGTH (in miles/km), which are not necessarily useful by themselves for making thematic maps, but are useful for standardizing your data by calculating rates and ratios. [Click here for more about why and how we need to standardize our thematic data.](../standardizing-data)

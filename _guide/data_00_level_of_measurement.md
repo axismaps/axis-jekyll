@@ -1,9 +1,11 @@
 ---
 layout: guide
-title: Level of Measurement&#58; Nominal, Ordinal, and Numerical Data
+title: Level of Measurement
 nav: Guide
 category: data
 ---
+
+## Nominal, Ordinal, and Numerical Data
 
 ### Know Your Data
 
