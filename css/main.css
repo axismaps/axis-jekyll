@@ -677,6 +677,10 @@ span.caption {
   font-weight: 500;
 }
 
+.guide-content ol {
+  font-weight: 300;
+}
+
 /* RESPONSIVE STYLES */
 
 @media (max-width: 850px) {

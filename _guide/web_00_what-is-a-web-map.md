@@ -36,7 +36,11 @@ Slippy maps accomplish their slick usability with _tiling_ schemes. In the old d
 
 Tiles come in two flavors: **raster tiles** are pre-rendered images of map data, while **vector tiles** are small sections of the data itself, which is then rendered in the browser. Raster tiles are the original standard and are still very common, but vector tiles have moved to the forefront as technology has made live-rendering of map data feasible. Vector tiles are efficient and fast for a variety of reasons—see some technical explanations in [Tom MacWright's JS.Geo presentation on vector tiles](http://tmcw.github.io/presentations/jsgeo/).
 
-Tiled maps use a standard _tiling scheme_ which is worth understanding. Tiles are numbered according to their zoom level and x and y position, typrically starting in the top left corner.
+Tiled maps use a standard **tiling scheme** which is worth understanding. Tiles are idenfied by three numbers, typically in this order:
+
+1. **Zoom level**: the [scale](../scale-and-generalization) of the map for this tile, relative to an initial scale at which the whole world fits in one tile. (More on this in a moment.)
+2. An **X** coordinate: the **horizontal** position of this tile, within the grid of tiles for the world map at this zoom level. Usually, this number increases from left to right, with 0 being the left edge of the map, or 180º West longitude.
+3. A **Y** coordinate: the **vertical** position of this tile, within the grid of tiles for the world map at this zoom level. Usually, this number counts up from top to bottom to right, with 0 being the top edge of the map, around 85º North latitude. (In the standard Mercator map projection of web maps, 85º latitude northern and southern limits allows everything to fit in a square.)
 
 ![]({{site.baseurl}}/guide/images/zoom2.jpg)
 <span class="caption">Tiles are typically numbered with [z, x, y] coordinates. This example is zoom level 2.</span>
