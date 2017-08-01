@@ -13,7 +13,7 @@
                     <h4>{{ project.titleshort }}</h4>
                     <h5>{{ project.clientshort }}</h5>
                 </a>
-  	            {% if count >= 8 %}
+  	            {% if count >= 8 and page.url != '/projects/index.html' %}
                     {% assign position = {{ forloop.index }} %}
   	                {% break %}
       	        {% endif %}
@@ -21,7 +21,7 @@
         {% endfor %}
         <div style="clear:both"></div>
     </div>
-    {% if page.url == '/' %}
+    {% if page.url != '/projects/index.html' %}
         <a class="button hollow" href="{{ '/projects/' | prepend: site.baseurl }}">See more projects...</a>
     {% endif %}
 </section>
