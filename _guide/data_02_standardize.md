@@ -2,7 +2,7 @@
 layout: guide
 title: Standardizing Data
 nav: Guide
-category: general
+category: data
 ---
 
 ### To Standardize or Not?

@@ -2,7 +2,7 @@
 layout: guide
 title: Univariate Maps Versus Multivariate Maps
 nav: Guide
-category: general
+category: mutlivariate
 ---
 
 ### One Data Theme or Many Data Themes?

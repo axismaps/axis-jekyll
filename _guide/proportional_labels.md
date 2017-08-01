@@ -2,7 +2,7 @@
 layout: guide
 title: Proportional Labels
 nav: Guide
-category: multivariate
+category: 
 ---
 
 ### When to Use

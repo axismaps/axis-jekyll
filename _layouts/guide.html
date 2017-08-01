@@ -3,19 +3,19 @@
   {% include meta.html %}
   <body>
     {% include ga.html %}
-    <div id="wrapper">
-      {% include header.html %}
-      <div id="guide-banner">
-        <h1>Thematic Cartography Guide</h1>
-        <p>A short, friendly guide to basic principles of thematic mapping</p>
-      </div>
-      <section id="guide">
-        <div class="content">
-          <h2>{{ page.title }}</h2>
-          {{ content }}
-        </div>
-      </section>
-      {% include footer.html %}
+    {% include header.html %}
+    <div id="guide-banner">
+      <a href="../">
+        <h2>Cartography Guide</h2>
+        <h3>A short, friendly guide to basic principles of map design</h3>
+      </a>
     </div>
+    <section class="guide-content">
+      <div class="content">
+        <h2>{{ page.title }}</h2>
+        {{ content }}
+      </div>
+    </section>
+    {% include footer.html %}
   </body>
 </html>

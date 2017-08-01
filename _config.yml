@@ -16,7 +16,7 @@ collections:
   guide:
     output: true
     layout: guide
-    permalink: /guide/:path/
+    permalink: /guide/:title/
 
 # Build settings
 markdown: kramdown
