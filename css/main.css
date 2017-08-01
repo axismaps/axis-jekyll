@@ -445,7 +445,7 @@ a.project:hover .grid-image{
 }
 
 /* ABOUT */
-#about{
+#about, #team{
   margin: 20px 20%;
   text-align: center;
   line-height: 26px;
@@ -457,19 +457,44 @@ a.project:hover .grid-image{
   margin-top: 0px;
   }
 
-#data-design-code{
+#data-design-code, #personnel{
   margin: 20px 80px 80px;
   padding-top: 10px;
 }
 
-#about p{
+#personnel {
+  margin-top: 0;
+}
+
+#about p, #team p{
   text-align: left;
   color: #666;
   line-height: 32px;
 }
 
-#data-design-code p{
+#data-design-code p, #personnel p{
   color: #666;
+}
+
+img.madison {
+  display: block;
+  margin: 0 auto;
+}
+
+.person {
+  margin-bottom: 80px;
+}
+
+.person img {
+  width: 150px;
+}
+
+.person div {
+  margin-left: 200px;
+}
+
+.person h3 a {
+  color: #333;
 }
 
 span.big{
