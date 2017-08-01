@@ -444,8 +444,8 @@ a.project:hover .grid-image{
   background-color: #BA8B36;
 }
 
-/* ABOUT */
-#about, #team{
+/* ABOUT, TEAM, CONTACT */
+#about, #team, #contact{
   margin: 20px 20%;
   text-align: center;
   line-height: 26px;
@@ -466,7 +466,7 @@ a.project:hover .grid-image{
   margin-top: 0;
 }
 
-#about p, #team p{
+#about p, #team p, #contact p{
   text-align: left;
   color: #666;
   line-height: 32px;
