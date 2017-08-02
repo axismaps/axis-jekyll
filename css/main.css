@@ -250,7 +250,12 @@ footer{
 
 footer h4{
   font-size: 16px;
-  }
+}
+
+footer h4 a {
+  color: #333;
+  font-weight: 700;
+}
 
 footer > div{
   width: calc( 25% - 40px );
@@ -679,6 +684,74 @@ span.caption {
 
 .guide-content ol {
   font-weight: 300;
+}
+
+/* BLOG */
+
+#blog {
+  margin: 20px 80px 80px;
+}
+
+#blog.blogroll article {
+  margin-bottom: 40px;
+}
+
+#blog.blogroll article hr {
+  margin-bottom: 60px;
+}
+
+#blog h1 {
+  font-size: 40px;
+}
+
+#blog h1 a {
+  color: #333;
+}
+
+#blog h2 {
+  font-size: 32px;
+}
+
+#blog .share-excerpt {
+  font-size: 16px;
+  background-color: #EFF1F2;
+  margin-bottom: 40px;
+}
+
+#blog .share-links {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#blog .share-links a {
+  margin-right: 15px;
+}
+
+#blog .metadata {
+  margin: 15px 0;
+}
+
+#blog .metadata > div {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#blog .pagination {
+  text-align: center;
+}
+
+#blog .pagination-section {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#blog .mini-portfolio {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+#blog img {
+  max-width: 100%;
 }
 
 /* RESPONSIVE STYLES */
