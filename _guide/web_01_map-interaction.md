@@ -212,4 +212,4 @@ Two simple recommendations here, forgoing any design details: include this stuff
 
 ### More interaction guidelines
 
-Always be mindful of [how much interaction to add to a map](../should-map-be-interactive/), if any at all. A good additional resource is [Robin Tolochko's master's thesis](http://tolomaps.github.io/assets/Tolochko_Thesis.pdf), which developed some guidelines for when and how to implement many of the interactions described on this page (and others), based on a study of map users and experts.
+Always be mindful of [how much interaction to add to a map](../should-a-map-be-interactive/), if any at all. A good additional resource is [Robin Tolochko's master's thesis](http://tolomaps.github.io/assets/Tolochko_Thesis.pdf), which developed some guidelines for when and how to implement many of the interactions described on this page (and others), based on a study of map users and experts.

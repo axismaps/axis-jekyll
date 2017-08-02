@@ -21,7 +21,7 @@ As a general rule, if something is important to the purpose of the map, it shoul
 
 ![]({{site.baseurl}}/guide/images/revolt_tooltip.gif)
 
-Interactive elements can also do the users' work for them. In the animated map above, which shows movement of troops, a tooltip will appear on hover but also automatically opens with some pertinent details, hding even further detail behind a click.
+Interactive elements can also do the users' work for them. In the animated map above, which shows movement of troops, a tooltip will appear on hover but also automatically opens with some pertinent details, hiding even further detail behind a click.
 
 ![]({{site.baseurl}}/guide/images/eic_menu_control.gif)
 

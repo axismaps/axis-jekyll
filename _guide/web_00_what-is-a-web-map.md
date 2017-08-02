@@ -67,7 +67,7 @@ Standard slippy maps use the **Web Mercator** projection, much to the chagrin of
 
 However, it comes with a few pitfalls:
 
-* **The Mercator projection is wildly inappropriate for some types of thematic maps.** (To say nothing of the generally distorted version of the world it presents.) [Choropleth](../choropleth) maps and others that depend on correct area proportions should not be used with Mercator maps at small (global-to-continental) scales, as area distortions can be huge. Distortions are minimal at local levels, though.
+* **The Mercator projection is wildly inappropriate for some types of thematic maps.** (To say nothing of the generally distorted version of the world it presents.) [Choropleth](../choropleth-maps) maps and others that depend on correct area proportions should not be used with Mercator maps at small (global-to-continental) scales, as area distortions can be huge. Distortions are minimal at local levels, though.
 
 * As implied above, **scale is not constant around the world.** Be suspicious if someone presents you with Google Maps screenshots of two different places "at the same scale." Zoom level is not the same as scale. At high latitudes, where areas are enlarged, a tile represents less area than near the equator.
 ![]({{site.baseurl}}/guide/images/z16.jpg)

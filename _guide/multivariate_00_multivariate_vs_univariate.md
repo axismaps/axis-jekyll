@@ -2,7 +2,7 @@
 layout: guide
 title: Univariate Maps Versus Multivariate Maps
 nav: Guide
-category: mutlivariate
+category: multivariate
 ---
 
 ### One Data Theme or Many Data Themes?
@@ -27,7 +27,7 @@ At the risk of oversimplifying, single theme maps are easier to read and make th
 
 ### Making Good Multivariate Maps
 
-> **USE THE RIGHT TYPES OF DATA:** Some multivariate map types, such as [bivariate choropleth](../bivariate_choropleth), are best with ordinal or numeric data. Others, such as [bivariate proportional symbols](../bivariate_proportional), can work with nominal data as one of the attributes. [See our longer discussion on level of measurement](../level_of_measurement) for more on the different types of data.
+> **USE THE RIGHT TYPES OF DATA:** Some multivariate map types, such as [bivariate choropleth](../bivariate-choropleth), are best with ordinal or numeric data. Others, such as [bivariate proportional symbols](../bivariate-proportional-symbols), can work with nominal data as one of the attributes. [See our longer discussion on level of measurement](../level-of-measurement) for more on the different types of data.
 > 
 > **MAKE SURE THESE DATA BELONG TOGETHER:** Another critical issue is that your multiple data sets need to be commensurate and logically related. To avoid making a spurious correlation (or imply that a nonsense association exists) you should be able to argue your data variables have some relationship to each other. _Income_ and _education_ are very much correlated—both influencing the other in the real world—whereas _education_ and _the price of watermelons_ are probably not connected in any meaningful way and any patterns you see are likely just random chance.
 > 
