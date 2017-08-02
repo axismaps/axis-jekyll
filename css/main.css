@@ -931,6 +931,14 @@ span.caption {
     margin-left: 0;
   }
 
+  #guide-banner h2, #guide-banner h3 {
+    margin: auto 20px;
+  }
+
+  section#guides, section.guide-content {
+    margin: 0 20px 80px;
+  }
+
   footer {
     padding: 20px ;
   }
