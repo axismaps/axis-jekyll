@@ -938,6 +938,10 @@ span.caption {
     height: auto;
   }
 
+  .fixed-header #header .logo {
+    height: 30px;
+  }
+
   #header nav #links a{
     display: block;
   }
@@ -949,6 +953,10 @@ span.caption {
     text-decoration: none;
     font-size: 30px;
     margin-right: 20px;
+  }
+
+  .fixed-header #menu {
+    line-height: 30px;
   }
   
   #header nav{
