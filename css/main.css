@@ -517,6 +517,11 @@ font-size: 30px;
   text-align: center;
 }
 
+img.banner {
+  display: block;
+  margin: auto;
+}
+
 #poster > *{
   width: 100%;
   height: 100%;
