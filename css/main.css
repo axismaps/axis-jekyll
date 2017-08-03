@@ -489,6 +489,7 @@ a.project:hover .grid-image{
 img.madison {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .person {
@@ -865,6 +866,10 @@ span.caption {
     padding-top: 20px;
   }
 
+  hr {
+    margin: 20px auto 20px;
+  }
+
   #header {
     padding-left: 0;
   }
@@ -997,6 +1002,14 @@ span.caption {
 
   section#guides, section.guide-content {
     margin: 0 20px 80px;
+  }
+
+  #blog {
+    margin: 20px;
+  }
+
+  #blog.blogroll article hr {
+    margin-bottom: 40px;
   }
 
   footer {
