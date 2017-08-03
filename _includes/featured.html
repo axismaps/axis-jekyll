@@ -8,7 +8,7 @@
         {% for project in items reversed %}
             {% if project.featured %}
                 {% assign count = count | plus: 1 %}
-                <a class="project" href="{{ project.url | prepend: site.baseurl }}">
+                <a class="project" href="{{ project.url | prepend: site.baseurl }}" {% if count == 9 %} id="next-projects" {% endif %}>
                     <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
                     <h4>{{ project.titleshort }}</h4>
                     <h5>{{ project.clientshort }}</h5>
@@ -22,7 +22,7 @@
         <div style="clear:both"></div>
     </div>
     {% if page.url != '/projects/index.html' %}
-        <a class="button hollow" href="{{ '/projects/' | prepend: site.baseurl }}">See more projects...</a>
+        <a class="button hollow" href="{{ '/projects/#next-projects' | prepend: site.baseurl }}">See more projects...</a>
     {% else %}
         <a class="button hollow" href="{{ '/more-projects/' | prepend: site.baseurl }}">See more projects...</a>
     {% endif %}
