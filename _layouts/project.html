@@ -114,7 +114,7 @@
     </div>
     <script>
       $( window ).resize( function(){
-        $( '#poster' ).height( 720 * $( '#poster' ).width() / 1280 );
+        $( '#poster' ).height( Math.min(window.innerHeight - 200, 720 * $( '#poster' ).width() / 1280 ));
       });
       $( window ).resize();
       
