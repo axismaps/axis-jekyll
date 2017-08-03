@@ -17,4 +17,12 @@ function init_events()
 		if( $( window ).width() > 650 ) $( "nav #links" ).show();
 		else $( "nav #links" ).hide();
 	});
+
+	$(window).scroll(function(){
+		if ($(window).scrollTop() > 100) {
+			$('body').addClass('fixed-header');
+		} else {
+			$('body').removeClass('fixed-header');
+		}
+	})
 }
