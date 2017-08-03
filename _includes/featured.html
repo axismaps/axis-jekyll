@@ -23,5 +23,7 @@
     </div>
     {% if page.url != '/projects/index.html' %}
         <a class="button hollow" href="{{ '/projects/' | prepend: site.baseurl }}">See more projects...</a>
+    {% else %}
+        <a class="button hollow" href="{{ '/more-projects/' | prepend: site.baseurl }}">See more projects...</a>
     {% endif %}
 </section>

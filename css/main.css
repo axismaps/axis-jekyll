@@ -293,7 +293,7 @@ footer p.legal{
 }
 
 /* PORTFOLIO */
-#featured-projects {
+#featured-projects, #all-projects {
   text-align: center;
 	background-color: #EFF1F2;
 	padding-bottom: 20px;
@@ -338,6 +338,30 @@ a.project:hover .grid-image{
 	-webkit-transition: all 5s ease-in-out;
 	-moz-transition: all 5s ease-in-out;
 	-o-transition: all 5s ease-in-out;
+}
+
+#project-list {
+  margin: 10px 40px;
+}
+
+.project-short {
+  background-color: white;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.project-short .banner-image {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.project-short p {
+  text-align: left;
+}
+
+.project-short h4 a {
+  color: #333;
+  font-weight: 700;
 }
 
 /* CLIENTS */
