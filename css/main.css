@@ -571,6 +571,7 @@ font-size: 30px;
 #features img{
   width: 100%;
   margin-top: 40px;
+  cursor: pointer;
 }
 
 #related{
@@ -637,6 +638,65 @@ font-size: 30px;
   -webkit-transition: all 5s ease-in-out;
   -moz-transition: all 5s ease-in-out;
   -o-transition: all 5s ease-in-out;
+}
+
+.image-modal {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.image-modal div {
+  text-align: center;
+}
+
+.image-modal div span {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.image-modal img {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.image-modal i {
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.image-modal i:hover{
+  color: black;
+}
+
+.image-modal i.disabled, .image-modal i.disabled:hover {
+  color: #666;
+}
+
+.image-modal .icon-times {
+  right: 20px;
+  top: 20px;
+}
+
+.image-modal .icon-left-dir, .image-modal .icon-right-dir {
+  top: 50%;
+  margin-top: -20px;
+}
+
+.image-modal .icon-left-dir {
+  left: 20px;
+}
+
+.image-modal .icon-right-dir {
+  right: 20px;
 }
 
 /* Guides */

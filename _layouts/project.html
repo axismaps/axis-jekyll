@@ -123,6 +123,54 @@
           $( "#video-thumb" ).css( "background-image", "url(" + json[ 0 ].thumbnail_medium + ")" );
         });
       {% endif %}
+
+      {% if page.features %}
+        var modal = $('<div>')
+          .attr('class', 'image-modal')
+          .appendTo('body')
+          .hide();
+        $('<i class="icon-times">')
+          .click(function (){
+            modal.hide();
+          })
+          .appendTo(modal);
+
+        var i = 0;
+        var l = $('#features img').length;
+
+        var left = $('<i class="icon-left-dir">')
+          .click(function(){imageModal(i - 1);})
+          .appendTo(modal);
+
+        var right = $('<i class="icon-right-dir">')
+          .click(function(){imageModal(i + 1);})
+          .appendTo(modal);
+
+        $('#features img').click(function () {
+          imageModal($('#features img').index(this));
+        })
+
+        function imageModal (index) {
+          i = Math.max(0, Math.min(index, l - 1));
+          if (index < 0 || index >= l) return;
+          
+          if (index == 0) left.addClass('disabled');
+          else left.removeClass('disabled');
+
+          if (index == l - 1) right.addClass('disabled');
+          else right.removeClass('disabled');
+
+          $('div', modal).remove();
+
+          $('<div>')
+            .append($('#features img').eq(index).clone())
+            .append('<br>')
+            .append($('#features span').eq(index).clone())
+            .prependTo(modal);
+
+          modal.show();
+        }
+      {% endif %}
     </script>
   </body>
 </html>
