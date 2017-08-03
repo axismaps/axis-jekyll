@@ -122,7 +122,8 @@ function init_events()
 	
 	$( window ).resize( function()
 	{
-		if( $( window ).width() > 520 ) $( "nav #links" ).show();
+		if( $( window ).width() > 650 ) $( "nav #links" ).show();
+		else $( "nav #links" ).hide();
 	});
 
 }
