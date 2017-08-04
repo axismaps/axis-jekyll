@@ -5,7 +5,7 @@ nav: Guide
 category: general
 ---
 
-![]({{site.baseurl}}/guide/images/labels.jpg)
+![]({{site.baseurl}}/media/guide/labels.jpg)
 
 ### Background
 
@@ -19,9 +19,9 @@ The task of **1) selecting fonts** and font styles and **2) placing (or, positio
 
 **2) Why do I need a visual hierarchy of map labels and text?** A visual hierarchy is an essential aspect of map design that helps map readers organize graphical information so that it can be understood more quickly and easily. When applied to labels and text, a visual hierarchy allows people to more quickly and easily execute basic map reading tasks like categorizing, grouping, searching and scanning for information. The first map below shows a visual hierarchy of labels. Without visual hierarchy, as shown in the second example below, map reading becomes more taxing because everything is assigned an equal level of importance.
 
-![label hierarchy]({{site.baseurl}}/guide/images/labelHierarchy.jpg)
+![label hierarchy]({{site.baseurl}}/media/guide/labelHierarchy.jpg)
 
-![no label hierarchy]({{site.baseurl}}/guide/images/noLabelHierarchy.jpg)
+![no label hierarchy]({{site.baseurl}}/media/guide/noLabelHierarchy.jpg)
 
 All else equal, bigger and bolder styles tend to promote labels and text in the visual hierarchy. Capitalization and bold colors like black, red, or purple can have a similar, promoting effect. Smaller point sizes and letterspacing (or, tracking) tend to demote labels, as do more muted text colors, like gray. Of course, the task becomes more complex as more labels are added and the number of necessary styles increases. Creating a good visual hierarchy will normally require some experimentation, revision, and refinement.
 
@@ -47,13 +47,13 @@ All else equal, bigger and bolder styles tend to promote labels and text in the 
 
 > **Point Size** is the height of a capital letter plus some space above and below. This is a holdover from the days of metal type setting, in which the characters in a font had to fit on a slug of the same body size to ensure uniform printing. _It's important to note that different typefaces at the same point size can appear different in size, as shown below._ _Point size alone should never be used to determine legibility._
 > 
-> ![point size and x-height]({{site.baseurl}}/guide/images/pointSize_xHeight.png)
+> ![point size and x-height]({{site.baseurl}}/media/guide/pointSize_xHeight.png)
 > 
 > **X-height** is the height of a lowercase letter minus its ascenders and descenders, shown with a blue dashed line in the example above. This property is nearly as important as point size when considering the legibility of text. All else equal, when point size gets small, fonts with larger x-heights tend to appear bigger than those with small x-heights. Fonts with largish x-heights also tend to have bigger interior spaces within letterforms that are less likely to collapse on screen at small sizes.
 > 
 > **Serifs** are the small marks that appear on the terminals of some letterforms, as shown below on the letter 'T'. Fonts for screen-based maps should have robust serifs that won't break down at small sizes. In fact, at small sizes on screen, the best choice is usually a sans serif font. However, when serifs are an option on screen, heavier block-like or square serifs are often the best choice, like those on the fonts Georgia, Droid Serif, or Bitstream Vera Serif.
 > 
-> ![serifs]({{site.baseurl}}/guide/images/serifs.png)
+> ![serifs]({{site.baseurl}}/media/guide/serifs.png)
 > 
 > **Depth of Family.** Font families that have a range of members are often good choices, given the variety of font styles regularly employed on maps. If a font comes in a regular, or Roman, weight, plus an italic and bold style, you'll be able to cover the common uses for these without having to introduce another font family. Some font families, like Helvetica Neue, are very 'deep' and can include 10 or more members.
 > 

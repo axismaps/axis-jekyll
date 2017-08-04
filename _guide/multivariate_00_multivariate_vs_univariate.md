@@ -11,7 +11,7 @@ If you want to make a thematic map you need to be working with geographic data t
 
 If your data has only one thematic layer or theme, you can of course map only **one attribute.** If the data contain more than one theme, you can decide between a one attribute map or **a multivariate thematic map,** that is, a map layer that **combines two data themes together into a hybrid map symbol**. These multivariate thematic maps encode multiple geographic facts about each location using more complex map symbols. Multivariate maps are not necessarily better than univariate maps and what follows is a discussion about their pros and cons.
 
-![]({{site.baseurl}}/guide/images/multiv_panel.jpg)
+![]({{site.baseurl}}/media/guide/multiv_panel.jpg)
 
 _Example of multivariate map types available in [indiemapper](http://indiemapper.io)._
 
@@ -21,7 +21,7 @@ The majority of thematic maps show one attribute such as _per capita income_. Of
 
 Before deciding to make multivariate maps know that they are harder to design than one-attribute maps. They can become easily cluttered with many overlapping map symbols and colors all competing for precious space on the map. It is also wise to consider your audience and the amount of time they are likely to spend reading your map. In the examples below, bivariate choropleth maps use color in a fairly sophisticated manner and they usually require many return trips to the map legend to keep all of the colors straight. Simple univariate maps are not nearly as complicated and will work better-and work more quickly-for a wider audience.
 
-![]({{site.baseurl}}/guide/images/bivariateLegend.jpg)![]({{site.baseurl}}/guide/images/univariateLegend.jpg)
+![]({{site.baseurl}}/media/guide/bivariateLegend.jpg)![]({{site.baseurl}}/media/guide/univariateLegend.jpg)
 
 At the risk of oversimplifying, single theme maps are easier to read and make their point quickly. Multivariate theme maps are richer but require more effort to understand.
 

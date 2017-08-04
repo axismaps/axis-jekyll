@@ -15,7 +15,7 @@ The success of many thematic maps, such as [choropleth maps](../choropleth-maps)
 
 Nominal data are categories that are inherently unorderable (like soils or landuse) and should only be mapped with **nominal color schemes**. If you have orderable categories (such as low/med/high) or if you have numerical data, a **sequential color scheme** is what you need. Sequential color schemes can be single or multi-hue, but they are dominated and ordered by differences in lightness/saturation. **Diverging schemes** should only be used when your data has a natural mid-point such as a zero (e.g., positive and negative change/growth) or if you want to compare places to something like the national average (e.g., county data showing places that are above and below the national average for a variable like per capita income). A good place to find color schemes of each type is [ColorBrewer](http://www.ColorBrewer2.org), where you can also find more detailed discussions of their characteristics.
 
-![]({{site.baseurl}}/guide/images/color_schemes.jpg)
+![]({{site.baseurl}}/media/guide/color_schemes.jpg)
 
 ### Perceptually-Graded Schemes
 

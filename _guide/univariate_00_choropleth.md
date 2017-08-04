@@ -5,7 +5,7 @@ nav: Guide
 category: univariate
 ---
 
-![]({{site.baseurl}}/guide/images/choropleth.jpg)
+![]({{site.baseurl}}/media/guide/choropleth.jpg)
 
 ### When to Use
 
@@ -29,7 +29,7 @@ _**Not sure you should use a choropleth map?**_ Good alternatives include [dot d
 
 Below is a 5-class choropleth map that uses a [sequential color scheme](../using-colors-on-maps) (from light to dark) attached to an equal-interval classification scheme.
 
-![]({{site.baseurl}}/guide/images/classed_choropleth.jpg)
+![]({{site.baseurl}}/media/guide/classed_choropleth.jpg)
 
 With sequential color schemes, it is traditional to use darker/stronger colors for larger numbers. Note that the appearance of the choropleth colors will appear to change depending on what other colors are used on the map, such as blue water or black city labels. The colors of the enumeration unit borders (county and state lines here) also have a very large impact on the look of the map, so experiment with both fill and stroke color combinations. You may even decide to not draw those enumeration unit borders (no stroke, just fill). Note: it may be harder for your audience to locate places on the map without those borders. For a more complete discussion of color in thematic mapping, have a look [ColorBrewer](http://colorbrewer2.org).
 
@@ -45,7 +45,7 @@ Not sure how many classes to use? Have a look at the distribution of your data i
 
 Just as there is no single correct number of classes, there is no single best way to classify you data into ranges. Look at a histogram (or scatterplot) to determine the 'form' of your observations. Above all else the goal of data classification is to put places with similar rates in the same class, and separate places with very different rates into different classes.
 
-![]({{site.baseurl}}/guide/images/histogram_examples.png)
+![]({{site.baseurl}}/media/guide/histogram_examples.png)
 
 _The form of this histogram suggests that 3 or 4 data classes seem most appropriate.
  Lacking any other insight, the "dips/gaps" suggest natural places to break the data._
@@ -64,13 +64,13 @@ Unclassed choropleth maps are an attractive alternative to traditional classed c
 
 With unclassed choropleth maps, each unique data value gets a unique color: For example, the unemployment figures for the 50 US states would be ranked from lowest to highest and placed along a continuous color ramp from low to high (see below). If, for example, there is a big numerical gap/jump from the state with the 3rd highest unemployment to the one with the 2nd, there'd be a correspondingly larger jump in color - the data are arranged proportionally along the color ramp.
 
-![]({{site.baseurl}}/guide/images/unclassed_ramp.jpg)
+![]({{site.baseurl}}/media/guide/unclassed_ramp.jpg)
 
 ### Example Unclassed Choropleth Map
 
 In the map below, notice how you can easily see a large geographic pattern of unemployment rates, but it is very hard to compare or rank counties: try to accurately arrange the counties in California from lowest to highest...it's nearly impossible.
 
-![]({{site.baseurl}}/guide/images/unclassed_choropleth_map.jpg)
+![]({{site.baseurl}}/media/guide/unclassed_choropleth_map.jpg)
 
 ### Limitations
 

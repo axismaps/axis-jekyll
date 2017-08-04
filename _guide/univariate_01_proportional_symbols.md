@@ -5,7 +5,7 @@ nav: Guide
 category: univariate
 ---
 
-![]({{site.baseurl}}/guide/images/prop_symbols.jpg)
+![]({{site.baseurl}}/media/guide/prop_symbols.jpg)
 
 ### When to Use
 
@@ -28,13 +28,13 @@ Example datasets appropriate for proportional symbol maps:
 *   estimated likelihood of a major earthquake for cities in California (low, medium, and high risk)
 *   population totals of the 50 largest cities in China
 
-![]({{site.baseurl}}/guide/images/proportional_squaresB.jpg)
+![]({{site.baseurl}}/media/guide/proportional_squaresB.jpg)
 
 ### Example Single-Variable Proportional Symbol Map
 
 The proportional symbols used on this map (above) encode the elevation of cities in California: the bigger the square, the higher the elevation. Squares and circles are good choices because they're compact, and simple shapes make visually estimating and comparing sizes easier. Try adjusting both the symbol fill and stroke color and transparency, or perhaps you'd prefer just fill or just stroke—we often make proportional symbol maps without any fill color if the color might compete with other map content.
 
-![]({{site.baseurl}}/guide/images/multivariate_proportional.png)
+![]({{site.baseurl}}/media/guide/multivariate_proportional.png)
 
 ### Example Multi-Variable Proportional Symbol Map
 
@@ -46,7 +46,7 @@ By experimenting with (1) layer order, (2) transparency, (3) fill (or no fill), 
 
 A common problem with proportional symbol maps is symbol congestion/overlap, especially if there are large variations in the size of symbols or if numerous data locations are close together (see the California map above for an example of this). Using symbol transparency is one (partial) solution which allows overlapping symbols to show through. Another solution is to physically move the symbols apart, manually, and give everything a bit more room, although this runs the risk of disassociating a symbol from its location and your readers might no longer know which symbol goes with which place (which is worse than symbol congestion).
 
-![]({{site.baseurl}}/guide/images/bigLittle.jpg)
+![]({{site.baseurl}}/media/guide/bigLittle.jpg)
 
 _If the small square represents 1,000 people, how many people does the big square represent?
  The answer may surprise you (see below)_

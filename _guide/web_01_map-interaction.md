@@ -11,7 +11,7 @@ In the broadest terms, we may think of an _interactive map_ as one that can be c
 2. Responsive to direct user manipulation (click, touch, etc.)
 3. Changeable in some way
 
-![]({{site.baseurl}}/guide/images/interaction_wntb.jpg)  
+![]({{site.baseurl}}/media/guide/interaction_wntb.jpg)  
 <span class="caption">A map with loads of interactivity.</span>
 
 ### Types of map interaction
@@ -40,11 +40,11 @@ For the most part, map navigation means panning and zooming by direct manipulati
 
 Additionally, sophisticated data- or story-driven maps often fold automatic panning and zooming into interactions with the data or story, a helpful way to guide users through something potentially very complex. For example, clicking on the state choropleth map below zooms to a state and reveals data in finer geographic detail.
 
-![]({{site.baseurl}}/guide/images/ajpp_zoom.gif)
+![]({{site.baseurl}}/media/guide/ajpp_zoom.gif)
 
 Or, in a map with a narrative story such as below, advancing through the story (via arrow buttons at the top left, among other methods) moves the map to different points of interest.
 
-![]({{site.baseurl}}/guide/images/revolt_zoom.gif)
+![]({{site.baseurl}}/media/guide/revolt_zoom.gif)
 
 Notably, both of the above examples also allow free panning and zooming, as this is generally expected in web maps. The automated navigation is an extra touch to help guide users' attention to important things.
 
@@ -70,20 +70,20 @@ Still, we do what we can. A good search addresses both the _where_ and _what_ qu
 
 In all cases, it's good to tame people's expectations of Google-quality search by stating what the search is capable of. We frequently use the `placeholder` attribute of text inputs as a hint about what is searchable.
 
-![]({{site.baseurl}}/guide/images/search_hints.png)
+![]({{site.baseurl}}/media/guide/search_hints.png)
 
 **Quick feedback is ideal.**
 
 Autocomplete hints and live-updating results as the user types (i.e., not requring the Enter key or a button click), if possible, are good ways to give the user instant feedback about the scope of search, whether their query is decent, and that search even works in the first place. For example in the map below, the main contents of the map and sidebar themselves change as you type. In other cases, a list of results simply pops up after a certain minimum number of characters are entered.
 
-![]({{site.baseurl}}/guide/images/napa_search_results.gif)
+![]({{site.baseurl}}/media/guide/napa_search_results.gif)
 
 **Organize results in useful ways.**
 
 Good organization of list-based results is helpful especially if data is vast and/or the search is multi-purpose (e.g., for both places and attributes), so that the user doesn't have to wade through a big list to find something. Even small ehancements, such as showing the number of results, are useful. Two examples of organized results are below, both of which separate results into categories. Notice that the second one also highlights the matching text, a small step (that could be expanded further) to help people understand why they got the results they did.
 
-![]({{site.baseurl}}/guide/images/wntb_search_results.png)
-![]({{site.baseurl}}/guide/images/rio_search_results.png)
+![]({{site.baseurl}}/media/guide/wntb_search_results.png)
+![]({{site.baseurl}}/media/guide/rio_search_results.png)
 
 #### Filter
 
@@ -96,39 +96,39 @@ Filtering, quite often, accomplishes the exact same thing as a search, just appr
 
 Most filter controls are implemented either as some kind of toggle (such as a checkbox) for looking at pre-defined categories or groups, or sliders for looking at ranges of time or data value. There are variations, though. See the variety on display below, for example.
 
-![]({{site.baseurl}}/guide/images/hubway_filters.png)
+![]({{site.baseurl}}/media/guide/hubway_filters.png)
 
 **Map and data displays can double as filter controls.**
 
 Filters don't always need to be built as separate menus and panels, but can be integrated with other parts of a well-designed UI. In the first example below, the choropleth legend is used for filtering data value categories. In the second example, charts act as filters.
 
-![]({{site.baseurl}}/guide/images/mapmaster_filter.jpg)  
-![]({{site.baseurl}}/guide/images/eic_filter.jpg)  
+![]({{site.baseurl}}/media/guide/mapmaster_filter.jpg)  
+![]({{site.baseurl}}/media/guide/eic_filter.jpg)  
 
 **Make it clear that filters are active.**
 
 Combinations of active filters can get complicated, and moreover sometimes it's easy to become engrossed in a map and forget that you're looking at a restricted set of data, so it's good to include visual reminders. This could be anything from small hints to explicit text.
 
-![]({{site.baseurl}}/guide/images/eic_all_filters.jpg)  
+![]({{site.baseurl}}/media/guide/eic_all_filters.jpg)  
 <span class="caption">The map and data displays have been filtered by commodity (long ells), geography (Bombay), and a time range. The title area explicitly states all this.</span>
 
-![]({{site.baseurl}}/guide/images/napa_active_filters.jpg)  
+![]({{site.baseurl}}/media/guide/napa_active_filters.jpg)  
 <span class="caption">Active filters hidden in menus are hinted at by numbers in the menu titles, showing the number of filters active within each. Note that the search results also states that results are from a restricted set of data.</span>
 
 **Boolean logic can be tricky.**
 
 One challenge we run into a lot is how to deal with combinations of different filters (usually category toggles) from different places. Do we show data that matches Filter 1 AND Filter 2? Filter 1 OR Filter 2? Usually we settle on a logic of OR within a group of filters, and AND between groups, as demonstrated below. You might decide on something different, but it is always good to think this through.
 
-![]({{site.baseurl}}/guide/images/napa_filter1.jpg)  
+![]({{site.baseurl}}/media/guide/napa_filter1.jpg)  
 <span class="caption">No filters selected; all data present: 329 wineries.</span>
 
-![]({{site.baseurl}}/guide/images/napa_filter2.jpg)  
+![]({{site.baseurl}}/media/guide/napa_filter2.jpg)  
 <span class="caption">Filter to wineries producing Merlot: 181 wineries.</span>
 
-![]({{site.baseurl}}/guide/images/napa_filter3.jpg)  
+![]({{site.baseurl}}/media/guide/napa_filter3.jpg)  
 <span class="caption">Select a second variety; now we show wineries producing Merlot OR Pinot Noir: 210 wineries.</span>
 
-![]({{site.baseurl}}/guide/images/napa_filter4.jpg)  
+![]({{site.baseurl}}/media/guide/napa_filter4.jpg)  
 <span class="caption">Select a filter from the Features menu. We now show family-owned AND (Merlot OR Pinot Noir): 185 wineries.</span>
 
 #### Final tips on search and filter
@@ -149,10 +149,10 @@ The result of retrieval interactions usually comes in one (or both) of two flavo
 
 Besides being brief, a floating tooltip ought to show the most essential information. What's the first thing a user will want to know about something on the map? Show that so that they don't have to work hard for it. If there's a lot more beyond that, a hybrid approach works well. Show a few details on hover in a tooltip, then click for more information in a fixed panel.
 
-![]({{site.baseurl}}/guide/images/napa_hover.jpg)  
+![]({{site.baseurl}}/media/guide/napa_hover.jpg)  
 <span class="caption">Hovering on a point shows basic information like name and address.</span>
 
-![]({{site.baseurl}}/guide/images/napa_click.jpg)  
+![]({{site.baseurl}}/media/guide/napa_click.jpg)  
 <span class="caption">Clicking the point opens more details in the side panel.</span>
 
 **Mobile is a different beast.**
@@ -161,17 +161,17 @@ Design for mobile and touch devices throws most of the above out the window and 
 
 The two-stage retrieval can still be achieved, however, in a manner such as you've probably seen in the Google Maps app. Here's the same example as above, but for mobile. Tapping the marker shows a bit of information at the bottom. Tapping the short details brings up the full panel. (You can't see it in the screenshots, but the bottom strip initially bounces a bit to suggest that it's interactive.)
 
-![]({{site.baseurl}}/guide/images/napa_tap1.jpg)  
+![]({{site.baseurl}}/media/guide/napa_tap1.jpg)  
 <span class="caption">Tap once for short, essential details.</span>
 
-![]({{site.baseurl}}/guide/images/napa_tap2.jpg)  
+![]({{site.baseurl}}/media/guide/napa_tap2.jpg)  
 <span class="caption">Tap the short details for full information.</span>
 
 **Don't assume.**
 
 As much as some people might be inclined to poke around at everything on the map, it's not necessarily obvious to everyone that things are interactive, or the extent to which they are. If the map has both a hover and a click interaction, for example, people might see the hover and assume that's the extent of it, not knowing to click. To that end, it doesn't hurt to include hints about what's possible. (Sometimes we have to be reminded to do this by clients who aren't accustomed to looking at interactive maps all day every day.)
 
-![]({{site.baseurl}}/guide/images/learn_more.png) 
+![]({{site.baseurl}}/media/guide/learn_more.png) 
 
 ### Data manipulation
 
@@ -199,7 +199,7 @@ As so many thematic maps are subject to the [modifiable areal unit problem (MAUP
 
 Not all geographic units can be treated equally. For example, some are too small to be legible at small scales, and too cumbersome to display on screen. It may be necesary to change symbolization along with units. In the map shown below, 32,000ish zip code tabulation areas would not only be too small to see but would also bring the map to a grinding halt if displayed as polygons. We show them as points until the map is zoomed in enough to display polygons in more managable chunks.
 
-![]({{site.baseurl}}/guide/images/merck_zips.png)  
+![]({{site.baseurl}}/media/guide/merck_zips.png)  
 
 **Customized map symbology**
 
@@ -207,7 +207,7 @@ A final type of data manipulation is changing how the data is presented and symb
 
 Two simple recommendations here, forgoing any design details: include this stuff only if 1) you're fairly certain users want it and know what they're doing, and 2) it's a little buried in the UI, requiring motivation to find it.
 
-![]({{site.baseurl}}/guide/images/indiemapper_classification.png)  
+![]({{site.baseurl}}/media/guide/indiemapper_classification.png)  
 <span class="caption">Choropleth classification options in [indiemapper](http://indiemapper.io), a tool for completely custom cartography</span>
 
 ### More interaction guidelines
