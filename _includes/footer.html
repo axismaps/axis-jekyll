@@ -20,7 +20,9 @@
 	<div>
 		<h4>Where was that?</h4>
 		{% for page in site.pages %}
-			<p><a href="{{ page.url }}">{{ page.title }}</a></p>
+			{% if page.omit != true %}
+				<p><a href="{{ page.url }}">{{ page.title }}</a></p>
+			{% endif %}
 		{% endfor %}
 		<p>&nbsp;</p>
 		<h4>Made <i class="icon-at"></i> Axis</h4>
