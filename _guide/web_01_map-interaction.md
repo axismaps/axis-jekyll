@@ -205,7 +205,7 @@ Not all geographic units can be treated equally. For example, some are too small
 
 **Customized map symbology**
 
-A final type of data manipulation is changing how the data is presented and symbolized. Again, this is not commonly called for, perhaps most rarely of anything in this section. Unless it's requested and desired by an audience of expert users, think about how allowing a user to change, say, the choropleth classification method could ruin the story you're trying to tell. (As we know, [different classification methods can tell drastically different tales](../data/data-classification).) Even innocuous-seeming things added for flair, like color scheme options, could be risky—a map of sequential data could end up with a diverging or categorical color scheme, for example.
+A final type of data manipulation is changing how the data is presented and symbolized. Again, this is not commonly called for, perhaps most rarely of anything in this section. Unless it's requested and desired by an audience of expert users, think about how allowing a user to change, say, the choropleth classification method could ruin the story you're trying to tell. (As we know, [different classification methods can tell drastically different tales]({{site.baseurl}}/guide/data/data-classification).) Even innocuous-seeming things added for flair, like color scheme options, could be risky—a map of sequential data could end up with a diverging or categorical color scheme, for example.
 
 Two simple recommendations here, forgoing any design details: include this stuff only if 1) you're fairly certain users want it and know what they're doing, and 2) it's a little buried in the UI, requiring motivation to find it.
 
@@ -214,4 +214,4 @@ Two simple recommendations here, forgoing any design details: include this stuff
 
 ### More interaction guidelines
 
-Always be mindful of [how much interaction to add to a map](../web/should-a-map-be-interactive/), if any at all. A good additional resource is [Robin Tolochko's master's thesis](http://tolomaps.github.io/assets/Tolochko_Thesis.pdf), which developed some guidelines for when and how to implement many of the interactions described on this page (and others), based on a study of map users and experts.
+Always be mindful of [how much interaction to add to a map]({{site.baseurl}}/guide/web/should-a-map-be-interactive/), if any at all. A good additional resource is [Robin Tolochko's master's thesis](http://tolomaps.github.io/assets/Tolochko_Thesis.pdf), which developed some guidelines for when and how to implement many of the interactions described on this page (and others), based on a study of map users and experts.
