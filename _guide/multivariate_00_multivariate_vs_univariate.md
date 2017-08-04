@@ -5,7 +5,7 @@ slug: multivariate vs univariate
 nav: Guide
 categories: multivariate
 order: 400
-redirect_from: /guide/multivariate
+redirect_from: /guide/multivariate/
 ---
 
 ### One Data Theme or Many Data Themes?

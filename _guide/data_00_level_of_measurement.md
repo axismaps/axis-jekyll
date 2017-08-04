@@ -5,7 +5,7 @@ slug: Level of Measurement
 nav: Guide
 categories: data
 order: 200
-redirect_from: /guide/level_of_measurement
+redirect_from: /guide/level_of_measurement/
 ---
 
 ## Nominal, Ordinal, and Numerical Data
