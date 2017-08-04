@@ -5,6 +5,7 @@ slug: What is a map
 nav: Guide
 categories: general
 order: 100
+redirect_from: /guide/thematic
 ---
 
 It may sound silly to ask what a map is, but it's important to understand the **what** and **why** of maps.

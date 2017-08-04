@@ -5,6 +5,7 @@ slug: Map Projections
 nav: Guide
 categories: general
 order: 107
+redirect_from: /guide/projections
 ---
 
 ### Flattening the Earth

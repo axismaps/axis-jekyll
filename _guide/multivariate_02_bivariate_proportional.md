@@ -5,6 +5,7 @@ slug: Bivariate Proportional Symbols
 nav: Guide
 categories: multivariate
 order: 402
+redirect_from: /guide/bivariate_proportional
 ---
 
 ### When to Use

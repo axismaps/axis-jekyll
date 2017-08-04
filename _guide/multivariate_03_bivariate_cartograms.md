@@ -5,6 +5,7 @@ slug: Bivariate Cartograms
 nav: Guide
 categories: multivariate
 order: 403
+redirect_from: /guide/bivariate_cartograms
 ---
 
 ### When to Use

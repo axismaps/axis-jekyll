@@ -5,6 +5,7 @@ slug: choropleth
 nav: Guide
 categories: univariate
 order: 300
+redirect_from: /guide/choropleth
 ---
 
 ![]({{site.baseurl}}/media/guide/choropleth.jpg)

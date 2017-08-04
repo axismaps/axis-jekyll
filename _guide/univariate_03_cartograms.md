@@ -5,6 +5,7 @@ slug: cartograms
 nav: Guide
 categories: univariate
 order: 303
+redirect_from: /guide/cartograms
 ---
 
 ### When to Use

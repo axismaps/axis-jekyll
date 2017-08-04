@@ -5,6 +5,7 @@ slug: Standardizing Data
 nav: Guide
 categories: data
 order: 202
+redirect_from: /guide/standardize
 ---
 
 ### To Standardize or Not?

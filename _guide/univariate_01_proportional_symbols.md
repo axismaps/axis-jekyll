@@ -5,6 +5,7 @@ slug: Proportional Symbols
 nav: Guide
 categories: univariate
 order: 301
+redirect_from: /guide/proportional_symbols
 ---
 
 ![]({{site.baseurl}}/media/guide/prop_symbols.jpg)

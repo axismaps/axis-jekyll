@@ -5,6 +5,7 @@ slug: Dot Density
 nav: Guide
 categories: univariate
 order: 302
+redirect_from: /guide/dot_density
 ---
 
 ### When to Use

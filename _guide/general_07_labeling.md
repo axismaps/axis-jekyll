@@ -5,6 +5,7 @@ slug: labeling
 nav: Guide
 categories: general
 order: 108
+redirect_from: /guide/labeling
 ---
 
 ![]({{site.baseurl}}/media/guide/labels.jpg)

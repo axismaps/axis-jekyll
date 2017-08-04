@@ -5,6 +5,7 @@ slug: Bivariate Choropleth
 nav: Guide
 categories: multivariate
 order: 401
+redirect_from: /guide/bivariate_choropleth
 ---
 
 ### When to Use

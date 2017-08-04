@@ -5,6 +5,7 @@ slug: value by alpha
 nav: Guide
 categories: multivariate
 order: 404
+redirect_from: /guide/value_by_alpha
 ---
 
 ### When to Use
