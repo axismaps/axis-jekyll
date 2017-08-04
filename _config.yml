@@ -3,8 +3,8 @@ title: Axis Maps
 email: info@axismaps.com
 description: Axis Maps - Data. Design. Code.
 baseurl: ""
-url: "http://beta.axismaps.com"
-easyurl: "http://beta.axismaps.com"
+url: "http://www.axismaps.com"
+easyurl: "http://www.axismaps.com"
 paginate: 10
 paginate_path: "/blog/page:num/"
 permalink: "/blog/:year/:month/:title/"
@@ -24,3 +24,4 @@ highlighter: rouge
 gems: 
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-redirect-from
