@@ -21,35 +21,57 @@ At its core, cartography is about _abstraction_. We don’t show data in its raw
 
 Common generalization tasks include:
 
+-----
+
 ![]({{site.baseurl}}/media/guide/selection.png)  
 **Selection:** choosing which objects to include on the map
+
+-----
 
 ![]({{site.baseurl}}/media/guide/simplification.png)  
 **Simplification:** reduce the number of vertices in an object
 
+-----
+
 ![]({{site.baseurl}}/media/guide/smoothing.png)  
 **Smoothing:** reduce sharp angles to smoother curves
+
+-----
 
 ![]({{site.baseurl}}/media/guide/aggregation.png)  
 **Aggregation:** group points into areas
 
+-----
+
 ![]({{site.baseurl}}/media/guide/amalgamation.png)  
 **Amalgamation:** group areas into larger areas
+
+-----
 
 ![]({{site.baseurl}}/media/guide/collapse.png)  
 **Collapse:** reduce a detailed object to a point symbol
 
+-----
+
 ![]({{site.baseurl}}/media/guide/merge.png)  
 **Merge:** grouping of line features
+
+-----
 
 ![]({{site.baseurl}}/media/guide/refinement.png)  
 **Refinement:** select only portions of an object to display
 
+-----
+
 ![]({{site.baseurl}}/media/guide/exaggeration.png)  
 **Exaggeration:** amplify a part of an object (for clarity)
 
+-----
+
 ![]({{site.baseurl}}/media/guide/enhancement.png)  
 **Enhancement:** add detail that visually elevates an object
+
+-----
 
 ![]({{site.baseurl}}/media/guide/displacement.png)  
 **Displacement:** separate objects (for clarity)
