@@ -13,7 +13,7 @@ omit: true
       <div class="content post">
         {{ post.content | split:'<!--break-->' | first }}
         {% if post.content contains '<!--break-->' %}
-          <a href="{{ post.url }}">read more</a>
+          <a href="{{ post.url }}">Read more...</a>
         {% endif %}
       </div>
       <hr/>
