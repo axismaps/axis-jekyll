@@ -274,7 +274,7 @@ nav a:hover{
 
 /* FOOTER */
 footer{
-  padding: 40px;
+  padding: 40px 80px;
   background-color: #EFF1F2;
   font-size: 16px;
   line-height: 22px;
@@ -370,8 +370,9 @@ a.project:hover .grid-image{
 }
 
 .project-short {
+  max-width: 980px;
   background-color: white;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   padding: 20px;
 }
 
@@ -427,7 +428,8 @@ a.project:hover .grid-image{
 }
 
 .tool{
-  margin: 36px 0;
+  max-width: 980px;
+  margin: 36px auto;
   clear: both;
   padding: 20px;
 }
