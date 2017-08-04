@@ -1,15 +1,17 @@
 ---
 layout: guide
 title: Using Colors on Maps
+slug: Using Colors on Maps
 nav: Guide
-category: general
+categories: general
+order: 105
 ---
 
-Color can be a challenging design elements to perfect. It takes experience and a designer's eye to produce pleasing and effective color schemes, but there are also some guidelines to follow. Recall that dimensions of color have powerful effects as [visual variables](../general_03_visual-variables), causing the eye to see groups, order, or some combination thereof. Choosing colors carefully based on the nature of the data you're mapping will ensure that the map's message is made clear.
+Color can be a challenging design elements to perfect. It takes experience and a designer's eye to produce pleasing and effective color schemes, but there are also some guidelines to follow. Recall that dimensions of color have powerful effects as [visual variables](../general/visual-variables), causing the eye to see groups, order, or some combination thereof. Choosing colors carefully based on the nature of the data you're mapping will ensure that the map's message is made clear.
 
 ### Controlling the Three Dimensions of Color
 
-The success of many thematic maps, such as [choropleth maps](../univariate_00_choropleth), depends upon understanding how we manipulate colors to systematically encode our geographic data using the three dimensions of color: **hue, lightness,** and **saturation**. Unlike picking colors for your living room, the use of color on maps is far less subjective than most people suspect and we don't pick the colors on maps simply because "they look nice." Rather, there are important rules that govern how color schemes work and how those colors relate to the data. Furthermore, there are important perceptual constraints that are well known, such as red-green colorblindness (affecting roughly 8% of males), which require we design with these issues in mind and not merely pick what looks nice to us personally. The good news is that the rules that govern how to use color on maps, as well as solutions to problems like red-green color blindness, are well understood and fairly easy to follow.
+The success of many thematic maps, such as [choropleth maps](../univariate/choropleth), depends upon understanding how we manipulate colors to systematically encode our geographic data using the three dimensions of color: **hue, lightness,** and **saturation**. Unlike picking colors for your living room, the use of color on maps is far less subjective than most people suspect and we don't pick the colors on maps simply because "they look nice." Rather, there are important rules that govern how color schemes work and how those colors relate to the data. Furthermore, there are important perceptual constraints that are well known, such as red-green colorblindness (affecting roughly 8% of males), which require we design with these issues in mind and not merely pick what looks nice to us personally. The good news is that the rules that govern how to use color on maps, as well as solutions to problems like red-green color blindness, are well understood and fairly easy to follow.
 
 ### The nature of your thematic data dictates what kind of color scheme you need
 

@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: Scale and Generalization
+slug: Scale and Generalization
 nav: Guide
-category: general
+categories: general
+order: 106
 ---
 
 ### The meanings of scale

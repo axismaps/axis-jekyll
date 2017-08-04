@@ -16,7 +16,7 @@ collections:
   guide:
     output: true
     layout: guide
-    permalink: /guide/:title/
+    permalink: /guide/:categories/:slug/
 
 # Build settings
 markdown: kramdown

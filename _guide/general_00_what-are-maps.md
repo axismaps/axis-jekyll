@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: What is a map?
+slug: What is a map
 nav: Guide
-category: general
+categories: general
+order: 100
 ---
 
 It may sound silly to ask what a map is, but it's important to understand the **what** and **why** of maps.

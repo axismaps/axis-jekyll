@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: Map Projections
+slug: Map Projections
 nav: Guide
-category: general
+categories: general
+order: 107
 ---
 
 ### Flattening the Earth

@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: Should a map be interactive?
+slug: Should a map be interactive
 nav: Guide
-category: web
+categories: web
+order: 502
 ---
 
 The wealth and power of digital tools makes it tempting and easy to turn every map into an interactive, but it is wise to be cautious and conservative when building interactive maps. Interactive maps are costly: in the time and effort required to produce them, in the bandwidth and performance of the sites where they live, and in the work demanded of their users.

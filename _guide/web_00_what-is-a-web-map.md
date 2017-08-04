@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: What is a web map?
+slug: What is a web map?
 nav: Guide
-category: web
+categories: web
+order: 500
 ---
 
 "Web map" often implies a map that is not simply on the web, but rather one that is _powered_ by the web. A **digital map** is on a computer, but may not be accessible by internet, and is relatively static if it is. A **web map** depends on the internet. It is usually interactive and not always self-contained.
@@ -38,7 +40,7 @@ Tiles come in two flavors: **raster tiles** are pre-rendered images of map data,
 
 Tiled maps use a standard **tiling scheme** which is worth understanding. Tiles are idenfied by three numbers, typically in this order:
 
-1. **Zoom level**: the [scale](../scale-and-generalization) of the map for this tile, relative to an initial scale at which the whole world fits in one tile. (More on this in a moment.)
+1. **Zoom level**: the [scale](../general/scale-and-generalization) of the map for this tile, relative to an initial scale at which the whole world fits in one tile. (More on this in a moment.)
 2. An **X** coordinate: the **horizontal** position of this tile, within the grid of tiles for the world map at this zoom level. Usually, this number increases from left to right, with 0 being the left edge of the map, or 180º West longitude.
 3. A **Y** coordinate: the **vertical** position of this tile, within the grid of tiles for the world map at this zoom level. Usually, this number counts up from top to bottom to right, with 0 being the top edge of the map, around 85º North latitude. (In the standard Mercator map projection of web maps, 85º latitude northern and southern limits allows everything to fit in a square.)
 
@@ -67,7 +69,7 @@ Standard slippy maps use the **Web Mercator** projection, much to the chagrin of
 
 However, it comes with a few pitfalls:
 
-* **The Mercator projection is wildly inappropriate for some types of thematic maps.** (To say nothing of the generally distorted version of the world it presents.) [Choropleth](../choropleth-maps) maps and others that depend on correct area proportions should not be used with Mercator maps at small (global-to-continental) scales, as area distortions can be huge. Distortions are minimal at local levels, though.
+* **The Mercator projection is wildly inappropriate for some types of thematic maps.** (To say nothing of the generally distorted version of the world it presents.) [Choropleth](../univariate/choropleth) maps and others that depend on correct area proportions should not be used with Mercator maps at small (global-to-continental) scales, as area distortions can be huge. Distortions are minimal at local levels, though.
 
 * As implied above, **scale is not constant around the world.** Be suspicious if someone presents you with Google Maps screenshots of two different places "at the same scale." Zoom level is not the same as scale. At high latitudes, where areas are enlarged, a tile represents less area than near the equator.
 ![]({{site.baseurl}}/media/guide/z16.jpg)

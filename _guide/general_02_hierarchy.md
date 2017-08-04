@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: Visual Hierarchy
+slug: Visual Hierarchy
 nav: Guide
-category: general
+categories: general
+order: 103
 ---
 
 Good **visual hierarchy** is crucial to overall effective map design. Visual hierarchy is the organization of design such that some things seem more prominent and important, and others less so.
@@ -27,7 +29,7 @@ Figure-ground effects can be ambiguous even with high contrast, causing unstable
 
 ### Designing and assessing good visual hierarchy
 
-Recall that certain [visual variables](../general_03_visual-variables) are _ordered_, in particular size and color value. Generally speaking, larger objects appear more important and will draw the eye, as will darker objects (assuming a light background). If something is important, or repesents something that literally is big, make its symbol bigger and bolder than others. Keep in mind the impact of size and color on hierarchy when using those variables to symbolize numerical data. For example in a choropleth map, one end of the color ramp is likely to draw the eye more than the other, so ideally that end should represent the more "important" or notable part of the data.
+Recall that certain [visual variables](../general/visual-variables) are _ordered_, in particular size and color value. Generally speaking, larger objects appear more important and will draw the eye, as will darker objects (assuming a light background). If something is important, or repesents something that literally is big, make its symbol bigger and bolder than others. Keep in mind the impact of size and color on hierarchy when using those variables to symbolize numerical data. For example in a choropleth map, one end of the color ramp is likely to draw the eye more than the other, so ideally that end should represent the more "important" or notable part of the data.
 
 Visual hierarchy goes beyond the map itself. A map exists in some kind of page, be it paper or on the web, and likely is surrounded by supporting elements like titles, text, or charts. This overall layout should have an appropriate hiearchy too. If the map is the most important part of the story, it should be as large as possible. Skip that gigantic north arrow!
 

@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: Visual Variables
+slug: Visual Variables
 nav: Guide
-category: general
+categories: general
+order: 104
 ---
 
 ![]({{site.baseurl}}/media/guide/visual_variables.png)

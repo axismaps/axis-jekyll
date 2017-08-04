@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: Labeling and text hierarchy in cartography
+slug: labeling
 nav: Guide
-category: general
+categories: general
+order: 108
 ---
 
 ![]({{site.baseurl}}/media/guide/labels.jpg)

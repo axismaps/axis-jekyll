@@ -2,7 +2,8 @@
 layout: guide
 title: Map Design Resources
 nav: Guide
-category: null
+categories: general
+order: 600
 ---
 
 ### Other resource lists  

@@ -1,8 +1,10 @@
 ---
 layout: guide
 title: Dot Density Maps
+slug: Dot Density
 nav: Guide
-category: univariate
+categories: univariate
+order: 302
 ---
 
 ### When to Use
@@ -13,7 +15,7 @@ Dot density maps are a simple yet highly effective way to show density differenc
 
 ### Reasons Why We Like Them
 
-There are at least three big advantages of dot density maps over [choropleth maps](../choropleth-maps): (1) on a dot density map you can map _raw data / simple counts_ (e.g., number of farms) or _rates and ratios_ (e.g., number of farms per sq kilometer); (2) your data need not be tied to enumeration units and hence some of the concerns inherent in choropleth maps can be side-stepped with dot density maps (unless, of course, your data are reported by enumeration units—in which case you're probably stuck with them); and (3) dot density maps work fine in black and white, when color isn't an option.
+There are at least three big advantages of dot density maps over [choropleth maps](../univariate/choropleth): (1) on a dot density map you can map _raw data / simple counts_ (e.g., number of farms) or _rates and ratios_ (e.g., number of farms per sq kilometer); (2) your data need not be tied to enumeration units and hence some of the concerns inherent in choropleth maps can be side-stepped with dot density maps (unless, of course, your data are reported by enumeration units—in which case you're probably stuck with them); and (3) dot density maps work fine in black and white, when color isn't an option.
 
 Example datasets appropriate for dot density maps:
 
@@ -34,7 +36,7 @@ While the versatility and easy-to-grasp nature of dot density maps is appealing,
 
 Additionally, although most dot density maps distribute dots randomly, map readers may potentially infer dot locations as precise locations of the phenomenon being mapped (e.g., the actual exact location of a person). To combat this, dot density maps should not be made at too large a scale. Further, to avoid confusion, ideally dots should be distributed only in areas where the phenomenon actually exists (e.g., no dots in lakes for a map of population).
 
-_**Not sure you should use a dot density map?**_ Potential alternatives include [choropleth](../choropleth-maps) maps (if your data can be standardized and are attached to enumeration units), [graduated/proportional symbol](../proportional-symbols) maps, and [cartograms](../non-contiguous-cartograms).
+_**Not sure you should use a dot density map?**_ Potential alternatives include [choropleth](../univariate/choropleth) maps (if your data can be standardized and are attached to enumeration units), [graduated/proportional symbol](../univariate/proportional-symbols) maps, and [cartograms](../univariate/cartograms).
 
 ### Dot Size and Dot Value
 

@@ -1,15 +1,17 @@
 ---
 layout: guide
 title: Choropleth Maps
+slug: choropleth
 nav: Guide
-category: univariate
+categories: univariate
+order: 300
 ---
 
 ![]({{site.baseurl}}/media/guide/choropleth.jpg)
 
 ### When to Use
 
-You can use a choropleth maps when your data are **(1)** attached to enumeration units (e.g., counties, provinces, countries), **(2)** [standardized to show rates or ratios](../standardizing-data) (never use choropleth with raw data/counts), and **(3)** you have a continuous statistical surface, in other words, you could conceptually measure the phenomena anywhere in space (n.b. 'zero' is still a valid measurement). For example, _number of people_ is a count and not appropriate for choropleth maps; _number of people per square mile_ is a ratio and is a continuous statistical surface (even if it drops to zero over uninhabited places, every location has a data value) and, thus, is appropriate for choropleth maps.
+You can use a choropleth maps when your data are **(1)** attached to enumeration units (e.g., counties, provinces, countries), **(2)** [standardized to show rates or ratios](../data/standardizing-data) (never use choropleth with raw data/counts), and **(3)** you have a continuous statistical surface, in other words, you could conceptually measure the phenomena anywhere in space (n.b. 'zero' is still a valid measurement). For example, _number of people_ is a count and not appropriate for choropleth maps; _number of people per square mile_ is a ratio and is a continuous statistical surface (even if it drops to zero over uninhabited places, every location has a data value) and, thus, is appropriate for choropleth maps.
 
 Example datasets appropriate for choropleth maps:
 
@@ -23,11 +25,11 @@ Example datasets appropriate for choropleth maps:
 
 Choropleth maps are extremely popular, probably the most common thematic map in use today. That's good because it means your audience is likely to understand them. One reason they're popular is that much of our geodata is reported by enumeration units, such as census data, and so we are accustomed to thinking of the world as divided into spatial units like census tracts, counties, and provinces. However, most cartographers would argue choropleth maps are over-used and commonly misused if the geographic phenomena being mapped aren't intrinsically tied to enumeration units: For example, communicable diseases, soil types, or age demographics don't care much about county lines or zip codes and rarely do they change abruptly at those human-created boundaries. By comparison, tax rates are very closely tied to enumeration units, do change abruptly, and make perfect sense as a choropleth map. The less the thing you are mapping is tied to enumeration units, the less sense a choropleth map makes.
 
-_**Not sure you should use a choropleth map?**_ Good alternatives include [dot density maps](../dot-density-maps), [graduated/proportional symbol](../proportional-symbols) maps, and [cartograms](../non-contiguous-cartograms): Furthermore, while choropleth maps require that your data are standardized (rates, ratios...e.g., _X per square kilometer_ or _Y per 100,000 people_), these other 3 map types can all handle raw data (e.g., simple counts, totals).
+_**Not sure you should use a choropleth map?**_ Good alternatives include [dot density maps](../univariate/dot-density), [graduated/proportional symbol](../univariate/proportional-symbols) maps, and [cartograms](../univariate/cartograms): Furthermore, while choropleth maps require that your data are standardized (rates, ratios...e.g., _X per square kilometer_ or _Y per 100,000 people_), these other 3 map types can all handle raw data (e.g., simple counts, totals).
 
 ### Example Classed Choropleth Map
 
-Below is a 5-class choropleth map that uses a [sequential color scheme](../using-colors-on-maps) (from light to dark) attached to an equal-interval classification scheme.
+Below is a 5-class choropleth map that uses a [sequential color scheme](../general/using-colors-on-maps) (from light to dark) attached to an equal-interval classification scheme.
 
 ![]({{site.baseurl}}/media/guide/classed_choropleth.jpg)
 
