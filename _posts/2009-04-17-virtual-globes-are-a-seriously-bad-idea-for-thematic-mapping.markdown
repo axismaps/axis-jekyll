@@ -33,7 +33,7 @@ tags:
 
 ![3D prism map of population in Google Earth]({{ site.baseurl }}/media/posts/2009/04/prismmap.jpg)
 _3D prism map in Google Earth (blog.thematicmapping.org)_
-
+<!--break-->
 ![3D human figures as proportional symbols]({{ site.baseurl }}/media/posts/2009/04/humanfigures.jpg)
 _3D human figures as proportional symbols (blog.thematicmapping.org)_
 

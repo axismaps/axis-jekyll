@@ -120,5 +120,6 @@ comments:
 <p>I love <a href="http://www.colorbrewer.org" target="_blank">ColorBrewer</a>. All of us here at Axis rely on it almost daily and it's helped us to make nice looking maps quickly; and that's what good tools do, they make their users look really good at their jobs.</p>
 <p>7+ years later, ColorBrewer is due for some changes and <a href="http://www.personal.psu.edu/cab38/">Cindy Brewer</a> has been kind enough to ask us to hold the scalpel. Nothing major. Same great color schemes (of course), but a new interface and some new functionality to help ColorBrewer's 2000 visitors per week get the most out of the experience.</p>
 <p>We're in the early stages of planning this project but we though we would open this up for some discussion amongst the ColorBrewer-using, Axis Maps Blog-reading masses.</p>
+<!--break-->
 <p><strong>QUESTION: </strong><span style="color: #000080;"><span style="color: #586f83;">What would you like to see in the new version? What should remain untouched? What do you love? What do you wish was done better?</span></span></p>
 <p>Let us know your thoughts in the comments. Thanks!</p>

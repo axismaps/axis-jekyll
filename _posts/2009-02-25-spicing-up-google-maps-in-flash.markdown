@@ -65,6 +65,7 @@ comments:
 <p><strong><em>Note from the future: the example in this post broke somewhere along the line, but this whole post is obsolete anyway now that the Google Maps API allows <a href="http://www.41latitude.com/post/1268734799/google-styled-maps">styled maps</a>!</em></strong></p>
 <p>This isn't news to everyone, but it's worth pointing out the fun things one can do with maps using the ActionScript ColorMatrixFilter.  Tired of the boring old yellow and orange Google map in the Flash API (or any other map in Flash/Flex)?  Lay down a ColorMatrixFilter on that sucker!</p>
 <p>The ColorMatrixFilter, if it needs to be pointed out, essentially allows you to mix up the red, green, blue, and alpha channels of vector or raster graphics to produce exciting new colors.  Adobe has a nice little <a href="http://www.adobe.com/devnet/flash/articles/matrix_transformations_04.html">article</a> explaining it, along with an interactive demo.</p>
+<!--break-->
 <p>I poked around the Google Maps Flash API to find exactly where to apply the filter.  If you apply it directly to the Map instance, you'll color everything, including the Google logo and whatever else floats on top of the map.  One level deeper is better, but will still color makers and info windows.  A second level deeper is the spot.  It's basically like this, where <code>map</code> is the Map instance:</p>
 {% highlight as %}
   var a:Sprite = map.getChildAt(1) as Sprite;

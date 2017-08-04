@@ -29,6 +29,8 @@ The project has numerous technical challenges (which of course pale in compariso
 - What if you need more map rendering _oomph_ (compositing, labels, etc) than the browser can provide?
 - What if your dataset is just _too big_ for the browser to handle as vectors?
 
+<!--break-->
+
 These are all cases where you might choose to render your maps as rasters, but still want to give your users the ability to identify features through data probing and get information on-demand. First, a little background on the tools (or stack) being used for this project. Here they are as a sandwich:
 
 ![Stack sandwich]({{ site.baseurl }}/media/posts/2016/05/sandwich.jpg)

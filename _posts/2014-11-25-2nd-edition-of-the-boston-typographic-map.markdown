@@ -25,7 +25,7 @@ comments: []
 
 ![Boston 2nd ed. typographic map]({{ site.baseurl }}/media/posts/2014/11/boston_full.png)
 _<a href="http://store.axismaps.com/product/boston">Boston 2nd ed. typographic map</a>_
-
+<!--break-->
 <p>Here are some of the most notable changes:</p>
 <h3>Extent and Map Scale</h3>
 <p>The 2nd edition covers a much larger area than the original version. We now include the entire city of Boston, plus a number of surrounding towns. Cambridge and Somerville are still present, of course, but we now extend farther north into Medford and Malden. The extension southward is even greater, covering the area all the way down to Dedham, Milton, and the Blue Hills Reservation.</p>

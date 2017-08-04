@@ -132,7 +132,7 @@ comments:
 
 ![Figure 1: The above is a draft of one of my first attempts, in this case depicting a particular ride that one of my roommates hopes to participate in this summer. click to see fullsize]({{ site.baseurl }}/media/posts/2009/05/fig13.png)
 _Figure 1: The above is a draft of one of my first attempts, in this case depicting a particular ride that one of my roommates hopes to participate in this summer. click to see fullsize_
-
+<!--break-->
 <p>So I set to work considering how best to show elevation changes along a route, and I came up with a relatively simple concept: encode the elevation of points along the route using line width.</p>
 <p>The symbology here is, I think, fairly efficient. By varying the width I am encoding three pieces of information: the elevation of the path, the slope, and the aspect. The first is not particularly useful, but the other two are the critical pieces of information for the cyclist. Importantly, both need to be on the map together - knowing the slope of a hill is great, but you also have to know whether, as you head along the road, you'll be climbing up that steep grade or coasting down. Getting all that information into one symbol is not necessarily that hard. Both slope and aspect are derived from elevation, so it's really just a matter of producing a map which shows elevation in a way that makes it easy to see the pattern of how elevation changes. Show the one variable, and your brain fills in the other two. But, it works a lot better if the symbology makes it easier for your brain to figure out how elevation changes. Compare the two maps below:</p>
 

@@ -23,6 +23,8 @@ comments: []
 ---
 We recently built a [map](http://napavintners.com/maps/) for [Napa Valley Vintners](http://napavintners.com/), a nonprofit trade association with 500+ members located in one of the most well known wine growing regions in the world. The map is meant to help people locate wineries, plan a visit to the region, and then send directions and a trip itinerary to a phone for easy navigation while driving. Two versions of the Web map were developed, one for the desktop and another for mobile phones. We ran into a couple of issues while working on the mobile version, in particular, that were solved with a design workaround or three. They're relatively small things, but should have a positive impact on how users experience the map.
 
+<!--break-->
+
 ### Browser chrome - minimize before entry
 The browser chrome is all the stuff that appears around a window, taking away screen space from what you're trying to look at. On a phone, when maximized, it usually appears as an address bar at the top and tool bar at the bottom for various things like page navigation, sharing and bookmarking. The bottom bar can obscure content, which isn't great if you want to use that space for other things, like parts of a map interface, or if you simply want more map area showing on the screen. Typically, the browser chrome minimizes automatically when scrolling down a normal web page via tap+drag down. However, because our map is fixed to the viewport, scrolling down pans to the south instead, and the chrome doesn't minimize.
 

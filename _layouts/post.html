@@ -15,7 +15,7 @@ layout: default
         {% for project in site.projects %}
           {% if page.project == project.pid %}
             <a class="mini-portfolio button hollow" href="{{ project.url | prepend: site.baseurl }}">
-              <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.pid }}.png)"></div>
+              <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
               <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
             </a>
           {% endif %}
@@ -23,7 +23,7 @@ layout: default
       {% endif %}
     </div>
   </article>
-  {% include social_media.html %}
+  
 
   <!-- Page Nav links -->
   <div class="pagenav">

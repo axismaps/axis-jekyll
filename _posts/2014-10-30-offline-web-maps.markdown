@@ -25,6 +25,7 @@ comments: []
 <p>Great! They give lots of presentations where they want to show off the map and this means they wouldn't have to rely on conference wifi, the most overstretched resource on the planet. We delivered the completed map to be deployed on their site along with the instructions:</p>
 <blockquote><p>Just open index.html in your web-browser and you'll be up and running.</p></blockquote>
 <p>Nope.</p>
+<!--break-->
 <blockquote><p>Did you try Chrome instead of IE?</p></blockquote>
 <p>That ol' chestnut? Still nope.</p>
 <p>Why was it working for me but not for them? We developed this map running the files locally so what was the difference between our machines and theirs?</p>

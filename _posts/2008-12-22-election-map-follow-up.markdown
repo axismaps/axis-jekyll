@@ -73,6 +73,7 @@ comments:
 <li>Vary the brightness of counties by population density rather than total population.  This was a frequent suggestion.  I think it has a few of its own drawbacks too, but it looks pretty good.</li>
 <li>Different color schemes.  Just for fun, I've used the purple color scheme that has become common in recent elections.  I also liked the suggestion in one comment to saturate colors by margin of victory, so I've done that too.  In these, full blue would be total Obama domination (Obamanation? Obamadom?), full red would be the same for McCain, and gray is an even split.</li>
 </ul>
+<!--break-->
 <p>No snazzy posters this time.  Just a few map snapshots.</p>
 <p>First, the original colors mapped by population density, as posted in the comments on the original post.<br />
 <img src="http://www.cartogrammar.com/images/night_election_density.jpg" alt="Election map, population density" width="525" height="357" /></p>

@@ -27,6 +27,8 @@ The overview map uses value-by-alpha to display the results. Each district is co
 
 ![Stripes!]({{ site.baseurl }}/media/posts/2016/03/stripes.png)
 
+<!--break-->
+
 Our original solution to this issue was to treat ties as _no data_. This ended up not working because:
 
 1. It failed at giving an overall impression of the geographic distribution of the election results by party

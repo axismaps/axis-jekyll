@@ -22,6 +22,8 @@ Most of the work we do here at Axis involves coding Javascript interactive maps.
 
 If you are fairly new to coding you may not be familiar that code can have design patterns. Just like there are [cartographic principles](http://www.axismaps.com/guide/) that help with everything from layout to typography to color, there are coding principles that help with code clarity, maintainability, and efficiency.
 
+<!--break-->
+
 A good book to refer to on code design patterns for Javascript is [Learn JavaScript Design Patterns by Addy Osmani](http://addyosmani.com/resources/essentialjsdesignpatterns/book). The particular pattern I found recently useful is Publish/Subscribe (nested under the Observer pattern in the above book). There are a couple of ways to implement it, but since we use jQuery in most everything anyways, I’ll talk about jQuery’s implementation.
 
 jQuery has the ability to register and listen for [custom events](https://learn.jquery.com/events/introduction-to-custom-events/). How this works in practice is fairly easy. First you need to sort out what events are actually going to happen. These aren’t events like 'click', but custom events like 'yearchange' or 'dataupdated' or 'mapmove'. Once you have that set, whenever you create a component that is going to be affected by one of these custom events, you register it on the `document`.

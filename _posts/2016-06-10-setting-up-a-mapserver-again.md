@@ -26,6 +26,8 @@ About 4 years ago we wrote a post about [setting up a map server with Mapnik and
 
 Unlike the previous guide, this one won't cover basics of Linux and the command line. It's also written for a Red Hat Enterprise Linux (RHEL) 7.2 server instead of Ubuntu. Let's do it.
 
+<!--break-->
+
 ## Provision the server
 
 The first thing we need to do is provision a Red Hat Enterprise Linux server. [Amazon EC2](http://aws.amazon.com) is as good a place as any to do this, but feel free to use any server you'd like. A few things to keep in mind:
