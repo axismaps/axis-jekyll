@@ -1,21 +1,10 @@
 <footer>
 	<div>
 		<h4>Need to get in touch?</h4>
-		<p><a href="mailto:info@axismaps.com"></a></p>
+		<p><a href="mailto:info@axismaps.com">info@axismaps.com</a></p>
 		<p>Axis Maps<br>PO Box 421<br>Hewitt, TX 76643<br>USA</p>
 		<p>For all questions about indiemapper, please visit: <a href="http://indiemapper.io" target="_blank">http://indiemapper.io</a></p>
 		<p>For all questions about typographic maps, please visit: <a href="http://store.axismaps.com" target="_blank">http://store.axismaps.com</a></p>
-	</div>
-	<div>
-		<h4><i class="icon-twitter"></i> We're on Twitter</h4>
-		<p><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/axismaps" data-widget-id="286241540362346496"></a></p>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</div>
-	<div>
-		<h4><a href="{{ '/blog/' | prepend: site.baseurl }}">From the blog</a></h4>
-		{% for post in site.posts limit: 5 %}
-			<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-		{% endfor %}
 	</div>
 	<div>
 		<h4>Where was that?</h4>
@@ -31,6 +20,18 @@
 		<p><a href="http://colorbrewer2.org" target="_blank">Colorbrewer</a></p>
 		<p><a href="http://store.axismaps.com" target="_blank">Typographic Map Store</a></p>
 	</div>
+	<div>
+		<h4><a href="{{ '/blog/' | prepend: site.baseurl }}">From the blog</a></h4>
+		{% for post in site.posts limit: 10 %}
+			<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+		{% endfor %}
+	</div>
+	<div>
+		<h4><i class="icon-twitter"></i> We're on Twitter</h4>
+		<p><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/axismaps" data-widget-id="286241540362346496"></a></p>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+	<p style="clear:both"></p>
 	<a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ '/images/logo_small.png' | prepend: site.baseurl }}" alt='Axis Maps' class='logo'></a>
 	<hr>
 	<p class="legal">&copy;2017 Axis Maps. All rights reserved.<br>The material on this site may not be reproduced, distributed, transmitted, or otherwise used, except with the prior permission of Axis Maps.</p>
