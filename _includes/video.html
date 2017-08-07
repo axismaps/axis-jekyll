@@ -32,7 +32,7 @@
     $( "#home-video, #page-title" ).height( h );
   });
 
-  $( window ).load( function(){
+  $( document ).ready( function(){
     $( window ).resize();
     $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 );
   });
