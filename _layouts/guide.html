@@ -15,7 +15,22 @@
         <h2>{{ page.title }}</h2>
         {{ content }}
       </div>
+      <div class="pagenav">
+        {% if page.previous %}
+          <div class="pagenav-section" style="float:left">
+            <span class="pagenav-title">Previous: </span>
+            <a href="{{ site.baseurl }}{{ page.previous.url }}" class="previous">{{page.previous.title}}</a>
+          </div>
+        {% endif %}
+        {% if page.next %}
+          <div class="pagenav-section" style="float:right">
+            <span class="pagenav-title">Next: </span>
+            <a href="{{ site.baseurl }}{{ page.next.url }}" class="next">{{page.next.title}}</a>
+          </div>
+        {% endif %}
+      </div>
     </section>
+
     {% include footer.html %}
   </body>
 </html>
