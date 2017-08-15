@@ -256,7 +256,7 @@ nav a:hover{
 }
 
 #home-video #page-title div{
-	padding: 0 30% 100px 50px;
+	padding: 0 10% 20px 50px;
 	bottom: 0;
 }
 
@@ -908,9 +908,22 @@ span.caption {
 /* RESPONSIVE STYLES */
 
 @media (max-width: 850px) {
-	#project-grid a.project{
-		width: calc( 100% - 105px );
-	}
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+
+  h1, h2 {
+    line-height: 50px;
+  }
+  
+  #project-grid a.project {
+    width: calc( 100% - 105px );
+  }
 
   footer > div{
     width: calc( 50% - 40px );
@@ -961,8 +974,7 @@ span.caption {
 
   #header .logo {
     margin-left: 20px;
-    max-width: 75%;
-    height: auto;
+    height: 50px;
   }
 
   .fixed-header #header .logo {
