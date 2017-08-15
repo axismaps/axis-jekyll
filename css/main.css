@@ -945,6 +945,10 @@ span.caption {
   .tool {
     padding: 40px 20px 0px;
   }
+  
+  #features{
+  width: 220px;
+  }
 }
 
 @media (max-width: 650px) {
