@@ -38,6 +38,7 @@ h4{
 h5{
 	font-size: 16px;
 	font-weight: 400;
+	line-height: 19px;
 }
 
 a {
@@ -121,11 +122,14 @@ iframe {
 }
 
 ol {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   color: #333;
   }
   
+ol li+li, ul li+li {
+  padding-top: 5px;
+  }  
 
 /* UTILITY */
 .clear-left {
@@ -383,12 +387,18 @@ a.project:hover .grid-image{
 
 .project-short p {
   text-align: left;
+  font-size: 16px;
 }
 
 .project-short h4 a {
   color: #333;
   font-weight: 700;
 }
+
+#project h2, #project-metadata h2 {
+  line-height: 45px;
+  padding-bottom: 10px;
+  }
 
 /* CLIENTS */
 #clients{
@@ -532,12 +542,12 @@ a.project:hover .grid-image{
 
 #about p, #team p, #contact p{
   text-align: left;
-  color: #666;
+  color: #333;
   line-height: 32px;
 }
 
 #data-design-code p, #personnel p{
-  color: #666;
+  color: #333;
 }
 
 img.madison {
@@ -595,7 +605,7 @@ img.banner {
   }
 
 #project-entry p{
-  color: #666;
+  color: #333;
   line-height: 32px;
   }
   
@@ -614,10 +624,10 @@ img.banner {
   padding-left: 50px;
   padding-bottom: 30px;
   margin-top: -20px;
-  width: 220px;
+  width: 300px;
   font-size: 16px;
-  font-style: italic;
-  font-weight: 400;
+  font-style: regular;
+  font-weight: 300;
   color: #333;
   line-height: 19px;
   text-align: center;
