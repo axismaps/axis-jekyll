@@ -129,7 +129,17 @@ ol {
   
 ol li+li, ul li+li {
   padding-top: 5px;
-  }  
+  }
+  
+.dropcap {
+  font-size: 60px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-right: 6px;
+  line-height: 20px;
+  float: left;
+  }
+
 
 /* UTILITY */
 .clear-left {
@@ -801,6 +811,7 @@ span.caption {
   padding: 20px 0;
   background: url(../images/guide_banner.jpg);
   text-shadow: 0 0 5px black;
+  margin-bottom: 50px;
 }
 
 #guide-banner a, #guide-banner a:hover {
