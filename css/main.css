@@ -273,12 +273,13 @@ nav a:hover{
 #home-video #scroll-indicator{
 	width: 100%;
 	opacity: 0;
-	margin: 0 0 20px -50px;
-	font-size: 26px;
-	line-height: 30px;
+	margin: 0 0 120px -50px;
+	font-size: 20px;
+	line-height: 25px;
 	font-weight: bold;
 	color: #58A2D8;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 #scroll-indicator a:hover {
@@ -1021,9 +1022,10 @@ span.caption {
   }
 
   #home-video #page-title div#scroll-indicator {
-    padding-bottom: 100px;
-    width: auto;
-    right: 0;
+    //padding-bottom: 100px;
+    //width: auto;
+    //right: 0;
+    visibility: hidden;
   }
 
   #project-grid {
