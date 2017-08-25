@@ -6,21 +6,21 @@
 		<p>For all questions about indiemapper, please visit: <a href="http://indiemapper.io" target="_blank">indiemapper.io</a></p>
 		<p>For all questions about typographic maps, please visit: <a href="http://store.axismaps.com" target="_blank">store.axismaps.com</a></p>
 	</div>
-	<div>
+	<div class="footer-nav">
 		<h4>Where was that?</h4>
 		{% for page in site.pages %}
-			{% if page.omit != true %}
+			{% if page.omit != true and page.layout != 'redirect' and page.url != '/' %}
 				<p><a href="{{ page.url }}">{{ page.title }}</a></p>
 			{% endif %}
 		{% endfor %}
-		<p>&nbsp;</p>
+		<p class="spacer">&nbsp;</p>
 		<h4>Made <i class="icon-at"></i> Axis</h4>
 		<p> <a href="{{ '/guide/' | prepend: site.baseurl }}">Cartography Guide</a></p>
 		<p><a href="http://indiemapper.io" target="_blank">Indiemapper</a></p>
 		<p><a href="http://colorbrewer2.org" target="_blank">Colorbrewer</a></p>
 		<p><a href="http://store.axismaps.com" target="_blank">Typographic Map Store</a></p>
 	</div>
-	<div>
+	<div class="blog-links">
 		<h4><a href="{{ '/blog/' | prepend: site.baseurl }}">From the blog</a></h4>
 		{% for post in site.posts limit: 10 %}
 			<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>

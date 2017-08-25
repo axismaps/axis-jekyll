@@ -925,10 +925,6 @@ span.caption {
   #project-grid a.project {
     width: calc( 100% - 105px );
   }
-
-  footer > div{
-    width: calc( 50% - 40px );
-  }
   
   .tool .img, .tool:nth-child(even) .img{
     float: none;
@@ -954,6 +950,42 @@ span.caption {
     float: none;
     display: block;
     margin: 0 auto 15px auto;
+  }
+
+  footer {
+    padding: 20px 80px;
+  }
+
+  footer > div {
+    float: none;
+    width: auto;
+  }
+
+  footer h4 {
+    margin-top: 10px;
+  }
+
+  footer p {
+    margin: 5px 0;
+    line-height: 18px;
+  }
+
+  footer > div.footer-nav p {
+    display: inline-block;
+    padding-right: 10px;
+    margin: 5px 0;
+  }
+
+  footer > a, footer > hr {
+    display: none;
+  }
+
+  .pagenav-section {
+    float: left !important;
+  }
+
+  footer .blog-links p:nth-child(n+7) {
+    display: none;
   }
 }
 
@@ -1134,9 +1166,13 @@ span.caption {
     padding: 20px ;
   }
 
-  footer > div {
-    float: none;
-    width: auto;
+  footer > div.footer-nav p {
+    display: block;
+    padding: 0;
+  }
+
+  footer div.footer-nav p.spacer {
+    display: none;
   }
 }
 
