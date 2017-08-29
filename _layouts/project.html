@@ -151,14 +151,9 @@
         })
 
         function imageModal (index) {
-          i = Math.max(0, Math.min(index, l - 1));
-          if (index < 0 || index >= l) return;
-          
-          if (index == 0) left.addClass('disabled');
-          else left.removeClass('disabled');
-
-          if (index == l - 1) right.addClass('disabled');
-          else right.removeClass('disabled');
+          if (index < 0) index = l-1;
+          if (index >= l) index = 0;
+          i = index;
 
           $('div', modal).remove();
 

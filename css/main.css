@@ -758,10 +758,6 @@ img.banner {
   color: black;
 }
 
-.image-modal i.disabled, .image-modal i.disabled:hover {
-  color: #666;
-}
-
 .image-modal .icon-times {
   right: 20px;
   top: 20px;
