@@ -20,6 +20,7 @@ categories:
 - Code
 tags: []
 comments: []
+project: napa
 ---
 We recently built a [map](http://napavintners.com/maps/) for [Napa Valley Vintners](http://napavintners.com/), a nonprofit trade association with 500+ members located in one of the most well known wine growing regions in the world. The map is meant to help people locate wineries, plan a visit to the region, and then send directions and a trip itinerary to a phone for easy navigation while driving. Two versions of the Web map were developed, one for the desktop and another for mobile phones. We ran into a couple of issues while working on the mobile version, in particular, that were solved with a design workaround or three. They're relatively small things, but should have a positive impact on how users experience the map.
 
