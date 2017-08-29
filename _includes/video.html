@@ -16,7 +16,7 @@
 </div>
 <script>
   $( window ).resize( function(){
-    var h = $( window ).height() - 150;
+    var h = $( window ).height() - $('#header').height() - 75;
     var w = $( window ).width();
     if( w / h < 16 / 9 ){
       var w1 = h * ( 16 / 9 );
