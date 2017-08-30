@@ -1103,13 +1103,12 @@ span.caption {
     width: auto;
   }
 
-  #built-for > div {
-    margin-right: auto;
+  #built-for > div:nth-child(2) {
+    margin-right: 20px;
   }
 
   #built-for .logo-image {
-    float: none;
-    width: auto;
+    width: 150px;
     margin-right: 0;
   }
 
