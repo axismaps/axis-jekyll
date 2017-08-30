@@ -7,7 +7,7 @@ clientshort: Merck
 logo: merck.png
 tag: Animated map of rotavirus vaccination rates over ten years
 date: 2017-02-01
-category: healthcare
+category: Healthcare
 featured: true
 slideshow: true
 video: 
