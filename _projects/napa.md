@@ -24,4 +24,6 @@ We built the Napa Valley Winery Map and Trip Planner as a tourism tool for Napa 
 
 The basemap is a completely custom design intended to highlight the terrain and greenery of the region, featuring shaded relief and a mix of OpenStreetMap and local GIS data. Wineries appear as points on the map and in a side panel with expandable details. Visitors can select wineries to add to a trip, and then enter a trip planner mode in which they can specify an order of visits, choose starting and ending addresses, and get driving directions for the trip. A link to the trip (or any map view) can be shared with others, or saved by the visitors themselves for when they are in the valley.
 
+<iframe class="inline" src="https://player.vimeo.com/video/231671531" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Because it's a trip planner, it's expected that some people will be using the map while they're actually on a trip in Napa Valley; thus we devoted a lot of effort toward a good design and experience for mobile devices. This includes different UI designs, for example relying on modal elements, but also small enhancements to indicate and encourage interactivity. We also take advantage of geolocation for users who are in Napa Valley: the visitor's location can appear on the map and can be used as a starting point in driving directions.

@@ -115,6 +115,8 @@
     <script>
       $( window ).resize( function(){
         $( '#poster' ).height( Math.min(window.innerHeight - 200, 720 * $( '#poster' ).width() / 1280 ));
+        $( 'iframe.inline' ).width( Math.max( 480, $( '#project-entry' ).width() - 350 ) );
+        $( 'iframe.inline' ).height( 720 * $( 'iframe.inline' ).width() / 1280 );
       });
       $( window ).resize();
       
