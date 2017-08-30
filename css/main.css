@@ -919,6 +919,10 @@ span.caption {
   h1, h2 {
     line-height: 50px;
   }
+
+  #home-video #page-title p {
+    display: none;
+  }
   
   #project-grid a.project {
     width: calc( 100% - 105px );
@@ -1224,10 +1228,6 @@ span.caption {
 
     #home-video #page-title h3 {
       margin-bottom: 10px;
-    }
-
-    #home-video #page-title p {
-      display: none;
     }
   }
 
