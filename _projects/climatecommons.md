@@ -7,9 +7,9 @@ clientshort: EJN
 logo: internews.png
 tag: Climate data meets climate journalism
 date: 2013-04-03
-featured: true
+featured: false
 slideshow: true
-link: http://climatecommons.earthjournalism.net/map/
+link: 
 github: https://github.com/axismaps/climatecommons
 layout: project
 nav: Portfolio
@@ -17,14 +17,4 @@ category: Environmental
 github: https://github.com/axismaps/climatecommons
 ---
 
-## Overview
-In partnership with Earth Journalism Network, and made possible by a Google.org Tides Foundation Developer Grant, this map is a Google Maps Change of States API implementation. Change of States helps to document the impacts of climate change, charting the way the US is adapting to this global phenomenon. Featuring geographically contextualized news stories that link climate change to natural disasters and other environmental and even health issues, this map will be a spatial and temporal news aggregator, a rich store of information for journalists and any members of the public who are interested in exploring the correlation between climate change data and its coverage in the media. 
-
-## Data
-The map is a collection of geographically tagged climate change related news stories set within the context of related and publicly available geospatial data and presented on a choropleth color scheme. News stories are aggregated from RSS Feeds and Google Alerts and Forms collected twice daily, sited by place name, fed into a Google Fusion table, and manually verified against Natural Earth databases. The stories are the contextual narrative to the quantitative geodata, which was collected from a variety of agencies and translated into points on the map from which the hexagonal surface was dynamically rendered. News stories can be filtered by category (including policy, impacts and costs, and causes) and according to criteria such as weather or emissions.
-
-## Design
-The basemap makes use of a subtle desaturated color scheme and was designed to integrate with Earth Journalism Network's branding. News stories appear in a scrolling sidebar. This allows users access to a constantly updated stream of stories relevant to their particular map view without obscuring the map itself. The hexagons form the link between the spatial points on the map and the news stories in the linear list. They are inversely correlated to zoom level and hovering over each reveals its value. Weather or emissions related information and source count is layered in and there is also a search bar where users can explore more defined climate change interests. 
-
-## Code
-As this project was made possible by a Google grant, it makes exclusive use of Google technology. The map is a Google Maps Change of States API implementation that includes our own open-source hexbin library, which performs client-side calculation and rendering of bin counts or raster interpolation. New stories are aggregated via Google News (including Alerts and Forms) and data is stored using Google Fusion tables and retrieved using web-services built in PHP. The use of Google Fusion tables for news stories and thematic data makes it easy to add future data to the map. This particular map is US specific but the technology is highly adaptable to any country or bio-region.
+In partnership with Earth Journalism Network, and made possible by a Google.org Tides Foundation Developer Grant, this map is a Google Maps Change of States API implementation. Change of States helps to document the impacts of climate change, charting the way the US is adapting to this global phenomenon. Featuring geographically contextualized news stories that link climate change to natural disasters and other environmental and even health issues, this map is be a spatial and temporal news aggregator, a rich store of information for journalists and any members of the public who are interested in exploring the correlation between climate change data and its coverage in the media.
