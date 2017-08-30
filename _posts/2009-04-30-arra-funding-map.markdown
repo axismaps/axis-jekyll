@@ -88,6 +88,7 @@ comments:
 ---
 ![ARRA Funding Map]({{ site.baseurl }}/media/posts/2009/04/arra_fundingmap1.jpg)
 <p>Lots of maps are coming out that document when, where, and how stimulus money is being spent through the ARRA, like these at the <a href="http://foundationcenter.org/focus/economy/maps.html" target="_blank">Foundation Center</a>. With all of the reporting, accountability, and transparency required of ARRA grant recipients, I'm sure we'll only be seeing a lot more of these in the future. <a href="http://www.recovery.gov/?q=content/state-recovery-page" target="_blank">Recovery.gov</a> directs traffic to states' Web sites where some of this data is appearing. I'm looking forward to seeing more and more mash-ups and interactive maps and graphics as developers and designers get their hands on this stuff and data from other sources that track stimulus money.</p>
+<!--break-->
 <p><strong>Our Map</strong></p>
 <p>For now, we decided to get involved by putting together a static map that shows where our ARRA tax dollars are going for energy-related programs administered by the DOE. As underlying layers, the map shows states' historical energy consumption trends and their projected trends required to meet consumption goals set for 2012.</p>
 <p>I'm sure we could all talk about the politics around ARRA funding and energy consumption and how this might or might not be shaped by patterns that the map does or doesn't show. But to me, a few of the most interesting things about this map are related to its design:</p>

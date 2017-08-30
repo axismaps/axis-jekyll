@@ -30,6 +30,7 @@ comments:
   content: "[...] As are these four typographic maps. [...]"
 ---
 <p>Our <a href="http://store.axismaps.com">typographic maps store</a> took a little summer vacation last month and has now returned with some big postcards of the four cities it visited: <a href="http://store.axismaps.com/product/london">London</a>, <a href="http://store.axismaps.com/product/philadelphia">Philadelphia</a>, <a href="http://store.axismaps.com/product/seattle">Seattle</a>, and <a href="http://store.axismaps.com/product/minneapolis">Minneapolis</a>. Perhaps you'll enjoy them yourself!</p>
+<!--break-->
 <h2>London</h2>
 <p>Our maps have ventured outside the US for the first time, to everyone's favo(u)rite summer 2012 city. With that, we've launched a UK store for orders (pre-orders for the moment) there and internationally at <a href="http://store.axismaps.co.uk/#uk">store.axismaps.co.uk</a>. The map is also available on the American side of the pond, of course.</p>
 <p><a href="http://store.axismaps.com/product/london/"><img src="{{ site.baseurl }}/media/posts/2012/08/london_20120723.jpg" alt="London typographic map" title="London typographic map" width="300" height="200" class="alignnone size-medium wp-image-1349" /></a></p>

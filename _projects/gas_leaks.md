@@ -9,4 +9,4 @@ slideshow: true
 link: http://clf.org/map/
 ---
 
-In the two days following the 2012 election, we made an interactive map to explore the relationship between demographics and election results. The map uses a technique called value-by-alpha, which is a bivariate choropleth map that "equalizes" a base map so that the visual weight of a map unit corresponds to a data value. For example, in the population map counties with lower populations are less visually prominent while counties with high populations remain brightly colored, giving a more accurately weighted picture of the country than a map showing a sea of red in sparsely populated areas.
+We worked with the Conservation Law Foundation to create a set of three interactive maps in the context of a piece on the state and danger of natural gas leaks in Massachusetts. The first shows the location and severity of leaks; the second is a gridded map of methane emissions; and the third shows the number of leaks repaired over a two year period in Massachusetts towns and cities. The maps are embedded in a longer multimedia article, also of our making.

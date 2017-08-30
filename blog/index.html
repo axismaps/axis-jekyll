@@ -1,30 +1,22 @@
 ---
 layout: default
-nav: Blog
+title: Axis Maps Blog
 order: 3
+omit: true
 ---
 
 <section id="blog" class="blogroll">
   {% for post in paginator.posts %}
     <article>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      {% include post_metadata.html %}
       <div class="content post">
-        {{ post.content }}
-        
-        {% if post.project %}
-          <hr />
-          {% for project in site.projects %}
-            {% if post.project == project.pid %}
-              <a class="mini-portfolio" href="{{ project.url | prepend: site.baseurl }}">
-                <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.pid }}.png)"></div>
-                <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
-              </a>
-            {% endif %}
-          {% endfor %}
+        {{ post.content | split:'<!--break-->' | first }}
+        {% if post.content contains '<!--break-->' %}
+          <a href="{{ post.url }}">Read more...</a>
         {% endif %}
       </div>
-      {% include social_media.html %}
-      {% include post_metadata.html %}
+      <hr/>
     </article>
   {% endfor %}
   

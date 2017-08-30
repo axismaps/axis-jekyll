@@ -1,0 +1,38 @@
+<div id='home-video'>
+  <video playsinline autoplay muted loop poster="{{ '/media/video/poster.png' | prepend: site.baseurl }}">
+    <source src="{{ '/media/video/home.mp4' | prepend: site.baseurl }}" type="video/mp4">
+  </video>
+  <div id="page-title">
+    <div>
+      <p>&nbsp;</p>
+      <h1>We bring the traditions of cartography to the Web.</h1>
+      <p>&nbsp;</p>
+      <h3>Our custom maps match your data, visual identity, message, and audience.</h3>
+      <p>&nbsp;</p>
+      <a class="button" href="mailto:info@axismaps.com">Contact us</a>
+    </div>
+    <div id="scroll-indicator"><a href="#featured-projects">View More <br/> <i class="icon-down-open"></i></a></div>
+  </div>
+</div>
+<script>
+  $( window ).resize( function(){
+    var h = $( window ).height() - $('#header').height() - 75;
+    var w = $( window ).width();
+    if( w / h < 16 / 9 ){
+      var w1 = h * ( 16 / 9 );
+      $( '#page-title' ).removeAttr( 'style' );
+      $( "video" )
+        .height( h )
+        .width( w1 )
+        .css( "margin-left", ( w - w1 ) / 2 );
+    } else {
+      $( "video" ).removeAttr( 'style' ).width( w );
+    }
+    $( "#home-video, #page-title" ).height( h );
+  });
+
+  $( document ).ready( function(){
+    $( window ).resize();
+    $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 );
+  });
+</script>

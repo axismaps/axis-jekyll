@@ -2,6 +2,7 @@
 pid: esri_color
 title: ESRI Color Browser
 client: ESRI
+logo: esri.png
 date: 2014-05-02
 featured: false
 slideshow: true

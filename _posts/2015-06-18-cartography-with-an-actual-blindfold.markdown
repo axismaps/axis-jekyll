@@ -28,6 +28,8 @@ Last month, Andy gave a talk at the OpenVis Conference entitled [Blindfolded Car
 
 First off, what are accessibility features and why should you care? Accessibility features are features and general design patterns that allow people with disabilities to view and interact with your content. This can range from simply allowing keyboard navigation all the way up to screen readers. Now, why should you care? We can get fairly pedantic about whether a font size should be 16pt or 18pt, should this light brown text be `#f2e1cb` or `#f8f1e7`, should this `div` have a margin of 20px or 22px? If we as developers take that much care about things that a lot of users aren't going to consciously notice, shouldn't we take at least some care with things that some of the users are really really going to notice?
 
+<!--break-->
+
 So what categories of accessibility should you be aware of? There are 4 areas that I'm going to talk about; I'm sure there are more, but these cover the majority of cases that I'm currently aware of. Color, keyboard navigation, ARIA, and Screen Readers. Also, I should note, I am not an expert in this. What follows are the notes of a developer brand new to the area of accessibility.
 
 ## Color

@@ -8,7 +8,7 @@ tag: Visualizing 15 years of job growth / loss
 date: 2014-09-02
 featured: true
 slideshow: true
-video: 164081675
+video: 212543451
 link: http://tipstrategies.com/geography-of-jobs/
 layout: project
 nav: Portfolio

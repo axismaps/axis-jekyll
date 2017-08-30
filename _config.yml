@@ -5,7 +5,7 @@ description: Axis Maps - Data. Design. Code.
 baseurl: ""
 url: "http://www.axismaps.com"
 easyurl: "http://www.axismaps.com"
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num/"
 permalink: "/blog/:year/:month/:title/"
 collections:
@@ -13,10 +13,10 @@ collections:
     output: true
     layout: project
     permalink: /projects/:path/
-  guides:
+  guide:
     output: true
     layout: guide
-    permalink: /guide/:path/
+    permalink: /guide/:categories/:slug/
 
 # Build settings
 markdown: kramdown
@@ -24,3 +24,4 @@ highlighter: rouge
 gems: 
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-redirect-from

@@ -4,6 +4,7 @@ title: American Jewish Population Map
 titleshort: American Jewish Population
 client: Brandeis University
 clientshort: Brandeis
+logo: brandeis.png
 tag: Nationwide population study
 date: 2013-09-27
 featured: true

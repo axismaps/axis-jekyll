@@ -65,6 +65,7 @@ comments:
 <blockquote><p>"I'm looking to expand my skills to make interactive maps. What do I need to know to become an interactive cartographer?"</p></blockquote>
 <p>Because our industry is evolving at such breakneck speeds, the required skill sets are constantly changing. Flash actionscript code has been replaced by Javascript and HTML5. Basemap cartography is endlessly tweaked as <a href="https://github.com/mapnik/mapnik/wiki/XMLConfigReference">Mapnik XML</a> instead of Illustrator layers. We can <a href="http://www.axismaps.com/blog/2012/01/dont-panic-an-absolute-beginners-guide-to-building-a-map-server/">easily build and support our own tile servers</a>. It's exciting change and it allows us to do more with our maps faster and cheaper.</p>
 <p>Unfortunately, if you're trying to break into interactive cartography and haven't been involved with its evolution on a daily basis, it can be very tough to know where to begin. It's no longer as easy as "learn ArcView if you want to be a GIS Tech, or Illustrator if you want to be a cartographer."</p>
+<!--break-->
 <p>However, while the tools may be changing month-by-month, there have been three broad areas of core competency for all interactive cartographers that have been consistent throughout:</p>
 <ol>
 <li>You need to be able to find, manipulate, and store spatial and non-spatial data.</li>

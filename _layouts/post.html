@@ -4,18 +4,18 @@ layout: default
 <section id="blog" class="singleblog">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
+    {% include post_metadata.html %}
   </header>
 
   <article>
     <div class="post content">
       {{ content }}
-      
+
       {% if page.project %}
-        <hr />
         {% for project in site.projects %}
           {% if page.project == project.pid %}
-            <a class="mini-portfolio" href="{{ project.url | prepend: site.baseurl }}">
-              <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/icon/{{ project.pid }}.png)"></div>
+            <a class="mini-portfolio button hollow" href="{{ project.url | prepend: site.baseurl }}">
+              <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
               <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
             </a>
           {% endif %}
@@ -23,20 +23,19 @@ layout: default
       {% endif %}
     </div>
   </article>
-  {% include social_media.html %}
-  {% include post_metadata.html %}
   
+
   <!-- Page Nav links -->
   <div class="pagenav">
     {% if page.previous %}
-      <div class="pagenav-section">
-        <span class="pagenav-title">Previous</span>
+      <div class="pagenav-section" style="float:left">
+        <span class="pagenav-title">Previous: </span>
         <a href="{{ site.baseurl }}{{ page.previous.url }}" class="previous">{{page.previous.title}}</a>
       </div>
     {% endif %}
     {% if page.next %}
-      <div class="pagenav-section">
-        <span class="pagenav-title">Next</span>
+      <div class="pagenav-section" style="float:right">
+        <span class="pagenav-title">Next: </span>
         <a href="{{ site.baseurl }}{{ page.next.url }}" class="next">{{page.next.title}}</a>
       </div>
     {% endif %}

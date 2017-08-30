@@ -4,6 +4,7 @@ title: Mapping Pacific Voyages
 titleshort: Mapping Pacific Voyages
 client: Adam Matthew Digital
 clientshort: AMD
+logo: sage.png
 tag: Animating historic sea voyages
 date: 2013-11-21
 featured: true

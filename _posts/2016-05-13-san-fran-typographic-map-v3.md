@@ -24,6 +24,7 @@ project: typographic
 
 Ever since the San Francisco map sold out over the holidays we’ve been eager to get it reprinted and back up for sale. Of course, before doing so, we couldn’t resist making a few changes to refresh and update the design. The new version, pictured above, is the third in six years. Read down the page for a quick rundown of what’s new, or skip it and go straight to the [typographic maps store](http://store.axismaps.com) where you can check out the [map of San Francisco](http://store.axismaps.com/product/typographic-map-san-francisco) and our collection of other typographic cities.
 
+<!--break-->
 
 ### Blue Water
 To further accentuate the peninsula, city, and coastline, the San Francisco Bay and Pacific Ocean were filled with a solid blue background color. Blue text in these areas now recedes into the background while the peninsula and city rise to the foreground.

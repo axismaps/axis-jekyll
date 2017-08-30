@@ -68,6 +68,7 @@ comments:
 <p>Last month at the annual <a href="http://nacis.org" target="_blank">NACIS</a> conference, I gave a presentation called "In Defense of Bad Maps" — an attempt to demonstrate the value of prolific, popular, yet supposedly "bad" cartography on the web; and to propose a small bit of advice on how to approach cartographic sacrifices in the real, professional world.</p>
 <p>This was a last-minute submission, not without occasional regret, and as such there are no especially strong arguments here, but my hope the is that the talk provided one or two things to think about as web cartography continues to grow and evolve. <a href="https://speakerdeck.com/axismaps/in-defense-of-bad-maps" target="_blank">Presentation slides</a> have been posted, but as usual they don't mean much without the spoken component. Here's a summarized version.</p>
 <p><a href="{{ site.baseurl }}/media/posts/2013/11/nacis2013.013.jpg"><img src="{{ site.baseurl }}/media/posts/2013/11/nacis2013.013.jpg" alt="F tha map police!" width="300" height="225" class="alignnone size-medium wp-image-1731" /></a></p>
+<!--break-->
 <p>Now, I was going for something a little trollish, at least in the title, but I'm too mild-mannered (by day) to go on a true rant, so the provocation—while evident, I hope—is minimal. This is the <em>tl;dr</em> synopsis:</p>
 <ol>
 <li>There are "bad" maps on the web, they sometimes become very popular in spite of (or even because of) being bad, and they bother cartographers.</li>

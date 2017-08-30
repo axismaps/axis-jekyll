@@ -26,6 +26,9 @@ project: bpl
 Last weekend saw the close of a six-month exhibition by the Norman B. Leventhal Map Center at the Boston Public Library titled ["We Are One: Mapping America’s Road from Revolution to Independence,"](http://maps.bpl.org/weareone) a piece of which we at Axis Maps had the pleasure of creating. A commemoration of the 250th anniversary of the [Stamp Act](https://en.wikipedia.org/wiki/Stamp_Act_1765), the exhibition featured an impressive collection of contemporary maps from the years prior to the American Revolution through the early years of the new nation, documenting and providing context for the events leading to American independence.
 
 ![A few maps from 'We Are One']({{ site.baseurl }}/media/posts/2015/11/bplthumbs.jpg)
+
+<!--break-->
+
 !['We Are One' exhibition]({{ site.baseurl }}/media/posts/2015/11/bpl_exhibit.jpg)
 
 As part of the exhibit, we designed interactive features for two large touchscreen displays, which allowed visitors to explore many of the maps on display more closely. (This was handy, because one of the display cases literally yelled at you to stand back if you got too close.) The two interactive displays featured maps of different themes, georectified and overlaid on a modern map. Visitors could search for locations and see them in the context of the historic maps, and also browse a curated set of map details.

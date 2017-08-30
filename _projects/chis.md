@@ -4,12 +4,13 @@ title: AskCHIS Neighborhood Edition
 titleshort: AskCHIS NE
 client: UCLA Center for Health Policy Research
 clientshort: UCLA
+logo: ucla_health.png
 tag: California health dashboard visualization
 category: Healthcare
 date: 2014-11-19
 featured: true
 slideshow: true
-video: 140199816
+video: 212543400
 link: http://askchisne.ucla.edu/ask/_layouts/ne/dashboard.aspx#/
 layout: project
 nav: Portfolio

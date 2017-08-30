@@ -24,6 +24,7 @@ tags: []
 <p>There is of course a real answer to that question (perhaps it's something like, "every<em>where</em>, but not every<em>thing</em>" or perhaps it's "there's actually this one spot in Idaho we haven't hit yet"), but it's more amusing to dwell on the things we cartographers hear from our new acquaintances than on what we say in reply. In that spirit, a week or two ago I posed the following on Twitter:</p>
 <blockquote><p><strong>Survey time. Cartographers, fill in the blank based on your experience. Person: "What do you do?" You: "I'm a cartographer." Person: ______</strong></p></blockquote>
 <p>It generated some excellent replies. If you're not a cartographer, when you meet one remember that these are things we've all heard. If you are a cartographer, please comment to share your experiences too!</p>
+<!--break-->
 <p><a href="http://twitter.com/stefanie_gray">@stefanie_gray</a> has heard several good ones.</p>
 <blockquote><p>"You're a cartographer? But isn't the map done?!" (Yes, there is only one map! Ever! And it's DONE!)</p>
 <p>"Why would you study cartography if every place has been discovered?" (Uh, did I say I was in 'conquistador studies'?)</p>

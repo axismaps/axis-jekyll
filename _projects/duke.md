@@ -2,6 +2,7 @@
 pid: duke
 title: Duke University Children's Environmental Health Initiative
 client: Duke University
+logo: duke.png
 tag: Facilitating meaningful comparisons
 date: 2011-07-26
 category: Healthcare

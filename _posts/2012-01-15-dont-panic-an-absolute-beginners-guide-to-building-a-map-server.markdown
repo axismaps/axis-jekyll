@@ -85,6 +85,7 @@ comments:
 <li><strong><a href="http://mapnik.org/" target="_blank">Mapnik</a>: </strong>A very powerful tool for automatically generating maps from geographic data with lots of control over cartographic display and rendering.</li>
 <li><strong><a href="http://tilestache.org/" target="_blank">TileStache</a>: </strong>A simple way to efficiently serve geographic data to mapping applications. It can send tiled vector or raster data and will speed up any application that needs to load lots of data.</li>
 </ul>
+<!--break-->
 <h2></h2>
 <h2>Basic Setup</h2>
 <p>I'm going to be using a <a href="http://www.rackspacecloud.com/2936.html" target="_blank">Rackspace Cloud Server</a> for this example. It's a cheap way to get a server up and running and I've found them to be great with support. They automatically build your server and install the operating system. You just need to select 3 things:</p>
