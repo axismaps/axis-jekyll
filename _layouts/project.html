@@ -130,7 +130,12 @@
         var modal = $('<div>')
           .attr('class', 'image-modal')
           .appendTo('body')
-          .hide();
+          .hide()
+          .on('click', function(e){
+            if (e.target == this) {
+              modal.hide();
+            }
+          });
         $('<i class="icon-times">')
           .click(function (){
             modal.hide();
