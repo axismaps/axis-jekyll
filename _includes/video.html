@@ -11,7 +11,7 @@
       <p>&nbsp;</p>
       <a class="button" href="mailto:info@axismaps.com">Contact us</a>
     </div>
-    <div id="scroll-indicator"><a href="#featured-projects">View More <br/> <i class="icon-down-open"></i></a></div>
+    <div id="scroll-indicator">View More <br/> <i class="icon-down-open"></i></div>
   </div>
 </div>
 <script>
@@ -37,6 +37,11 @@
 
   $( document ).ready( function(){
     $( window ).resize();
-    $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 );
+    $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 )
+      .on('click', function (){
+        $('body').animate({
+          scrollTop: $('#featured-projects').position().top
+        }, 400);
+      })
   });
 </script>
