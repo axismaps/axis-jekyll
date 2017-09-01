@@ -34,7 +34,7 @@ We are seeking a full-time **web map developer** to help bring our designs to li
 
 ## Where:
 
-Anywhere, but UK and central or eastern US are preferred.
+Anywhere, but UK, Western Europe, and central or eastern US are preferred.
 
 ## When:
 
