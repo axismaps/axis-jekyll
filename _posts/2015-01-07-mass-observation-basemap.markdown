@@ -19,6 +19,7 @@ categories:
 - Design
 tags: []
 comments: []
+project: massobservation
 ---
 <p class="p1">We recently worked on a project with <a title="Adam Matthew Digital" href="http://www.amdigital.co.uk/">Adam Matthew Digital</a> mapping British diarists in the UK who wrote during the first half of the 20th century. Most of the 500+ entries deal with observations about the impact of WWII on everyday life.  The map allows users to search and filter diarists by gender and date of birth or view them in smaller groupings by theme (e.g., "Political Opinions", Women in Wartime", "London During the Blitz"). Brief bios and excerpts from the diaries themselves are also viewable, as shown in the screenshot of the interface below:</p>
 <p class="p1"><img class="aligncenter size-full wp-image-2010" src="{{ site.baseurl }}/media/posts/2015/01/Mass_Observation.png" alt="Mass_Observation"/></p>
