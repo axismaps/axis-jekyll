@@ -23,6 +23,8 @@ At Axis Maps, our aim is to bring the traditions of cartography to the web. We d
 
 We are seeking a full-time **web map developer** to help bring our designs to life. As a developer, you will largely be responsible for writing code that powers our maps, but your cartographic and interactive design skills will also help us make the best maps possible.
 
+<!--break-->
+
 ### We're looking for these qualities:
 
 - **Skill and comfort with front-end web technologies (JavaScript, HTML, CSS) and development processes.** At a minimum you'll need to be comfortable building and working with interactive web pages, familiar with tools and processes for organizing and building projects, and resourceful enough to find solutions when you're stuck.
