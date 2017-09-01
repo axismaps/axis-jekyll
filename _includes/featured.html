@@ -10,8 +10,8 @@
                 {% assign count = count | plus: 1 %}
                 <a class="project" href="{{ project.url | prepend: site.baseurl }}" {% if count == 9 %} id="next-projects" {% endif %}>
                     <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
-                    <h4>{{ project.titleshort }}</h4>
-                    <h5>{{ project.clientshort }}</h5>
+                    <h4>{{ project.title }}</h4>
+                    <h5>{{ project.client }}</h5>
                 </a>
   	            {% if count >= 8 and page.url == '/' %}
                     {% assign position = {{ forloop.index }} %}
