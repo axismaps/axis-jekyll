@@ -26,6 +26,7 @@ layout: default
   
 
   <!-- Page Nav links -->
+  {% if page.omit_nav != true %}
   <div class="pagenav">
     {% if page.previous %}
       <div class="pagenav-section" style="float:left">
@@ -40,5 +41,6 @@ layout: default
       </div>
     {% endif %}
   </div>
+  {% endif %}
 
 </section>
