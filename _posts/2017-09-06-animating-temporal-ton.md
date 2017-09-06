@@ -2,7 +2,7 @@
 layout: post
 nav: Blog
 status: publish
-published: false
+published: true
 title: Animating a temporal ton in a web map
 author:
   display_name: Andy Woodruff
@@ -41,7 +41,7 @@ We faced a challenge along those lines earlier this year when we set out to [vis
 
 First, a brief overview of this map, which is at [https://merck.axismaps.io/](https://merck.axismaps.io/) or in a video demo below. It shows the percent of eligible children receiving a vaccine each week over approximately ten years at state, county, or zip code level. More detailed numbers are found in a chart at the bottom and by poking around the map. And that's about it. Simple, right?
 
---video--
+<iframe src="https://player.vimeo.com/video/232558037" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Prototyping
 
@@ -76,7 +76,7 @@ Detailed data with actual vaccination rates is loaded on demand through a simple
 
 ![Probe for actual data values]({{ site.baseurl }}/media/posts/2017/09/merck_probe.jpg)
 
-To everyone's surprise the data was pretty noisy. While we expected that rates would steadily increase over time, instead they fluctate a lot and switch back and forth between data classes. We tried to smooth this out and see broader patterns by using four-week rolling averages, but it seems that noise simply is reality. More noise meant more _change_ data and more rows in our CSVs, but we still ended up with file sizes acceptable for this purpose and a lot smaller than we would have had otherwise.
+To further reduce file size and smooth out the animation, we mapped 12-week rolling averages instead of single-week snapshots. The data tends to be unstable and noisy when and where there were lower populations of eligible children, so our hope was that averaging values over time would present a better picture of trends, while also resulting in fewer rows of change in our final CSV.
 
 ### Data overload: space
 
@@ -88,7 +88,11 @@ Most of the map is drawn as SVG using standard [D3 methods](https://github.com/d
 
 ![Zip code point probe]({{ site.baseurl }}/media/posts/2017/09/merck_zip_probe.png)
 
-At the scale where we do show zip code polygons, the problem remains that this is a ton of geographic data. For this we built a simple Node vector tile server which queries a PostGIS database for zip codes whose centroids fall within a [tile's bounds](https://github.com/mapbox/sphericalmercator#bboxx-y-zoom-tms_style-srs), then sends the polygons as topojson (and caches them to S3). On the front end, when the user zooms past a scale threshold, the map switches to a standard web Mercator map (using [d3-tile](https://github.com/d3/d3-tile)) onto which we can load zip code tiles as the map is panned. (As a bonus we can also easily load reference basemap tiles underneath to help with orientation.)
+At the scale where we do show zip code polygons, the problem remains that this is a ton of geographic data. For this we built a simple Node vector tile server that sends the polygons in tile-sized chunks as topojson (and caches them to S3). We calculated and stored zip code centroids in a PostGIS database ahead of time, then get the tiles by querying for centroids that fall within a [tile's bounds](https://github.com/mapbox/sphericalmercator#bboxx-y-zoom-tms_style-srs). We use centroids instead of polygon intersections so that each polygon is only drawn on one tile—it's fine if it spills out into other tiles on the map as in the highlighted example below, but we don't want it being drawn multiple times.
+
+![Zip code in multiple tiles]({{ site.baseurl }}/media/posts/2017/09/merck_zip_tile.png)
+
+On the front end, when the user zooms past a scale threshold, the map switches to a standard web Mercator map (using [d3-tile](https://github.com/d3/d3-tile)) onto which we can load zip code tiles as the map is panned. (As a bonus we can also easily load reference basemap tiles underneath to help with orientation.)
 
 ![Zip code vector tiles]({{ site.baseurl }}/media/posts/2017/09/merck_pan.gif)
 
