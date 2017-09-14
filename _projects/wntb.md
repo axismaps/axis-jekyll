@@ -9,7 +9,7 @@ date: 2013-04-25
 category: Healthcare
 featured: true
 slideshow: true
-link: http://whynotthebest.org/map/
+link: http://whynotthebest.org/maps/
 layout: project
 nav: Portfolio
 ---
