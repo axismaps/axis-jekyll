@@ -358,6 +358,12 @@ footer p.legal{
 	border-radius: 3px;
 }
 
+#project-grid a.project h4{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 #project-grid a.project h5{
   max-width: 100%;
   overflow: hidden;
