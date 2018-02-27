@@ -12,8 +12,8 @@ author:
 date: '2018-02-26 00:00:00 +0100'
 date_gmt: '2018-02-26 00:00:00 +0100'
 categories:
-Cartography
-Design
+- Cartography
+- Design
 tags:
 - Layout
 - Look and Feel
