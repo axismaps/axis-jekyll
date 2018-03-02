@@ -2,7 +2,7 @@
 layout: post
 nav: Blog
 status: publish
-published: false
+published: true
 title: Animating a temporal ton in a web map
 author:
   display_name: Andy Woodruff
@@ -37,15 +37,15 @@ project: merck
 </tr>
 </table>
 
-We faced a challenge along those lines earlier this year when we set out to [visualize usage of rotavirus vaccines](https://merck.axismaps.io/) produced by Merck. Simple-sounding on the surface, it involved some tricky design and back-end work, notably because weekly data by zip code over ten years means more than 1.5 million data points: a ton of data for a web map to be loading.
+We faced a challenge along the above lines earlier this year when we set out to [visualize usage of rotavirus vaccines](https://merck.axismaps.io/) produced by Merck. Simple-sounding on the surface, it involved some tricky design and back-end work, notably because weekly data by zip code over ten years means more than 17 million data points: a ton of data for a web map to be loading.
 
 First, a brief overview of this map, which is at [https://merck.axismaps.io/](https://merck.axismaps.io/) or in a video demo below. It shows the percent of eligible children receiving a vaccine each week over approximately ten years at state, county, or zip code level. More detailed numbers are found in a chart at the bottom and by poking around the map. And that's about it. Simple, right?
 
---video--
+<iframe src="https://player.vimeo.com/video/232558037" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Prototyping
 
-This project involved several prototypes to work through design decisions. Although in the end it became a fairly straightforward choropleth and point map, the client and we wanted to explore some map types that we thought might best show the spatial and temporal patterns. Early on we had a request for the map to appear such that the entire United States, even unpopulated areas, are covered, to avoid suggesting that there are areas that the vaccines hadn't even reached. To this end we tried binning into grid cells, but this comes with a couple of problems.
+This project involved several prototypes to work through design decisions. Although in the end it became a fairly straightforward choropleth and point map, the client and we wanted to explore some map types that we thought might best show the spatial and temporal patterns. Early on we had a request for the map to appear such that the entire United States, even unpopulated areas, are covered, to avoid suggesting that there are areas that the vaccines hadn't even reached. To this end we tried binning into grid cells, but that comes with a couple of problems.
 
 There are places that zip code tabulation areas don't touch—because nobody lives there—so ensuring no blank space means a certain minimum grid cell size, which may or may not be a good resolution for the more populated parts of the country.
 
@@ -55,7 +55,7 @@ At one point we experimented with variable cell sizes, where each cell contained
 
 ![Variable grid cell sizes with approximately equal numbers of zip codes]({{ site.baseurl }}/media/posts/2017/09/merck_variable_size.jpg)
 
-A second problem with binning is that it requires aggregations that depend on actually having the necessary data. In this case, we had vaccination rates already aggregated to geographies like zip codes, but we did not have the actual number of vaccinations and the total number of eligible children. Without those, we weren't able to display actual vaccination rates in a grid. Instead it was something like _"percent of zip codes with rates above 50%,"_ so for example if a cell had 100 zip codes and 40 of them had vaccination rates above 50%, the map would show this cell as 40%. This is a bit too convoluted and may not do a great job at showing real spatial patterns anyway.
+A second problem with binning is that it requires aggregations that depend on actually having the necessary data. In this case, we had vaccination rates already aggregated to geographies like zip codes, but we did not have the actual number of vaccinations and the total number of eligible children. Without those, we weren't able to display actual vaccination rates in a grid. Instead it was something like _"percent of zip codes with rates above 50%,"_ so for example if a cell had 100 zip codes and 40 of them had vaccination rates above 50%, the map would show the cell as 40%. This is a bit too convoluted and may not do a great job at showing real spatial patterns anyway.
 
 ### Data overload: time
 
@@ -76,7 +76,7 @@ Detailed data with actual vaccination rates is loaded on demand through a simple
 
 ![Probe for actual data values]({{ site.baseurl }}/media/posts/2017/09/merck_probe.jpg)
 
-To everyone's surprise the data was pretty noisy. While we expected that rates would steadily increase over time, instead they fluctate a lot and switch back and forth between data classes. We tried to smooth this out and see broader patterns by using four-week rolling averages, but it seems that noise simply is reality. More noise meant more _change_ data and more rows in our CSVs, but we still ended up with file sizes acceptable for this purpose and a lot smaller than we would have had otherwise.
+To further reduce file size and smooth out the animation, we mapped 12-week rolling averages instead of single-week snapshots. The data tends to be unstable and noisy when and where there were lower populations of eligible children, so our hope was that averaging values over time would present a better picture of trends, while also resulting in fewer rows of change in our final CSV.
 
 ### Data overload: space
 
@@ -84,11 +84,15 @@ Besides the attribute data load, a national map at the level of something like z
 
 Legibility concerns led us to the zip code point map. At a national scale, even county polygons are pushing it in terms of crowding, and most zip code polygons are definitely too small to be discernable. Thus we make you zoom in pretty far before zip codes resolve to polygon representations; before that they're shown as centroid points, which are still crowded on a national map but are a bit easier to pick out.
 
-Most of the map is drawn as SVG using standard [D3 methods](https://github.com/d3/d3-geo), but the zip code point layer is an exception. This number of points, some 33,000, do not perform well as vector graphics and instead are drawn to a canvas element. It means some extra work to account for things like interactivity (we can't just attach mouse handlers and have to search for nearby points on mouse move), but it's worth it to avoid completely choking on rendering.
+Most of the map is drawn as SVG using standard [D3 methods](https://github.com/d3/d3-geo), but the zip code point layer is an exception. This many points, some 33,000, do not perform well as vector graphics and instead are drawn to a canvas element. It means some extra work to account for things like interactivity (we can't just attach mouse handlers and have to search for nearby points on mouse move), but it's worth it to avoid completely choking on rendering.
 
 ![Zip code point probe]({{ site.baseurl }}/media/posts/2017/09/merck_zip_probe.png)
 
-At the scale where we do show zip code polygons, the problem remains that this is a ton of geographic data. For this we built a simple Node vector tile server which queries a PostGIS database for zip codes whose centroids fall within a [tile's bounds](https://github.com/mapbox/sphericalmercator#bboxx-y-zoom-tms_style-srs), then sends the polygons as topojson (and caches them to S3). On the front end, when the user zooms past a scale threshold, the map switches to a standard web Mercator map (using [d3-tile](https://github.com/d3/d3-tile)) onto which we can load zip code tiles as the map is panned. (As a bonus we can also easily load reference basemap tiles underneath to help with orientation.)
+At the scale where we do show zip code polygons, the problem remains that this is a ton of geographic data. For this we built a simple Node vector tile server that sends the polygons in tile-sized chunks as topojson (and caches them to S3). We calculated and stored zip code centroids in a PostGIS database ahead of time, then can get the tiles by querying for centroids that fall within a [tile's bounds](https://github.com/mapbox/sphericalmercator#bboxx-y-zoom-tms_style-srs). We use centroids instead of polygon intersections so that each polygon is only drawn on one tile—it's fine if it spills out into other tiles on the map as in the highlighted example below, but we don't want it being drawn multiple times.
+
+![Zip code in multiple tiles]({{ site.baseurl }}/media/posts/2017/09/merck_zip_tile.png)
+
+On the front end, when the user zooms past a scale threshold, the map switches to a standard web Mercator map (using [d3-tile](https://github.com/d3/d3-tile)) onto which we can load zip code tiles as the map is panned. (As a bonus we can also easily load reference basemap tiles underneath to help with orientation.)
 
 ![Zip code vector tiles]({{ site.baseurl }}/media/posts/2017/09/merck_pan.gif)
 
