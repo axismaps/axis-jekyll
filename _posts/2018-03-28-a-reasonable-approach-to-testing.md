@@ -51,7 +51,7 @@ Instead, use your functionality list to create a handful of testing scenarios. T
 3. Also allow for randomization on the order certain tasks are performed
 4. Most importantly, be grounded in the reality of your actual users as you understand their workflows and potential uses of the map.
 
-When making a plan for testing your datasets, consider how they were created. Were they created by hand? Conversely, are there any weaknesses in your data generation script that may require manual intervention? If so, instead of randomizing your datasets, create a plan that mandates _all_ of them are tested.
+When making a plan for testing your datasets, consider how they were created. Were they created by hand? Conversely, are there any weaknesses in your data generation script that may require manual intervention? If so, instead of randomizing your datasets, create a plan that mandates _all_ of them are tested. If you are randomizing, it's worth making a note about your datasets and geographies that are outliers. This particular plan for public health project in California requires extra attention to Los Angeles county since it has the highest density of census tracts which could (and did) lead to bugs not present in other areas.
 
 The following testing scenario is based off a hypothetical user that has a specific idea of the indicators they’re interested in, but isn’t sure about which geography to perform their analysis.
 
