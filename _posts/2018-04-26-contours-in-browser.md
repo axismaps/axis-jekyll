@@ -43,7 +43,7 @@ You can do a handful of things here:
 - Draw maps as basic contour lines or with a stylized raised, illuminated look
 - Export to GeoJSON, PNG, or SVG
 
-[Give it a try](http://axismaps.github.io/contours) and let us know if you find it useful for anything! Have a look at the [source code](https://github.com/axismaps/contours) too if you're interested in how it works, which is broadly described below.
+[Give it a try](http://contours.axismaps.com) and let us know if you find it useful for anything! Have a look at the [source code](https://github.com/axismaps/contours) too if you're interested in how it works, which is broadly described below.
 
 ## Global elevation data
 
@@ -72,7 +72,7 @@ To recap, then, whenever the map is moved and redrawn, it does the following:
 1. Load terrain tiles
 2. Draw tiles to an invisible canvas and decode to elevation values
 3. Get contour line thresholds based on user options and the current range of elevation values
-4. Get contour polygons from with d3-contour
+4. Get contour polygons with d3-contour
 5. Draw contours to canvas with the specified style options
 
 When style options change, it only needs to redraw the canvas. If the line interval changes, it needs to re-calculate contours but doesn't need to reload elevation data. If the map moves, it needs to do everything.
@@ -100,5 +100,3 @@ Or we can get carried away with hachures just for aesthetic purposes, starting a
 Finally, there are always trippy animations. This one does show actual contour lines, but it's not exactly an ordinary map. Making useful things is great, sure. But making wacky pretty things is more fun!
 
 ![]({{ site.baseurl }}/media/posts/2018/04/animated_contours.gif)
-
-<!--img src="/media/posts/2018/03/hpi_functionality.png" alt="Functionality Flow Chart" style="max-height: none"-->
