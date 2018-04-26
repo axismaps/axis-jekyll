@@ -29,9 +29,9 @@ A short while ago we received an inquiry about making a tool to draw a simple to
 1. How can we load good elevation data for anywhere in the world? I know how to find some good DEMs, but not on-demand in a web app, and I only know good data in the US.
 2. How the heck do you draw contour lines? That has always been a desktop or command-line GIS operation for me.
 
-Turns out I was wrong; neither of those is terribly difficult. So I [built a thing](http://axismaps.github.io/contours). More proof of concept than anything, this is a tool that lets you draw a contour map for just about anywhere, style it to a certain degree, and export to a few formats—perhaps most usefully, GeoJSON for use in further mapping or GIS work. There is really no fancy technology here. It's all JavaScript, employing Leaflet and D3.
+Turns out I was wrong; neither of those is terribly difficult. So I [built a thing](http://contours.axismaps.com). More proof of concept than anything, this is a tool that lets you draw a contour map for just about anywhere, style it to a certain degree, and export to a few formats—perhaps most usefully, GeoJSON for use in further mapping or GIS work. There is really no fancy technology here. It's all JavaScript, employing Leaflet and D3.
 
-[![]({{ site.baseurl }}/media/posts/2018/04/contours.jpg)](http://axismaps.github.io/contours)
+[![]({{ site.baseurl }}/media/posts/2018/04/contours.jpg)](http://contours.axismaps.com)
 
 You can do a handful of things here:
 
