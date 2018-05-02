@@ -52,7 +52,7 @@ a:hover{
 	text-decoration: underline;
 }
 
-a.button{
+a.button, button.submit{
 	display: inline-block;
 	line-height: 25px;
     margin: 20px 0;
@@ -602,6 +602,21 @@ a.project:hover .grid-image{
 
 span.big{
 font-size: 30px;
+}
+
+.tool.newsletter{
+  background-color: #EFF1F2;
+}
+
+#subForm input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 /* PROJECT */
