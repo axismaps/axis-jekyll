@@ -25,3 +25,4 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-redirect-from
+  - jekyll-sitemap
