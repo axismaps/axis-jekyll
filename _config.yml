@@ -1,10 +1,13 @@
 # Site settings
 title: Axis Maps
 email: info@axismaps.com
-description: Axis Maps - Data. Design. Code.
+description: Bringing the traditions of cartography to the web
 baseurl: ""
-url: "http://www.axismaps.com"
-easyurl: "http://www.axismaps.com"
+url: "https://www.axismaps.com"
+easyurl: "https://www.axismaps.com"
+twitter:
+  username: axismaps
+logo: /images/logo.png
 paginate: 10
 paginate_path: "/blog/page:num/"
 permalink: "/blog/:year/:month/:title/"
@@ -26,3 +29,4 @@ gems:
   - jekyll-gist
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-seo-tag
