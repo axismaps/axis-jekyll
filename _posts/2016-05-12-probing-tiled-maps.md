@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Probing on a Tiled Map
-author:
+author: davidheyman
+image: /media/posts/2016/05/probe_animation.gif
+writer:
   display_name: David Heyman
-  login: dave
   email: dave@axismaps.com
-  url: ''
 date: '2016-05-12 09:03:18 +0100'
 date_gmt: '2016-05-12 09:03:18 +0100'
 categories:

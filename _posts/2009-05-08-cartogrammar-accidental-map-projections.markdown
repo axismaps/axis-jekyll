@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: "[Cartogrammar] Accidental map projections"
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 411
@@ -24,14 +24,14 @@ tags:
 - bloopers
 comments:
 - id: 2349
-  author: Farzaneh Sarafraz
+  writer: Farzaneh Sarafraz
   author_email: farzaane@gmail.com
   author_url: ''
   date: '2009-05-18 06:38:21 +0100'
   date_gmt: '2009-05-18 11:38:21 +0100'
   content: Where's the RSS feed of this blog?
 - id: 2353
-  author: dave
+  writer: dave
   author_email: dave@axismaps.com
   author_url: http://
   date: '2009-05-18 10:11:06 +0100'
@@ -43,7 +43,7 @@ comments:
 
     Comment feed -> http://www.axismaps.com/blog/comments/feed/
 - id: 2355
-  author: Farzaneh Sarafraz
+  writer: Farzaneh Sarafraz
   author_email: farzaane@gmail.com
   author_url: ''
   date: '2009-05-18 13:11:32 +0100'

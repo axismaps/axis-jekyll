@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: 'The Best of Both Worlds: Semi-transparent choropleth maps in GeoCommons Maker!'
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 32

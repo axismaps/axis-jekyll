@@ -4,11 +4,8 @@ nav: Blog
 status: publish
 published: true
 title: The Golden Age of Cartography is Now
-author:
+writer:
   display_name: Mark Harrower
-  login: mark
-  email: mark@axismaps.com
-  url: http://www.geography.wisc.edu/~harrower/
 author_login: mark
 author_email: mark@axismaps.com
 author_url: http://www.geography.wisc.edu/~harrower/
@@ -22,7 +19,7 @@ tags:
 - Cartography
 comments:
 - id: 108528
-  author: Mapping geographies of the planet and of ourselves &laquo; FrogHeart
+  writer: Mapping geographies of the planet and of ourselves &laquo; FrogHeart
   author_email: ''
   author_url: http://www.frogheart.ca/?p=7958
   date: '2012-09-11 16:51:04 +0100'

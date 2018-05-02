@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Contour maps in a web browser
-author:
+author: awoodruff
+writer:
   display_name: Andy Woodruff
-  login: dave
   email: andy@axismaps.com
-  url: ''
+image: /media/posts/2018/04/contour_map.jpg
 date: '2018-04-25 09:00:00 +0100'
 date_gmt: '2018-04-25 09:00:00 +0100'
 categories:

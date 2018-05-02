@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Advice to the Aspiring Interactive Cartographer
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 1369
@@ -20,7 +20,7 @@ categories:
 tags: []
 comments:
 - id: 107738
-  author: cristen
+  writer: cristen
   author_email: cbc79@cornell.edu
   author_url: http://www.twitter.com/thecristen
   date: '2012-09-04 09:46:07 +0100'
@@ -29,21 +29,21 @@ comments:
     intimidated by the coding involved. Now not so much. :) Also thanks for the Hackety
     link.
 - id: 121343
-  author: Fort Bend County, TX Lawyer
+  writer: Fort Bend County, TX Lawyer
   author_email: warren.lessard@gmx.de
   author_url: ''
   date: '2012-12-14 12:02:22 +0000'
   date_gmt: '2012-12-14 17:02:22 +0000'
   content: Wonderful. I agree.
 - id: 121637
-  author: Geospatial | Annotary
+  writer: Geospatial | Annotary
   author_email: ''
   author_url: https://annotary.com/collections/2988/geospatial
   date: '2013-01-17 10:09:21 +0000'
   date_gmt: '2013-01-17 15:09:21 +0000'
   content: "[...] Share   www.axismaps.com &nbsp; &nbsp; &nbsp; 3 months [...]"
 - id: 121721
-  author: Original Ripped Fuel
+  writer: Original Ripped Fuel
   author_email: 111714Nordine1@hotmail.com
   author_url: http://guildwars2.org.ua/index.php?action=profile;u=30843
   date: '2013-01-27 21:58:06 +0000'
@@ -51,7 +51,7 @@ comments:
   content: You should be a part of a contest for one of the greatest sites on the
     net. I most certainly will recommend this blog!
 - id: 121779
-  author: Maynard Desmaris
+  writer: Maynard Desmaris
   author_email: Turberville@live.co.uk
   author_url: http://www.cellsea.com/user/home/CR50e61b407de9c
   date: '2013-02-06 20:43:38 +0000'

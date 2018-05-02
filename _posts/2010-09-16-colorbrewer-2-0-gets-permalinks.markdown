@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: ColorBrewer 2.0 gets permalinks
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com

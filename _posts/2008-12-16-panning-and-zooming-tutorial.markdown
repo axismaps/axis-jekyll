@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Panning and zooming tutorial
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com

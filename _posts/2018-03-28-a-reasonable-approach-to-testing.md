@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: A Reasonable Approach to Front-End Testing
-author:
+author: davidheyman
+image: /media/posts/2018/03/hpi_ui.png
+writer:
   display_name: David Heyman
-  login: dave
   email: dave@axismaps.com
-  url: ''
 date: '2018-03-28 09:00:00 +0100'
 date_gmt: '2018-03-28 09:00:00 +0100'
 categories:

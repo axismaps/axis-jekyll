@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Virtual Globes are a seriously bad idea for thematic mapping
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com

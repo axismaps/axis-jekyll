@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: 'Death''s Door Spirits: Mapping Wisconsin''s Finest Craft Distillery'
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 803
@@ -20,7 +20,7 @@ categories:
 tags: []
 comments:
 - id: 23359
-  author: Adam Fritzler
+  writer: Adam Fritzler
   author_email: mid@zigamorph.net
   author_url: http://www.zigamorph.net/~mid/
   date: '2010-12-04 13:02:12 +0000'
@@ -29,7 +29,7 @@ comments:
     list? How did you approach doing geographic distance searches with SimpleDB? Simplify
     it to counties?
 - id: 23727
-  author: dave
+  writer: dave
   author_email: dave@axismaps.com
   author_url: http://
   date: '2010-12-07 04:52:23 +0000'
@@ -58,7 +58,7 @@ comments:
     from there.\r\n\r\nIt's not the most efficient or accurate function but for a
     map of this size and complexity, it does the job just fine."
 - id: 28099
-  author: Jeff
+  writer: Jeff
   author_email: jfergon@yahoo.com
   author_url: ''
   date: '2011-01-07 09:29:29 +0000'
@@ -67,7 +67,7 @@ comments:
     in Madison WI where they contract out all their distilling. They are pretty much
     a marketing co.
 - id: 121751
-  author: Get the facts
+  writer: Get the facts
   author_email: Mashore@gmail.com
   author_url: http://www.99polls.com/profile_1789940
   date: '2013-02-01 13:31:21 +0000'

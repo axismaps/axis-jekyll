@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: ColorBrewer2.org
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 3510
-  author: Andrea
+  writer: Andrea
   author_email: aborruso@gmail.com
   author_url: http://blog.spaziogis.it
   date: '2009-06-23 18:12:10 +0100'
@@ -29,7 +29,7 @@ comments:
   content: "Hi Mark,\nit's a great thing!!! \n\nOnly a question: where is export button?\n\nThank
     you,\n\nAndrea"
 - id: 3511
-  author: Andrea
+  writer: Andrea
   author_email: aborruso@gmail.com
   author_url: http://blog.spaziogis.it
   date: '2009-06-23 18:13:11 +0100'
@@ -42,7 +42,7 @@ comments:
 
     Andrea
 - id: 3521
-  author: Zery
+  writer: Zery
   author_email: zery.sp@gmail.com
   author_url: http://zerinfo.blogspot.com
   date: '2009-06-23 23:18:56 +0100'
@@ -53,7 +53,7 @@ comments:
     Regards,
     Zery
 - id: 3535
-  author: Mark
+  writer: Mark
   author_email: mark@axismaps.com
   author_url: http://www.geography.wisc.edu/~harrower/
   date: '2009-06-24 08:49:29 +0100'
@@ -61,7 +61,7 @@ comments:
   content: Hi Andrea - glad you like it! The export button is perhaps a bit hidden...it's
     in the bottom left corner of the map.
 - id: 3536
-  author: Mark
+  writer: Mark
   author_email: mark@axismaps.com
   author_url: http://www.geography.wisc.edu/~harrower/
   date: '2009-06-24 08:51:53 +0100'
@@ -71,7 +71,7 @@ comments:
     Flex app that would run locally on your desktop...it's just a matter of finding
     the time! Cheers.
 - id: 3540
-  author: Kevin
+  writer: Kevin
   author_email: kmayall@agresearch.bm
   author_url: ''
   date: '2009-06-24 09:55:13 +0100'
@@ -82,14 +82,14 @@ comments:
     Nice work!
     Kevin
 - id: 3541
-  author: Mark Harrower
+  writer: Mark Harrower
   author_email: mark@axismaps.com
   author_url: http://www.geography.wisc.edu/~harrower/
   date: '2009-06-24 10:08:11 +0100'
   date_gmt: '2009-06-24 15:08:11 +0100'
   content: 'Kevin: Go to http://gis.cancer.gov/tools/colortool/'
 - id: 3543
-  author: La Cartoteca &raquo; Blog Archive &raquo; ColorBrewer2, el color de los
+  writer: La Cartoteca &raquo; Blog Archive &raquo; ColorBrewer2, el color de los
     mapas
   author_email: ''
   author_url: http://alpoma.net/carto/?p=835
@@ -99,7 +99,7 @@ comments:
     entra en escena ColorBrewer2, la nueva versiÃ³n de este sistema online que facilita
     jugar con combinaciones de color ideales en nuestros mapas, de [...]"
 - id: 3629
-  author: ColorBrewer2.org | Tone Ag Consulting Ltd.
+  writer: ColorBrewer2.org | Tone Ag Consulting Ltd.
   author_email: ''
   author_url: http://toneag.com/wp/2009/06/26/colorbrewer2-org/
   date: '2009-06-26 19:28:04 +0100'
@@ -107,7 +107,7 @@ comments:
   content: "[...] via Axis Maps Blog)   Posted by jtone on Friday, June 26, 2009,
     at 6:27 PM. Filed under General. Follow any responses [...]"
 - id: 3723
-  author: Color Brewer Update | PTS Blog
+  writer: Color Brewer Update | PTS Blog
   author_email: ''
   author_url: http://peltiertech.com/WordPress/links-and-stuff-6-26-2009/
   date: '2009-06-29 20:12:07 +0100'
@@ -116,7 +116,7 @@ comments:
     designing color palettes. In ColorBrewer2.org Mark Harrower of Axis Maps announced
     Color Brewer 2, which updates the 8-year-old Color Brewer [...]"
 - id: 121728
-  author: Traci Mckillips
+  writer: Traci Mckillips
   author_email: Lala@gmail.com
   author_url: http://illinoiscommunityjustice.org/For_Much_Better_Pest_Handle,_Consider_Our_Advice
   date: '2013-01-29 07:17:33 +0000'

@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Typographic map posters
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -26,14 +26,14 @@ tags:
 - chicago
 comments:
 - id: 16507
-  author: Peter
+  writer: Peter
   author_email: petersheesley@hotmail.com
   author_url: ''
   date: '2010-09-30 14:16:18 +0100'
   date_gmt: '2010-09-30 19:16:18 +0100'
   content: These look fantastic. Great work!
 - id: 16546
-  author: Tom bridge
+  writer: Tom bridge
   author_email: Tom@welovedc.com
   author_url: http://Www.welovedc.com
   date: '2010-09-30 22:00:16 +0100'
@@ -41,14 +41,14 @@ comments:
   content: I looooove the concept. Can't wait to see DC!! I would by a huge one for
     my office!
 - id: 16611
-  author: tanya buckingham
+  writer: tanya buckingham
   author_email: tanmabuck@gmail.com
   author_url: ''
   date: '2010-10-01 14:18:00 +0100'
   date_gmt: '2010-10-01 19:18:00 +0100'
   content: Beautiful.
 - id: 16616
-  author: dvs
+  writer: dvs
   author_email: david.sabban@gmail.com
   author_url: ''
   date: '2010-10-01 14:45:14 +0100'
@@ -56,7 +56,7 @@ comments:
   content: Looks like ORK finally has some competition for cool maps! Seattle next,
     please!
 - id: 16695
-  author: Carfree Chicago
+  writer: Carfree Chicago
   author_email: lee@carfreechicago.com
   author_url: http://www.carfreechicago.com
   date: '2010-10-02 08:45:51 +0100'
@@ -67,14 +67,14 @@ comments:
     L heavily shapes my experience of the city, so a map without it just doesn't feel
     like Chicago to me.
 - id: 16728
-  author: Joel
+  writer: Joel
   author_email: joel.sheesley@wheaton.edu
   author_url: ''
   date: '2010-10-02 16:47:45 +0100'
   date_gmt: '2010-10-02 21:47:45 +0100'
   content: Fantastic!  Who would not want one of these?!
 - id: 16730
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2010-10-02 17:29:17 +0100'
@@ -94,7 +94,7 @@ comments:
     lines and a bunch of other neat features as well (building footprints, Millennium
     Park attractions, etc)."
 - id: 16748
-  author: Carfree Chicago
+  writer: Carfree Chicago
   author_email: lee@carfreechicago.com
   author_url: http://www.carfreechicago.com
   date: '2010-10-02 21:49:27 +0100'
@@ -103,7 +103,7 @@ comments:
     figure ground map in this style of a neighborhood or the Loop including the train
     would be very cool indeed.
 - id: 16818
-  author: Andy Woodruff
+  writer: Andy Woodruff
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2010-10-03 10:45:16 +0100'
@@ -116,7 +116,7 @@ comments:
     a smaller scale than the Chicago map.\r\n\r\nLarge scale maps and creative solutions
     to the space constraints would both be interesting challenges."
 - id: 16913
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2010-10-04 10:24:48 +0100'
@@ -126,7 +126,7 @@ comments:
 
     Besides going with a larger scale map, the two solutions that initially came to mind when thinking about the conflict between streets and train lines were 1) displacing street and/or train routes off of their true locations to make room for both, or 2) somehow integrating the "CTA" text into the lines of repeating street names. I felt uneasy about the former and to be honest never gave the latter a whole lot of thought. But maybe something like this would be worth considering in a future version.
 - id: 17162
-  author: Lauren
+  writer: Lauren
   author_email: slhibbert@gmail.com
   author_url: ''
   date: '2010-10-06 09:33:03 +0100'
@@ -134,7 +134,7 @@ comments:
   content: I LOVE these maps.   They are amazing.  I would love one of NYC or Brooklyn.   I
     hope they are in the works.
 - id: 17235
-  author: Kristie
+  writer: Kristie
   author_email: kristie@kristiewithanie.com
   author_url: http://kristiewithanie.com/
   date: '2010-10-07 01:00:30 +0100'
@@ -142,14 +142,14 @@ comments:
   content: AMAZING. I shared this with ALL of the Art Institute. Hope you do Seattle
     soon!
 - id: 17257
-  author: Michael
+  writer: Michael
   author_email: Michaellacek@hotmail.com
   author_url: ''
   date: '2010-10-07 08:10:03 +0100'
   date_gmt: '2010-10-07 13:10:03 +0100'
   content: Beautiful! Please think about Milan and Rome, Italy!
 - id: 17258
-  author: Caleb
+  writer: Caleb
   author_email: caleb@alerque.com
   author_url: http://alerque.com
   date: '2010-10-07 08:29:03 +0100'
@@ -157,7 +157,7 @@ comments:
   content: Beautiful. I am not sure weather to file my new subscription to this blog
     as art or cartography!
 - id: 17273
-  author: Mungewell
+  writer: Mungewell
   author_email: simon@mungewell.org
   author_url: ''
   date: '2010-10-07 13:00:19 +0100'
@@ -171,7 +171,7 @@ comments:
 
     Anyhow, very impressive.
 - id: 17277
-  author: MK
+  writer: MK
   author_email: marisa.brandt@gmail.com
   author_url: ''
   date: '2010-10-07 15:05:53 +0100'
@@ -179,7 +179,7 @@ comments:
   content: Lovely!  A map of either (or both!) Minneapolis and St. Paul would be wonderful
     (still waiting on the ORK folks for that one...).
 - id: 17362
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2010-10-08 17:47:39 +0100'
@@ -191,7 +191,7 @@ comments:
     south of that intersection). It probably could use some tweaking here and there,
     but shows promise, I think.
 - id: 17444
-  author: Carfree Chicago
+  writer: Carfree Chicago
   author_email: lee@carfreechicago.com
   author_url: http://www.carfreechicago.com
   date: '2010-10-09 18:36:02 +0100'
@@ -201,21 +201,21 @@ comments:
     of neighborhoods, train lines and stations and only major arterial streets?\n\nOf
     course, you're the ones putting all the time into it, so feel free to ignore me!"
 - id: 17492
-  author: laFrancese
+  writer: laFrancese
   author_email: lafrancese@gmail.com
   author_url: http://unmondodibene.com
   date: '2010-10-10 11:27:57 +0100'
   date_gmt: '2010-10-10 16:27:57 +0100'
   content: sono bellissime, complimenti! ^_^
 - id: 17521
-  author: Sarah
+  writer: Sarah
   author_email: sarah.n.barry@hotmail.com
   author_url: ''
   date: '2010-10-10 20:45:01 +0100'
   date_gmt: '2010-10-11 01:45:01 +0100'
   content: I LOVE these! I would definitely buy a Washington, D.C. and a Detroit :)
 - id: 17568
-  author: Spencer
+  writer: Spencer
   author_email: olinekwi@gmail.com
   author_url: ''
   date: '2010-10-11 13:10:07 +0100'
@@ -225,14 +225,14 @@ comments:
 
     I know a store here that would stock these for you too.
 - id: 17576
-  author: Russell
+  writer: Russell
   author_email: holm.russell@gmail.com
   author_url: ''
   date: '2010-10-11 16:53:33 +0100'
   date_gmt: '2010-10-11 21:53:33 +0100'
   content: I will buy a San Francisco copy the day they come out. Is there an ETA?
 - id: 17578
-  author: Joshua Taylor
+  writer: Joshua Taylor
   author_email: joshuantaylor@hotmail.com
   author_url: http://www.JoshuaTaylorDesign.com
   date: '2010-10-11 17:26:11 +0100'
@@ -242,14 +242,14 @@ comments:
     be interested to see if this style of map would actually help people find their
     destination any easier. Have you done any research on that front?
 - id: 17580
-  author: Sue
+  writer: Sue
   author_email: sue@howsueisnow.com
   author_url: http://www.susaneamurphy.com
   date: '2010-10-11 17:47:32 +0100'
   date_gmt: '2010-10-11 22:47:32 +0100'
   content: 'One word: WOW.'
 - id: 17587
-  author: firefrorefiddle
+  writer: firefrorefiddle
   author_email: scvance@mac.com
   author_url: ''
   date: '2010-10-11 19:06:26 +0100'
@@ -259,7 +259,7 @@ comments:
     but would be TO DIE FOR if letterpressed!  (I'm a Boston to SF transplant and
     now can't WAIT for you to tackle the City by the Bay!!)
 - id: 17594
-  author: Carl
+  writer: Carl
   author_email: caritger@gmail.com
   author_url: http://falsereactions.tumblr.com
   date: '2010-10-11 20:49:03 +0100'
@@ -268,7 +268,7 @@ comments:
     soft spot for both cartography and typography, so this is like aesthetics heaven
     here!
 - id: 17598
-  author: Andy Woodruff
+  writer: Andy Woodruff
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2010-10-11 21:28:03 +0100'
@@ -280,7 +280,7 @@ comments:
 
     @all the city requests (here and on Twitter) - Too soon for any promises of course, but hopefully we will get to them all sooner or later!
 - id: 17601
-  author: Justin
+  writer: Justin
   author_email: justin@justgooddesign.net
   author_url: http://www.justgooddesign.net
   date: '2010-10-11 22:49:47 +0100'
@@ -288,14 +288,14 @@ comments:
   content: Is there a Seattle map planned, by chance? I would buy one of those in
     a heartbeat!
 - id: 17603
-  author: Jay
+  writer: Jay
   author_email: jay@jayschaul.com
   author_url: http://jayschaul.com
   date: '2010-10-11 23:03:56 +0100'
   date_gmt: '2010-10-12 04:03:56 +0100'
   content: These are so great. Very well put together!
 - id: 17606
-  author: pearldoc
+  writer: pearldoc
   author_email: pvarol@hotmail.com
   author_url: ''
   date: '2010-10-11 23:30:44 +0100'
@@ -303,42 +303,42 @@ comments:
   content: Please,please,please, consider doing Seattle.  Planning on buying two Chicago's
     but would love to see Seattle as well.  Thank you
 - id: 17612
-  author: Liz
+  writer: Liz
   author_email: an.thi.bui@gmail.com
   author_url: ''
   date: '2010-10-12 01:02:09 +0100'
   date_gmt: '2010-10-12 06:02:09 +0100'
   content: These are amazing!! I would love an LA/OC map!
 - id: 17641
-  author: Jay
+  writer: Jay
   author_email: jlc218@hotmail.com
   author_url: ''
   date: '2010-10-12 08:45:48 +0100'
   date_gmt: '2010-10-12 13:45:48 +0100'
   content: Unbelievable. One for San Diego would be great!
 - id: 17645
-  author: Adam
+  writer: Adam
   author_email: foxadam@yahoo.com
   author_url: ''
   date: '2010-10-12 09:27:16 +0100'
   date_gmt: '2010-10-12 14:27:16 +0100'
   content: Let me know when you're doing London, UK or Toronto, ON !!!
 - id: 17646
-  author: Jessica
+  writer: Jessica
   author_email: jraut2@gmail.com
   author_url: http://www.theCraftery.etsy.com
   date: '2010-10-12 09:33:37 +0100'
   date_gmt: '2010-10-12 14:33:37 +0100'
   content: Philly! Downtown grid map would rule!!
 - id: 17657
-  author: susan
+  writer: susan
   author_email: susan.smyth@mac.com
   author_url: ''
   date: '2010-10-12 12:33:31 +0100'
   date_gmt: '2010-10-12 17:33:31 +0100'
   content: These are beautiful! Please add SF and Oakland too!
 - id: 17666
-  author: Becky
+  writer: Becky
   author_email: bdnorton@gmail.com
   author_url: ''
   date: '2010-10-12 15:01:40 +0100'
@@ -346,21 +346,21 @@ comments:
   content: Beautiful, beautiful work! I am adding my votes for Seattle and London,
     and purchasing the Boston one! Nicely done!
 - id: 17669
-  author: Paul
+  writer: Paul
   author_email: swortz@gmail.com
   author_url: ''
   date: '2010-10-12 15:18:08 +0100'
   date_gmt: '2010-10-12 20:18:08 +0100'
   content: Gorgeous! Eager to see Seattle and Paris ...
 - id: 17710
-  author: Jackie
+  writer: Jackie
   author_email: jacklynklein@gmail.com
   author_url: ''
   date: '2010-10-12 21:21:40 +0100'
   date_gmt: '2010-10-13 02:21:40 +0100'
   content: I can't wait to see San Francisco!
 - id: 17719
-  author: Slim Paley
+  writer: Slim Paley
   author_email: slimpaley@gmail.com
   author_url: http://slimpaley.com
   date: '2010-10-12 22:55:49 +0100'
@@ -369,14 +369,14 @@ comments:
     I would love to buy a map, a vowel, and most of all, your PATIENCE!!
     Amazing!
 - id: 17727
-  author: Sol
+  writer: Sol
   author_email: pleno71@hotmail.com
   author_url: ''
   date: '2010-10-13 02:37:16 +0100'
   date_gmt: '2010-10-13 07:37:16 +0100'
   content: What a great piece of work!
 - id: 17764
-  author: Peter
+  writer: Peter
   author_email: peterlivingston@mac.com
   author_url: ''
   date: '2010-10-13 10:37:48 +0100'
@@ -386,7 +386,7 @@ comments:
 
     p.s. Really excited to see NYC.
 - id: 17770
-  author: Jed
+  writer: Jed
   author_email: jed@jed.co
   author_url: http://jed.co
   date: '2010-10-13 11:51:23 +0100'
@@ -394,7 +394,7 @@ comments:
   content: "+1 for San Diego. If you do one, I'll invite you over for dinner and take
     you to the beach."
 - id: 17773
-  author: Suzanne Long
+  writer: Suzanne Long
   author_email: sel@well.com
   author_url: ''
   date: '2010-10-13 12:23:41 +0100'
@@ -402,14 +402,14 @@ comments:
   content: Echoing Adam above, please let me know when you do Toronto, Canada or London,
     UK.
 - id: 17781
-  author: Chason
+  writer: Chason
   author_email: daileycr89@gmail.com
   author_url: ''
   date: '2010-10-13 14:25:18 +0100'
   date_gmt: '2010-10-13 19:25:18 +0100'
   content: Seattle?
 - id: 17813
-  author: Derek
+  writer: Derek
   author_email: mangxema@yahoo.com
   author_url: ''
   date: '2010-10-13 22:15:19 +0100'
@@ -418,14 +418,14 @@ comments:
     would definitely buy an Atlanta map, having lived there for most of my life.  It
     would be challenging for your people though given the roads..
 - id: 17817
-  author: Justin Campbell
+  writer: Justin Campbell
   author_email: cmsjustin@gmail.com
   author_url: http://twitter.com/JustinCampbell
   date: '2010-10-13 22:44:09 +0100'
   date_gmt: '2010-10-14 03:44:09 +0100'
   content: Philly
 - id: 17821
-  author: Steve Benfield
+  writer: Steve Benfield
   author_email: steve.benfield.tr@gmail.com
   author_url: ''
   date: '2010-10-13 23:36:47 +0100'
@@ -435,7 +435,7 @@ comments:
     map can't get better, you guys innovated something quite useful and aesthetically
     pleasing. EXCELLENT WORK!
 - id: 17868
-  author: Valerie
+  writer: Valerie
   author_email: valeriegp@gmail.com
   author_url: ''
   date: '2010-10-14 07:09:46 +0100'
@@ -443,14 +443,14 @@ comments:
   content: These are so stunning. Please do Houston! Come on guys, you are in Texas!
     :-)
 - id: 17887
-  author: Wakeskater
+  writer: Wakeskater
   author_email: wakeskater1010@me.com
   author_url: ''
   date: '2010-10-14 08:34:23 +0100'
   date_gmt: '2010-10-14 13:34:23 +0100'
   content: When you make one of Atlanta I will buy them up like crazy!
 - id: 17890
-  author: Craig
+  writer: Craig
   author_email: theman@craigeisenberger.net
   author_url: http://www.craigeisenberger.net
   date: '2010-10-14 09:08:33 +0100'
@@ -458,7 +458,7 @@ comments:
   content: I second Philadelphia as a future project. The work is truly an awesome
     use of typography.
 - id: 17917
-  author: Adrienne
+  writer: Adrienne
   author_email: adrienne.m.owen@gmail.com
   author_url: ''
   date: '2010-10-14 15:52:22 +0100'
@@ -466,14 +466,14 @@ comments:
   content: I second the Houston request. I've been looking for an antique map, but
     this is really more my style.
 - id: 17925
-  author: Josh
+  writer: Josh
   author_email: joshuammyers@gmail.com
   author_url: ''
   date: '2010-10-14 18:57:56 +0100'
   date_gmt: '2010-10-14 23:57:56 +0100'
   content: Very well done but they are soo similar to Paula Scher's maps. http://mayastendhalgallery.com/paulaScherArt_00.html
 - id: 17932
-  author: Michael
+  writer: Michael
   author_email: mike@mikelu.org
   author_url: http://www.mikelu.org/
   date: '2010-10-14 20:33:14 +0100'
@@ -481,7 +481,7 @@ comments:
   content: These are fantastic, especially for a typography geek! I'll second the
     Seattle request!!
 - id: 17960
-  author: Figatellix
+  writer: Figatellix
   author_email: vignaroli.jn@gmail.com
   author_url: http://california.figatellix.com/
   date: '2010-10-15 05:50:25 +0100'
@@ -489,7 +489,7 @@ comments:
   content: "+1 for San Diego too ! \n\nI'm looking forward to see you new maps. Great
     job. Good luck !"
 - id: 17973
-  author: christian
+  writer: christian
   author_email: christian@nuthinking.com
   author_url: http://nuthinking.com
   date: '2010-10-15 08:15:57 +0100'
@@ -497,7 +497,7 @@ comments:
   content: Please consider starting individual projects for different cities on websites
     like http://www.kickstarter.com/ so that people can vote with money their city!
 - id: 17985
-  author: Caroline
+  writer: Caroline
   author_email: caroline.baudin@gmail.com
   author_url: http://caroline.baudin.free.fr
   date: '2010-10-15 10:50:47 +0100'
@@ -508,7 +508,7 @@ comments:
     Is there a way to stay in touch and be updated about your coming creations?
     cheers, Caroline
 - id: 18015
-  author: Amy
+  writer: Amy
   author_email: amy.silvoy@gmail.com
   author_url: ''
   date: '2010-10-15 20:23:56 +0100'
@@ -517,7 +517,7 @@ comments:
     These are amazing. Are you working on other cities? if so which ones? can you please do Philadelphia.
     Amy
 - id: 18039
-  author: Mark
+  writer: Mark
   author_email: mafletcher@gmail.com
   author_url: ''
   date: '2010-10-16 01:59:13 +0100'
@@ -525,42 +525,42 @@ comments:
   content: Fantastic concept, 1 vote from me for Sydney (the one Down Under, not the
     one in Canada) if you are looking for other cities to tackle.
 - id: 18098
-  author: kate
+  writer: kate
   author_email: kate.monahan@gmail.com
   author_url: ''
   date: '2010-10-16 19:24:45 +0100'
   date_gmt: '2010-10-17 00:24:45 +0100'
   content: gorgeous!
 - id: 18157
-  author: Chris
+  writer: Chris
   author_email: chris.cartwright@gmail.com
   author_url: ''
   date: '2010-10-17 10:33:48 +0100'
   date_gmt: '2010-10-17 15:33:48 +0100'
   content: Wow...please do Toronto next!
 - id: 18300
-  author: Carl
+  writer: Carl
   author_email: carl.winter@yahoo.com
   author_url: http://www.2stinkyfish.com
   date: '2010-10-18 21:59:11 +0100'
   date_gmt: '2010-10-19 02:59:11 +0100'
   content: One more vote for San Francisco AND New York! Can't wait to have both!
 - id: 18369
-  author: Emily
+  writer: Emily
   author_email: etlyon@gmail.com
   author_url: ''
   date: '2010-10-19 17:58:06 +0100'
   date_gmt: '2010-10-19 22:58:06 +0100'
   content: Please do San Francisco next!  The bay and bridge would look awesome!
 - id: 18400
-  author: eva
+  writer: eva
   author_email: dualpalma@yahoo.es
   author_url: ''
   date: '2010-10-20 04:47:40 +0100'
   date_gmt: '2010-10-20 09:47:40 +0100'
   content: Fantastic!! I love typography and this is new way to use it. Lovely concept.
 - id: 18444
-  author: Rachel
+  writer: Rachel
   author_email: rachnr@gmail.com
   author_url: ''
   date: '2010-10-20 14:38:29 +0100'
@@ -570,7 +570,7 @@ comments:
     love the simplicity of the B&amp;W but it would be nice to see it a little more
     lively with other single colors.  Amazing work!
 - id: 18464
-  author: Andy Woodruff
+  writer: Andy Woodruff
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2010-10-20 19:51:42 +0100'
@@ -584,7 +584,7 @@ comments:
 
     Thanks again everyone!
 - id: 18510
-  author: flex
+  writer: flex
   author_email: pierrejean@turpeau.net
   author_url: ''
   date: '2010-10-21 05:39:31 +0100'
@@ -593,14 +593,14 @@ comments:
     I vote for both San Francisco and New York.
     As a French reader, I would love to see such a map for Paris.
 - id: 18522
-  author: mike
+  writer: mike
   author_email: mtpritchard@gmail.com
   author_url: ''
   date: '2010-10-21 09:52:28 +0100'
   date_gmt: '2010-10-21 14:52:28 +0100'
   content: You guys need to keep it real and do a map for Madison!
 - id: 18807
-  author: Holly
+  writer: Holly
   author_email: hollymichellebyers@gmail.com
   author_url: http://hollythelibrarian.com
   date: '2010-10-23 23:34:33 +0100'
@@ -609,35 +609,35 @@ comments:
     of love :) \n\nAgreed--the CTA lines are trickier to do, but I liked the example
     here of colored backgrounds for where the streets and the L overlap."
 - id: 18850
-  author: Dan B
+  writer: Dan B
   author_email: beiting@sas.upenn.edu
   author_url: ''
   date: '2010-10-24 11:59:27 +0100'
   date_gmt: '2010-10-24 16:59:27 +0100'
   content: Love these maps.  Any chance of a Philadelphia one in the near future?
 - id: 19253
-  author: Ben
+  writer: Ben
   author_email: ben.waldorf@gmail.com
   author_url: ''
   date: '2010-10-27 23:58:24 +0100'
   date_gmt: '2010-10-28 04:58:24 +0100'
   content: Throw another vote on for an L.A. map.  These are great!
 - id: 19860
-  author: Jordan
+  writer: Jordan
   author_email: jordan@nivelo.co.uk
   author_url: http://www.jordanharper.co.uk
   date: '2010-11-03 07:49:29 +0000'
   date_gmt: '2010-11-03 12:49:29 +0000'
   content: Love these. Would buy a London (UK) one at the drop of a hat.
 - id: 19953
-  author: Rhys Ulerich
+  writer: Rhys Ulerich
   author_email: rhys.ulerich@gmail.com
   author_url: http://agentzlerich.blogspot.com/
   date: '2010-11-04 08:14:18 +0000'
   date_gmt: '2010-11-04 13:14:18 +0000'
   content: Austin please!  I'd love to buy one.
 - id: 20228
-  author: Tom Buckley
+  writer: Tom Buckley
   author_email: buckley.tom@gmail.com
   author_url: ''
   date: '2010-11-06 21:13:10 +0000'
@@ -645,7 +645,7 @@ comments:
   content: Ditto Josh's comment.  It might make sense to, at least, link to Paula
     Scher's work.
 - id: 20255
-  author: csaba
+  writer: csaba
   author_email: acdc110@gmail.com
   author_url: ''
   date: '2010-11-07 05:35:33 +0000'
@@ -654,7 +654,7 @@ comments:
     it ts original!
     Can we have same parts of it for wallpaper?
 - id: 20714
-  author: Scott
+  writer: Scott
   author_email: scottbre42@yahoo.com
   author_url: ''
   date: '2010-11-11 09:10:21 +0000'
@@ -666,7 +666,7 @@ comments:
 
     Either way, great job!
 - id: 20729
-  author: Megan Taylor
+  writer: Megan Taylor
   author_email: megan.m.t@gmail.com
   author_url: ''
   date: '2010-11-11 11:43:33 +0000'
@@ -674,21 +674,21 @@ comments:
   content: These would be even better if they were printed with a letterpress and
     the type was set by hand.
 - id: 21313
-  author: SQ
+  writer: SQ
   author_email: sabah.quraishi@gmail.com
   author_url: ''
   date: '2010-11-16 22:30:09 +0000'
   date_gmt: '2010-11-17 03:30:09 +0000'
   content: These are gorgeous!  Can't wait to see the DC one.
 - id: 21504
-  author: David
+  writer: David
   author_email: davel316@gmail.com
   author_url: ''
   date: '2010-11-19 00:30:05 +0000'
   date_gmt: '2010-11-19 05:30:05 +0000'
   content: Would love to see a London or Copenhagen one
 - id: 21896
-  author: Howard
+  writer: Howard
   author_email: howard.yu@gmail.com
   author_url: ''
   date: '2010-11-22 23:05:39 +0000'
@@ -696,14 +696,14 @@ comments:
   content: Is there some way to get an e-mail alert when the new ones are finished?  I'm
     interested in San Francisco!
 - id: 22687
-  author: talvin
+  writer: talvin
   author_email: talvinsingh@msn.com
   author_url: ''
   date: '2010-11-29 12:00:34 +0000'
   date_gmt: '2010-11-29 17:00:34 +0000'
   content: Would love to order for SF or NYC  :)
 - id: 23835
-  author: Eddy B
+  writer: Eddy B
   author_email: edbertran@gmail.com
   author_url: ''
   date: '2010-12-07 20:51:45 +0000'
@@ -713,14 +713,14 @@ comments:
     got some great ideas on spreading the word about these maps; email me sometime.
     \ \n\nThey should be in every home!"
 - id: 28113
-  author: carolyn
+  writer: carolyn
   author_email: carolyn.jardine@gmail.com
   author_url: ''
   date: '2011-01-07 13:37:42 +0000'
   date_gmt: '2011-01-07 18:37:42 +0000'
   content: Brilliant!
 - id: 29921
-  author: Vgriff
+  writer: Vgriff
   author_email: Kvgriff@msn.com
   author_url: ''
   date: '2011-01-19 01:20:19 +0000'
@@ -728,21 +728,21 @@ comments:
   content: Another vote for Seattle! These are so beautiful, I must own one and buy
     several for gifts.
 - id: 30356
-  author: Doug
+  writer: Doug
   author_email: douglaswestcott@mac.com
   author_url: ''
   date: '2011-01-21 10:02:16 +0000'
   date_gmt: '2011-01-21 15:02:16 +0000'
   content: Please, please, please do London!
 - id: 30373
-  author: naoya1972
+  writer: naoya1972
   author_email: naoya1972@hotmail.com
   author_url: http://ja-jp.facebook.com/naoya1972
   date: '2011-01-21 11:37:08 +0000'
   date_gmt: '2011-01-21 16:37:08 +0000'
   content: Nice poster!! I will buy
 - id: 32584
-  author: Harold
+  writer: Harold
   author_email: harold.thomas@unsc.com
   author_url: ''
   date: '2011-02-03 13:25:19 +0000'
@@ -752,7 +752,7 @@ comments:
 
     I've already spoken to several people and they are in for a San Diego poster as well......
 - id: 32733
-  author: Amber
+  writer: Amber
   author_email: little_canuck@hotmail.com
   author_url: ''
   date: '2011-02-04 16:13:43 +0000'
@@ -760,14 +760,14 @@ comments:
   content: Any chance a Canadian city (VANCOUVER) could be put on the consideration
     list?  These are absolutely beautiful!
 - id: 33249
-  author: Aly
+  writer: Aly
   author_email: akdegraff@comcast.net
   author_url: ''
   date: '2011-02-08 16:28:10 +0000'
   date_gmt: '2011-02-08 21:28:10 +0000'
   content: Any ETA for Washington, DC? Just want to know how often to check back :-)
 - id: 33265
-  author: Andy Woodruff
+  writer: Andy Woodruff
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2011-02-08 19:42:11 +0000'
@@ -776,7 +776,7 @@ comments:
     on the Washington map. We're probably counting in weeks at this point. Perhaps
     we'll post some teaser images soon.
 - id: 34542
-  author: spark of sanity
+  writer: spark of sanity
   author_email: texastoker@hotmail.com
   author_url: http://www.sparkofsanity.posterous.com
   date: '2011-02-16 01:37:24 +0000'
@@ -784,7 +784,7 @@ comments:
   content: I have to say Toronto would love to see the same treatment. Definitely
     awesome!
 - id: 34606
-  author: ofheartandcity
+  writer: ofheartandcity
   author_email: rosational@gmail.com
   author_url: ''
   date: '2011-02-16 10:08:53 +0000'
@@ -792,7 +792,7 @@ comments:
   content: I just want to add my two cents about Toronto!  I know at least four or
     five others who would snatch up the Toronto poster in a heartbeat.
 - id: 36195
-  author: Celeste
+  writer: Celeste
   author_email: celestegs@rogers.com
   author_url: http://doodlesscribbles.blogspot.com/
   date: '2011-02-27 10:12:39 +0000'
@@ -800,14 +800,14 @@ comments:
   content: I would totally buy a Toronto one for my office too!  Wow, these are terrific,
     well done guys!
 - id: 36489
-  author: Purdman2000
+  writer: Purdman2000
   author_email: geopurd@gmail.com
   author_url: ''
   date: '2011-03-01 10:30:38 +0000'
   date_gmt: '2011-03-01 15:30:38 +0000'
   content: No way....I used to live with this guy in Grad School!!!
 - id: 36655
-  author: Bucky Badger
+  writer: Bucky Badger
   author_email: concrete_man@hotmail.com
   author_url: ''
   date: '2011-03-02 10:28:51 +0000'
@@ -819,21 +819,21 @@ comments:
     capital square, I think that Madison would make a great typographic map. Very
     creative intersection of cartography and typology!
 - id: 40656
-  author: elliott
+  writer: elliott
   author_email: mattelliott1@gmail.com
   author_url: ''
   date: '2011-03-25 11:34:18 +0000'
   date_gmt: '2011-03-25 16:34:18 +0000'
   content: Detroit please!
 - id: 47120
-  author: Amy
+  writer: Amy
   author_email: amy.silvoy@gmail.com
   author_url: ''
   date: '2011-04-29 21:20:20 +0100'
   date_gmt: '2011-04-30 02:20:20 +0100'
   content: So what city is next...philly?
 - id: 47717
-  author: Derek
+  writer: Derek
   author_email: derekdac@gmail.com
   author_url: http://www.derekchristensen.com
   date: '2011-05-03 14:16:33 +0100'
@@ -841,7 +841,7 @@ comments:
   content: I'm getting an error when I click on http://typographic.axismaps.com/.
     I absolute love the maps!
 - id: 58454
-  author: Annan
+  writer: Annan
   author_email: shehadi.annan@Gmail.com
   author_url: ''
   date: '2011-07-17 20:44:40 +0100'
@@ -853,7 +853,7 @@ comments:
     continues in that direction? Just a suggestion!\r\n\r\nAnyway these maps rock.
     good job."
 - id: 122694
-  author: MJ
+  writer: MJ
   author_email: marlena@sti.net
   author_url: ''
   date: '2013-05-09 18:47:11 +0100'

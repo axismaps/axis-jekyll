@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Spicing up Google Maps in Flash
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -23,7 +23,7 @@ tags:
 - Google Maps
 comments:
 - id: 2248
-  author: Martijn
+  writer: Martijn
   author_email: marvanni@hotmail.com
   author_url: ''
   date: '2009-05-15 03:51:16 +0100'
@@ -34,7 +34,7 @@ comments:
     \n\nI know this is not a supportforum, but if you could post some more of the
     AS code, I would be greatfull to you!"
 - id: 2258
-  author: Martijn
+  writer: Martijn
   author_email: marvanni@hotmail.com
   author_url: ''
   date: '2009-05-15 12:21:23 +0100'
@@ -46,7 +46,7 @@ comments:
 
     Thanks for this Tip!
 - id: 6201
-  author: Markoff
+  writer: Markoff
   author_email: markoff@dir.bg
   author_url: ''
   date: '2009-11-16 19:34:12 +0000'
@@ -55,7 +55,7 @@ comments:
     do it. Something's wrong with my code. Thank you markoff__aatt__dir.bg (replace
     __aatt__ with "@")
 - id: 73861
-  author: Ronald
+  writer: Ronald
   author_email: no@thankyou.com
   author_url: ''
   date: '2011-12-19 06:38:54 +0000'

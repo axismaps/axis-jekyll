@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: The Aesthetician and the Cartographer
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 110477
-  author: Atrawog
+  writer: Atrawog
   author_email: atrawog@kartenwerkstatt.at
   author_url: http://kartenwerkstatt.at
   date: '2012-10-02 10:36:05 +0100'
@@ -35,7 +35,7 @@ comments:
     to fulfill all the new requirements with ArcMap is probably not the most clever
     thing to do."
 - id: 111168
-  author: Neill
+  writer: Neill
   author_email: njobe@geo-jobe.com
   author_url: http://www.mapthis.net
   date: '2012-10-10 09:26:55 +0100'
@@ -52,7 +52,7 @@ comments:
     of what define us as geographers/cartographers and move the science forward as
     quickly as the technology. (http://mapthis.net/2011/08/15/support-the-teaching-geography-is-fundamental-act-tgif/)
 - id: 112317
-  author: Rhonda Gilbreath
+  writer: Rhonda Gilbreath
   author_email: rhondagil@gmail.com
   author_url: ''
   date: '2012-10-27 20:34:43 +0100'
@@ -63,7 +63,7 @@ comments:
     but with the tools here and the information available that you have given is very
     knowledgeable. Thank you very much.
 - id: 120848
-  author: David Medeiros
+  writer: David Medeiros
   author_email: davidmed@stanford.edu
   author_url: http://www.mapbliss.com
   date: '2012-12-10 19:03:26 +0000'
@@ -84,7 +84,7 @@ comments:
     programs. In a quarter long program where I am now on the \"Fundamentals of GIS\",
     exactly 45 minutes were alloted to cartography."
 - id: 121846
-  author: Roy Doyon
+  writer: Roy Doyon
   author_email: roy_doyon@hotmail.com
   author_url: ''
   date: '2013-02-19 06:47:12 +0000'
@@ -117,7 +117,7 @@ comments:
     to the map audience, the available technology, good data analysis and finally
     map design principles."
 - id: 121847
-  author: Roy Doyon
+  writer: Roy Doyon
   author_email: roy_doyon@hotmail.com
   author_url: ''
   date: '2013-02-19 06:49:30 +0000'
@@ -125,7 +125,7 @@ comments:
   content: oops, that should read Judy Olson, not Olso, as Cynthia Brewer's mentor
     (she was at Michigan or Michigan State I think.
 - id: 123630
-  author: 'Geospatial Redux: Street View Now on Mobile Phones, Hubway Data Visualization
+  writer: 'Geospatial Redux: Street View Now on Mobile Phones, Hubway Data Visualization
     Challenge, - GIS Lounge'
   author_email: ''
   author_url: http://www.gislounge.com/geospatial-redux-help-classify-tropical-cyclone-imagery-street-view-now-on-mobile-phones-hubway-data-visualization-challenge/

@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Blindfolded Cartography
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -22,7 +22,7 @@ categories:
 tags: []
 comments:
 - id: 144587
-  author: Cartography with an actual blindfold | Axis Maps Blog
+  writer: Cartography with an actual blindfold | Axis Maps Blog
   author_email: ''
   author_url: http://www.axismaps.com/blog/2015/06/cartography-with-an-actual-blindfold/
   date: '2015-06-18 14:03:24 +0100'

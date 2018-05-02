@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: New typographic maps of Washington DC and New York
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -24,14 +24,14 @@ tags:
 - new york city
 comments:
 - id: 46548
-  author: DNF
+  writer: DNF
   author_email: darrell@garnix.org
   author_url: http://geogeek.garnix.org
   date: '2011-04-27 00:09:55 +0100'
   date_gmt: '2011-04-27 05:09:55 +0100'
   content: OK, where's the place to beg for Portland, Ore. model?
 - id: 46628
-  author: Andy Woodruff
+  writer: Andy Woodruff
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2011-04-27 08:43:08 +0100'

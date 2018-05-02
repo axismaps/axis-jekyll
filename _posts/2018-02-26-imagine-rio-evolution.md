@@ -4,11 +4,10 @@ nav: Blog
 status: publish
 published: true
 title: Design Evolution of the ImagineRio Map
-author:
+image: /media/posts/2018/02/data_probes.gif
+writer:
   display_name: Ben Sheesley
-  login: ben
   email: ben@axismaps.com
-  url: ''
 date: '2018-03-02 09:00:00 +0100'
 date_gmt: '2018-03-02 09:00:00 +0100'
 categories:

@@ -4,11 +4,9 @@ nav: Blog
 status: publish
 published: true
 title: The geography of presidential campaign rhetoric
-author:
+author: awoodruff
+writer:
   display_name: Andy Woodruff
-  login: andy
-  email: andy@axismaps.com
-  url: http://www.cartogrammar.com/blog
 author_login: andy
 author_email: andy@axismaps.com
 author_url: http://www.cartogrammar.com/blog

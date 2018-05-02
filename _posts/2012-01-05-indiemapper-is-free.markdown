@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: indiemapper is free
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 1192
@@ -20,7 +20,7 @@ categories:
 tags: []
 comments:
 - id: 75505
-  author: Kurt
+  writer: Kurt
   author_email: ktrinko@gmail.com
   author_url: ''
   date: '2012-01-05 11:41:11 +0000'
@@ -28,7 +28,7 @@ comments:
   content: "Thank you!\r\nThis will be a invalueable tool for teaching geography to
     students in higher education at public schools."
 - id: 75526
-  author: Indiemapper es ahora gratuito - La Cartoteca
+  writer: Indiemapper es ahora gratuito - La Cartoteca
   author_email: ''
   author_url: http://alpoma.net/carto/?p=3046
   date: '2012-01-05 16:09:39 +0000'
@@ -36,28 +36,28 @@ comments:
   content: "[...] informaciÃ³n: Axis Maps Blog MeneameDivÃºlgameDivobloggerBitacorasRedditDeliciousGoogle
     BuzzFacebookTwitter En esta misma [...]"
 - id: 75542
-  author: Mano Marks
+  writer: Mano Marks
   author_email: mmarks@google.com
   author_url: http://profiles.google.com/mano.marks
   date: '2012-01-05 20:25:29 +0000'
   date_gmt: '2012-01-06 01:25:29 +0000'
   content: Hey, congrats y'all! Great idea.
 - id: 75589
-  author: MarylandGIS (Don)
+  writer: MarylandGIS (Don)
   author_email: marylandgis@gmail.com
   author_url: http://gis-elektrika.blogspot.com
   date: '2012-01-06 09:59:48 +0000'
   date_gmt: '2012-01-06 14:59:48 +0000'
   content: IndieMapper ins "free" = IndieMapper is orphaned.
 - id: 75604
-  author: Indiemapper es ahora gratuito &laquo; Destacados
+  writer: Indiemapper es ahora gratuito &laquo; Destacados
   author_email: ''
   author_url: http://enredante.wordpress.com/2012/01/06/indiemapper-es-ahora-gratuito/
   date: '2012-01-06 11:27:32 +0000'
   date_gmt: '2012-01-06 16:27:32 +0000'
   content: "[...] MÃ¡s informaciÃ³n: Axis Maps Blog [...]"
 - id: 76006
-  author: makwani-kenya
+  writer: makwani-kenya
   author_email: makwani@yahoo.co.uk
   author_url: ''
   date: '2012-01-11 03:55:48 +0000'
@@ -65,7 +65,7 @@ comments:
   content: Cool, just heard of it, IndieMapper that is, so the going free is already
     achieving a viral growth, check out users in 3 to 6 months time!
 - id: 76244
-  author: Lauren
+  writer: Lauren
   author_email: laurenhonish@aol.com
   author_url: ''
   date: '2012-01-13 16:50:43 +0000'
@@ -74,7 +74,7 @@ comments:
     and Zip Code.  There's too much data to convert it into latitude and longitude.  Is
     there another progam like this that will allow me to do that?
 - id: 76974
-  author: Matthew
+  writer: Matthew
   author_email: mray84@gmail.com
   author_url: http://twitter.com/MatthewRay
   date: '2012-01-23 19:33:27 +0000'
@@ -86,7 +86,7 @@ comments:
     and it'll create your KML file for you: http://www.earthpoint.us/ExcelToKml.aspx\r\n
     \r\nGood luck!\r\n\r\nMatt"
 - id: 77154
-  author: Raul Bueno
+  writer: Raul Bueno
   author_email: raulbueno@gmail.com
   author_url: http://www.arquitetoraulbueno.com
   date: '2012-01-26 12:45:12 +0000'
@@ -94,7 +94,7 @@ comments:
   content: Thats great indiemapper is free. Any chances on your platform exports maps
     in kml format?
 - id: 78974
-  author: Indiemapper Ã¤r numera gratis | Galdump
+  writer: Indiemapper Ã¤r numera gratis | Galdump
   author_email: ''
   author_url: http://www.galdump.info/indiemapper-ar-numera-gratis/
   date: '2012-02-17 00:16:31 +0000'

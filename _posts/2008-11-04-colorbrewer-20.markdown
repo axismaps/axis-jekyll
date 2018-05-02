@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: ColorBrewer 2.0
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 157
@@ -24,7 +24,7 @@ tags:
 - choropleth
 comments:
 - id: 8
-  author: Tom Auer
+  writer: Tom Auer
   author_email: mta138@psu.edu
   author_url: http://www.personal.psu.edu/mta138/index.htm
   date: '2008-11-04 16:05:59 +0000'
@@ -51,7 +51,7 @@ comments:
     Cheers!
     Tom
 - id: 10
-  author: Greg Turner
+  writer: Greg Turner
   author_email: greg@gregturner.com
   author_url: http://www.gregturner.com
   date: '2008-11-05 22:43:13 +0000'
@@ -68,7 +68,7 @@ comments:
 
     Greg.
 - id: 11
-  author: Javier de la Torre
+  writer: Javier de la Torre
   author_email: jatorre@gmail.com
   author_url: http://biodivertido.blogspot.com
   date: '2008-11-06 03:26:12 +0000'
@@ -80,7 +80,7 @@ comments:
 
     Great tool! I'd like to see it open source and I would be happy to contribute too.
 - id: 27
-  author: Sean Gorman
+  writer: Sean Gorman
   author_email: sean@fortiusone.com
   author_url: http://blog.fortiusone.com
   date: '2008-11-13 15:54:07 +0000'
@@ -91,7 +91,7 @@ comments:
     an awesome scheme for a Yahoo! base map the next user does not have to reinvent
     the wheel.  A bot o' social cartography.
 - id: 70
-  author: Ben Coakley
+  writer: Ben Coakley
   author_email: bmc@jakethedog.net
   author_url: ''
   date: '2008-11-30 11:43:43 +0000'
@@ -102,7 +102,7 @@ comments:
     would be nice to be able to at least examine and adjust these features for simultaneous
     contrast issues, if not get suggestions for good colors.
 - id: 241
-  author: Phil Page
+  writer: Phil Page
   author_email: philpage@gmail.com
   author_url: ''
   date: '2009-01-14 21:08:14 +0000'
@@ -110,7 +110,7 @@ comments:
   content: I'd echo Javier's suggestion above for expanding the tool to generate bivariate
     color schemes.  These are very hard to construct successfully in a "manual" fashion.
 - id: 19847
-  author: Ian Marshal
+  writer: Ian Marshal
   author_email: ianmarshal@gmail.com
   author_url: http://www.radiant-insulation.com
   date: '2010-11-03 06:40:12 +0000'

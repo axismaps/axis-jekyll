@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: 2nd edition of the Boston typographic map
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 1914

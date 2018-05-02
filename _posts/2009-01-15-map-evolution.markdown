@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Map Evolution
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 214
@@ -24,7 +24,7 @@ tags:
 - screencast
 comments:
 - id: 243
-  author: Nathan
+  writer: Nathan
   author_email: nathan@flowingdata.com
   author_url: http://flowingdata.com
   date: '2009-01-15 12:46:20 +0000'
@@ -33,7 +33,7 @@ comments:
     process a lot of the time, which is more interesting a lot of the time - to me
     at least.
 - id: 692
-  author: benjamin
+  writer: benjamin
   author_email: benjamin.wiederkehr@artillery.ch
   author_url: http://www.datavisualization.ch
   date: '2009-03-30 02:14:45 +0100'
@@ -41,7 +41,7 @@ comments:
   content: Wow, really comprehensive visualization of the creative / analytical process
     of creating a map.
 - id: 3498
-  author: Where are all the dollar$ going? at SweetMaps
+  writer: Where are all the dollar$ going? at SweetMaps
   author_email: ''
   author_url: http://sweetmaps.com/blog/?p=194
   date: '2009-06-23 11:06:39 +0100'
@@ -50,14 +50,14 @@ comments:
     Maps also posted a super video  (with a beautiful musical accompaniment composed
     by one of the map-makers) showing 106 10-minute [...]"
 - id: 6266
-  author: kuesta
+  writer: kuesta
   author_email: kuesta1@gmail.com
   author_url: ''
   date: '2009-11-22 05:43:28 +0000'
   date_gmt: '2009-11-22 10:43:28 +0000'
   content: please tell me which software did you use for production?
 - id: 6278
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2009-11-23 23:06:23 +0000'
@@ -66,7 +66,7 @@ comments:
     Hi kuesta,
     The map was designed in Adobe Illustrator, and the movie was produced with iMovie.
 - id: 14863
-  author: Map Evolution 2 | Axis Maps Blog
+  writer: Map Evolution 2 | Axis Maps Blog
   author_email: ''
   author_url: http://www.axismaps.com/blog/2010/09/map-evolution-2/
   date: '2010-09-09 10:47:49 +0100'

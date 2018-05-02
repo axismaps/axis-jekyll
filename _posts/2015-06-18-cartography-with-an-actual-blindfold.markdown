@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Cartography with an actual blindfold
-author:
+writer:
   display_name: Josh Ryan
   login: josh
   email: josh@axismaps.com
-  url: ''
+
 author_login: josh
 author_email: josh@axismaps.com
 wordpress_id: 2177

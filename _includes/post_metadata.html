@@ -5,10 +5,10 @@
       {{ page.date | date: "%b %-d, %Y" }}
     </div>
     
-    {% if page.author %}
+    {% if page.writer %}
       <div class="metadata-item">
         <i class="icon-user"></i>
-        {{ page.author.display_name }}
+        {{ page.writer.display_name }}
       </div>
     {% endif %}
   {% else %}

@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Professional-looking water boundary effects made easy
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com

@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Yakkin' 'Bout Mappin'
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 1502
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 113815
-  author: Gretchen
+  writer: Gretchen
   author_email: gretchen@petersongis.com
   author_url: http://www.gretchenpeterson.com/blog
   date: '2012-11-16 12:57:24 +0000'

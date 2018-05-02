@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: D3 web maps for static cartography production
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com

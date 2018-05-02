@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: '"But hasn''t everything already been mapped?"'
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com

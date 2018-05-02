@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: ARRA funding map
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 374
@@ -20,7 +20,7 @@ categories:
 tags: []
 comments:
 - id: 1723
-  author: Daniel Huffman
+  writer: Daniel Huffman
   author_email: mrmunion@yahoo.com
   author_url: ''
   date: '2009-04-30 23:33:02 +0100'
@@ -36,7 +36,7 @@ comments:
 
     Just some off-the-cuff thoughts. I like it, though. I am a fan of data-dense maps with multiple layers of symbology, and also of dark color schemes.
 - id: 1729
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2009-05-01 02:59:23 +0100'
@@ -46,7 +46,7 @@ comments:
 
     Thanks for your comments. I like these suggestions, and agree that the pattern in the state outlines could be made more visible. Perhaps, as you say, decreasing state fill color saturation and adding a bit of color back to the outlines could help. I'll definitely give it a try.
 - id: 1740
-  author: Jon Peltier
+  writer: Jon Peltier
   author_email: jonpeltier@gmail.com
   author_url: http://peltiertech.com/WordPress/
   date: '2009-05-01 10:59:22 +0100'
@@ -58,7 +58,7 @@ comments:
     borders had a color scheme more similar to the interiors, it might be easier to
     compare them.
 - id: 2141
-  author: Richard Treves
+  writer: Richard Treves
   author_email: pentadij@gmail.com
   author_url: http://googleearthdesign.blogspot.com
   date: '2009-05-12 08:55:56 +0100'
@@ -68,7 +68,7 @@ comments:
 
     Rich
 - id: 3494
-  author: Where are all the dollar$ going? at SweetMaps
+  writer: Where are all the dollar$ going? at SweetMaps
   author_email: ''
   author_url: http://sweetmaps.com/blog/?p=194
   date: '2009-06-23 10:20:08 +0100'
@@ -77,7 +77,7 @@ comments:
     cartographers at Axis Maps in Madison Wisconsin.  This illustrates various techniques
     for communicating data on a static [...]"
 - id: 28231
-  author: Where are all the dollar$ going? &laquo; SweetMaps
+  writer: Where are all the dollar$ going? &laquo; SweetMaps
   author_email: ''
   author_url: http://www.sweetmaps.com/blog/?p=166
   date: '2011-01-08 11:56:23 +0000'

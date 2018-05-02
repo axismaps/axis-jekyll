@@ -4,9 +4,10 @@ nav: Blog
 status: publish
 published: true
 title: Updated Map Server Instructions
-author:
+author: davidheyman
+image: /media/posts/2016/06/pancakes.jpg
+writer:
   display_name: David Heyman
-  login: dave
   email: dave@axismaps.com
 date: '2016-06-10 00:00:00 +0000'
 date_gmt: '2016-06-10 00:00:00 +0000'

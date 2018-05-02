@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Four new typographic maps for summer 2012
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -22,7 +22,7 @@ tags:
 - typographic maps
 comments:
 - id: 106698
-  author: 'Type News: Cheeziwyg | Uber Patrol - The Definitive Cool Guide'
+  writer: 'Type News: Cheeziwyg | Uber Patrol - The Definitive Cool Guide'
   author_email: ''
   author_url: http://uberpatrol.com/typography/typedia/type-news-cheeziwyg/
   date: '2012-08-20 10:40:55 +0100'

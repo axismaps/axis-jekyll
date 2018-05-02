@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Zooming In On History
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
-  url: ''
+
 author_login: andy
 author_email: andy@axismaps.com
 date: '2015-12-02 14:03:18 +0100'

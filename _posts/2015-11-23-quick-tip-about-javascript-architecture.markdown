@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Quick tip about Javascript architecture
-author:
+writer:
   display_name: Josh Ryan
   login: josh
   email: josh@axismaps.com
-  url: ''
+
 author_login: josh
 author_email: josh@axismaps.com
 date: '2015-11-23 14:03:18 +0100'

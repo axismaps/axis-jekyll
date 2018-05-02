@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Visualizing Indieprojector
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com

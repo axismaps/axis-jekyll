@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Web cartography... that's like Google Maps, right?
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -25,7 +25,7 @@ tags:
 - talks
 comments:
 - id: 72442
-  author: Daniel Huffman
+  writer: Daniel Huffman
   author_email: daniel.p.huffman@gmail.com
   author_url: http://somethingaboutmaps.com
   date: '2011-12-05 20:17:51 +0000'
@@ -42,7 +42,7 @@ comments:
     I didn't see any fancy concepts drawn out as cubes here to explain things to me,
     just that square. What gives?"
 - id: 72525
-  author: Andy Woodruff
+  writer: Andy Woodruff
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2011-12-06 11:20:36 +0000'
@@ -52,7 +52,7 @@ comments:
     cubes are for hard science. Designy stuff is all squares, arrows, and fuzzy things.
     I'd need to do so much more research to put any of this in cube form!"
 - id: 72650
-  author: Ian Muehlenhaus
+  writer: Ian Muehlenhaus
   author_email: imuehlenhaus@uwlax.edu
   author_url: ''
   date: '2011-12-07 12:07:05 +0000'
@@ -60,7 +60,7 @@ comments:
   content: Nice article, Andy. Well put. I will probably use this post in my advanced
     map design courses.
 - id: 72788
-  author: Andrius
+  writer: Andrius
   author_email: andrius.balciunas@gf.vu.lt
   author_url: ''
   date: '2011-12-08 17:11:09 +0000'
@@ -68,7 +68,7 @@ comments:
   content: "I think that the last paragraph worth to be in the Cartography manual.
     \r\nThank you, Andy, for great article."
 - id: 72814
-  author: 'Everyday Lessons Learned: December 2011, Week 1 &laquo; Aesthetics of Everywhere'
+  writer: 'Everyday Lessons Learned: December 2011, Week 1 &laquo; Aesthetics of Everywhere'
   author_email: ''
   author_url: http://cbae.wordpress.com/2011/12/08/everyday-lessons-learned-december-2011-week/
   date: '2011-12-08 20:49:37 +0000'
@@ -76,7 +76,7 @@ comments:
   content: "[...] Here&#8217;s a great primer about map design: &#8220;Web cartography&#8230;
     That&#8217;s like Google Maps, right?&#8221; (Via Axis Maps [...]"
 - id: 73259
-  author: OTR Links 12/13/2011 | doug &#8211; off the record
+  writer: OTR Links 12/13/2011 | doug &#8211; off the record
   author_email: ''
   author_url: http://dougpete.wordpress.com/2011/12/13/otr-links-12132011/
   date: '2011-12-13 00:32:57 +0000'
@@ -84,14 +84,14 @@ comments:
   content: "[...] Web cartography... that's like Google Maps, right? &#8211; Axis
     Maps Blog [...]"
 - id: 75512
-  author: Gabriel Florit
+  writer: Gabriel Florit
   author_email: gabrielflorit@gmail.com
   author_url: http://gabrielflor.it
   date: '2012-01-05 13:51:17 +0000'
   date_gmt: '2012-01-05 18:51:17 +0000'
   content: Thank you for this - thoroughly enjoyed it.
 - id: 107648
-  author: Advice to the Aspiring Interactive Cartographer - Axis Maps Blog
+  writer: Advice to the Aspiring Interactive Cartographer - Axis Maps Blog
   author_email: ''
   author_url: http://www.axismaps.com/blog/2012/09/advice-to-the-aspiring-interactive-cartographer/
   date: '2012-09-03 11:01:46 +0100'

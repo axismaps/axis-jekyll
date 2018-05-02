@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Simplicity, not Simple
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com
@@ -22,7 +22,7 @@ tags:
 - Design
 comments:
 - id: 190
-  author: D. P. Huffman
+  writer: D. P. Huffman
   author_email: mrmunion@yahoo.com
   author_url: ''
   date: '2008-12-27 13:31:52 +0000'
@@ -32,7 +32,7 @@ comments:
 
     If only that philosophy were followed more. Windows XP is certainly more friendly for the novice user than 3.11 was. But you can't entirely turn off that PlaySkool feeling. This is a mistake I think is made too often, as well...replacing interfaces designed for advanced users with interfaces designed for novices, when they should instead be designing flexible interfaces that are good for anyone. Ones in which the number of features and the complexity of the display can be adjusted based on how comfortable and familiar the user has become with the system.
 - id: 231
-  author: andy
+  writer: andy
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2009-01-10 15:10:57 +0000'

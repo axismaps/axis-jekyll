@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Little Design Details in a Simple Map
-author:
+author: davidheyman
+image: /media/posts/2016/03/color2.png
+writer:
   display_name: David Heyman
-  login: dave
   email: dave@axismaps.com
-  url: ''
 date: '2016-03-24 09:03:18 +0100'
 date_gmt: '2016-03-24 09:03:18 +0100'
 categories:

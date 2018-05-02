@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Map Evolution 2
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 660
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 14865
-  author: Brian Kelly
+  writer: Brian Kelly
   author_email: polymonic@gmail.com
   author_url: http://www.spilth.org/
   date: '2010-09-09 11:10:01 +0100'
@@ -31,7 +31,7 @@ comments:
 
     I've been working on a map myself and have taken screenshots throughout the process. It's not finished yet, but it has definitely changed a bit over the course of it's development: http://www.flickr.com/photos/spilth/sets/72157624490148326/show/
 - id: 14872
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2010-09-09 11:59:08 +0100'
@@ -42,7 +42,7 @@ comments:
     changes happening all over the place, from the legend to the map to the title
     area. Really neat.
 - id: 14900
-  author: craig
+  writer: craig
   author_email: craigfeuerherdt@gmail.com
   author_url: ''
   date: '2010-09-09 18:21:27 +0100'
@@ -50,7 +50,7 @@ comments:
   content: Would Hillside Health Care International consider and/or yourself consider
     allowing the map to be used to input data into OpenStreetMap?
 - id: 14951
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2010-09-10 08:41:28 +0100'
@@ -64,7 +64,7 @@ comments:
     were collected on paper only. Unfortunately, we don't have GPS locations for any
     of these-- it was all very low tech!
 - id: 15288
-  author: Bryan
+  writer: Bryan
   author_email: bkrouse@cableone.net
   author_url: ''
   date: '2010-09-14 11:50:40 +0100'
@@ -74,7 +74,7 @@ comments:
 
     Thanks
 - id: 15291
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2010-09-14 12:23:46 +0100'
@@ -82,14 +82,14 @@ comments:
   content: Nope. Didn't download anything here. This is just a few screenshots stitched
     together in Photoshop for reference.
 - id: 15294
-  author: Bryan
+  writer: Bryan
   author_email: bkrouse@cableone.net
   author_url: ''
   date: '2010-09-14 12:45:50 +0100'
   date_gmt: '2010-09-14 17:45:50 +0100'
   content: That is simple enough. Thanks
 - id: 20481
-  author: Paige
+  writer: Paige
   author_email: pl20632@gulls.salisbury.edu
   author_url: ''
   date: '2010-11-09 10:40:42 +0000'
@@ -100,7 +100,7 @@ comments:
     to do, I can agree with you that gathering data can be challenging. I like your
     idea of tracing the roads in Adobe Illustrator.
 - id: 60597
-  author: Manny
+  writer: Manny
   author_email: westavenuekid@gmail.com
   author_url: http://www.playgroundmaps.com
   date: '2011-08-04 12:00:03 +0100'

@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: In Defense of Bad Maps
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 124662
-  author: Briefly | Stats Chat
+  writer: Briefly | Stats Chat
   author_email: ''
   author_url: http://www.statschat.org.nz/2013/11/22/briefly-51/
   date: '2013-11-21 19:30:25 +0000'
@@ -29,14 +29,14 @@ comments:
   content: "[...] &#8220;In defense of bad maps&#8221; (ie most of those on the internets)
     [...]"
 - id: 124674
-  author: Data Viz News [34] | Visual Loop
+  writer: Data Viz News [34] | Visual Loop
   author_email: ''
   author_url: http://visualoop.com/15662/data-viz-news-34
   date: '2013-11-23 04:37:33 +0000'
   date_gmt: '2013-11-23 09:37:33 +0000'
   content: "[...] In Defense of Bad Maps | Axismaps [...]"
 - id: 125310
-  author: Zemelapis
+  writer: Zemelapis
   author_email: justina@gmail.com
   author_url: http://kurgyvenu.lt/Kaunas
   date: '2013-12-06 02:22:34 +0000'
@@ -45,7 +45,7 @@ comments:
     Today the most "valued" features are fast and cheap, which make many things and
     projects poor quality.
 - id: 126002
-  author: Danielle Lee
+  writer: Danielle Lee
   author_email: Danielle.Lee@AE2S.com
   author_url: http://www.ae2s.com/gisblog/
   date: '2014-01-17 15:34:21 +0000'
@@ -56,7 +56,7 @@ comments:
     at least know what they are compromising when they make bad maps. And when they
     find out hopefully they will want to compromise less.
 - id: 126553
-  author: The Lost Art of Critical Map Reading | Graphicarto
+  writer: The Lost Art of Critical Map Reading | Graphicarto
   author_email: ''
   author_url: http://www.graphicarto.com/the-lost-art-of-critical-map-reading/
   date: '2014-02-27 15:43:30 +0000'

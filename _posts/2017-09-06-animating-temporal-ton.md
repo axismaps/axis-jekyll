@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Animating a temporal ton in a web map
-author:
+author: awoodruff
+image: /media/posts/2017/09/merck_probe.jpg
+writer:
   display_name: Andy Woodruff
-  login: andy
   email: andy@axismaps.com
-  url: ''
 date: '2017-09-04 09:03:18 +0100'
 date_gmt: '2017-09-04 09:03:18 +0100'
 categories:

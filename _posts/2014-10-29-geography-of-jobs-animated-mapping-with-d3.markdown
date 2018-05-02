@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: 'Geography of Jobs: animated mapping with D3'
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com

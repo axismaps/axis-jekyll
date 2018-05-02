@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: 'Don''t Panic: An Absolute Beginner''s Guide to Building a Map Server'
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 1205
@@ -20,7 +20,7 @@ categories:
 tags: []
 comments:
 - id: 76520
-  author: jhon
+  writer: jhon
   author_email: brandon@beejn.com
   author_url: ''
   date: '2012-01-17 13:48:44 +0000'
@@ -31,7 +31,7 @@ comments:
     maps?\r\n\r\nI want to do stuff like this - http://bit.ly/yO71Uy . Do i need a
     map server for this?\r\n\r\nThanks!"
 - id: 76614
-  author: David Heyman
+  writer: David Heyman
   author_email: dave@axismaps.com
   author_url: ''
   date: '2012-01-18 12:06:42 +0000'
@@ -42,7 +42,7 @@ comments:
     kinds of maps, thematic and reference maps at any scale. It could definitely make
     something like what's in your example... just not in 3D."
 - id: 76955
-  author: Ben Stoltz
+  writer: Ben Stoltz
   author_email: stoltz.ben@me.com
   author_url: ''
   date: '2012-01-23 09:38:24 +0000'
@@ -50,7 +50,7 @@ comments:
   content: Hey there David.  Would there be any way to add in, say, geo-processing
     tools to the server?
 - id: 76996
-  author: David Heyman
+  writer: David Heyman
   author_email: dave@axismaps.com
   author_url: ''
   date: '2012-01-24 04:03:28 +0000'
@@ -65,7 +65,7 @@ comments:
     target="_blank" rel="nofollow">GRASS</a> for running geo-processing commands directly
     from the shell.
 - id: 121879
-  author: Alan Smiles
+  writer: Alan Smiles
   author_email: alansmiles@gmail.com
   author_url: http://primarysolutions.org
   date: '2013-02-26 14:11:48 +0000'

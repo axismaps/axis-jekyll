@@ -4,11 +4,9 @@ nav: Blog
 status: publish
 published: true
 title: Updates to the San Francisco Typographic Map
-author:
+writer:
   display_name: Ben Sheesley
-  login: ben
   email: ben@axismaps.com
-  url: ''
 date: '2016-05-13 00:00:00 +0000'
 date_gmt: '2016-05-13 00:00:00 +0000'
 categories:

@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: London Low Life
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 908
@@ -20,7 +20,7 @@ categories:
 tags: []
 comments:
 - id: 123214
-  author: John Tallis&#8217;s Street Views of London and The London Low Life Project
+  writer: John Tallis&#8217;s Street Views of London and The London Low Life Project
     | Jane Austen&#039;s World
   author_email: ''
   author_url: http://janeaustensworld.wordpress.com/2013/07/02/john-talliss-street-views-of-london-and-the-london-low-life-project/

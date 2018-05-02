@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Data Probing and Info Window Design on Web-based Maps
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 484
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 4171
-  author: Daniel Huffman
+  writer: Daniel Huffman
   author_email: mrmunion@yahoo.com
   author_url: http://cartastrophe.wordpress.com
   date: '2009-07-13 12:43:34 +0100'
@@ -32,7 +32,7 @@ comments:
     it. I can see how there would be a challenge in making things transparent enough
     to be worth it, while still being legible and easy to focus attention on.
 - id: 4199
-  author: ben
+  writer: ben
   author_email: ben@axismaps.com
   author_url: http://
   date: '2009-07-14 08:33:26 +0100'

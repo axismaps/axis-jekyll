@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Indiemapper Launches April 12th, 2010
-author:
+writer:
   display_name: David Heyman
-  login: dave
+
   email: dave@axismaps.com
-  url: ''
+
 author_login: dave
 author_email: dave@axismaps.com
 wordpress_id: 634

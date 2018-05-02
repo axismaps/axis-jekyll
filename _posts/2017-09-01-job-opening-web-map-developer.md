@@ -2,9 +2,9 @@
 layout: post
 nav: Blog
 status: publish
-published: true
+published: false
 title: Now hiring&#58; Web Map Developer (Full Time)
-author:
+writer:
   display_name: Axis Maps
   login: andy
   email: andy@axismaps.com

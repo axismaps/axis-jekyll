@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: New ideas in terrain mapping for cyclists
-author:
+writer:
   display_name: Daniel Huffman
   login: dan
   email: mark@axismaps.com
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 2715
-  author: Sam
+  writer: Sam
   author_email: whatever@mailinator.com
   author_url: ''
   date: '2009-05-28 17:16:38 +0100'
@@ -29,7 +29,7 @@ comments:
   content: Maybe this is too obvious, but why not just put the bike routes onto a
     topographic map?
 - id: 2728
-  author: Daniel Huffman
+  writer: Daniel Huffman
   author_email: mrmunion@yahoo.com
   author_url: ''
   date: '2009-05-29 00:14:22 +0100'
@@ -40,7 +40,7 @@ comments:
     you really need. Anything else will be a distraction, if the map is being put
     to this sole purpose.
 - id: 2741
-  author: David
+  writer: David
   author_email: david0044@hotmail.com
   author_url: ''
   date: '2009-05-29 07:48:03 +0100'
@@ -50,7 +50,7 @@ comments:
       I do think there's something to your observation about the heavy line weight drawing the attention to the map's center where the terrain is high in elevation but relatively flat-but I can't come up with any better alternatives.
       Nice job!
 - id: 2749
-  author: Andy
+  writer: Andy
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2009-05-29 13:56:39 +0100'
@@ -59,7 +59,7 @@ comments:
     elevation data somewhere, or did you manually derive it from a topo map or something
     similar?
 - id: 2768
-  author: Daniel Huffman
+  writer: Daniel Huffman
   author_email: mrmunion@yahoo.com
   author_url: ''
   date: '2009-05-30 01:03:50 +0100'
@@ -76,7 +76,7 @@ comments:
     smooth shape. There are probably more efficient ways to do this, but I haven't
     given it enough thought yet.
 - id: 3021
-  author: Kip Mercure
+  writer: Kip Mercure
   author_email: pkmercure@gmail.com
   author_url: ''
   date: '2009-06-06 08:57:33 +0100'
@@ -87,7 +87,7 @@ comments:
     getting into a "smaller space."  Great concept.  I bike a charity ride the MS150,
     and might use your idea for my personal map of the ride.  Crediting you of course.
 - id: 3024
-  author: Daniel Huffman
+  writer: Daniel Huffman
   author_email: mrmunion@yahoo.com
   author_url: ''
   date: '2009-06-06 11:05:58 +0100'
@@ -95,7 +95,7 @@ comments:
   content: Hi Kip. Feel free to use the concept - I would be interested to know how
     it works out for you, as it's not yet been field-tested.
 - id: 3107
-  author: Bryan
+  writer: Bryan
   author_email: bkrouse@cableone.net
   author_url: ''
   date: '2009-06-11 17:36:33 +0100'
@@ -105,7 +105,7 @@ comments:
 
     thanks
 - id: 4637
-  author: Jo Wood
+  writer: Jo Wood
   author_email: jwo@soi.city.ac.uk
   author_url: http://www.soi.city.ac.uk/~jwo
   date: '2009-08-04 11:21:22 +0100'
@@ -119,7 +119,7 @@ comments:
 
     I tried various experiments with plotting slope, relative and absolute elevation change and using colour symbolisation, but I concluded, like you, that a simple monochrome plot of absolute elevation worked the best. I found that plotting the line width as w = 1 + 20*(z^1.5) where z is the height scaled between 0 (min) and 1 (max height) worked the most effectively. However this does seem to be scale and terrain dependent.
 - id: 12048
-  author: Adrianne
+  writer: Adrianne
   author_email: mareeaguzman@gmail.com
   author_url: http://guitartutorialsblog.com
   date: '2010-06-29 08:40:19 +0100'

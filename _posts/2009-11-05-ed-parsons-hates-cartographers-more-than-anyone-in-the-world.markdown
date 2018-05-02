@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Ed Parsons dislikes cartographers, "more than anyone in the world"
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com

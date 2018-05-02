@@ -4,11 +4,8 @@ nav: Blog
 status: publish
 published: true
 title: I'm not here to make your data look pretty.
-author:
+writer:
   display_name: Mark Harrower
-  login: mark
-  email: mark@axismaps.com
-  url: http://www.geography.wisc.edu/~harrower/
 author_login: mark
 author_email: mark@axismaps.com
 author_url: http://www.geography.wisc.edu/~harrower/

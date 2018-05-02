@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: 'AskCHIS NE map: All D3 Everything'
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com

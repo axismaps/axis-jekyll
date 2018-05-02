@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: Election map follow-up
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -26,7 +26,7 @@ tags:
 - election
 comments:
 - id: 183
-  author: Jon Peltier
+  writer: Jon Peltier
   author_email: jonpeltier@gmail.com
   author_url: http://peltiertech.com/WordPress/
   date: '2008-12-23 09:29:02 +0000'
@@ -35,7 +35,7 @@ comments:
     I had a month or two ago. The black background makes the details very hard for
     me to see.
 - id: 185
-  author: andy
+  writer: andy
   author_email: andy@axismaps.com
   author_url: http://www.cartogrammar.com/blog
   date: '2008-12-23 17:37:58 +0000'
@@ -44,7 +44,7 @@ comments:
     these maps and had to choose just a couple to do.  White background is next on
     my list, though, assuming I can find a chance to crank out a few more.
 - id: 192
-  author: Using Transparency for Feature Highlighting &raquo; Tim Showers - Web Development,
+  writer: Using Transparency for Feature Highlighting &raquo; Tim Showers - Web Development,
     Design, and Data Visualization&raquo; Blog Archive
   author_email: ''
   author_url: http://www.timshowers.com/2008/12/using-transparency-for-feature-highlighting/
@@ -57,7 +57,7 @@ comments:
     alpha transparency to make more populated areas brighter and less populated areas
     faded out. [...]"
 - id: 113190
-  author: Caprise
+  writer: Caprise
   author_email: cappie712@yahoo.com
   author_url: ''
   date: '2012-11-09 14:34:31 +0000'

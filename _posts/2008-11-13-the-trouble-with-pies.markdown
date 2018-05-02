@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: The trouble with pies
-author:
+writer:
   display_name: Mark Harrower
   login: mark
   email: mark@axismaps.com
@@ -23,7 +23,7 @@ tags:
 - graphics
 comments:
 - id: 25
-  author: Jon Peltier
+  writer: Jon Peltier
   author_email: jonpeltier@gmail.com
   author_url: http://peltiertech.com/WordPress/
   date: '2008-11-13 13:32:03 +0000'

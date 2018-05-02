@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: New letterpress maps of San Francisco and Manhattan
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -21,7 +21,7 @@ categories:
 tags: []
 comments:
 - id: 62987
-  author: Mary C. Nasser
+  writer: Mary C. Nasser
   author_email: paintmary@yahoo.com
   author_url: http://www.marycnasser.com/blog.html
   date: '2011-08-26 19:06:25 +0100'

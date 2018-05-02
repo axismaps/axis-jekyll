@@ -4,7 +4,7 @@ nav: Blog
 status: publish
 published: true
 title: 'The ''Why Not The Best'' map: thematic mapping with Leaflet'
-author:
+writer:
   display_name: Andy Woodruff
   login: andy
   email: andy@axismaps.com
@@ -25,7 +25,7 @@ tags:
 - leaflet
 comments:
 - id: 104447
-  author: Sheraz
+  writer: Sheraz
   author_email: sheraz24@gmail.com
   author_url: http://visualizingurbanfutures.wordpress.com
   date: '2012-08-03 09:23:35 +0100'

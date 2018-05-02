@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Representing 'No Data' on Interactive Maps
-author:
+writer:
   display_name: Ben Sheesley
   login: ben
   email: ben@axismaps.com
-  url: ''
+
 author_login: ben
 author_email: ben@axismaps.com
 wordpress_id: 954
@@ -20,7 +20,7 @@ categories:
 tags: []
 comments:
 - id: 55613
-  author: Tom Auer
+  writer: Tom Auer
   author_email: mta138@gmail.com
   author_url: http://theskua.com
   date: '2011-06-23 16:23:25 +0100'
@@ -30,7 +30,7 @@ comments:
     show species ranges from citizen science data, they've got to show where data
     was collected, but a species was not observed. Gray does work well.\r\n\r\nhttp://ebird.org/ebird/GuideMe?cmd=quickPick&amp;speciesCode=&amp;bMonth=01&amp;bYear=1900&amp;eMonth=12&amp;eYear=2011&amp;getLocations=northAmerica&amp;reportType=species&amp;speciesCodes=tenwar&amp;continue.x=40&amp;continue.y=3&amp;continue=Continue"
 - id: 55621
-  author: Ben Sheesley
+  writer: Ben Sheesley
   author_email: ben@axismaps.com
   author_url: ''
   date: '2011-06-23 17:46:04 +0100'
@@ -39,7 +39,7 @@ comments:
     birds are not, as well as where they are, tells a more complete story for sure.
     I like it.
 - id: 121638
-  author: Data Visualization | Annotary
+  writer: Data Visualization | Annotary
   author_email: ''
   author_url: https://annotary.com/collections/4279/data-visualization
   date: '2013-01-17 10:10:00 +0000'
