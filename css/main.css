@@ -89,7 +89,8 @@ hr {
 }
 
 section{
-	padding-top: 50px;
+  padding-top: 50px;
+  clear: both;
 }
 
 b, strong{
@@ -547,11 +548,11 @@ a.project:hover .grid-image{
   margin-top: -20px;
 }
 
-section#icons{
+section#icons, section#case-studies{
   margin: 0 10%;
 }
 
-section#icons h2{
+section#icons h2, section#case-studies h2{
   text-align: center;
   margin-bottom: 20px;
 }
@@ -572,6 +573,76 @@ section#icons h2{
 .icon-service p{
   font-size: 16px;
   margin-top: 0.25em;
+}
+
+.case-study.left{
+  margin-left: -10vw;
+}
+
+.case-study.right{
+  margin-right: -10vw;
+}
+
+.case-study .title-container{
+  width: 100vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.case-study h3{
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 40px;
+  padding: 10px 50px;
+  background-color: royalblue;
+  text-align: center;
+}
+
+.case-study > img, .case-study blockquote{
+  float: left;
+  margin: 30px 40px 80px 0;
+}
+
+.case-study > img{
+  max-height: 480px;
+  max-width: 45%;
+  float: left;
+  box-shadow: 0 0 10px rgba(0,0,0,.25);
+}
+
+.case-study.right > img{
+  float: right;
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.case-study blockquote{
+  clear: both;
+  width: 35%;
+  margin-left: 5%;
+  margin-right: calc(5% + 40px);
+  box-sizing: border-box;
+  border-left: 2px solid red;
+  padding-left: 30px;
+}
+
+.case-study blockquote::before{
+  content: '“';
+  font-size: 150px;
+  position: absolute;
+  margin: -10px;
+  color: red;
+}
+
+.case-study .project-title{
+  padding: 30px 0;
+  background-color: red;
+}
+
+.project-title p{
+  margin-bottom: 0;
 }
 
 /* ABOUT, TEAM, CONTACT */
