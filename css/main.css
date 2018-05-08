@@ -780,7 +780,7 @@ img.banner {
   max-height: 95%;
 }
 
-.image-modal i {
+.image-modal .svg-inline--fa {
   position: absolute;
   font-size: 40px;
   cursor: pointer;
@@ -790,21 +790,21 @@ img.banner {
   color: black;
 }
 
-.image-modal .fas.fa-times-circle {
+.image-modal .fa-times-circle {
   right: 20px;
   top: 20px;
 }
 
-.image-modal .fas.fa-caret-left, .image-modal .fas.fa-caret-right {
+.image-modal .fa-caret-left, .image-modal .fa-caret-right {
   top: 50%;
   margin-top: -20px;
 }
 
-.image-modal .fas.fa-caret-left {
+.image-modal .fa-caret-left {
   left: 20px;
 }
 
-.image-modal .fas.fa-caret-right {
+.image-modal .fa-caret-right {
   right: 20px;
 }
 
