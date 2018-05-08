@@ -540,6 +540,40 @@ a.project:hover .grid-image{
   background-color: #BA8B36;
 }
 
+/* INDUSTRIES */
+#intro{
+  background-color: #EFF1F2;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+section#icons{
+  margin: 0 10%;
+}
+
+section#icons h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon-service{
+  width: 33%;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  min-width: 230px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.icon-service .fa-layers{
+  margin: 0 0 10px -10px;
+}
+
+.icon-service p{
+  font-size: 16px;
+  margin-top: 0.25em;
+}
+
 /* ABOUT, TEAM, CONTACT */
 section.text{
   margin: 20px 20%;
