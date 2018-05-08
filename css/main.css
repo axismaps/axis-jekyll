@@ -540,6 +540,25 @@ a.project:hover .grid-image{
   background-color: #BA8B36;
 }
 
+/* INDUSTRIES */
+#intro{
+  background-color: #EFF1F2;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+section#icons{
+  margin: 0 10%;
+}
+
+.icon-service{
+  width: 33%;
+  padding-right: 20px;
+  min-width: 230px;
+  float: left;
+  box-sizing: border-box;
+}
+
 /* ABOUT, TEAM, CONTACT */
 section.text{
   margin: 20px 20%;
