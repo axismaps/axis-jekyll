@@ -16,7 +16,7 @@
         <h3>{{ page.tag }}</h3>
         <h5>{{ page.client }}</h5>
         {% if page.link %}
-          <a href="{{ page.link }}" target="_blank" class="button"><i class="icon-globe"></i> View the map</a><br />
+          <a href="{{ page.link }}" target="_blank" class="button"><i class="fal fa-globe"></i> View the map</a><br />
         {% endif %}
       </section>
       
@@ -39,7 +39,7 @@
         {{ content }}
 
         {%  if page.github %}
-          <a class="button hollow" href="{{ page.github }}" target="_blank"><span class="icon-github-circled"></span> View the source on Github</a>
+          <a class="button hollow" href="{{ page.github }}" target="_blank"><i class="fab fa-github"></i> View the source on Github</a>
         {% endif %}
       </section>
 
@@ -136,7 +136,7 @@
               modal.hide();
             }
           });
-        $('<i class="icon-times">')
+        $('<i class="fas fa-times-circle">')
           .click(function (){
             modal.hide();
           })
@@ -145,11 +145,11 @@
         var i = 0;
         var l = $('#features img').length;
 
-        var left = $('<i class="icon-left-dir">')
+        var left = $('<i class="fas fa-caret-left">')
           .click(function(){imageModal(i - 1);})
           .appendTo(modal);
 
-        var right = $('<i class="icon-right-dir">')
+        var right = $('<i class="fas fa-caret-right">')
           .click(function(){imageModal(i + 1);})
           .appendTo(modal);
 

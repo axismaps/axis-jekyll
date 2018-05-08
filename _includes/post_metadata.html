@@ -1,25 +1,25 @@
 <div class="metadata">
   {% if page.date %}
     <div class="metadata-item">
-      <i class="icon-table"></i>
+      <i class="fal fa-calendar-alt"></i>
       {{ page.date | date: "%b %-d, %Y" }}
     </div>
     
     {% if page.writer %}
       <div class="metadata-item">
-        <i class="icon-user"></i>
+        <i class="fal fa-user"></i>
         {{ page.writer.display_name }}
       </div>
     {% endif %}
   {% else %}
     <div class="metadata-item">
-      <i class="icon-table"></i>
+      <i class="fal fa-calendar-alt"></i>
       {{ post.date | date: "%b %-d, %Y" }}
     </div>
     
     {% if post.author %}
       <div class="metadata-item">
-        <i class="icon-user"></i>
+        <i class="fal fa-user"></i>
         {{ post.author.display_name }}
       </div>
     {% endif %}
