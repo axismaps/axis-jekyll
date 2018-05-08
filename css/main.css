@@ -795,16 +795,16 @@ img.banner {
   top: 20px;
 }
 
-.image-modal .fas.fa-caret-left-dir, .image-modal .fas.fa-caret-right-dir {
+.image-modal .fas.fa-caret-left, .image-modal .fas.fa-caret-right {
   top: 50%;
   margin-top: -20px;
 }
 
-.image-modal .fas.fa-caret-left-dir {
+.image-modal .fas.fa-caret-left {
   left: 20px;
 }
 
-.image-modal .fas.fa-caret-right-dir {
+.image-modal .fas.fa-caret-right {
   right: 20px;
 }
 
