@@ -1,6 +1,6 @@
 <div id='home-video'>
-  <video playsinline autoplay muted loop poster="{{ '/media/video/poster.png' }}">
-    <source src="{{ '/media/video/home.mp4' }}" type="video/mp4">
+  <video playsinline autoplay muted loop poster="{{ '/media/video/' | append: page.poster }}">
+    <source src="{{ '/media/video/' | append: page.video }}" type="video/mp4">
   </video>
   <div id="page-title">
     <div>
