@@ -790,21 +790,21 @@ img.banner {
   color: black;
 }
 
-.image-modal .icon-times {
+.image-modal .fas.fa-times-circle {
   right: 20px;
   top: 20px;
 }
 
-.image-modal .icon-left-dir, .image-modal .icon-right-dir {
+.image-modal .fas.fa-caret-left-dir, .image-modal .fas.fa-caret-right-dir {
   top: 50%;
   margin-top: -20px;
 }
 
-.image-modal .icon-left-dir {
+.image-modal .fas.fa-caret-left-dir {
   left: 20px;
 }
 
-.image-modal .icon-right-dir {
+.image-modal .fas.fa-caret-right-dir {
   right: 20px;
 }
 

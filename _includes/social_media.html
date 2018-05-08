@@ -3,12 +3,12 @@
   <div class="share-links">
     {% if post.title %}
       <a href="mailto:?subject={{ post.title }}&body={{ site.easyurl }}{{ post.url }}" rel="nofollow" target="_blank" title="Share by email"><i class="icon-mail-alt"></i>Email</a>
-      <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.easyurl }}{{ post.url }}&via=axismaps" rel="nofollow" target="_blank" title="Share on Twitter"><i class="icon-twitter"></i>Twitter</a>
+      <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.easyurl }}{{ post.url }}&via=axismaps" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fab fa-twitter"></i>Twitter</a>
       <a href="https://facebook.com/sharer/sharer.php?t={{ post.title }}&u={{ site.easyurl }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="icon-facebook"></i>Facebook</a>
       <a href="https://plus.google.com/share?url={{ site.easyurl }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="icon-gplus"></i>Google+</a>
     {% else %}
       <a href="mailto:?subject={{ page.title }}&body={{ site.easyurl }}{{ page.url }}" rel="nofollow" target="_blank" title="Share by email"><i class="icon-mail-alt"></i>Email</a>
-      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.easyurl }}{{ page.url }}&via=axismaps" rel="nofollow" target="_blank" title="Share on Twitter"><i class="icon-twitter"></i>Twitter</a>
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.easyurl }}{{ page.url }}&via=axismaps" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fab fa-twitter"></i>Twitter</a>
       <a href="https://facebook.com/sharer/sharer.php?t={{ post.title }}&u={{ site.easyurl }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="icon-facebook"></i>Facebook</a>
       <a href="https://plus.google.com/share?url={{ site.easyurl }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="icon-gplus"></i>Google+</a>
     {% endif %}

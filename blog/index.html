@@ -26,7 +26,7 @@ sitemap: false
   <div class="pagination">
     <div class="pagination-section">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="icon-left-dir"></i>Previous</a>
+        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fas fa-caret-left-dir"></i>Previous</a>
       {% endif %}
     </div>
     <div class="pagination-section">
@@ -34,7 +34,7 @@ sitemap: false
     </div>
     <div class="pagination-section">
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next<i class="icon-right-dir"></i></a>
+        <a href="{{ paginator.next_page_path }}" class="next">Next<i class="fas fa-caret-right-dir"></i></a>
       {% endif %}
     </div>
   </div>
