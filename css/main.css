@@ -541,7 +541,7 @@ a.project:hover .grid-image{
 }
 
 /* ABOUT, TEAM, CONTACT */
-#about, #team, #contact{
+section.text{
   margin: 20px 20%;
   text-align: center;
   line-height: 26px;
@@ -562,7 +562,7 @@ a.project:hover .grid-image{
   margin-top: 0;
 }
 
-#about p, #team p, #contact p{
+section.text p{
   text-align: left;
   color: #333;
   line-height: 32px;
@@ -1149,7 +1149,7 @@ span.caption {
     display: block;
   }
 
-  #about, #team, #contact, #data-design-code, #personnel {
+  section.text, #data-design-code, #personnel {
     margin: 20px;
   }
 
