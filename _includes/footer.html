@@ -17,15 +17,15 @@
 		{% endfor %}
 		<p class="spacer">&nbsp;</p>
 		<h4>Made <i class="icon-at"></i> Axis</h4>
-		<p> <a href="{{ '/guide/' | prepend: site.baseurl }}">Cartography Guide</a></p>
+		<p> <a href="{{ '/guide/' }}">Cartography Guide</a></p>
 		<p><a href="http://indiemapper.io" target="_blank">Indiemapper</a></p>
 		<p><a href="http://colorbrewer2.org" target="_blank">Colorbrewer</a></p>
 		<p><a href="http://store.axismaps.com" target="_blank">Typographic Map Store</a></p>
 	</div>
 	<div class="blog-links">
-		<h4><a href="{{ '/blog/' | prepend: site.baseurl }}">From the blog</a></h4>
+		<h4><a href="{{ '/blog/' }}">From the blog</a></h4>
 		{% for post in site.posts limit: 10 %}
-			<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+			<p><a href="{{ post.url }}">{{ post.title }}</a></p>
 		{% endfor %}
 	</div>
 	<div>
@@ -34,7 +34,7 @@
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 	<p style="clear:both"></p>
-	<a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ '/images/logo_small.png' | prepend: site.baseurl }}" alt='Axis Maps' class='logo'></a>
+	<a href="{{ '/' }}"><img src="{{ '/images/logo_small.png' }}" alt='Axis Maps' class='logo'></a>
 	<hr>
 	<p class="legal">&copy;2017 Axis Maps. All rights reserved.<br>The material on this site may not be reproduced, distributed, transmitted, or otherwise used, except with the prior permission of Axis Maps.</p>
 </footer>

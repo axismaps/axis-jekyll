@@ -25,12 +25,12 @@ comments: []
 <!--break-->
 <p>These maps use the same technique except now alpha is controlled by storm impact. Areas with a higher level of impact are more visually prominent that areas of less impact. These maps hopefully quickly give you an understanding of the population affected by the storm. While I'm sure this was the intention of the ESRI map, because of some misplaced interactivity trumping <a href="http://www.axismaps.com/blog/2012/10/the-aesthetician-and-the-cartographer/">thoughtful cartography</a>, it can't say the same.</p>
 <h2>Median Income</h2>
-<p><img class=" aligncenter" style="display: block; margin-left: auto; margin-right: auto;" title="income.jpg" src="{{ site.baseurl }}/media/posts/2012/11/income1.jpg" alt="Income" width="704" height="807" border="0" /></p>
+<p><img class=" aligncenter" style="display: block; margin-left: auto; margin-right: auto;" title="income.jpg" src="/media/posts/2012/11/income1.jpg" alt="Income" width="704" height="807" border="0" /></p>
 <h2>Black Population</h2>
-<p><img class=" aligncenter" style="display: block; margin-left: auto; margin-right: auto;" title="black.jpg" src="{{ site.baseurl }}/media/posts/2012/11/black3.jpg" alt="Black" width="704" height="807" border="0" /></p>
+<p><img class=" aligncenter" style="display: block; margin-left: auto; margin-right: auto;" title="black.jpg" src="/media/posts/2012/11/black3.jpg" alt="Black" width="704" height="807" border="0" /></p>
 <h2>Percent Residents on Medicare</h2>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" title="medicare.jpg" src="{{ site.baseurl }}/media/posts/2012/11/medicare1.jpg" alt="Medicare" width="704" height="807" border="0" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" title="medicare.jpg" src="/media/posts/2012/11/medicare1.jpg" alt="Medicare" width="704" height="807" border="0" /></p>
 <h2>Percent Uninsured</h2>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" title="uninsured.jpg" src="{{ site.baseurl }}/media/posts/2012/11/uninsured1.jpg" alt="Uninsured" width="704" height="807" border="0" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" title="uninsured.jpg" src="/media/posts/2012/11/uninsured1.jpg" alt="Uninsured" width="704" height="807" border="0" /></p>
 <h2>Unemployment Rate</h2>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" title="unemployment.jpg" src="{{ site.baseurl }}/media/posts/2012/11/unemployment3.jpg" alt="Unemployment" width="704" height="807" border="0" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" title="unemployment.jpg" src="/media/posts/2012/11/unemployment3.jpg" alt="Unemployment" width="704" height="807" border="0" /></p>

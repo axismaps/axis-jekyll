@@ -31,10 +31,10 @@ tags:
 <p class="MsoNormal"><strong>Wrong. </strong></p>
 <p class="MsoNormal">In fact, <a href="http://blog.thematicmapping.org" target="_blank">despite recent efforts</a> to create a suite of thematic mapping approaches, Google Earth is a terrible environment for presenting many kinds of thematic maps. I'd go so far as to say that the 3D prism maps and 3D graduated symbol maps we see popping up in Google Earth are <a href="http://en.wikipedia.org/wiki/Chartjunk" target="_blank"><strong>pure chart junk</strong></a>, of the kind <a href="http://www.edwardtufte.com/tufte/">Tufte</a> warned us about repeated for past 25 years.</p>
 
-![3D prism map of population in Google Earth]({{ site.baseurl }}/media/posts/2009/04/prismmap.jpg)
+![3D prism map of population in Google Earth](/media/posts/2009/04/prismmap.jpg)
 _3D prism map in Google Earth (blog.thematicmapping.org)_
 <!--break-->
-![3D human figures as proportional symbols]({{ site.baseurl }}/media/posts/2009/04/humanfigures.jpg)
+![3D human figures as proportional symbols](/media/posts/2009/04/humanfigures.jpg)
 _3D human figures as proportional symbols (blog.thematicmapping.org)_
 
 <p class="MsoNormal"><strong>CHART JUNK</strong></p>
@@ -62,7 +62,7 @@ _3D human figures as proportional symbols (blog.thematicmapping.org)_
 <p style="text-align: left; padding-left: 30px;"><strong>This is an absolute rule:</strong> <em>If you want to give people the best chance to judge the relative sizes of objects, they should all be drawn at the same scale.</em></p>
 <p><strong>STILL NOT CONVINCED? LET'S DO SOME USER TESTING</strong></p>
 
-![Judging height is critical to the success of this map, yet most heights are obscured]({{ site.baseurl }}/media/posts/2009/04/nepalquiz.jpg)
+![Judging height is critical to the success of this map, yet most heights are obscured](/media/posts/2009/04/nepalquiz.jpg)
 _Judging height is critical to the success of this map, yet most heights are obscured_
 
 <p style="padding-left: 30px;"><strong>TASK #1: </strong>As quickly as you can, how does Nepal compare to Uzbekistan? <strong><br />

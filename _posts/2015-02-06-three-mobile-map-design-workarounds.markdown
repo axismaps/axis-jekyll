@@ -31,7 +31,7 @@ The browser chrome is all the stuff that appears around a window, taking away sc
 
 What's the workaround? How do we minimize the chrome so that when users get to the map they as much of it as possible? By forcing people to scroll down a separate introduction page. The page doubles as a loading screen and also includes some branding, a background image, and an attribution line. When the map finishes loading, a big up arrow with the words "Pull up to view map" appears. Pulling up, which scrolls down, sends people to the map with a minimized chrome.
 
-![Chrome]({{ site.baseurl }}/media/posts/2015/02/chrome.gif)
+![Chrome](/media/posts/2015/02/chrome.gif)
 
 The HTML is structured with a few special elements:
 
@@ -81,7 +81,7 @@ Geolocation is great for plotting your location along a route, fixing your loca
 
 What's the workaround here? How can we 1) encourage people to allow their location to be tracked, and 2) if it's denied, still ask for it again later to see if they change their minds? Essentially, we did it by asking if the browser can ask for permission in the first place. In other words, we used a custom notification that both explains the advantages of allowing your location to be tracked and asks if you would like to enable GPS. If the custom notification is denied, we can ask again next time... the browser hasn't blocked anything because it hasn't asked anything and the user is sent to the map. If the custom notification is accepted, the user is asked again by the browser. Yes, it is an additional click, but we see this as better than the alternative of a user potentially not having geolocation enabled at all.
 
-![Geolocation]({{ site.baseurl }}/media/posts/2015/02/geolocation.gif)
+![Geolocation](/media/posts/2015/02/geolocation.gif)
 
 ### Data Probe - animation indicates more
 
@@ -89,16 +89,16 @@ Every time a winery point is tapped on the mobile map we display a set of attri
 
 We needed a visual cue that would make it clear that more information existed without using up any space in the data probe itself. There was no room for an obvious up arrow here. However, we did find a nice bounce animation at [animate.css](http://daneden.github.io/animate.css/) that served as a good workaround. With each tap of a point, the probe panel bounces up and down a couple times from the bottom of the screen, then stops. It's a subtle way of showing that more information can be accessed by swiping up.
 
-![Probe]({{ site.baseurl }}/media/posts/2015/02/probe.gif)
+![Probe](/media/posts/2015/02/probe.gif)
 
 Swiping up yields the full details for the winery:
 
-![Probe full]({{ site.baseurl }}/media/posts/2015/02/probe_full.png)
+![Probe full](/media/posts/2015/02/probe_full.png)
 
 ### Lessons Learned
 
 With a huge push towards responsive web design, this is something we're going to be doing more and more as users expect to have content tailored for whatever screen they're using. Mobile maps present a lot more challenges than a standard webpage of long text content. Elements can't reflow and reposition with a grid scaffolding and some basic CSS width queries and you often feel like you're fighting against the tendencies of the browser. However, by making mobile design a key part of the total map design process, you can force yourself to think about how mobile users use the map differently; which features are important to them and which should be left for the desktop only. It may feel like building two separate products but the results mean that everyone gets what they need wherever they are.
 
-![Device testing]({{ site.baseurl }}/media/posts/2015/02/testing.jpg)
+![Device testing](/media/posts/2015/02/testing.jpg)
 
 PS - Get ready to buy a bunch of extra phones off eBay because each one is a unique little snowflake which makes testing a nightmare.

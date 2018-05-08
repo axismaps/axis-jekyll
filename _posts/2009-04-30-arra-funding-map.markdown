@@ -86,7 +86,7 @@ comments:
     cartographers at Axis Maps in Madison Wisconsin.  This illustrates various techniques
     for communicating data on a static [...]"
 ---
-![ARRA Funding Map]({{ site.baseurl }}/media/posts/2009/04/arra_fundingmap1.jpg)
+![ARRA Funding Map](/media/posts/2009/04/arra_fundingmap1.jpg)
 <p>Lots of maps are coming out that document when, where, and how stimulus money is being spent through the ARRA, like these at the <a href="http://foundationcenter.org/focus/economy/maps.html" target="_blank">Foundation Center</a>. With all of the reporting, accountability, and transparency required of ARRA grant recipients, I'm sure we'll only be seeing a lot more of these in the future. <a href="http://www.recovery.gov/?q=content/state-recovery-page" target="_blank">Recovery.gov</a> directs traffic to states' Web sites where some of this data is appearing. I'm looking forward to seeing more and more mash-ups and interactive maps and graphics as developers and designers get their hands on this stuff and data from other sources that track stimulus money.</p>
 <!--break-->
 <p><strong>Our Map</strong></p>
@@ -99,12 +99,12 @@ comments:
 <p>The challenge here was to select colors for three data sets (historical energy, projected energy, and ARRA money) that not only encoded data properly but were harmonious (i.e., not competing or ugly). The historical energy data set has a natural midpoint around zero, so it needed a diverging color scheme. On the other hand, the projected energy data, having no midpoint, required a sequential scheme (thanks to <a href="http://www.colorbrewer.axismaps.com/" target="_blank">ColorBrewer 2.0</a> for both sets of specs). Proportional rings for ARRA money just needed to be readable and look nice on top of the other colors.</p>
 <p>Here are some earlier attempts at getting color right. In my first try, I used a grayscale sequential ramp for the historical data (state fill color), matching the middle value to the map's background for a pseudo-diverging ramp feel. But this seemed overly subtle and downplayed the importance of clearly distinguishing states with decreasing and increasing energy consumption trends.</p>
 
-![First attempt at color.]({{ site.baseurl }}/media/posts/2009/04/graymap.png)
+![First attempt at color.](/media/posts/2009/04/graymap.png)
 _First attempt at color._
 
 <p>So, my next try was to replace the grayscale ramp with a true diverging ramp. Yuck. The mix of red outlines and fill colors bothered me on an purely aesthetic level. Other diverging ramps with other hues in them produced similarly ugly results.</p>
 
-![Second attempt at color.]({{ site.baseurl }}/media/posts/2009/04/aquamap.png)
+![Second attempt at color.](/media/posts/2009/04/aquamap.png)
 _Second attempt at color._
 
 <p>The final colors for historical energy consumption trends (blue-white-red) seem to best emphasize the data's midpoint, with red doing its part to connote "alarm" in the states with a poor track record. The projected energy consumption data set is now lower down in the visual hierarchy (shown using a grayscale color ramp on state outlines), but this seems to be acceptable compromise. Using gray prevents these two ramps from competing for attention or overlapping and confusing the map reader. From my perspective, at least, it also results in an (yes, subjective) improvement in overall color harmony.</p>

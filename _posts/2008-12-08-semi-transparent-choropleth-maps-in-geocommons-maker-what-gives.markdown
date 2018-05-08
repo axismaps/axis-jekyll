@@ -32,38 +32,38 @@ tags:
 <p><span>The fundamental problem with transparency is that<em> the color of semi-transparent map units can shift due to the visibility of color that lies beneath them</em>. This is not at all surprising, but can make the basic legend matching task difficult, obscure the pattern of color on the map, or just as bad, make patterns appear out of nowhere. Here's a look at what happens to colors using the same semi-transparent choropleth map units on different backgrounds. These are screen captures from early design mock-ups for Maker!.</span></p>
 <p><span>The first image shows (hypothetical) opaque choropleth map units with a 7-class color ramp. The next three images show the same units at 50% opacity on top of Google terrain, streets, and satellite imagery. Notice how colors shift when compared to the opaque map at top? See how lightly colored units nearly disappear on the streets map, and darkly colored units nearly disappear on the satellite map? Yikes!</span></p>
 
-![Mock-up of an opaque, 7-class choropleth map for Maker! (Google terrain)]({{ site.baseurl }}/media/posts/2008/08/picture-9.png)
+![Mock-up of an opaque, 7-class choropleth map for Maker! (Google terrain)](/media/posts/2008/08/picture-9.png)
 _Mock-up of an opaque, 7-class choropleth map for Maker! (Google terrain)_
 
-![Same mock-up, at 50% opaque (Google terrain)]({{ site.baseurl }}/media/posts/2008/08/picture-10.png)
+![Same mock-up, at 50% opaque (Google terrain)](/media/posts/2008/08/picture-10.png)
 _Same mock-up, at 50% opaque (Google terrain)_
 
-![Same mock-up, at 50% opaque (Google streets)]({{ site.baseurl }}/media/posts/2008/08/picture-11.png)
+![Same mock-up, at 50% opaque (Google streets)](/media/posts/2008/08/picture-11.png)
 _Same mock-up, at 50% opaque (Google streets)_
 
-![Same mock-up, at 50% opaque (Google satellite)]({{ site.baseurl }}/media/posts/2008/08/picture-12.png)
+![Same mock-up, at 50% opaque (Google satellite)](/media/posts/2008/08/picture-12.png)
 _Same mock-up, at 50% opaque (Google satellite)_
 
 <p style="text-align: center; "><strong>The Solution to Transparency</strong></p>
 <p><span>We employed three design solutions to ensure that semi-transparent choropleth maps in Maker! would work, despite potential map reading problems: 1) unit boundaries, 2) data probing, and 3) transparency control.</span></p>
 <p><strong>1) Unit boundaries.</strong> In Maker's choropleth maps <em>unit </em><em>boundaries</em> are color coded but remain opaque, even when <em>unit </em><em>fill</em> color is semi-transparent. This gives map users some true color information to work with, and should improve their ability and confidence to spot map patterns or match colors to a legend. In other words, while unit fill colors can get you close, unit boundaries can get you the rest of the way there.</p>
 
-![Screen-shot from Maker! showing opaque choropleth unit boundaries]({{ site.baseurl }}/media/posts/2008/08/picture-31.png)
+![Screen-shot from Maker! showing opaque choropleth unit boundaries](/media/posts/2008/08/picture-31.png)
 _Screen-shot from Maker! showing opaque choropleth unit boundaries_
 
 
-![Corresponding legend for the above map]({{ site.baseurl }}/media/posts/2008/08/picture-14.png)
+![Corresponding legend for the above map](/media/posts/2008/08/picture-14.png)
 _Corresponding legend for the above map_
 
 <p><strong>2) Data probing.</strong> We also took advantage of a relatively common and very helpful interactive map feature known as data probing. Exact values for any choropleth map unit can be obtained by clicking on them. In Maker!, we designed the data probing feature to go one step further and give values for all of the possible attributes associated with each map unit, not just the mapped attribute alone (see the scrolly list, shown in the probing pop-up below).</p>
 
-![GeoCommons Maker! Data Probe]({{ site.baseurl }}/media/posts/2008/12/picture-51.png)
+![GeoCommons Maker! Data Probe](/media/posts/2008/12/picture-51.png)
 _GeoCommons Maker! Data Probe_
 
 <p><span><strong>3) Transparency control.</strong> Finally, we gave mapmakers a transparency control, as well as a chance to take some responsibility for how well their maps communicate. The transparency control lets mapmakers decide what works and what doesn't. Given the huge range of possible maps that can be made with Maker!, some user controls like this are necessary (as well as being kinda fun!). Here, transparency can be adjusted for a custom fit with any chosen tile set, color scheme, or other mapped data. Settings on the control (shown below) range from 50-100% opaque.<br />
 </span></p>
 
-![Screen-shot from Maker! showing the transparency control]({{ site.baseurl }}/media/posts/2008/08/picture-131.png)
+![Screen-shot from Maker! showing the transparency control](/media/posts/2008/08/picture-131.png)
 _Screen-shot from Maker! showing the transparency control_
 
 <p style="text-align: center;"><span><strong>The Best of Both Worlds</strong></span></p>

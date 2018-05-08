@@ -127,7 +127,7 @@ comments:
     quickly.
 ---
 <p>I'm pleased to announce we've launched <a href="http://ColorBrewer2.org">ColorBrewer2.org</a>! After 8 years, which is about 80 in web years, it was time to update and overhaul the much-loved ColorBrewer. I was lucky to be a co-designer on the original and with the Flex development talents of Andy Woodruff we were finally able to implement ideas that had been kicking around. This remains totally free and adds some new features that'll make using this easier and faster.</p>
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-472" title="cb2" src="{{ site.baseurl }}/media/posts/2009/06/cb2.png" alt="cb2" width="525" height="331" /></p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-472" title="cb2" src="/media/posts/2009/06/cb2.png" alt="cb2" width="525" height="331" /></p>
 <!--break-->
 <p>New Features include:</p>
 <p style="padding-left: 30px;">1. EXPORT: We never really had this before and now you have four ways to get colors out of ColorBrewer: export Adobe ASE color swatches directly into Illustrator or Photoshop, copy and paste color specs, download an Excel file of specs, or even run ColorBrewer right inside ArcGIS (thanks to the folks at the NCS).</p>

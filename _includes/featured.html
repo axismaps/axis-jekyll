@@ -1,15 +1,15 @@
 <section id="featured-projects">
 	<h2>Projects</h2>
     <h3>Designed &amp; Built by Axis Maps</h3>
-    <a class="button hollow" href="{{ '/about/' | prepend: site.baseurl }}">Learn more about what we do...</a>
+    <a class="button hollow" href="{{ '/about/' }}">Learn more about what we do...</a>
 	<div id='project-grid'>
         {% assign count = 0 %}
         {% assign items = site.projects | sort: 'date' %}
         {% for project in items reversed %}
             {% if project.featured %}
                 {% assign count = count | plus: 1 %}
-                <a class="project" href="{{ project.url | prepend: site.baseurl }}" {% if count == 9 %} id="next-projects" {% endif %}>
-                    <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+                <a class="project" href="{{ project.url }}" {% if count == 9 %} id="next-projects" {% endif %}>
+                    <div class="grid-image" style="background-image: url(/media/banners/{{ project.pid }}.png)"></div>
                     <h4 title="{{ project.title }}">{{ project.title }}</h4>
                     <h5>{{ project.client }}</h5>
                 </a>
@@ -22,8 +22,8 @@
         <div style="clear:both"></div>
     </div>
     {% if page.url == '/' %}
-        <a class="button hollow" href="{{ '/projects/#next-projects' | prepend: site.baseurl }}">See more projects...</a>
+        <a class="button hollow" href="{{ '/projects/#next-projects' }}">See more projects...</a>
     {% else %}
-        <a class="button hollow" href="{{ '/more-projects/' | prepend: site.baseurl }}">See more projects...</a>
+        <a class="button hollow" href="{{ '/more-projects/' }}">See more projects...</a>
     {% endif %}
 </section>

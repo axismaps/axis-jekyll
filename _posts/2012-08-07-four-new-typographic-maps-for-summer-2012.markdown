@@ -33,18 +33,18 @@ comments:
 <!--break-->
 <h2>London</h2>
 <p>Our maps have ventured outside the US for the first time, to everyone's favo(u)rite summer 2012 city. With that, we've launched a UK store for orders (pre-orders for the moment) there and internationally at <a href="http://store.axismaps.co.uk/#uk">store.axismaps.co.uk</a>. The map is also available on the American side of the pond, of course.</p>
-<p><a href="http://store.axismaps.com/product/london/"><img src="{{ site.baseurl }}/media/posts/2012/08/london_20120723.jpg" alt="London typographic map" title="London typographic map" width="300" height="200" class="alignnone size-medium wp-image-1349" /></a></p>
-<p><a href="http://store.axismaps.com/product/london/"><img src="{{ site.baseurl }}/media/posts/2012/08/london_4.jpg" alt="London typographic map" title="London typographic map" width="300" height="199" class="alignnone size-medium wp-image-1348" /></a></p>
+<p><a href="http://store.axismaps.com/product/london/"><img src="/media/posts/2012/08/london_20120723.jpg" alt="London typographic map" title="London typographic map" width="300" height="200" class="alignnone size-medium wp-image-1349" /></a></p>
+<p><a href="http://store.axismaps.com/product/london/"><img src="/media/posts/2012/08/london_4.jpg" alt="London typographic map" title="London typographic map" width="300" height="199" class="alignnone size-medium wp-image-1348" /></a></p>
 <h2>Philadelphia</h2>
 <p>Or celebrate American independence from London in the Cradle of Liberty. We've got Philly's astoundingly dense network of streets and, of course, a nod to Rocky.</p>
-<p><a href="http://store.axismaps.com/product/philadelphia"><img src="{{ site.baseurl }}/media/posts/2012/08/philadelphia_20120722.jpg" alt="Philadelphia typographic map" title="Philadelphia typographic map" width="300" height="200" class="alignnone size-medium wp-image-1351" /></a></p>
-<p><a href="http://store.axismaps.com/product/philadelphia"><img src="{{ site.baseurl }}/media/posts/2012/08/philadelphia_3.jpg" alt="Philadelphia typographic map" title="Philadelphia typographic map" width="300" height="199" class="alignnone size-medium wp-image-1350" /></a></p>
+<p><a href="http://store.axismaps.com/product/philadelphia"><img src="/media/posts/2012/08/philadelphia_20120722.jpg" alt="Philadelphia typographic map" title="Philadelphia typographic map" width="300" height="200" class="alignnone size-medium wp-image-1351" /></a></p>
+<p><a href="http://store.axismaps.com/product/philadelphia"><img src="/media/posts/2012/08/philadelphia_3.jpg" alt="Philadelphia typographic map" title="Philadelphia typographic map" width="300" height="199" class="alignnone size-medium wp-image-1350" /></a></p>
 <h2>Seattle</h2>
 <p>Grab your coffee and your 90s grunge music and head to the west coast. This watery Seattle map will show you where to hang out.</p>
-<p><a href="http://store.axismaps.com/product/seattle"><img src="{{ site.baseurl }}/media/posts/2012/08/seattle_20120723.jpg" alt="Seattle typographic map" title="Seattle typographic map" width="200" height="300" class="alignnone size-medium wp-image-1353" /></a></p>
-<p><a href="http://store.axismaps.com/product/seattle"><img src="{{ site.baseurl }}/media/posts/2012/08/seattle_4.jpg" alt="Seattle typographic map" title="Seattle typographic map" width="300" height="199" class="alignnone size-medium wp-image-1352" /></a></p>
+<p><a href="http://store.axismaps.com/product/seattle"><img src="/media/posts/2012/08/seattle_20120723.jpg" alt="Seattle typographic map" title="Seattle typographic map" width="200" height="300" class="alignnone size-medium wp-image-1353" /></a></p>
+<p><a href="http://store.axismaps.com/product/seattle"><img src="/media/posts/2012/08/seattle_4.jpg" alt="Seattle typographic map" title="Seattle typographic map" width="300" height="199" class="alignnone size-medium wp-image-1352" /></a></p>
 <h2>Minneapolis</h2>
 <p>In the summer, enjoy the parks and lakes in this city on the upper reaches of the Mississippi River. In the harsh Minnesotan winter, wrap yourself in this map for warmth.</p>
-<p><a href="http://store.axismaps.com/product/minneapolis"><img src="{{ site.baseurl }}/media/posts/2012/08/minneapolis_20110722.jpg" alt="Minneapolis typographic map" title="Minneapolis typographic map" width="300" height="200" class="alignnone size-medium wp-image-1355" /></a></p>
-<p><a href="http://store.axismaps.com/product/minneapolis"><img src="{{ site.baseurl }}/media/posts/2012/08/minneapolis_3.jpg" alt="Minneapolis typographic map" title="Minneapolis typographic map" width="300" height="199" class="alignnone size-medium wp-image-1354" /></a></p>
+<p><a href="http://store.axismaps.com/product/minneapolis"><img src="/media/posts/2012/08/minneapolis_20110722.jpg" alt="Minneapolis typographic map" title="Minneapolis typographic map" width="300" height="200" class="alignnone size-medium wp-image-1355" /></a></p>
+<p><a href="http://store.axismaps.com/product/minneapolis"><img src="/media/posts/2012/08/minneapolis_3.jpg" alt="Minneapolis typographic map" title="Minneapolis typographic map" width="300" height="199" class="alignnone size-medium wp-image-1354" /></a></p>
 <p>More maps are coming soon. Stay tuned!</p>

@@ -33,11 +33,11 @@ The project has numerous technical challenges (which of course pale in compariso
 
 These are all cases where you might choose to render your maps as rasters, but still want to give your users the ability to identify features through data probing and get information on-demand. First, a little background on the tools (or stack) being used for this project. Here they are as a sandwich:
 
-![Stack sandwich]({{ site.baseurl }}/media/posts/2016/05/sandwich.jpg)
+![Stack sandwich](/media/posts/2016/05/sandwich.jpg)
 
 Delicious! And here they are as a _literal stack_ of pancakes:
 
-![Stack of pancakes]({{ site.baseurl }}/media/posts/2016/05/pancakes.jpg)
+![Stack of pancakes](/media/posts/2016/05/pancakes.jpg)
 
 Tasty! All of geographic data is stored in the PostGIS database. Each feature is tagged with a start date and end date, base on its first and last appearance (in that particular form) in the primary source documents. Map tiles are rendered using Mapnik (through [Tilelive](https://github.com/mapbox/tilelive)) based on:
 
@@ -48,7 +48,7 @@ Once delivered to the browser, the tiles are cached on AWS S3 so they won't be r
 
 Hopefully that provides enough context for the technical side of this post. I imagine it's a _stack_ that's pretty familiar to lots of you. Personally, I prefer it in sandwich form. The basic flow of data probing on a raster map involves 4 separate functions:
 
-![Full probe workflow]({{ site.baseurl }}/media/posts/2016/05/full_probe.gif)
+![Full probe workflow](/media/posts/2016/05/full_probe.gif)
 
 1. The user clicks the map, requesting features at the lat / lon coordinates under their mouse
 2. The API uses PostGIS to identify which features exist at that given location and returns those features back to the browser
@@ -99,7 +99,7 @@ The units assigned to `probeZoom` are decimal degrees (which is why they are so 
 
 The last thing we should do on the client side is provide a little bit of feedback to the user. Since the request to the server may take a small amount of time, we can prevent duplicate requests and frustrations by letting the user know their request has been received (and we're working on it, OK). We display a very small animation where the user clicks that runs until the response is received.
 
-![Animated user feedback]({{ site.baseurl }}/media/posts/2016/05/probe_animation.gif)
+![Animated user feedback](/media/posts/2016/05/probe_animation.gif)
 
 It's built using [pure CSS](https://github.com/axismaps/rio/blob/master/css/animate.css) so it loads much faster than an animated GIF. It can be places at the mouse cursor if it is appended to the `#map` div using the `x` and `y` properties of the `event` object passed to the click function.
 
@@ -134,13 +134,13 @@ Once the query has ended, it's just a matter of packaging the data up into an ob
 
 We've returned all of the matching features to the browser, with each feature's `name`, `layer`, and unique `id`. This allows us to present them in an organized way to the user like this:
 
-![List of features]({{ site.baseurl }}/media/posts/2016/05/list.png)
+![List of features](/media/posts/2016/05/list.png)
 
 It's important to organize them by layer if the type of feature they are isn't immediately apparent by its name.
 
 It's good to note that this step isn't 100% necessary for all datasets. Our data is dense enough and diverse enough that immediately drawing the vectors for each of the 7 features would be overwhelming and visually messy. Furthermore, it wouldn't accomplish the user's task of giving them information on the 1 feature they clicked on (it's not their fault a lot of stuff occupies the same geographic space). Instead, we've given them the tools to browse through the list of matching results which supports the tasks of those who want information on a specific feature, and those who want details on everything nearby.
 
-![Pick from the list]({{ site.baseurl }}/media/posts/2016/05/pick_list.gif)
+![Pick from the list](/media/posts/2016/05/pick_list.gif)
 
 This type of probing is also really good for displaying features that otherwise wouldn't draw on the map because of their size and potential visual dominance. Check out the final feature _Centro_ chosen from the list. It's a neighborhood / area so it is labeled on the map, but not drawn because the complex borders would be distracting. By adding it to the list of probe-able features, we're given users a way to see it's exact boundaries.
 
@@ -162,7 +162,7 @@ exports.draw = function( req, res ){
 
 The ID parameter is passed to the API using a similar URL structure as we setup with ExpressJS before. Outside of its use here, this is an excellent function to have as a part of your API to render GeoJSON for features on-demand. Once it's drawn in Leaflet, the highlight looks like:
 
-![Highlighted]({{ site.baseurl }}/media/posts/2016/05/highlight.png)
+![Highlighted](/media/posts/2016/05/highlight.png)
 
 We've added a small pseudo-halo around the polygon by drawing the vector twice. It gives it a little more depth and makes it seem less out-of-place when drawn on the pseudo-3D elements on the map. The styling object we use is:
 

@@ -10,7 +10,7 @@ sitemap: false
 <section id="blog" class="blogroll">
   {% for post in paginator.posts %}
     <article>
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       {% include post_metadata.html %}
       <div class="content post">
         {{ post.content | split:'<!--break-->' | first }}
@@ -26,7 +26,7 @@ sitemap: false
   <div class="pagination">
     <div class="pagination-section">
       {% if paginator.previous_page %}
-        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous"><i class="icon-left-dir"></i>Previous</a>
+        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="icon-left-dir"></i>Previous</a>
       {% endif %}
     </div>
     <div class="pagination-section">
@@ -34,7 +34,7 @@ sitemap: false
     </div>
     <div class="pagination-section">
       {% if paginator.next_page %}
-        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next<i class="icon-right-dir"></i></a>
+        <a href="{{ paginator.next_page_path }}" class="next">Next<i class="icon-right-dir"></i></a>
       {% endif %}
     </div>
   </div>

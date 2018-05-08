@@ -25,7 +25,7 @@ We recently finished work on a [live election map](http://egypt2015.herokuapp.co
 ## Stripes
 The overview map uses value-by-alpha to display the results. Each district is colored according to the party that won the most seats. Transparency is controlled by the number of seats won in that district (not the number of seats available). Because Egypt uses a proportional system representation for each district, a party wins seats _in proportion_ to how much of the vote they won. This leads to lots of ties, especially in the individual results list where the districts are very small with only 2 - 4 seats up for grabs, and many candidates running unaffiliated with any political party.
 
-![Stripes!]({{ site.baseurl }}/media/posts/2016/03/stripes.png)
+![Stripes!](/media/posts/2016/03/stripes.png)
 
 <!--break-->
 
@@ -77,7 +77,7 @@ layer.setStyle( style );
 
 The most challenging part of the brief for this map was in dealing with displaying the changes to the electoral system between the 2011 and 2015 elections. Outside of changes to the law, the most visible change was to the electoral districts themselves, and this was something we needed to show on an already visually complicated map.
 
-![Shadows!]({{ site.baseurl }}/media/posts/2016/03/shadows.png)
+![Shadows!](/media/posts/2016/03/shadows.png)
 
 To display the former boundaries, we decided to use a shadowy / gradienty type line style. We wanted something that was heavy enough to be visible on top of the complex polygon fills, but transparent and fuzzy enough to suggest that it is no longer present on the map. To achieve this style, we used a simple SVG filter.
 

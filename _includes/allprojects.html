@@ -1,7 +1,7 @@
 <section id="all-projects">
 	<h2>More projects</h2>
     <h3>Designed &amp; Built by Axis Maps</h3>
-    <a class="button hollow" href="{{ '/projects/' | prepend: site.baseurl }}">Back to featured projects...</a>
+    <a class="button hollow" href="{{ '/projects/' }}">Back to featured projects...</a>
 	<div id='project-list'>
         {% assign count = 0 %}
         {% assign items = site.projects | sort: 'date' %}
@@ -9,7 +9,7 @@
             {% unless project.featured %}
             <div class="project-short">
                 {% assign count = count | plus: 1 %}
-                <img class="banner-image" src="{{ site.baseurl }}/media/banners/{{ project.pid }}.png"/>
+                <img class="banner-image" src="/media/banners/{{ project.pid }}.png"/>
                 {% if project.link %}
                     <h4><a href="{{project.link}}">{{ project.title }}</a></h4>
                 {% else %}
@@ -22,5 +22,5 @@
         {% endfor %}
         <div style="clear:both"></div>
     </div>
-    <a class="button hollow" href="{{ '/projects/' | prepend: site.baseurl }}">Back to projects...</a>
+    <a class="button hollow" href="{{ '/projects/' }}">Back to projects...</a>
 </section>
