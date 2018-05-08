@@ -30,10 +30,10 @@ project: merck
 </tr>
 <tr>
 <td style="text-align: left;">You:</td>
-<td><img src="{{ site.baseurl }}/media/posts/2017/09/emoji1.png"/></td>
-<td><img src="{{ site.baseurl }}/media/posts/2017/09/emoji2.png"/></td>
-<td><img src="{{ site.baseurl }}/media/posts/2017/09/emoji3.png"/></td>
-<td><img src="{{ site.baseurl }}/media/posts/2017/09/emoji4.png"/></td>
+<td><img src="/media/posts/2017/09/emoji1.png"/></td>
+<td><img src="/media/posts/2017/09/emoji2.png"/></td>
+<td><img src="/media/posts/2017/09/emoji3.png"/></td>
+<td><img src="/media/posts/2017/09/emoji4.png"/></td>
 </tr>
 </table>
 
@@ -49,11 +49,11 @@ This project involved several prototypes to work through design decisions. Altho
 
 There are places that zip code tabulation areas don't touch—because nobody lives there—so ensuring no blank space means a certain minimum grid cell size, which may or may not be a good resolution for the more populated parts of the country.
 
-![Zip code centroids binned to various cell sizes]({{ site.baseurl }}/media/posts/2017/09/merck_grid_size.gif)
+![Zip code centroids binned to various cell sizes](/media/posts/2017/09/merck_grid_size.gif)
 
 At one point we experimented with variable cell sizes, where each cell contained approximately the same number of zip codes. Big squares mean sparse populations, and small cells mean dense population, where there are a lot of zip codes in a small area. I'm still a little intrigued by this idea, but cartographically the effect is kind of opposite of the intended representation: all cells are meant to be "equal" in a sense, but the larger, sparser cells carry a lot more visual weight.
 
-![Variable grid cell sizes with approximately equal numbers of zip codes]({{ site.baseurl }}/media/posts/2017/09/merck_variable_size.jpg)
+![Variable grid cell sizes with approximately equal numbers of zip codes](/media/posts/2017/09/merck_variable_size.jpg)
 
 A second problem with binning is that it requires aggregations that depend on actually having the necessary data. In this case, we had vaccination rates already aggregated to geographies like zip codes, but we did not have the actual number of vaccinations and the total number of eligible children. Without those, we weren't able to display actual vaccination rates in a grid. Instead it was something like _"percent of zip codes with rates above 50%,"_ so for example if a cell had 100 zip codes and 40 of them had vaccination rates above 50%, the map would show the cell as 40%. This is a bit too convoluted and may not do a great job at showing real spatial patterns anyway.
 
@@ -74,7 +74,7 @@ date,fips,newclass
 
 Detailed data with actual vaccination rates is loaded on demand through a simple API to get values for a specific geographic entity.
 
-![Probe for actual data values]({{ site.baseurl }}/media/posts/2017/09/merck_probe.jpg)
+![Probe for actual data values](/media/posts/2017/09/merck_probe.jpg)
 
 To further reduce file size and smooth out the animation, we mapped 12-week rolling averages instead of single-week snapshots. The data tends to be unstable and noisy when and where there were lower populations of eligible children, so our hope was that averaging values over time would present a better picture of trends, while also resulting in fewer rows of change in our final CSV.
 
@@ -86,15 +86,15 @@ Legibility concerns led us to the zip code point map. At a national scale, even 
 
 Most of the map is drawn as SVG using standard [D3 methods](https://github.com/d3/d3-geo), but the zip code point layer is an exception. This many points, some 33,000, do not perform well as vector graphics and instead are drawn to a canvas element. It means some extra work to account for things like interactivity (we can't just attach mouse handlers and have to search for nearby points on mouse move), but it's worth it to avoid completely choking on rendering.
 
-![Zip code point probe]({{ site.baseurl }}/media/posts/2017/09/merck_zip_probe.png)
+![Zip code point probe](/media/posts/2017/09/merck_zip_probe.png)
 
 At the scale where we do show zip code polygons, the problem remains that this is a ton of geographic data. For this we built a simple Node vector tile server that sends the polygons in tile-sized chunks as topojson (and caches them to S3). We calculated and stored zip code centroids in a PostGIS database ahead of time, then can get the tiles by querying for centroids that fall within a [tile's bounds](https://github.com/mapbox/sphericalmercator#bboxx-y-zoom-tms_style-srs). We use centroids instead of polygon intersections so that each polygon is only drawn on one tile—it's fine if it spills out into other tiles on the map as in the highlighted example below, but we don't want it being drawn multiple times.
 
-![Zip code in multiple tiles]({{ site.baseurl }}/media/posts/2017/09/merck_zip_tile.png)
+![Zip code in multiple tiles](/media/posts/2017/09/merck_zip_tile.png)
 
 On the front end, when the user zooms past a scale threshold, the map switches to a standard web Mercator map (using [d3-tile](https://github.com/d3/d3-tile)) onto which we can load zip code tiles as the map is panned. (As a bonus we can also easily load reference basemap tiles underneath to help with orientation.)
 
-![Zip code vector tiles]({{ site.baseurl }}/media/posts/2017/09/merck_pan.gif)
+![Zip code vector tiles](/media/posts/2017/09/merck_pan.gif)
 
 ### Recap
 

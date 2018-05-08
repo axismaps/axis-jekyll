@@ -36,17 +36,17 @@ So what categories of accessibility should you be aware of? There are 4 areas th
 
 Color can cover a whole host of issues, but the main areas to watch out for are color blindness and low contrast. About 10% of all males have some form of color blindness, of which the most prevalent is red/green (protanopia) color blindness. That's a big percentage of your users. Simple fix – don't put red and green right next to each other. As a mapping company trained in classical cartography techniques, this one is pretty much embedded in our blood and bones. Other versions of color blindness do exist though. It's up to you to decide how many versions you want to design for (since the more you cover, the less options you have for design). A good site to figure out which colors you can use is [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/).
 
-![Magenta vs Gray for Red/Green color blind people]({{ site.baseurl }}/media/posts/2015/06/color-lab.png)
+![Magenta vs Gray for Red/Green color blind people](/media/posts/2015/06/color-lab.png)
 _Magenta vs Gray for Red/Green color blind people_
 
 A color tool for Cartography specifically and which has colorblind options is [ColorBrewer](http://colorbrewer2.org/) (which Axis Maps hosts).
 
-![Color brewer example image]({{ site.baseurl }}/media/posts/2015/06/color-brewer.png)
+![Color brewer example image](/media/posts/2015/06/color-brewer.png)
 _Color Brewer_
 
 The other major category related to vision is contrast. Many users have a harder time distinguishing low contrast color pairings. For example, `#ccc` color text on a `#999` background. You can check contrast between colors using the [Color Contrast Check tool.](http://www.snook.ca/technical/colour_contrast/colour.html)
 
-![Contrast checker image - #999 vs #ccc]({{ site.baseurl }}/media/posts/2015/06/contrast-checker-999vsccc.png)
+![Contrast checker image - #999 vs #ccc](/media/posts/2015/06/contrast-checker-999vsccc.png)
 _Contrast Checker - #999 vs #ccc_
 
 *Testing:* The best way to test for color blindness issues is to have a someone who is actually color blind look at the site (and since 1 out 10 men are, there is a good chance you know someone who is). Barring that, run the various colors through [Colorlab](http://colorlab.wickline.org/colorblind/colorlab/) and the [Color Contrast Check tool](http://www.snook.ca/technical/colour_contrast/colour.html).
@@ -126,7 +126,7 @@ Each screen reader sees the world slightly differently. This can create some hea
 
 ---
 
-![Screenshot of the carousel  with the problem arrows]({{ site.baseurl }}/media/posts/2015/06/carousel.png)
+![Screenshot of the carousel  with the problem arrows](/media/posts/2015/06/carousel.png)
 _Screenshot of the carousel with the problem arrows_
 
 For the life of me, I couldn't get Chrome to read the `aria-label` on the arrows, until I took the [ChromeVox tutorial](http://www.chromevox.com/tutorial/) and realized that screen readers don't just use `tab` to navigate. They use the arrow keys, the plus/minus keys, and a whole host of other shortcut keys. `Tab` is just for interactive elements (and apparently Chrome/ChromeVox was not reading the `aria-label` for interactive elements). This is by design. Keyboard only users just need `tab` to move through the interactable elements. They can read the non-interactive elements already. Screen Readers use other keys to move through the non-interactable elements such as paragraph blocks.

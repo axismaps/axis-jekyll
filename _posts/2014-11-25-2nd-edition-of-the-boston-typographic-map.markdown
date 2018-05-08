@@ -23,7 +23,7 @@ comments: []
 ---
 <p>It's been five years since we first introduced our map of Boston. The popularity of that map started us down a course of typographic mapping that has since expanded to 11 cities. Given the special place that Boston has in our hearts, we felt it was well deserving of a redesign. And to prove just how much we love this city, we started from scratch. In other words, we started at the beginning with a blank canvas, imported a fresh copy of Open Street Map geography and place names, determined a new map extent and layout, and chose new fonts, colors, and character styles. The new <a title="Boston 2nd edition poster" href="http://store.axismaps.com/product/boston">Boston, 2nd edition poster</a> is still 24 inches wide by 36 inches tall, but looks and feels dramatically different.</p>
 
-![Boston 2nd ed. typographic map]({{ site.baseurl }}/media/posts/2014/11/boston_full.png)
+![Boston 2nd ed. typographic map](/media/posts/2014/11/boston_full.png)
 _<a href="http://store.axismaps.com/product/boston">Boston 2nd ed. typographic map</a>_
 <!--break-->
 <p>Here are some of the most notable changes:</p>
@@ -39,8 +39,8 @@ _<a href="http://store.axismaps.com/product/boston">Boston 2nd ed. typographic m
 <p>Boston is famous for its major underground and underwater tunnels. The 2nd edition Boston map is the first to employ a text style specifically for tunnels. Where highway text goes subsurface, we simply reverse its fill and stroke color. For example, Interstate 90 is represented by purple text with a white stroke but where it becomes Ted Williams Tunnel it is reversed and becomes white text with a purple stroke. I can't help but compare the bright white tunnel text to the bright lights of cars being turned on as they go beneath the surface.</p>
 <p>Below are images of the two maps side by side, each covering an area that is approximately 13 by 13 inches on the printed poster. The 2nd ed. covers a lot more ground in the same amount of space, has a bolder look due in part to its color-filled areas, has wavy water text, and a couple of new headlight-style tunnels. Let's say goodbye to the original Boston map and hello to the <a title="Boston 2nd edition" href="http://store.axismaps.com/product/boston">2nd edition</a>!</p>
 
-![Boston 2nd ed. typographic map detail]({{ site.baseurl }}/media/posts/2014/11/boston_2ed.png)
+![Boston 2nd ed. typographic map detail](/media/posts/2014/11/boston_2ed.png)
 _<a href="http://store.axismaps.com/product/boston">Boston 2nd ed. typographic map detail</a>_
 
-![Original Boston typographic map detail]({{ site.baseurl }}/media/posts/2014/11/boston_type_0329_02_blog.jpg)
+![Original Boston typographic map detail](/media/posts/2014/11/boston_type_0329_02_blog.jpg)
 _<a href="http://store.axismaps.com/product/boston">Original Boston typographic map detail</a>_

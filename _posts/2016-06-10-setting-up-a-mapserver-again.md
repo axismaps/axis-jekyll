@@ -21,9 +21,9 @@ comments: []
 project: rio
 ---
 
-About 4 years ago we wrote a post about [setting up a map server with Mapnik and PostGIS]({{ site.baseurl }}/blog/2012/01/dont-panic-an-absolute-beginners-guide-to-building-a-map-server/). It's still one of the most popular posts on the site but it's VERY OLD. I wanted to update it with a slightly easier install method and some newer software. What's in the stack? I'm glad you asked!
+About 4 years ago we wrote a post about [setting up a map server with Mapnik and PostGIS](/blog/2012/01/dont-panic-an-absolute-beginners-guide-to-building-a-map-server/). It's still one of the most popular posts on the site but it's VERY OLD. I wanted to update it with a slightly easier install method and some newer software. What's in the stack? I'm glad you asked!
 
-![The pancakes again]({{ site.baseurl }}/media/posts/2016/06/pancakes.jpg)
+![The pancakes again](/media/posts/2016/06/pancakes.jpg)
 
 Unlike the previous guide, this one won't cover basics of Linux and the command line. It's also written for a Red Hat Enterprise Linux (RHEL) 7.2 server instead of Ubuntu. Let's do it.
 
@@ -94,6 +94,6 @@ node render/app.js stylesheet.xml test.png
 
 When you view the file (log onto your server using SFTP and download it), it should look something like this:
 
-![It's a test!]({{ site.baseurl }}/media/posts/2016/06/test.png)
+![It's a test!](/media/posts/2016/06/test.png)
 
 Success! You are now the proud owner of a map server. Go get another snack. You've earned it.

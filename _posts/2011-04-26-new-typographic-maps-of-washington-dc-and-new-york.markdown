@@ -41,7 +41,7 @@ comments:
 
     We're interested to hear what other cities people would like to see when it comes time to think about making another map, so we're collecting a list through that page to help sway us in some particular direction.
 ---
-<p><a href="http://store.axismaps.com"><img src="{{ site.baseurl }}/media/posts/2011/04/dc_ny1.png" alt="DC and NYC typographic maps" title="DC and NYC typographic maps" class="alignnone size-full wp-image-903" /></a></p>
+<p><a href="http://store.axismaps.com"><img src="/media/posts/2011/04/dc_ny1.png" alt="DC and NYC typographic maps" title="DC and NYC typographic maps" class="alignnone size-full wp-image-903" /></a></p>
 <p>Earlier this month we launched our <a href="http://store.axismaps.com">new store</a> with two new typographic maps we had been working on since last autumn: <a href="http://store.axismaps.com/product/typographic-map-washington-dc">Washington, DC</a> and <a href="http://store.axismaps.com/product/manhattan">New York City</a> (Manhattan). These 24x36 inch posters, along with the existing line of cities, are now done in super sharp detail as offset prints, and all are now found at the new store.</p>
 <p>In addition to the new cities, we also released limited edition <a href="http://www.axismaps.com/com/store/soldout.html">letterpress prints</a> of San Francisco, which managed to sell out almost immediately. We're now looking into future letterpress editions of this and other cities.</p>
 <!--break-->

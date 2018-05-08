@@ -22,7 +22,7 @@ order: 4
   <ul>
     {% for guide in guides %}
       {% if guide.categories contains 'general' %}
-        <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
+        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -31,7 +31,7 @@ order: 4
   <ul>
     {% for guide in guides %}
       {% if guide.categories contains 'data' %}
-        <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
+        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -40,7 +40,7 @@ order: 4
   <ul>
     {% for guide in guides %}
       {% if guide.categories contains 'univariate' %}
-        <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
+        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -49,7 +49,7 @@ order: 4
   <ul>
     {% for guide in guides %}
       {% if guide.categories contains 'multivariate' %}
-        <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
+        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -58,7 +58,7 @@ order: 4
   <ul>
     {% for guide in guides %}
       {% if guide.categories contains 'web' %}
-        <li><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></li>
+        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

@@ -14,8 +14,8 @@ layout: default
       {% if page.project %}
         {% for project in site.projects %}
           {% if page.project == project.pid %}
-            <a class="mini-portfolio button hollow" href="{{ project.url | prepend: site.baseurl }}">
-              <div class="mini-image" id="mp{% increment length %}" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+            <a class="mini-portfolio button hollow" href="{{ project.url }}">
+              <div class="mini-image" id="mp{% increment length %}" style="background-image: url(/media/banners/{{ project.pid }}.png)"></div>
               <p><strong>{{ project.titleshort }}</strong> - {{ project.clientshort }}<br /><em>{{ project.tag }}</em></p>
             </a>
           {% endif %}
@@ -31,13 +31,13 @@ layout: default
     {% if page.previous %}
       <div class="pagenav-section" style="float:left">
         <span class="pagenav-title">Previous: </span>
-        <a href="{{ site.baseurl }}{{ page.previous.url }}" class="previous">{{page.previous.title}}</a>
+        <a href="{{ page.previous.url }}" class="previous">{{page.previous.title}}</a>
       </div>
     {% endif %}
     {% if page.next %}
       <div class="pagenav-section" style="float:right">
         <span class="pagenav-title">Next: </span>
-        <a href="{{ site.baseurl }}{{ page.next.url }}" class="next">{{page.next.title}}</a>
+        <a href="{{ page.next.url }}" class="next">{{page.next.title}}</a>
       </div>
     {% endif %}
   </div>

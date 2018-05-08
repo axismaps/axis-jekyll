@@ -9,7 +9,7 @@
             <iframe class="video full" src="https://player.vimeo.com/video/{{ page.video }}" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       {%  else %}
-        <img src="{{ site.baseurl }}/media/banners/{{ page.pid }}.png" class="banner">
+        <img src="/media/banners/{{ page.pid }}.png" class="banner">
       {% endif %}
       <section id="project">
         <h2>{{ page.title }}</h2>
@@ -26,9 +26,9 @@
             {% for feature in page.features %}
               <div>
                 {% if feature contains '\gif\' %}
-                  <img src="{{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.gif">
+                  <img src="/media/features/{{ page.pid }}/{{ forloop.index0 }}.gif">
                 {% else %}
-                  <img src="{{ site.baseurl }}/media/features/{{ page.pid }}/{{ forloop.index0 }}.png">
+                  <img src="/media/features/{{ page.pid }}/{{ forloop.index0 }}.png">
                 {% endif %}
                 <span>{{ feature | remove: "\gif\ " }}</span>
               </div>
@@ -46,7 +46,7 @@
       <section id="project-metadata">
         {% if page.logo %}
           <div id="built-for">
-            <div class="logo-image" style="background-image: url({{ site.baseurl }}/media/clients/{{ page.logo }})"></div>
+            <div class="logo-image" style="background-image: url(/media/clients/{{ page.logo }})"></div>
             <div>
               <h4>Built with and for:</h4>
               <h5>{{ page.client }}</h5>
@@ -61,7 +61,7 @@
             {% assign items = site.projects | sort: 'date' %}
             {% for project in items reversed %}
               {% if project.category == page.category and project.featured and project.title != page.title %}
-                <li><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></li>
+                <li><a href="{{ project.url }}">{{ project.title }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
@@ -81,7 +81,7 @@
           <ul>
             {% for post in posts reversed %}
               {% if post.project == page.pid %}
-                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
@@ -93,11 +93,11 @@
           {% for project in items reversed %}
             {% if project.featured %}
               {% if current == true %}
-                <a class="project" href="{{ project.url | prepend: site.baseurl }}">
-                  <div class="grid-image" style="background-image: url({{ site.baseurl }}/media/banners/{{ project.pid }}.png)"></div>
+                <a class="project" href="{{ project.url }}">
+                  <div class="grid-image" style="background-image: url(/media/banners/{{ project.pid }}.png)"></div>
                 </a>
                 <div>
-                  <a class="button hollow" href="{{ project.url | prepend: site.baseurl }}">Next project ></a>
+                  <a class="button hollow" href="{{ project.url }}">Next project ></a>
                   <h2>{{ project.title }}</h2>
                   <h5>{{ project.client }}</h5>
                 </div>

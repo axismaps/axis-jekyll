@@ -21,4 +21,4 @@ tags: []
 comments: []
 ---
 <p>Interested in how to present your indiemapper-made maps on beautiful Natural Earth Raster imagery? Check out this indiemapper + Adobe workflow over at the i<a href="http://indiemapper.io/blog/2010/10/indiemapper-adobe/">ndiemapper blog</a>.</p>
-<p><a rel="attachment wp-att-793" href="http://www.axismaps.com/blog/2010/10/indiemapper-adobe/finalmap/"><img class="alignnone size-full wp-image-793" title="finalMap" src="{{ site.baseurl }}/media/posts/2010/10/finalMap.jpg" alt="finalMap" width="486" height="256" /></a></p>
+<p><a rel="attachment wp-att-793" href="http://www.axismaps.com/blog/2010/10/indiemapper-adobe/finalmap/"><img class="alignnone size-full wp-image-793" title="finalMap" src="/media/posts/2010/10/finalMap.jpg" alt="finalMap" width="486" height="256" /></a></p>

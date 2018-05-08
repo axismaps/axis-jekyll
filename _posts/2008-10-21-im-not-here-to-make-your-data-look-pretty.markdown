@@ -24,7 +24,7 @@ tags:
 <!--break-->
 <p>While the eye-brain system is a masterpiece of evolution, it also has these well-known limitations and pitfalls. Optical illusions are one such example, including the one below by MIT professor <a href="http://web.mit.edu/persci/people/adelson/index.html" target="_blank">Edward Adelson</a> which is one of the best I've ever seen: It beautifully illustrates how our brains automagically discount the actual gray of the squares (their real lightness) in order to keep the logic of the checker-floor true (it discounts the shadow cast by the cylinder, our own built-in 'image correction software'). Here's the <a href="http://web.mit.edu/persci/people/adelson/checkershadow_illusion.html" target="_blank">proof</a>.</p>
 
-![The brain sees what it expects to see.]({{ site.baseurl }}/media/posts/2008/08/checkershadow_illusion4med.jpg)
+![The brain sees what it expects to see.](/media/posts/2008/08/checkershadow_illusion4med.jpg)
 _The brain sees what it expects to see: Squares A and B are exactly the same shade of gray. For real._
 
 <p>Within visualization we worry about both Type 1 and Type 2 errors; seeing things that aren't there, and missing things that are. Given both the power of graphics to speak so clearly to us and the very real limitations of 'visual thinking', it behooves us to not only use such power wisely, but to also understand as <a href="http://www.geovista.psu.edu/members/maceachren/" target="_blank">Alan MacEachren</a> notes, <a href="http://www.amazon.com/How-Maps-Work-Representation-Visualization/dp/0898625890" target="_blank">how and why maps work</a>.</p>
