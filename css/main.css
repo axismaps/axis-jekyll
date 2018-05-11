@@ -590,14 +590,25 @@ section#icons h2, section#case-studies h2{
   align-items:center;
 }
 
+.case-study.right .title-container{
+  margin-left: -10vw;
+}
+
 .case-study h3{
   text-transform: uppercase;
   color: white;
   font-weight: normal;
   margin-bottom: 40px;
   padding: 10px 50px;
-  background-color: royalblue;
   text-align: center;
+}
+
+.case-study.color-red h3{
+  background-color: #E34A33;
+}
+
+.case-study.color-purple h3{
+  background-color: #763E74;
 }
 
 .case-study > img, .case-study blockquote{
@@ -620,12 +631,27 @@ section#icons h2, section#case-studies h2{
 
 .case-study blockquote{
   clear: both;
-  width: 35%;
+  width: 30%;
   margin-left: 5%;
   margin-right: calc(5% + 40px);
   box-sizing: border-box;
-  border-left: 2px solid red;
+  border-left: 2px solid black;
   padding-left: 30px;
+}
+
+.case-study.right blockquote{
+  margin-right: 5%;
+  margin-left: calc(5% + 40px);
+  padding-right: 30px;
+  float: right;
+}
+
+.case-study.color-red blockquote{
+  border-left-color: #E34A33;
+}
+
+.case-study.color-purple blockquote{
+  border-left-color: #763E74;
 }
 
 .case-study blockquote::before{
@@ -633,12 +659,31 @@ section#icons h2, section#case-studies h2{
   font-size: 150px;
   position: absolute;
   margin: -10px;
-  color: red;
+}
+
+.case-study.color-red blockquote::before{
+  color: #E34A33;
+}
+
+.case-study.color-purple blockquote::before{
+  color: #763E74;
 }
 
 .case-study .project-title{
   padding: 30px 0;
-  background-color: red;
+}
+
+.case-study.right .project-title{
+  padding-left: 40px;
+  margin-left: -40px;
+}
+
+.case-study.color-red .project-title{
+  background-color: #FDF0ED;
+}
+
+.case-study.color-purple .project-title{
+  background-color: #FAF0FA;
 }
 
 .project-title p{
