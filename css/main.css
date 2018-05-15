@@ -550,12 +550,18 @@ a.project:hover .grid-image{
   padding: 40px 20%;
 }
 
+#intro p{
+  font-size: 24px;
+  line-height: 30px;
+}
+
 #intro p:first-child:first-letter {
   float: left;
   font-weight: bold;
-  font-size: 52px;
-  line-height: 52px;
+  font-size: 60px;
+  line-height: 56px;
   padding-right: 4px;
+  padding-top: 4px;
 }
 
 section#icons{
