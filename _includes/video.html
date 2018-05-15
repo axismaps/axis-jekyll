@@ -11,12 +11,12 @@
       <p>&nbsp;</p>
       <a class="button email-event" href="mailto:info@axismaps.com">Contact us</a>
     </div>
-    <div id="scroll-indicator">View More <br/> <i class="fas fa-chevron-down"></i></div>
+    <!-- <div id="scroll-indicator">View More <br/> <i class="fas fa-chevron-down"></i></div> -->
   </div>
 </div>
 <script>
   $( window ).resize( function(){
-    var h = $( window ).height() - $('#header').height() - 75;
+    var h = $( window ).height() - $('#header').height() - 200;
     var w = $( window ).width();
     h = Math.max(250, h);
     if (window.innerWidth < 350) {
@@ -37,11 +37,11 @@
 
   $( document ).ready( function(){
     $( window ).resize();
-    $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 )
-      .on('click', function (){
-        $('body').animate({
-          scrollTop: $('#featured-projects').position().top
-        }, 400);
-      })
+    // $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 )
+    //   .on('click', function (){
+    //     $('body').animate({
+    //       scrollTop: $('#featured-projects').position().top
+    //     }, 400);
+    //   });
   });
 </script>
