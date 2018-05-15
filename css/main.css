@@ -138,7 +138,12 @@ ol li+li, ul li+li {
   padding-right: 6px;
   line-height: 20px;
   float: left;
-  }
+}
+
+section > i:first-child{
+  font-size: 30px;
+  color: #E34A33;
+}
 
 
 /* UTILITY */
@@ -562,6 +567,19 @@ a.project:hover .grid-image{
   line-height: 56px;
   padding-right: 4px;
   padding-top: 4px;
+}
+
+a#contact-bar{
+  background-color: #58A2D8;
+  color: white;
+  font-weight: 300;
+  padding: 30px;
+  margin: 30px auto;
+  display: inline-block;
+}
+
+a#contact-bar:hover{
+  text-decoration: none;
 }
 
 section#icons{
