@@ -270,7 +270,7 @@ nav a:hover{
 	padding-bottom: 10px;
 }
 
-#home-video #page-title div#scroll-indicator{
+#home-video #page-title #scroll-indicator{
 	width: 200px;
   left: 50%;
 	opacity: 0;
@@ -334,7 +334,7 @@ footer p.legal{
 #featured-projects, #all-projects {
   text-align: center;
 	background-color: #EFF1F2;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #featured-projects .button{
@@ -1146,7 +1146,7 @@ span.caption {
     padding: 20px;
   }
 
-  #home-video #page-title div#scroll-indicator {
+  #home-video #page-title #scroll-indicator {
     visibility: hidden;
   }
 

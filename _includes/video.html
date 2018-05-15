@@ -11,7 +11,7 @@
       <p>&nbsp;</p>
       <a class="button email-event" href="mailto:info@axismaps.com"><i class="fas fa-users"></i> Contact us</a>
     </div>
-    <!-- <div id="scroll-indicator">View More <br/> <i class="fas fa-chevron-down"></i></div> -->
+    <a href="#featured-projects" id="scroll-indicator">View Our Work<br/><i class="fas fa-chevron-down"></i></a>
   </div>
 </div>
 <script>
@@ -37,11 +37,11 @@
 
   $( document ).ready( function(){
     $( window ).resize();
-    // $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 )
-    //   .on('click', function (){
-    //     $('body').animate({
-    //       scrollTop: $('#featured-projects').position().top
-    //     }, 400);
-    //   });
+    $( "#scroll-indicator" ).animate({ bottom: '-100px', opacity: 1}, 1000 )
+      .on('click', function (){
+        $('body').animate({
+          scrollTop: $('#featured-projects').position().top
+        }, 400);
+      });
   });
 </script>
