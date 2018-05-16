@@ -548,9 +548,9 @@ a.project:hover .grid-image{
 /* INDUSTRIES */
 #intro{
   background: #e7f4fc;
-  background: -moz-linear-gradient(top, #e7f4fc 0%, #fff6e6 100%);
-  background: -webkit-linear-gradient(top, #e7f4fc 0%,#fff6e6 100%);
-  background: linear-gradient(to bottom, #e7f4fc 0%,#fff6e6 100%);
+  background: -moz-linear-gradient(-45deg, #e7f4fc 0%, #fff6e6 100%);
+  background: -webkit-linear-gradient(-45deg, #e7f4fc 0%,#fff6e6 100%);
+  background: linear-gradient(-45deg, #e7f4fc 0%,#fff6e6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f4fc', endColorstr='#fff6e6',GradientType=0 );
   padding: 40px 20%;
 }
