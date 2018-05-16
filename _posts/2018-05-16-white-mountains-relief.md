@@ -3,7 +3,7 @@ layout: post
 nav: Blog
 status: publish
 published: true
-title: Shaded relief in 11 steps
+title: Relief mapping in 11 easy steps!
 author: awoodruff
 writer:
   display_name: Andy Woodruff
@@ -22,6 +22,8 @@ tags:
 comments: []
 project: []
 ---
+
+Try it at home! Satisfaction guaranteed!
 
 ![](/media/posts/2018/05/relief_banner.jpg)
 
@@ -43,13 +45,13 @@ There's no single way to make a shaded relief map, but here's how this one came 
 8. Generate and label contour lines from the DEM using QGIS, then export and add them as a Photoshop layer.
 9. Add roads (from OpenStreetMap via [Geofabrik's extracts](https://download.geofabrik.de/)) to the QGIS project. Export and style them with Illustrator, and place the .ai file as a layer in Photoshop underneath the relief. (Shadows thus fall on roads as they would in real life.)
 10. Label all the peaks, physical features, and towns one by one in Illustrator (no GIS data involved), and place them into Photoshop.
-11. Mask out Vermont (which helps a bit with orientation, and it's a NH map after all), crop the image, do miscellaneous cleanup, and finish!
+11. Mask out Vermont (sorry, Vermonters), flatten and crop the image, and print!
 
-That, of course, greatly simplifies each step, but it gives a good idea of everything that goes into a map. Labeling, for example, is hugely important and takes a lot of time to do right.
+Done! That list, of course, vastly oversimplifies things, but it gives a good idea of everything that goes into a map. Labeling, for example, is hugely important and takes a lot of time to do right.
 
 ![](/media/posts/2018/05/labels_only.png)
 
-Perhaps my favorite touch, briefly visible in the animated sequence, is number 6 from the list above: adding extra punch to the relief map's highlights and shadows. Daniel Huffman also covers something like this (along with much more!) in his [walkthrough of terrain mapping in Photoshop](https://somethingaboutmaps.wordpress.com/2016/10/03/terrain-in-photoshop/). A brightened, warmer tone is applied to the light side of mountains at high elevations, while shadows are given a blue tint. Not only does this seem to boost the illusion of depth, it also better evokes the temperature and appearance of a warm sun and cool shadows in reality. The effects are applied lightly, but they make a difference.
+Perhaps my favorite touch, briefly visible in the animated sequence, is number 7 from the list above: adding extra punch to the relief map's highlights and shadows. Daniel Huffman also covers something like this (along with much more!) in his [walkthrough of terrain mapping in Photoshop](https://somethingaboutmaps.wordpress.com/2016/10/03/terrain-in-photoshop/). A brightened, warmer tone is applied to the light side of mountains at high elevations, while shadows are given a blue tint. Not only does this seem to boost the illusion of depth, it also better evokes the temperature and appearance of a warm sun and cool shadows in reality. The effects are applied lightly, but they make a difference.
 
 ![](/media/posts/2018/05/relief_shadows.jpg)
 
