@@ -54,8 +54,9 @@ a:hover{
 
 a.button, button.submit{
 	display: inline-block;
-	line-height: 25px;
-    margin: 20px 0;
+  line-height: 25px;
+  font-family: 'Lato', sans-serif;
+  margin: 20px 0;
 	padding: 15px;
 	background-color: #58A2D8;
 	border-radius: 3px;
@@ -673,19 +674,46 @@ span.big{
 font-size: 30px;
 }
 
-.tool.newsletter{
+.newsletter, .contact{
   background-color: #EFF1F2;
+  padding: 30px;
 }
 
-#subForm input {
+.contact h4{
+  text-align: left;
+}
+
+form input, form textarea {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 0 0 10px 0;
   display: inline-block;
   font-family: 'Lato', sans-serif;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+form label{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+button.submit{
+  margin-bottom: 0;
+}
+
+.sending{
+  font-weight: bold;
+  line-height: 60px;
+  display: none;
+}
+
+.send-success{
+  text-align: left;
+  text-indent: -42px;
+  margin-left: 50px;
+  display: none;
 }
 
 /* PROJECT */

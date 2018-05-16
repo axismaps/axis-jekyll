@@ -10,9 +10,40 @@ order: 6
 	<h3>We want to build your map!</h3>
 	<p>We’ve worked with a wide range of clients all over the world. We’re excited to hear about your project, whether it’s small or large.</p>
 
-	<p><strong>Standard email:</strong><br>
-	Write to David Heyman, Managing Director of Axis Maps at:<br><a class="email-event" href="mailto:info@axismaps.com">info@axismaps.com</a>
+	<div class="contact">
+		<h4>Tell us about your project</h4>
+		<p>Any information is helpful here, from big picture project idea stuff to more detailed data, technology, and system requirements. Feel free to tell us anything you know, as well as any questions you have for us.</p>
+		<form id="email-contact">
+			<p>
+				<label>Name</label>
+				<input name="name" type="text">
+			</p>
+			<p>
+				<label>Organization</label>
+				<input name="org" type="text">
+			</p>
+			<p>
+				<label>Email</label>
+				<input name="email" type="email">
+			</p>
+			<p>
+				<label>Message</label>
+				<textarea name="message" rows="6"></textarea>
+			</p>
+			<p>
+				<button class="submit" type="submit">Submit</button>
+				<div class="sending"><i class="fas fa-spinner fa-spin fa-2x" style="position:relative;top:6px;right:8px;"></i> Sending message...</div>
+			</p>
+		</form>
+		<div class="send-success"><i class="fas fa-check-circle fa-2x" style="position:relative;top:6px;right:8px;color:#86D17F;"></i>Thanks for getting in touch. We’ll get back to you via the email address you provided.</div>
+	</div>
+
+	<p>
+		<strong>Standard email:</strong><br>
+		Write to David Heyman, Managing Director of Axis Maps at:<br><a class="email-event" href="mailto:info@axismaps.com">info@axismaps.com</a>
 	</p>
+
+	<hr>
 
 	<div class="tool newsletter">
 		<p><strong>Sign up for Axis News:</strong><br>
@@ -43,6 +74,25 @@ order: 6
 	<p>For all questions about indiemapper, please visit:<br><a href="http://indiemapper.io">http://indiemapper.io</a></p>
 
 	<p>For all questions about typographic maps, please visit:<br>
-<a href="http://store.axismaps.com/contact">http://store.axismaps.com/contact</a></p>
+	<a href="http://store.axismaps.com/contact">http://store.axismaps.com/contact</a></p>
 
 </section>
+
+<script>
+	$('#email-contact').submit(function (e) {
+		e.preventDefault();
+		$('#email-contact .submit').hide();
+		$('.sending').show();
+		$.ajax({
+			url: 'https://axis-email.prod.with-datafire.io/contact',
+			data: $(this).serializeArray(),
+			method: 'POST',
+			success: function () {
+				$('.sending').hide();
+				$('#email-contact').slideUp(function () {
+					$('.send-success').fadeIn();
+				});
+			}
+		})
+	})
+</script>
