@@ -207,6 +207,18 @@ nav{
   line-height: 30px;
 }
 
+.fixed-header .contact-button{
+  padding: 5px 15px;
+  margin-left: -10px;
+  background-color: #58A2D8;
+  color: white;
+  border-radius: 3px;
+}
+
+.fixed-header .contact-button:hover{
+  color: black;
+}
+
 nav a{
 	margin-right: 30px;
 	font-size: 20px;
