@@ -81,6 +81,7 @@ order: 6
 			data: $(this).serializeArray(),
 			method: 'POST',
 			success: function () {
+				ga('send', 'event', 'contact', 'form');
 				$('.sending').hide();
 				$('#email-contact').slideUp(function () {
 					$('.send-success').fadeIn();
