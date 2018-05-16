@@ -674,18 +674,28 @@ span.big{
 font-size: 30px;
 }
 
-.newsletter, .contact{
+.contact{
   background-color: #EFF1F2;
   padding: 30px;
 }
 
-.contact h4{
+.contact h4, .newsletter h4{
   text-align: left;
+}
+
+.newsletter{
+  background-color: #E7F4FC;
+  float: left;
+  width: 50%;
+  min-width: 320px;
+  padding: 20px;
+  margin: 0 40px 40px 0;
+  box-sizing: border-box;
 }
 
 form input, form textarea {
   width: 100%;
-  padding: 12px 20px;
+  padding: 10px 25px;
   margin: 0 0 10px 0;
   display: inline-block;
   font-family: 'Lato', sans-serif;
@@ -701,6 +711,7 @@ form label{
 
 button.submit{
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .sending{
