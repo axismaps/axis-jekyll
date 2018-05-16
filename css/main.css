@@ -699,7 +699,6 @@ font-size: 30px;
   background-color: #E7F4FC;
   float: left;
   width: 50%;
-  min-width: 320px;
   padding: 20px;
   margin: 0 40px 40px 0;
   box-sizing: border-box;
@@ -1076,6 +1075,12 @@ span.caption {
   
   #project-grid a.project {
     width: calc( 100% - 105px );
+  }
+
+  .icon-service, .newsletter{
+    float: none;
+    width: auto;
+    margin-right: 0;
   }
   
   .tool .img, .tool:nth-child(even) .img{
