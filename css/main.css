@@ -442,7 +442,8 @@ a.project:hover .grid-image{
 
 /* CLIENTS */
 #clients{
-	margin: 0 40px;
+  margin: 0 40px;
+  padding-bottom: 50px;
 }
 
 #clients h4{
