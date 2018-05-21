@@ -24,7 +24,7 @@ order: 6
 			</p>
 			<p>
 				<label>Email</label>
-				<input name="email" type="email">
+				<input name="email" type="email" required>
 			</p>
 			<p>
 				<label>Message</label>
@@ -35,7 +35,8 @@ order: 6
 				<div class="sending"><i class="fas fa-spinner fa-spin fa-2x" style="position:relative;top:6px;right:8px;"></i> Sending message...</div>
 			</p>
 		</form>
-		<div class="send-success"><i class="fas fa-check-circle fa-2x" style="position:relative;top:6px;right:8px;color:#86D17F;"></i>Thanks for getting in touch. We’ll get back to you via the email address you provided.</div>
+		<div class="send-message success"><i class="fas fa-check-circle fa-2x" style="position:relative;top:6px;right:8px;color:#86D17F;"></i>Thanks for getting in touch. We’ll get back to you via the email address you provided.</div>
+		<div class="send-message failure"><i class="fas fa-close-circle fa-2x" style="position:relative;top:6px;right:8px;color:#E34A33;"></i>We're sorry. There's an error with the contact form. Please <a class="email-event" href="mailto:info@axismaps.com">email us</a>.</div>
 	</div>
 
 	<p>
@@ -73,17 +74,25 @@ order: 6
 	$('#email-contact').submit(function (e) {
 		e.preventDefault();
 		$('#email-contact .submit').hide();
+		var data = $(this).serializeArray();
+		$('#email-contact input, #email-contact textarea').attr('disabled', true);
 		$('.sending').show();
 		$.ajax({
 			url: 'https://axis-email.prod.with-datafire.io/contact',
-			data: $(this).serializeArray(),
+			data: data,
 			method: 'POST',
 			success: function () {
 				ga('send', 'event', 'contact', 'form');
 				$('.sending').hide();
 				$('#email-contact').slideUp(function () {
-					$('.send-success').fadeIn();
+					$('.send-message.success').fadeIn();
 				});
+			},
+			error: function () {
+				$('#email-contact input, #email-contact textarea').removeAttr('disabled');
+				$('.sending').hide();
+				$('#email-contact .submit').show();
+				$('.send-message.failure').fadeIn();
 			}
 		})
 	})
