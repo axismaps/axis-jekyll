@@ -100,14 +100,14 @@ Point them towards their clothes. While they struggle to get them on, go back to
 Copy the address and paste it into the SFTP client of your choice. Log in as `root` using either your SSH key or a password and upload your mbtiles file to your home directory. If you really want to get fancy, you can do the upload straight from your terminal with:
 
 ```sh
-scp vector.mbtiles root@<your ip address>:/root/vector.mbtiles
+scp vector.mbtiles root@<server ip address>:/root/vector.mbtiles
 ```
 
 While you're waiting for that to finish, go check on the kids and make sure they're presentable.
 
 ## Starting the Server On Your Way Out the Door
 
-It's the final step. The kids are dressed and their bags are packed. All you need to do is start your server and your status as a legend is secure. SSH into your server (`ssh root@<your ip address>`) and run this single command:
+It's the final step. The kids are dressed and their bags are packed. All you need to do is start your server and your status as a legend is secure. SSH into your server (`ssh root@<server ip address>`) and run this single command:
 
 ```sh
 docker run --rm -it -v $(pwd):/data -p 80:80 klokantech/tileserver-gl vector.mbtiles --verbose
