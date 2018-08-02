@@ -93,14 +93,26 @@ That script will add each file in the `geojson` directory to a vector tileset in
 
 Now the pressure is on, but there's only 3 steps to go. Run upstairs to lay out some clothes for your kids. While you're up there, quickly provision a server on Digital Ocean. You'll want the [One-Click Docker App](https://www.digitalocean.com/products/one-click-apps/docker/) but the smallest size should do. While that's provisioning, get the kids upstairs and get their teeth brushed. _Pro-tip: Brush their teeth before they're dressed._
 
-Point them towards their clothes. While they struggle to get them on, go back to your machine and look for the IP address of your newly provisioned server. Copy the address and paste it into the SFTP client of your choice. Log in as `root` using either your SSH key or a password and upload your mbtiles file to your home directory. While you're waiting for that to finish, go check on the kids and make sure they're presentable.
+Point them towards their clothes. While they struggle to get them on, go back to your machine and look for the IP address of your newly provisioned server. Just click _COPY_ and it's on your clipboard, ready to go:
+
+![An IP address](/media/posts/2018/06/droplet.png)
+
+Copy the address and paste it into the SFTP client of your choice. Log in as `root` using either your SSH key or a password and upload your mbtiles file to your home directory. If you really want to get fancy, you can do the upload straight from your terminal with:
+
+```sh
+scp vector.mbtiles root@<your ip address>:/root/vector.mbtiles
+```
+
+While you're waiting for that to finish, go check on the kids and make sure they're presentable.
 
 ## Starting the Server On Your Way Out the Door
 
-It's the final step. The kids are dressed and their bags are packed. All you need to do is start your server and your status as a legend is secure. SSH into your server and run this single command:
+It's the final step. The kids are dressed and their bags are packed. All you need to do is start your server and your status as a legend is secure. SSH into your server (`ssh root@<your ip address>`) and run this single command:
 
 ```sh
 docker run --rm -it -v $(pwd):/data -p 80:80 klokantech/tileserver-gl vector.mbtiles --verbose
 ```
 
-That's it! Go walk the kids to school. Get a coffee on your way home. When you're back, just visit the IP address in a browser and grab the tilejson URL and start styling in [OpenMapTiles](http://editor.openmaptiles.org)!
+That's it! Go walk the kids to school. Get a coffee on your way home. When you're back, just visit the IP address in a browser and click **inspect** to view your tiles or grab the tilejson URL and start styling in [OpenMapTiles](http://editor.openmaptiles.org)!
+
+![](/media/posts/2018/06/preview.png)
