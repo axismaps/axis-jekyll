@@ -4,11 +4,11 @@ nav: Blog
 status: publish
 published: true
 title: Deploy your own vector tile server while getting your kids ready for school
-author: awoodruff
+author: davidheyman
 writer:
   display_name: David Heyman
   email: dave@axismaps.com
-image: /media/posts/2018/05/relief_banner.jpg
+image: /media/posts/2018/06/preview.png
 date: '2018-06-26 09:00:00 +0100'
 date_gmt: '2018-06-26 09:00:00 +0100'
 categories:
