@@ -68,9 +68,9 @@ mkdir ../geojson
 Now, you can convert all your shapefiles to GeoJSON with a single command that loops through your directory and takes all the files with a _shp_ extension and converts them into GeoJSON using the same filename as the shapefile:
 
 ```sh
-for f in *.shp; 
-do 
-	mapshaper $f -o format=geojson ../geojson/`basename $f .shp`.json;
+for f in *.shp;
+do
+  mapshaper $f -o format=geojson ../geojson/`basename $f .shp`.json;
 done
 ```
 
@@ -115,4 +115,4 @@ docker run --rm -it -v $(pwd):/data -p 80:80 klokantech/tileserver-gl vector.mbt
 
 That's it! Go walk the kids to school. Get a coffee on your way home. When you're back, just visit the IP address in a browser and click **inspect** to view your tiles or grab the tilejson URL and start styling in [OpenMapTiles](http://editor.openmaptiles.org)!
 
-![](/media/posts/2018/06/preview.png)
+![Vector preview](/media/posts/2018/06/preview.png)
