@@ -14,7 +14,7 @@ layout: project
 nav: Portfolio
 features:
 - View voyages on an automatically rotating globe
-- Transition between globe and map to examine single voyages
+- \gif\ Transition between globe and map to examine single voyages
 - Visualize polar and circumnavigation voyages on the same map
 ---
 
