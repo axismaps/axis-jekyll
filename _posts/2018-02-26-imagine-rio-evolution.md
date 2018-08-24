@@ -30,7 +30,7 @@ Powering imagineRio is _iRio_, a Node application that facilitates:
 2. Tile rendering and caching with options to select the year and layer visibility.
 3. An API to request metadata and vector data across the entire database.
 
-When our friends at Rice wanted to launch 2 additional maps, it made sense to re-use the iRio platform; not only because the system was already built and tested, but also because their team was already familiar with the intricacies of the data required to power the map. With this knowledge and their existing best practices, they were able to quickly produce new datasets for new maps of the Rice University Campus in [instituteRice](http://instituterice.herokuapp.com/) and Beirut, Lebanon in [diverseLevant](https://diverselevant.herokuapp.com/).
+When our friends at Rice wanted to launch 2 additional maps, it made sense to re-use the iRio platform; not only because the system was already built and tested, but also because their team was already familiar with the intricacies of the data required to power the map. With this knowledge and their existing best practices, they were able to quickly produce new datasets for new maps of the Rice University Campus in [instituteRice](http://instituterice.org/) and Beirut, Lebanon in [diverseLevant](https://diverselevant.org/).
 
 ### Design Evolution
 
