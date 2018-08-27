@@ -10,17 +10,19 @@ category: Education
 featured: true
 slideshow: true
 video: 286491323
+link: http://diverselevant.org
+github: https://github.com/axismaps/imaginerio/tree/beirut
 layout: project
 nav: Portfolio
 features:
-- View a spatially and temporally accurate map of Beirut for a selected year
-- See primary source images in spatial and historic context
+- \gif\ View a spatially and temporally accurate map of Beirut for a selected year
+- \gif\ See primary source images in spatial and historic context
 - Highlight specific feature by their subtype for detailed view of the city
 ---
 
 diverseLevant is an online mapping platform that illustrates the urban evolution of Beirut, over its entire history as well as across its social, cultural, and religious diversity. Primary sources, such as views of the city, historical maps, archeological surveys, and architectural projects are located in time and in space while their associated visual and geographic data are integrated across a number of databases, including an open-access digital library of images, a geographic information system, an open source relational database, and a content delivery web service.
 
-Powering diverseLevant is _iRio_, a Node application that facilitates:
+Powering diverseLevant is (_iRio_)[https://github.com/axismaps/irio], a Node application that facilitates:
 
 1. Data management and conversion from the shapefiles used by the Rice team to collect data and PostGIS where the data is eventually stored.
 2. Tile rendering and caching with options to select the year and layer visibility.
