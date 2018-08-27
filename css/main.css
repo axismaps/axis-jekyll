@@ -611,6 +611,10 @@ section#icons h2, section#case-studies h2{
   background-color: #763E74;
 }
 
+.case-study.color-green h3{
+  background-color: #318850;
+}
+
 .case-study > img, .case-study blockquote{
   float: left;
   margin: 30px 40px 80px 0;
@@ -654,6 +658,10 @@ section#icons h2, section#case-studies h2{
   border-left-color: #763E74;
 }
 
+.case-study.color-purple blockquote{
+  border-left-color: #318850;
+}
+
 .case-study blockquote::before{
   content: '“';
   font-size: 150px;
@@ -667,6 +675,10 @@ section#icons h2, section#case-studies h2{
 
 .case-study.color-purple blockquote::before{
   color: #763E74;
+}
+
+.case-study.color-purple blockquote::before{
+  color: #318850;
 }
 
 .case-study .project-title{
@@ -684,6 +696,10 @@ section#icons h2, section#case-studies h2{
 
 .case-study.color-purple .project-title{
   background-color: #FAF0FA;
+}
+
+.case-study.color-green .project-title{
+  background-color: #EFF8F2;
 }
 
 .project-title p{
