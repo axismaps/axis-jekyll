@@ -256,7 +256,7 @@ nav a:hover{
 /* HOME VIDEO */
 #home-video, #home-video #page-title{
 	width: 100%;
-	height: calc( 100% - 100px );
+	height: 500px;
 	overflow: hidden;
 }
 
