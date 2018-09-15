@@ -13,7 +13,7 @@ slideshow: true
 video: 212543609
 layout: project
 link: http://imaginerio.org
-github: https://github.com/axismaps/rio
+github: https://github.com/axismaps/imaginerio
 nav: Portfolio
 features:
 - View maps from 1500 to present day

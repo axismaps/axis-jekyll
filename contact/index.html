@@ -6,17 +6,49 @@ order: 6
 ---
 
 <section class="text" id="contact">
-	<h2>Contact Us</h2>
+	<h2>Work With Us</h2>
 	<h3>We want to build your map!</h3>
-	<p>We’ve worked with a wide range of clients all over the world. We’re excited to hear about your project, whether it’s small or large.</p>
+	<p>We’ve worked with a wide range of clients all over the world. We’re excited to hear about your project, whether it’s small or large, and we look forward to discussing how we can design a custom solution for you and your data.</p>
 
-	<p><strong>Standard email:</strong><br>
-	Write to David Heyman, Managing Director of Axis Maps at:<br><a class="email-event" href="mailto:info@axismaps.com">info@axismaps.com</a>
+	<div class="contact">
+		<h4>Tell us about your project</h4>
+		<!-- <p>Any information is helpful here, from big picture project idea stuff to more detailed data, technology, and system requirements. Feel free to tell us anything you know, as well as any questions you have for us.</p> -->
+		<form id="email-contact">
+			<p>
+				<label>Name</label>
+				<input name="name" type="text">
+			</p>
+			<p>
+				<label>Organization</label>
+				<input name="org" type="text">
+			</p>
+			<p>
+				<label>Email</label>
+				<input name="email" type="email" required>
+			</p>
+			<p>
+				<label>Message</label>
+				<textarea name="message" rows="6"></textarea>
+			</p>
+			<p>
+				<button class="submit" type="submit">Submit</button>
+				<div class="sending"><i class="fas fa-spinner fa-spin fa-2x" style="position:relative;top:6px;right:8px;"></i> Sending message...</div>
+			</p>
+		</form>
+		<div class="send-message success"><i class="fas fa-check-circle fa-2x" style="position:relative;top:6px;right:8px;color:#86D17F;"></i>Thanks for getting in touch. We’ll get back to you via the email address you provided.</div>
+		<div class="send-message failure"><i class="fas fa-close-circle fa-2x" style="position:relative;top:6px;right:8px;color:#E34A33;"></i>We're sorry. There's an error with the contact form. Please <a class="email-event" href="mailto:info@axismaps.com">email us</a>.</div>
+	</div>
+
+	<p>
+		<strong>Standard email:</strong><br>
+		Write to David Heyman, Managing Director of Axis Maps at:<br><a class="email-event" href="mailto:info@axismaps.com">info@axismaps.com</a>
 	</p>
 
-	<div class="tool newsletter">
-		<p><strong>Sign up for Axis News:</strong><br>
-		Stay up-to-date with our latest projects and posts via our less-than-monthly newsletter.</p>
+	<hr>
+
+	<div class="newsletter">
+		<h4>Sign up for Axis News:</h4>
+		<p>Stay up-to-date with our latest projects and posts via our less-than-monthly newsletter.</p>
 		<form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC2609F17392F670071250B99C2DCC2366FF0E920F4160DEA6904F1B0228DB266282C6ED1BDCA1E3F1AAFF268246020FDB59">
 			<p>
 					<label for="fieldName">Name</label><br />
@@ -33,16 +65,35 @@ order: 6
 		<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 	</div>
 
-	<p><strong>Post Office Box:</strong><br>
-	Axis Maps<br>
-	PO Box 421<br>
-	Hewitt, TX 76643<br>
-	USA
-	</p>
-
-	<p>For all questions about indiemapper, please visit:<br><a href="http://indiemapper.io">http://indiemapper.io</a></p>
-
-	<p>For all questions about typographic maps, please visit:<br>
-<a href="http://store.axismaps.com/contact">http://store.axismaps.com/contact</a></p>
+	<p>For all questions about indiemapper, please visit <a href="http://indiemapper.io">http://indiemapper.io</a>.</p>
+	<p>For all questions about typographic maps, please visit <a href="http://store.axismaps.com/contact">the typographic map store</a>.</p>
 
 </section>
+
+<script>
+	$('#email-contact').submit(function (e) {
+		e.preventDefault();
+		$('#email-contact .submit').hide();
+		var data = $(this).serializeArray();
+		$('#email-contact input, #email-contact textarea').attr('disabled', true);
+		$('.sending').show();
+		$.ajax({
+			url: 'https://axis-email.prod.with-datafire.io/contact',
+			data: data,
+			method: 'POST',
+			success: function () {
+				ga('send', 'event', 'contact', 'form');
+				$('.sending').hide();
+				$('#email-contact').slideUp(function () {
+					$('.send-message.success').fadeIn();
+				});
+			},
+			error: function () {
+				$('#email-contact input, #email-contact textarea').removeAttr('disabled');
+				$('.sending').hide();
+				$('#email-contact .submit').show();
+				$('.send-message.failure').fadeIn();
+			}
+		})
+	})
+</script>

@@ -54,8 +54,9 @@ a:hover{
 
 a.button, button.submit{
 	display: inline-block;
-	line-height: 25px;
-    margin: 20px 0;
+  line-height: 25px;
+  font-family: 'Lato', sans-serif;
+  margin: 20px 0;
 	padding: 15px;
 	background-color: #58A2D8;
 	border-radius: 3px;
@@ -139,7 +140,12 @@ ol li+li, ul li+li {
   padding-right: 6px;
   line-height: 20px;
   float: left;
-  }
+}
+
+section > i:first-child{
+  font-size: 30px;
+  color: #E34A33;
+}
 
 
 /* UTILITY */
@@ -200,6 +206,18 @@ nav{
 
 .fixed-header nav {
   line-height: 30px;
+}
+
+.fixed-header .contact-button{
+  padding: 5px 15px;
+  margin-left: -10px;
+  background-color: #58A2D8;
+  color: white;
+  border-radius: 3px;
+}
+
+.fixed-header .contact-button:hover{
+  color: black;
 }
 
 nav a{
@@ -271,7 +289,7 @@ nav a:hover{
 	padding-bottom: 10px;
 }
 
-#home-video #page-title div#scroll-indicator{
+#home-video #page-title #scroll-indicator{
 	width: 200px;
   left: 50%;
 	opacity: 0;
@@ -335,7 +353,7 @@ footer p.legal{
 #featured-projects, #all-projects {
   text-align: center;
 	background-color: #EFF1F2;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #featured-projects .button{
@@ -425,7 +443,8 @@ a.project:hover .grid-image{
 
 /* CLIENTS */
 #clients{
-	margin: 0 40px;
+  margin: 0 40px;
+  padding-bottom: 50px;
 }
 
 #clients h4{
@@ -543,9 +562,41 @@ a.project:hover .grid-image{
 
 /* INDUSTRIES */
 #intro{
+  background: #e7f4fc;
   background-color: #EFF1F2;
-  padding-bottom: 20px;
-  margin-top: -20px;
+  background: -moz-linear-gradient(-45deg, #e7f4fc 0%, #fff6e6 100%);
+  background: -webkit-linear-gradient(-45deg, #e7f4fc 0%,#fff6e6 100%);
+  background: linear-gradient(-45deg, #e7f4fc 0%,#fff6e6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f4fc', endColorstr='#fff6e6',GradientType=0 );
+  padding: 40px 20%;
+}
+
+#intro p{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+#intro p:first-child:first-letter {
+  float: left;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 56px;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
+a#contact-bar{
+  background-color: #58A2D8;
+  color: white;
+  font-weight: 300;
+  padding: 30px;
+  margin: 30px auto;
+  display: inline-block;
+}
+
+a#contact-bar b{
+  color: white;
+  font-weight: 700;
 }
 
 section#icons, section#case-studies{
@@ -770,19 +821,59 @@ span.big{
 font-size: 30px;
 }
 
-.tool.newsletter{
+.contact{
   background-color: #EFF1F2;
+  padding: 30px;
 }
 
-#subForm input {
+.contact h4, .newsletter h4{
+  text-align: left;
+}
+
+.newsletter{
+  background-color: #E7F4FC;
+  float: left;
+  width: 50%;
+  padding: 20px;
+  margin: 0 40px 40px 0;
+  box-sizing: border-box;
+}
+
+form input, form textarea {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 10px 25px;
+  margin: 0 0 10px 0;
   display: inline-block;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+form label{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+button.submit{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.sending{
+  font-weight: bold;
+  line-height: 60px;
+  display: none;
+}
+
+.send-message{
+  text-align: left;
+  text-indent: -42px;
+  margin-left: 50px;
+  display: none;
 }
 
 /* PROJECT */
@@ -1095,7 +1186,6 @@ span.caption {
 
 #blog img {
   max-width: 100%;
-  max-height: 400px;
   display: block;
   margin: auto;
 }
@@ -1122,6 +1212,12 @@ span.caption {
   
   #project-grid a.project {
     width: calc( 100% - 105px );
+  }
+
+  .icon-service, .newsletter{
+    float: none;
+    width: auto;
+    margin-right: 0;
   }
   
   .tool .img, .tool:nth-child(even) .img{
@@ -1257,11 +1353,19 @@ span.caption {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
   }
 
+  #intro{
+    padding: 20px 5%;
+  }
+
+  #intro p {
+    margin-top: 0;
+  }
+
   #home-video #page-title div {
     padding: 20px;
   }
 
-  #home-video #page-title div#scroll-indicator {
+  #home-video #page-title #scroll-indicator {
     visibility: hidden;
   }
 

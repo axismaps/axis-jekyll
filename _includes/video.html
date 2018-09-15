@@ -9,16 +9,16 @@
       <p>&nbsp;</p>
       <h3>{{ page.subheading }}</h3>
       <p>&nbsp;</p>
-      <a class="button email-event" href="mailto:info@axismaps.com">Contact us</a>
+      <a class="button email-event" href="/contact/"><i class="fas fa-users"></i> Work with us</a>
     </div>
-    <div id="scroll-indicator">View More <br/> <i class="fas fa-chevron-down"></i></div>
+    <a href="#featured-projects" id="scroll-indicator">View Our Work<br/><i class="fas fa-chevron-down"></i></a>
   </div>
 </div>
 <script>
   $( window ).resize( function(){
-    var h = $( window ).height() - $('#header').height() - 75;
+    var h = $( window ).height() - $('#header').height() - $('#intro').outerHeight();
     var w = $( window ).width();
-    h = Math.max(250, h);
+    h = Math.max(300, h);
     if (window.innerWidth < 350) {
       h = Math.max(300, h);
     }
@@ -42,6 +42,6 @@
         $('body').animate({
           scrollTop: $('#featured-projects').position().top
         }, 400);
-      })
+      });
   });
 </script>
