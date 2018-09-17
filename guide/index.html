@@ -12,59 +12,64 @@ omit: true
 </div>
 <section id="guides">
   <div class="content">
-  <p>
-  <span class="dropcap">W</span> <strong>elcome!</strong> In this short guide, we share some insights and tips for designing maps. Our goal is to cover important concepts in cartography and flag the important decision points in the map-making process. There isn't always a single best answer in cartography, and in those cases we've tried to outline some of the pros and cons to different solutions.
-  </p>
-  <p>This is by no means a replacement for a full textbook on cartography; rather it is a quick reference guide for those moments when you're stumped, unsure of what to do next, or unfamiliar with the terminology. While the recommendations on these pages are short and not loaded with academic references, please appreciate that they represent a thoughtful synthesis of decades of map-making research.</p>
-  <p>This guide is maintained by <a href="http://axismaps.com">Axis Maps</a>, originally adapted from documentation written for <a href="http://indiemapper.io">indiemapper</a>. However, the content here is about general cartography principles, not software-specific tips. For more hands-on technical advice, visit some of the lists mentioned at the top of our <a href="{{site.baseurl }}/guide/map-design-resources">resources page</a>.</p>
-  <br>
-  {% assign guides = site.guide | sort: 'order' %}
-  <h3>General Map Making Topics</h3>
-  <ul>
-    {% for guide in guides %}
+    <p>
+      <span class="dropcap">W</span> <strong>elcome!</strong> In this short guide, we share some insights and tips for designing maps. Our goal is to cover important concepts in cartography and flag the important decision points in the map-making process. There isn't always a single best answer in cartography, and in those cases we've tried to outline some of the pros and cons to different solutions.
+    </p>
+    <p>This is by no means a replacement for a full textbook on cartography; rather it is a quick reference guide for those moments when you're stumped, unsure of what to do next, or unfamiliar with the terminology. While the recommendations on these pages are short and not loaded with academic references, please appreciate that they represent a thoughtful synthesis of decades of map-making research.</p>
+    <p>This guide is maintained by <a href="http://axismaps.com">Axis Maps</a>, originally adapted from documentation written for <a href="http://indiemapper.io">indiemapper</a>. However, the content here is about general cartography principles, not software-specific tips. For more hands-on technical advice, visit some of the lists mentioned at the top of our <a href="{{site.baseurl }}/guide/map-design-resources">resources page</a>.</p>
+    <br>
+    {% assign guides = site.guide | sort: 'order' %}
+    <h3>General Map Making Topics</h3>
+    <ul>
+      {% for guide in guides %}
       {% if guide.categories contains 'general' %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+      <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
-    {% endfor %}
-  </ul>
-  <br>
-  <h3>Geographic Data</h3>
-  <ul>
-    {% for guide in guides %}
+      {% endfor %}
+    </ul>
+    <br>
+    <h3>Geographic Data</h3>
+    <ul>
+      {% for guide in guides %}
       {% if guide.categories contains 'data' %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+      <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
-    {% endfor %}
-  </ul>
-  <br>
-  <h3>Univariate Thematic Map Types</h3>
-  <ul>
-    {% for guide in guides %}
+      {% endfor %}
+    </ul>
+    <br>
+    <h3>Univariate Thematic Map Types</h3>
+    <ul>
+      {% for guide in guides %}
       {% if guide.categories contains 'univariate' %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+      <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
-    {% endfor %}
-  </ul>
-  <br>
-  <h3>Multivariate Thematic Map Types</h3>  
-  <ul>
-    {% for guide in guides %}
+      {% endfor %}
+    </ul>
+    <br>
+    <h3>Multivariate Thematic Map Types</h3>
+    <ul>
+      {% for guide in guides %}
       {% if guide.categories contains 'multivariate' %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+      <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
-    {% endfor %}
-  </ul>
-  <br>
-  <h3>Web and Interactive Maps</h3>
-  <ul>
-    {% for guide in guides %}
+      {% endfor %}
+    </ul>
+    <br>
+    <h3>Web and Interactive Maps</h3>
+    <ul>
+      {% for guide in guides %}
       {% if guide.categories contains 'web' %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+      <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
       {% endif %}
-    {% endfor %}
-  </ul>
-  <br>
-  <h3>More resources on map design</h3>
-  <p>Want to dig depper? See this list of further <a href="{{site.baseurl }}/guide/general/resources">map design resources</a> for links to additional articles, tutorials, textbooks, tools, and more.</p>
+      {% endfor %}
+    </ul>
+    <br>
+    <h3>More resources on map design</h3>
+    <p>Want to dig depper? See this list of further <a href="{{site.baseurl }}/guide/general/resources">map design resources</a> for links to additional articles, tutorials, textbooks, tools, and more.</p>
+    <br />
+    <span class="license">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+      <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Cartography Guide</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.axismaps.com/guide/" property="cc:attributionName" rel="cc:attributionURL">Axis Maps</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </span>
   </div>
 </section>

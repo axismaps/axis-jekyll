@@ -934,6 +934,10 @@ img.banner {
 
 /* Guides */
 
+.license{
+  font-size: 15px;
+}
+
 section#guides, section.guide-content {
   margin: 0 80px 80px;
   padding-top: 0;
