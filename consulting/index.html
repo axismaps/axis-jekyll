@@ -109,7 +109,7 @@ subheading: Our services are designed to help you better understand your spatial
       <h4>UN FAO Spatial Data API</h4>
       <p>A database and API to support data collection at the UN Food and Agriculture Organization</p>
     </div>
-    <p>Pure Earch contacted us to support the the data tasks they were performing for the UN FAO. The process of collecting physical geography data (e.g., soils, elevantion, watershed, etc) was bogging them down at their current scale. We worked with them to design a fully functional database and API that could handle massive global raster and vector datasets, retrieving data for a given point or a point matrix.</p>
-    <p></p>
+    <p>Pure Earch contacted us to support the the data tasks they were performing for the UN FAO. We worked with them to design a fully functional database and API that could handle massive global raster and vector datasets, retrieving data for a given point or a point matrix. The first step was designing and deploying a cloud database to store and serve the geographic data. To populate the database, we build a series of commandline tools in Python. In addition to optimizing and uploading the spatial datasets, the commandline tools also collect and format the apppropriate metadata for inclusion in the database.</p>
+    <p>The final step was to build the API using the Express framework to manage the API endpoints and parameters. Each database query was tested against the largest datasets available in the project and optimized agianst their execution times. With the API build, we designed an interactive site to allow users to explore the documentation using an interactive environment to test and refine their queries.</p>
   </div>
 </section>
