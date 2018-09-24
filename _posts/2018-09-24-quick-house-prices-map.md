@@ -20,6 +20,8 @@ comments: []
 project: []
 ---
 
+_This post originally ran on the [Ordnance Survey Blog](https://www.ordnancesurvey.co.uk/blog/2018/09/house-prices-map-os-data/)._
+
 In my role as Managing Director, overseeing the operations of [Axis Maps](www.axismaps.com), I don’t get to make maps as much as I’d like. Last week I had a free day, so I figured I’d build a quick interactive map to try out some new tools and techniques for use in our future [custom interactive mapping projects](https://www.axismaps.com/projects/), and (data willing) show a new or interesting geographic phenomenon. The end result was this map, showing the [change in house prices from 2010 - 2018 in England and Wales](prices.axismaps.com).
 ![](/media/posts/2018/09/2018-08-29_19-34-45.gif)
 
