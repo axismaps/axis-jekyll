@@ -1,0 +1,115 @@
+---
+layout: default
+poster: consulting-poster.png
+video: consulting.mp4
+heading: Consulting Services
+subheading: Our services are designed to help you better understand your spatial data.
+---
+
+<style>
+  #scroll-indicator{
+    display: none;
+  }
+</style>
+
+{% include video.html %}
+
+<section id="intro">
+  <p><b>We have been experts in the field of interactive mapping for nearly 15 years.</b> During that time, we've helped a diverse group of clients navigate the ever-changing landscape of displaying geographic data on the web. We've advised on data methodologies for international teams, built cartographic and UI spec-sheets for startups, and provided bespoke hosting services tailored to each client's needs.</p>
+  <p><b><a class="email-event" href="mailto:info@axismaps.com">Contact us today!</a></b> We'd love to hear more about your project and start thinking about a solution that's right for you.</p>
+</section>
+
+<section id="icons">
+  <h2>Services</h2>
+  <div class="icon-service">
+    <span class="fa-layers fa-fw fa-4x">
+      <i class="fas fa-circle" style="color:#EFF1F2"></i>
+      <i class="fas fa-inventory" data-fa-transform="shrink-8"></i>
+    </span>
+    <h4>Data inventory & modeling</h4>
+    <p>Spatial data can be messy. We can help you take your spatial data—whatever format it is in—and turn it into structured, organized, machine-readable information.</p>
+  </div>
+  <div class="icon-service">
+    <span class="fa-layers fa-fw fa-4x">
+      <i class="fas fa-circle" style="color:#EFF1F2"></i>
+      <i class="fal fa-code-merge" data-fa-transform="shrink-6"></i>
+    </span>
+    <h4>Data integration</h4>
+    <p>The data collection processes already in place at your organization are paramount. We can help you by designing new software that brings spatial data to your existing workflows.</p>
+  </div>
+  <div class="icon-service">
+    <span class="fa-layers fa-fw fa-4x">
+      <i class="fas fa-circle" style="color:#EFF1F2"></i>
+      <i class="fal fa-object-group" data-fa-transform="shrink-6"></i>
+    </span>
+    <h4>Cartographic stylesheets</h4>
+    <p>If you have or are planning to build a mapping application, we can help you design a basemap and thematic graphics that match your branding, making your maps look uniquely your own.</p>
+  </div>
+  <div class="icon-service">
+    <span class="fa-layers fa-fw fa-4x">
+      <i class="fas fa-circle" style="color:#EFF1F2"></i>
+      <i class="fal fa-desktop-alt" data-fa-transform="shrink-6"></i>
+    </span>
+    <h4>UI / Website design</h4>
+    <p>We pride ourselves in building thoughtful and elegant user interfaces for maps and data visualizations. We can help you with your UI or website design (we even designed this site).</p>
+  </div>
+  <div class="icon-service">
+    <span class="fa-layers fa-fw fa-4x">
+      <i class="fas fa-circle" style="color:#EFF1F2"></i>
+      <i class="fal fa-server" data-fa-transform="shrink-6"></i>
+    </span>
+    <h4>Spatial data hosting</h4>
+    <p>The technology overhead required to get your spatial data or map server online can be immense. Let us help you design a custom solution that is right for your data's purpose and volume.</p>
+  </div>
+  <div class="icon-service">
+    <span class="fa-layers fa-fw fa-4x">
+      <i class="fas fa-circle" style="color:#EFF1F2"></i>
+      <i class="fal fa-graduation-cap" data-fa-transform="shrink-6"></i>
+    </span>
+    <h4>Cartography training</h4>
+    <p>We are passionate about <a href="/guide/" target="_blank">cartography education</a>. We would love the opportunity to teach your organization about the best practices around visually displaying geographic information.</p>
+  </div>
+</section>
+
+<section id="case-studies">
+  <h2>Case Studies</h2>
+  <div class="case-study left color-red">
+    <div class="title-container">
+      <h3>Data Creation Tools</h3>
+    </div>
+    <img src="/media/industries/consulting/viewcone.gif">
+    <!--<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum neque quis magna maximus fermentum. Curabitur ultrices lorem nisl, eu varius ipsum tincidunt eget. Morbi.</blockquote>-->
+    <div class="project-title">
+      <h4>imagineRio</h4>
+      <p>Custom data entry tools for an interational workforce</p>
+    </div>
+    <p>The backbone of the imagineRio project is a huge data-collection effort. Scholars and students in the United States and Brazil worked tirelessly to manually digitize geographic features from historic maps and geolocate historic images based on their content. The data collection processes were all done using ESRI tools including ArcGIS Pro and an ArcSDE server, but the imagineRio web-map was built using Mapnik and PostGIS (both open-source). To connect these technology platforms, we built a custom import interface that can be run from the commandline. It guides the user through a series of multiple choice questions, making sure the data they are loading gets routed to the correct place in the database. It has allowed us, with almost no special training, to give the imagineRio project staff the ability to <i>manage and maintain their project's data entirely on their own.</i></p>
+    <p>As the project grew, we had an opportunity to integrate a new image repository containing thousands of historic photographs. In addition to integrating new images into the project, we also had to integrate new staff to add the new photographs to the database. As this staff was not based at a university, they did not have access to ArcGIS Pro to use the same workflow as the rest of the team. We built a custom data collection tool</p>
+  </div>
+  <div class="case-study right color-purple">
+    <div class="title-container">
+      <h3>Cartographic Templates & Color Schemes</h3>
+    </div>
+    <img src="/media/industries/consulting/colors.png">
+    <!--<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum neque quis magna maximus fermentum. Curabitur ultrices lorem nisl, eu varius ipsum tincidunt eget. Morbi.</blockquote>-->
+    <div class="project-title">
+      <h4>ESRI ArcGIS Online</h4>
+      <p>Custom color specs for a major online mapping platform</p>
+    </div>
+    <p>We worked with ESRI to develop an internal color-browser as a test bed for introducing new color schemes to ArcGIS Online. Over 75 custom color schemes were designed for use with thematic data on several built-in basemaps of different styles. Each color scheme is matched both to a particular kind of data and a specific basemap. The goal was to design a wide range of color schemes that would provide users with the best defaults possible when making their maps.</p>
+    <p>In addition to designing the color schemes and providing detailed color specs, we wanted to make sure the color schemes could be easily communicated internally to the team implementing them in the product. To do this, we build on our experience building <a href="http://colorbrewer2.org" target="_blank">ColorBrewer</a> and designed and built a custom color browser for this project. The browser allows users to page through thematic map types, see the color schemes mapped to a test dataset, and view color specifications.</p>
+  </div>
+  <div class="case-study left color-green">
+    <div class="title-container">
+      <h3>Data Prep & API Design / Production</h3>
+    </div>
+    <img src="/media/industries/consulting/api.png">
+    <!--<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum neque quis magna maximus fermentum. Curabitur ultrices lorem nisl, eu varius ipsum tincidunt eget. Morbi.</blockquote>-->
+    <div class="project-title">
+      <h4>UN FAO Spatial Data API</h4>
+      <p>A database and API to support data collection at the UN Food and Agriculture Organization</p>
+    </div>
+    <p>Pure Earch contacted us to support the the data tasks they were performing for the UN FAO. We worked with them to design a fully functional database and API that could handle massive global raster and vector datasets, retrieving data for a given point or a point matrix. The first step was designing and deploying a cloud database to store and serve the geographic data. To populate the database, we build a series of commandline tools in Python. In addition to optimizing and uploading the spatial datasets, the commandline tools also collect and format the apppropriate metadata for inclusion in the database.</p>
+    <p>The final step was to build the API using the Express framework to manage the API endpoints and parameters. Each database query was tested against the largest datasets available in the project and optimized agianst their execution times. With the API build, we designed an interactive site to allow users to explore the documentation using an interactive environment to test and refine their queries.</p>
+  </div>
+</section>
