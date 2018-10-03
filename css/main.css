@@ -253,6 +253,23 @@ nav a:hover{
 	color: #57a1d7;
 }
 
+/* ERROR */
+#error{
+  height: calc(100vh - 100px);
+  background-image: url(../images/404.png);
+  background-size: cover;
+  box-sizing: border-box;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#error > div {
+  margin-top: -100px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 /* HOME VIDEO */
 #home-video, #home-video #page-title{
 	width: 100%;
