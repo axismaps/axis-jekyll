@@ -9,7 +9,7 @@
       <p>&nbsp;</p>
       <h3>{{ page.subheading }}</h3>
       <p>&nbsp;</p>
-      <a class="button email-event" href="/contact/"><i class="fas fa-users"></i> Work with us</a>
+      <a class="button email-event" href="/contact/"><i class="fas fa-users"></i> Contact us</a>
     </div>
     <a href="#featured-projects" id="scroll-indicator">View Our Work<br/><i class="fas fa-chevron-down"></i></a>
   </div>
@@ -30,7 +30,11 @@
         .width( w1 )
         .css( "margin-left", ( w - w1 ) / 2 );
     } else {
-      $( "video" ).removeAttr( 'style' ).width( w );
+      var h1 = w * ( 9 / 16 );
+      $( "video" )
+        .removeAttr( 'style' )
+        .width( w )
+        .css("margin-top", ( h - h1 ) / 2 );
     }
     $( "#home-video, #page-title" ).height( h );
   });
