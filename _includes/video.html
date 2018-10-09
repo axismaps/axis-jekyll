@@ -30,7 +30,11 @@
         .width( w1 )
         .css( "margin-left", ( w - w1 ) / 2 );
     } else {
-      $( "video" ).removeAttr( 'style' ).width( w );
+      var h1 = w * ( 9 / 16 );
+      $( "video" )
+        .removeAttr( 'style' )
+        .width( w )
+        .css("margin-top", ( h - h1 ) / 2 );
     }
     $( "#home-video, #page-title" ).height( h );
   });
