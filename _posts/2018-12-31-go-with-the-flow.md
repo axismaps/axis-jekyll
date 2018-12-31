@@ -37,7 +37,7 @@ As you might guess, these are, essentially, a collection on paths that "flow" do
 
 ## Attempting hachures... again
 
-As always, I began with an attempt to draw [hachures](https://en.wikipedia.org/wiki/Hachure_map). Earlier attempts had drawn strokes in a regular grid or from random points, but now thanks to d3-contour I had a proper starting point. Randomly placed strokes running donwhill create a *hachure-esque* look, but real hachures are arranged in rows along regular contour intervals.
+As always, I began with an attempt to draw [hachures](https://en.wikipedia.org/wiki/Hachure_map), a somewhat archaic terrain-shading technique of short, uniformly dense lines running in the direction of slope. Earlier attempts had drawn strokes in a regular grid or from random points, but now thanks to d3-contour I had a proper starting point. Randomly placed strokes running donwhill create a *hachure-esque* look, but real hachures are arranged in rows along regular contour intervals.
 
 ![](/media/posts/2018/12/pseudo-hachures.jpg)
 *Pseudo-hachures, relatively short strokes drawn from random points. Here, masking around each line helps preserve an appearance of overall uniform density.*
