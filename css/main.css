@@ -1191,6 +1191,15 @@ span.caption {
   margin-right: 15px;
 }
 
+#blog .metadata > div.twitter a {
+  color: #333;
+  font-weight: 300;
+}
+
+#blog .metadata > div.twitter > .fa-twitter {
+  color: #999;
+}
+
 #blog .pagination {
   text-align: center;
 }

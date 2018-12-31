@@ -17,11 +17,18 @@
       {{ post.date | date: "%b %-d, %Y" }}
     </div>
     
-    {% if post.author %}
+    {% if post.writer %}
       <div class="metadata-item">
         <i class="fal fa-user"></i>
-        {{ post.author.display_name }}
+        {{ post.writer.display_name }}
       </div>
+      {% if post.writer.twitter %}
+        <div class="metadata-item twitter">
+          <i class="fab fa-twitter"></i>
+          <a href="https://twitter.com/{{ post.writer.twitter }}">@{{ post.writer.twitter }}</a>
+        </div>
+      {% endif %}
     {% endif %}
+
   {% endif %}
 </div>
