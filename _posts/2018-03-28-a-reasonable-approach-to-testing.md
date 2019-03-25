@@ -17,7 +17,7 @@ tags:
 - Testing
 - Process
 comments: []
-project: []
+project: hpi
 ---
 
 We recently got to work with a [professional testing company](http://www.qa4u.com/QA4U/Welcome.html) on one of our larger projects and I was _blown away_ by how they handled front-end testing. My approach to front-end testing was always "bang on it enough with enough different devices and you’ll find most of the bugs." That approach works (mostly), but it’s stupid (totally).
