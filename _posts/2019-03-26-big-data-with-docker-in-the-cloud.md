@@ -24,7 +24,7 @@ Recently, we've been partnering with [Hammerhead](https://www.hammerhead.io) to 
 
 As part of this project, we needed to optimize and process global OSM data, converting it to the format used on the device and stripping out all the additional layers not used by the map style. The process uses GDAL, Osmosis, and PBF extracts downloaded from [Geofabrik](http://download.geofabrik.de). Very quickly, it became clear it was going to take a week to complete the entire world running from my local machine... and we had to deliver in a couple of days.
 
-We weren't thinking big enough! Obviously 1 computer wasn't going to cut it, we needed 50, all more powerful than my stupid laptop. 
+We weren't thinking big enough! Obviously 1 computer wasn't going to cut it, we needed 50, all more powerful than my stupid laptop. We had been working with Docker and DigitalOcean before, but mostly as a convenience way to not have to constantly rebuild server dependency. This seemed like a good opportunity to test their scalability and see how they could help us with dealing with a monster dataset.
 
 ## Docker
 Dockerfiles usually begin with an import statement that gives Docker an image to use as a starting point. This can be a different image you’ve made, but it’s often just an OS. For this one, we’re using Ubuntu Xenial.
@@ -147,3 +147,6 @@ for droplet in drops:
   else:
     active.append(droplet.name)
 ```
+
+## Wrapping Up
+Going forward, this work represents a strategy instead of a plug-and-play code library that we can reuse. Our big push in the last few years with our data work has been towards scriptability and repeatability, using code to handle every step of data processing from source to inside the application. What we learned on this project extends that scriptability to include not only the computer systems we run these projects on, but the level of scalability required to quickly process monster data jobs.
