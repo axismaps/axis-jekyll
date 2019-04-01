@@ -22,11 +22,17 @@ project: []
 
 Recently, we've been partnering with [Hammerhead](https://www.hammerhead.io) to design offline maps for their on-bike cycling computer. It's been really interesting to work on a design project where size concerns (all the data must be downloaded to the device and MBs count) and hardware concerns (the styles must read in direct sunlight) are equally as important as aesthetics.
 
-As part of this project, we needed to optimize and process global OSM data, converting it to the format used on the device and stripping out all the additional layers not used by the map style. The process uses GDAL, Osmosis, and PBF extracts downloaded from [Geofabrik](http://download.geofabrik.de). Very quickly, it became clear it was going to take a week to complete the entire world running from my local machine... and we had to deliver in a couple of days.
+As part of this project, we needed to optimize and process global OSM data, converting it to the format used on the device and stripping out all the additional layers not used by the map style. The process uses GDAL, Osmosis, and PBF extracts downloaded from [Geofabrik](http://download.geofabrik.de). We had already bundled it into a bash script that takes the name of an OSM area and:
+1. Downloads all the required data files
+2. Creates land and sea polygons and crops to the desired area
+3. Converts the OSM data
+4. Uploads the converted data to S3 along with a small text file defining the extents
 
-We weren't thinking big enough! Obviously 1 computer wasn't going to cut it, we needed 50, all more powerful than my stupid laptop. We had been working with Docker and DigitalOcean before, but mostly as a convenience way to not have to constantly rebuild server dependency. This seemed like a good opportunity to test their scalability and see how they could help us with dealing with a monster dataset.
+After running a few multi-hour tests on single US states, it became clear it was going to take a week to complete the entire world running from my local machine... and we had to deliver in a couple of days. We weren't thinking big enough! Obviously 1 computer wasn't going to cut it, we needed 50, all more powerful than my stupid laptop. We had been working with Docker and DigitalOcean before, but mostly as a convenience way to not have to constantly rebuild server dependency. This seemed like a good opportunity to test their scalability and see how they could help us with dealing with a monster dataset.
 
 ## Docker
+Docker is a system that lets you create containers / sandboxes where you can define the [dependencies required to run your application](https://docker-curriculum.com/). It standardizes the sometimes messy process of server provisioning and dependency installation that is often a barrier-to-entry to running software. How the container is setup is defined in the Dockerfile. Docker takes these instructions and builds the container that can run the software.
+
 Dockerfiles usually begin with an import statement that gives Docker an image to use as a starting point. This can be a different image you’ve made, but it’s often just an OS. For this one, we’re using Ubuntu Xenial.
 
 ```docker
@@ -100,7 +106,7 @@ docker push axismaps/mapsforge
 ```
 
 ## Running the Images
-With the Docker image built and uploaded, we’ve created a stable environment that we know will run our code anywhere. The next step is to write a simple script that will create VMs and tell them to run our Docker image with some specific commands. We’re using [DigitalOcean](https://www.digitalocean.com/) as our cloud host, but you should be able to do this with any provider.
+With the Docker image built and uploaded, we’ve created a stable environment that we know will run our code anywhere. The next step is to write a simple script that will provision virtual machines (VMs) and tell them to run our Docker image with some specific commands. We’re using [DigitalOcean](https://www.digitalocean.com/) as our cloud host, but you should be  able to do this with any provider.
 
 All of this works because when we create a new VM on DigitalOcean, we can send it some bash commands to execute immediately after it starts up. These commands are:
 
