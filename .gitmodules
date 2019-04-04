@@ -1,6 +1,6 @@
 [submodule "_guide"]
 	path = _guide
-	url = https://github.com/axismaps/cartography-guide.git
+	url = https://github.com/axismaps/thematic-cartography.git
 [submodule "_plugins/jekyll_postfiles"]
 	path = _plugins/jekyll_postfiles
 	url = https://github.com/davidheyman/jekyll-postfiles.git
