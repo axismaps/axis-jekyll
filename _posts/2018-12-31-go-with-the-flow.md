@@ -87,7 +87,7 @@ This is still pretty experimental, and I'm not yet at the point of publishing an
 
 But for those interested, the gist of how this works is this:
 
-1. Get elevation data from terrain tiles and compute contours (as described in [this post]((/blog/2018/04/contours-in-browser/)) about the contours tool)
+1. Get elevation data from terrain tiles and compute contours (as described in [this post](/blog/2018/04/contours-in-browser/) about the contours tool)
 2. Draw contours invisibly to SVG and use the `getPointAtLength` method to find regularly spaced points along each contour line.
 3. From each of those points, start calculating a path up or downhill.  
   * Get the elevation and aspect at the point.
