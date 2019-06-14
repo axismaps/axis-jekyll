@@ -12,7 +12,8 @@ function init_events()
 	});
 	
 	$( window ).resize( function () {
-		if( $( window ).width() > 650 ) $( "nav #links" ).show();
+		var mobile = window.matchMedia('(max-width: 650px) and (orientation: portrait), (max-height: 650px) and (orientation: landscape)');
+		if( !mobile.matches ) $( "nav #links" ).show();
 		else $( "nav #links" ).hide();
 	});
 

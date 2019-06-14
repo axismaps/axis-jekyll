@@ -18,7 +18,6 @@
   $( window ).resize( function(){
     var h = .75 * ($( window ).height() - $('#header').height());
     var w = $( window ).width();
-    h = Math.max(300, h);
     if( w / h < 16 / 9 ){
       var w1 = h * ( 16 / 9 );
       $( '#page-title' ).removeAttr( 'style' );
