@@ -114,7 +114,7 @@
     </div>
     <script>
       $( window ).resize( function(){
-        $( '#poster' ).height( Math.min(window.innerHeight - 200, 720 * $( '#poster' ).width() / 1280 ));
+        $( '#poster' ).height( Math.min(window.innerHeight - 120, 720 * $( '#poster' ).width() / 1280 ));
         $( 'iframe.inline' ).width( Math.max( 480, $( '#project-entry' ).width() - 350 ) );
         $( 'iframe.inline' ).height( 720 * $( 'iframe.inline' ).width() / 1280 );
       });
@@ -165,11 +165,11 @@
 
           $('div', modal).remove();
 
-          $('<div>')
-            .append($('#features img').eq(index).clone())
-            .append('<br>')
-            .append($('#features span').eq(index).clone())
+          var inner = $('<div>')
             .prependTo(modal);
+          var imageContainer = $('<div>').appendTo(inner);
+          imageContainer.append($('#features img').eq(index).clone());
+          inner.append($('#features span').eq(index).clone());
 
           modal.show();
         }
