@@ -16,12 +16,9 @@
 </div>
 <script>
   $( window ).resize( function(){
-    var h = $( window ).height() - $('#header').height() - Math.min(300, $('#intro').outerHeight());
+    var h = .75 * ($( window ).height() - $('#header').height());
     var w = $( window ).width();
     h = Math.max(300, h);
-    if (window.innerWidth < 350) {
-      h = Math.max(300, h);
-    }
     if( w / h < 16 / 9 ){
       var w1 = h * ( 16 / 9 );
       $( '#page-title' ).removeAttr( 'style' );
