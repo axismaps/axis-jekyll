@@ -4,7 +4,7 @@ title: Healthy Places Index
 client: Public Health Alliance of Southern California
 clientshort: Public Health Alliance
 logo: pha.png
-tag: Animating 400 years of globe-spanning voyages
+tag: A public health atlas of California
 date: 2018-06-14
 category: Health
 featured: true
@@ -15,7 +15,7 @@ layout: project
 nav: Portfolio
 features:
 - Smart search box searches across all geographies and addresses
-- \gif\ Transition between globe and map to examine single voyages
+- \gif\ Pool geographic units to see combined data
 - Upload and style shapefile data
 ---
 
