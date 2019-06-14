@@ -1571,7 +1571,7 @@ span.caption {
 
 @media (max-height: 600px), (max-width: 650px) {
   body, body.fixed-header {
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   #home-video #page-title {
@@ -1581,9 +1581,10 @@ span.caption {
   #home-video #page-title h1 {
     font-size: 40px;
   }
-
-  #header{
-    position: fixed;
+  
+  #header,
+  .fixed-header #header{
+    position: static;
     top: 0;
     z-index: 2;
     height: 50px;
