@@ -297,8 +297,12 @@ nav a:hover{
 	position: absolute;
 }
 
+#home-video #scroll-indicator {
+  display: none;
+}
+
 #home-video #page-title div{
-	padding: 0 10% 20px 50px;
+	padding: 0 50px 20px 50px;
 	bottom: 0;
 }
 
@@ -325,6 +329,10 @@ nav a:hover{
 	text-transform: uppercase;
   padding: 0;
   cursor: pointer;
+}
+
+#home-video .video-contact-button {
+  text-align: center;
 }
 
 /* FOOTER */
@@ -1260,6 +1268,10 @@ span.caption {
 
   #home-video #page-title p {
     display: none;
+  }
+
+  #home-video #page-title p.video-contact-button {
+    display: block;
   }
   
   #project-grid a.project {
