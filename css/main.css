@@ -626,12 +626,13 @@ section#icons h2, section#case-studies h2{
   margin-bottom: 20px;
 }
 
+div.services {
+  display: flex;
+}
+
 .icon-service{
-  width: 33%;
   padding-right: 20px;
   margin-bottom: 20px;
-  min-width: 230px;
-  float: left;
   box-sizing: border-box;
 }
 
@@ -1223,6 +1224,16 @@ span.caption {
 
 /* RESPONSIVE STYLES */
 
+@media (max-width: 1000px) {
+  section.text {
+    margin: 20px 10%;
+  }
+
+  #intro {
+    padding: 40px 10%;
+  }
+}
+
 @media (max-width: 850px) {
 
   h1 {
@@ -1245,9 +1256,11 @@ span.caption {
     width: calc( 100% - 105px );
   }
 
+  div.services {
+    flex-direction: column;
+  }
+
   .icon-service, .newsletter{
-    float: none;
-    width: auto;
     margin-right: 0;
   }
   
