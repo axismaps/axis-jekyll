@@ -83,6 +83,12 @@ a.button.hollow:hover{
 	color: white !important;
 }
 
+a.button.small {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+}
+
 hr {
 	margin: 40px auto 40px;
 	border: none;
@@ -642,7 +648,11 @@ div.services {
 
 .icon-service p{
   font-size: 16px;
-  margin-top: 0.25em;
+  margin: 0.25em 0;
+}
+
+.icon-service a.button {
+  margin-top: 0;
 }
 
 .case-study.left{
@@ -1260,8 +1270,13 @@ span.caption {
     flex-direction: column;
   }
 
+  .icon-service p.learn-more {
+    text-align: center;
+  }
+
   .icon-service, .newsletter{
     margin-right: 0;
+    padding-right: 0;
   }
   
   .tool .img, .tool:nth-child(even) .img{
